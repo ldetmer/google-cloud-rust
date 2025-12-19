@@ -14,7 +14,7 @@
 
 [package]
 name                 = "google-cloud-base"
-version              = "0.0.0"
+version                = "0.0.1"
 description          = "Google Cloud Client Libraries for Rust"
 edition.workspace    = true
 authors.workspace    = true

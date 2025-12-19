@@ -15,7 +15,7 @@
 [package]
 name        = "google-cloud-datastore"
 publish     = false
-version     = "0.0.0"
+version                = "0.0.1"
 description = "Google Cloud Client Libraries for Rust - Datastore"
 # Inherit other attributes from the workspace.
 edition.workspace      = true

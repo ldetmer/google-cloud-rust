@@ -17,7 +17,7 @@ description       = "Internal test utilities for google-cloud-rust crates"
 edition.workspace = true
 name              = "google-cloud-test-utils"
 publish           = false
-version           = "0.0.0"
+version                = "0.0.1"
 
 [dependencies]
 once_cell.workspace                          = true

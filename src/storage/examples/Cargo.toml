@@ -14,7 +14,7 @@
 
 [package]
 name                 = "storage-samples"
-version              = "0.0.0"
+version                = "0.0.1"
 publish              = false
 edition.workspace    = true
 authors.workspace    = true

@@ -15,7 +15,7 @@
 [package]
 name        = "google-cloud-bigtable"
 publish     = false
-version     = "0.0.0"
+version                = "0.0.1"
 description = "Google Cloud Client Libraries for Rust - Bigtable"
 # Inherit other attributes from the workspace.
 edition.workspace      = true
