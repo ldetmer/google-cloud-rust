@@ -177,39 +177,6 @@ pub trait Addresses: std::fmt::Debug + Send + Sync {
     > + Send {
         gaxi::unimplemented::unimplemented_stub()
     }
-
-    /// Implements [super::client::Addresses::get_operation].
-    fn get_operation(
-        &self,
-        _req: crate::model::region_operations::GetRequest,
-        _options: gax::options::RequestOptions,
-    ) -> impl std::future::Future<
-        Output = crate::Result<gax::response::Response<crate::model::Operation>>,
-    > + Send {
-        gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Returns the polling error policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_error_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        std::sync::Arc::new(gax::polling_error_policy::Aip194Strict)
-    }
-
-    /// Returns the polling backoff policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_backoff_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        std::sync::Arc::new(gax::exponential_backoff::ExponentialBackoff::default())
-    }
 }
 
 /// Defines the trait used to implement [super::client::Advice].
@@ -327,39 +294,6 @@ pub trait Autoscalers: std::fmt::Debug + Send + Sync {
         Output = crate::Result<gax::response::Response<crate::model::Operation>>,
     > + Send {
         gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Implements [super::client::Autoscalers::get_operation].
-    fn get_operation(
-        &self,
-        _req: crate::model::zone_operations::GetRequest,
-        _options: gax::options::RequestOptions,
-    ) -> impl std::future::Future<
-        Output = crate::Result<gax::response::Response<crate::model::Operation>>,
-    > + Send {
-        gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Returns the polling error policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_error_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        std::sync::Arc::new(gax::polling_error_policy::Aip194Strict)
-    }
-
-    /// Returns the polling backoff policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_backoff_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        std::sync::Arc::new(gax::exponential_backoff::ExponentialBackoff::default())
     }
 }
 
@@ -507,39 +441,6 @@ pub trait BackendBuckets: std::fmt::Debug + Send + Sync {
         Output = crate::Result<gax::response::Response<crate::model::Operation>>,
     > + Send {
         gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Implements [super::client::BackendBuckets::get_operation].
-    fn get_operation(
-        &self,
-        _req: crate::model::global_operations::GetRequest,
-        _options: gax::options::RequestOptions,
-    ) -> impl std::future::Future<
-        Output = crate::Result<gax::response::Response<crate::model::Operation>>,
-    > + Send {
-        gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Returns the polling error policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_error_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        std::sync::Arc::new(gax::polling_error_policy::Aip194Strict)
-    }
-
-    /// Returns the polling backoff policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_backoff_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        std::sync::Arc::new(gax::exponential_backoff::ExponentialBackoff::default())
     }
 }
 
@@ -741,39 +642,6 @@ pub trait BackendServices: std::fmt::Debug + Send + Sync {
     > + Send {
         gaxi::unimplemented::unimplemented_stub()
     }
-
-    /// Implements [super::client::BackendServices::get_operation].
-    fn get_operation(
-        &self,
-        _req: crate::model::global_operations::GetRequest,
-        _options: gax::options::RequestOptions,
-    ) -> impl std::future::Future<
-        Output = crate::Result<gax::response::Response<crate::model::Operation>>,
-    > + Send {
-        gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Returns the polling error policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_error_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        std::sync::Arc::new(gax::polling_error_policy::Aip194Strict)
-    }
-
-    /// Returns the polling backoff policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_backoff_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        std::sync::Arc::new(gax::exponential_backoff::ExponentialBackoff::default())
-    }
 }
 
 /// Defines the trait used to implement [super::client::CrossSiteNetworks].
@@ -843,39 +711,6 @@ pub trait CrossSiteNetworks: std::fmt::Debug + Send + Sync {
         Output = crate::Result<gax::response::Response<crate::model::Operation>>,
     > + Send {
         gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Implements [super::client::CrossSiteNetworks::get_operation].
-    fn get_operation(
-        &self,
-        _req: crate::model::global_operations::GetRequest,
-        _options: gax::options::RequestOptions,
-    ) -> impl std::future::Future<
-        Output = crate::Result<gax::response::Response<crate::model::Operation>>,
-    > + Send {
-        gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Returns the polling error policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_error_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        std::sync::Arc::new(gax::polling_error_policy::Aip194Strict)
-    }
-
-    /// Returns the polling backoff policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_backoff_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        std::sync::Arc::new(gax::exponential_backoff::ExponentialBackoff::default())
     }
 }
 
@@ -1149,39 +984,6 @@ pub trait Disks: std::fmt::Debug + Send + Sync {
     > + Send {
         gaxi::unimplemented::unimplemented_stub()
     }
-
-    /// Implements [super::client::Disks::get_operation].
-    fn get_operation(
-        &self,
-        _req: crate::model::zone_operations::GetRequest,
-        _options: gax::options::RequestOptions,
-    ) -> impl std::future::Future<
-        Output = crate::Result<gax::response::Response<crate::model::Operation>>,
-    > + Send {
-        gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Returns the polling error policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_error_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        std::sync::Arc::new(gax::polling_error_policy::Aip194Strict)
-    }
-
-    /// Returns the polling backoff policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_backoff_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        std::sync::Arc::new(gax::exponential_backoff::ExponentialBackoff::default())
-    }
 }
 
 /// Defines the trait used to implement [super::client::ExternalVpnGateways].
@@ -1262,39 +1064,6 @@ pub trait ExternalVpnGateways: std::fmt::Debug + Send + Sync {
         Output = crate::Result<gax::response::Response<crate::model::TestPermissionsResponse>>,
     > + Send {
         gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Implements [super::client::ExternalVpnGateways::get_operation].
-    fn get_operation(
-        &self,
-        _req: crate::model::global_operations::GetRequest,
-        _options: gax::options::RequestOptions,
-    ) -> impl std::future::Future<
-        Output = crate::Result<gax::response::Response<crate::model::Operation>>,
-    > + Send {
-        gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Returns the polling error policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_error_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        std::sync::Arc::new(gax::polling_error_policy::Aip194Strict)
-    }
-
-    /// Returns the polling backoff policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_backoff_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        std::sync::Arc::new(gax::exponential_backoff::ExponentialBackoff::default())
     }
 }
 
@@ -1511,39 +1280,6 @@ pub trait FirewallPolicies: std::fmt::Debug + Send + Sync {
     > + Send {
         gaxi::unimplemented::unimplemented_stub()
     }
-
-    /// Implements [super::client::FirewallPolicies::get_operation].
-    fn get_operation(
-        &self,
-        _req: crate::model::global_organization_operations::GetRequest,
-        _options: gax::options::RequestOptions,
-    ) -> impl std::future::Future<
-        Output = crate::Result<gax::response::Response<crate::model::Operation>>,
-    > + Send {
-        gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Returns the polling error policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_error_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        std::sync::Arc::new(gax::polling_error_policy::Aip194Strict)
-    }
-
-    /// Returns the polling backoff policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_backoff_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        std::sync::Arc::new(gax::exponential_backoff::ExponentialBackoff::default())
-    }
 }
 
 /// Defines the trait used to implement [super::client::Firewalls].
@@ -1635,39 +1371,6 @@ pub trait Firewalls: std::fmt::Debug + Send + Sync {
         Output = crate::Result<gax::response::Response<crate::model::Operation>>,
     > + Send {
         gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Implements [super::client::Firewalls::get_operation].
-    fn get_operation(
-        &self,
-        _req: crate::model::global_operations::GetRequest,
-        _options: gax::options::RequestOptions,
-    ) -> impl std::future::Future<
-        Output = crate::Result<gax::response::Response<crate::model::Operation>>,
-    > + Send {
-        gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Returns the polling error policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_error_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        std::sync::Arc::new(gax::polling_error_policy::Aip194Strict)
-    }
-
-    /// Returns the polling backoff policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_backoff_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        std::sync::Arc::new(gax::exponential_backoff::ExponentialBackoff::default())
     }
 }
 
@@ -1772,39 +1475,6 @@ pub trait ForwardingRules: std::fmt::Debug + Send + Sync {
     > + Send {
         gaxi::unimplemented::unimplemented_stub()
     }
-
-    /// Implements [super::client::ForwardingRules::get_operation].
-    fn get_operation(
-        &self,
-        _req: crate::model::region_operations::GetRequest,
-        _options: gax::options::RequestOptions,
-    ) -> impl std::future::Future<
-        Output = crate::Result<gax::response::Response<crate::model::Operation>>,
-    > + Send {
-        gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Returns the polling error policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_error_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        std::sync::Arc::new(gax::polling_error_policy::Aip194Strict)
-    }
-
-    /// Returns the polling backoff policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_backoff_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        std::sync::Arc::new(gax::exponential_backoff::ExponentialBackoff::default())
-    }
 }
 
 /// Defines the trait used to implement [super::client::FutureReservations].
@@ -1901,39 +1571,6 @@ pub trait FutureReservations: std::fmt::Debug + Send + Sync {
     > + Send {
         gaxi::unimplemented::unimplemented_stub()
     }
-
-    /// Implements [super::client::FutureReservations::get_operation].
-    fn get_operation(
-        &self,
-        _req: crate::model::zone_operations::GetRequest,
-        _options: gax::options::RequestOptions,
-    ) -> impl std::future::Future<
-        Output = crate::Result<gax::response::Response<crate::model::Operation>>,
-    > + Send {
-        gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Returns the polling error policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_error_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        std::sync::Arc::new(gax::polling_error_policy::Aip194Strict)
-    }
-
-    /// Returns the polling backoff policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_backoff_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        std::sync::Arc::new(gax::exponential_backoff::ExponentialBackoff::default())
-    }
 }
 
 /// Defines the trait used to implement [super::client::GlobalAddresses].
@@ -2026,39 +1663,6 @@ pub trait GlobalAddresses: std::fmt::Debug + Send + Sync {
     > + Send {
         gaxi::unimplemented::unimplemented_stub()
     }
-
-    /// Implements [super::client::GlobalAddresses::get_operation].
-    fn get_operation(
-        &self,
-        _req: crate::model::global_operations::GetRequest,
-        _options: gax::options::RequestOptions,
-    ) -> impl std::future::Future<
-        Output = crate::Result<gax::response::Response<crate::model::Operation>>,
-    > + Send {
-        gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Returns the polling error policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_error_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        std::sync::Arc::new(gax::polling_error_policy::Aip194Strict)
-    }
-
-    /// Returns the polling backoff policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_backoff_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        std::sync::Arc::new(gax::exponential_backoff::ExponentialBackoff::default())
-    }
 }
 
 /// Defines the trait used to implement [super::client::GlobalForwardingRules].
@@ -2150,39 +1754,6 @@ pub trait GlobalForwardingRules: std::fmt::Debug + Send + Sync {
         Output = crate::Result<gax::response::Response<crate::model::Operation>>,
     > + Send {
         gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Implements [super::client::GlobalForwardingRules::get_operation].
-    fn get_operation(
-        &self,
-        _req: crate::model::global_operations::GetRequest,
-        _options: gax::options::RequestOptions,
-    ) -> impl std::future::Future<
-        Output = crate::Result<gax::response::Response<crate::model::Operation>>,
-    > + Send {
-        gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Returns the polling error policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_error_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        std::sync::Arc::new(gax::polling_error_policy::Aip194Strict)
-    }
-
-    /// Returns the polling backoff policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_backoff_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        std::sync::Arc::new(gax::exponential_backoff::ExponentialBackoff::default())
     }
 }
 
@@ -2277,39 +1848,6 @@ pub trait GlobalNetworkEndpointGroups: std::fmt::Debug + Send + Sync {
         >,
     > + Send {
         gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Implements [super::client::GlobalNetworkEndpointGroups::get_operation].
-    fn get_operation(
-        &self,
-        _req: crate::model::global_operations::GetRequest,
-        _options: gax::options::RequestOptions,
-    ) -> impl std::future::Future<
-        Output = crate::Result<gax::response::Response<crate::model::Operation>>,
-    > + Send {
-        gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Returns the polling error policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_error_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        std::sync::Arc::new(gax::polling_error_policy::Aip194Strict)
-    }
-
-    /// Returns the polling backoff policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_backoff_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        std::sync::Arc::new(gax::exponential_backoff::ExponentialBackoff::default())
     }
 }
 
@@ -2495,39 +2033,6 @@ pub trait GlobalPublicDelegatedPrefixes: std::fmt::Debug + Send + Sync {
     > + Send {
         gaxi::unimplemented::unimplemented_stub()
     }
-
-    /// Implements [super::client::GlobalPublicDelegatedPrefixes::get_operation].
-    fn get_operation(
-        &self,
-        _req: crate::model::global_operations::GetRequest,
-        _options: gax::options::RequestOptions,
-    ) -> impl std::future::Future<
-        Output = crate::Result<gax::response::Response<crate::model::Operation>>,
-    > + Send {
-        gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Returns the polling error policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_error_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        std::sync::Arc::new(gax::polling_error_policy::Aip194Strict)
-    }
-
-    /// Returns the polling backoff policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_backoff_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        std::sync::Arc::new(gax::exponential_backoff::ExponentialBackoff::default())
-    }
 }
 
 /// Defines the trait used to implement [super::client::HealthChecks].
@@ -2620,39 +2125,6 @@ pub trait HealthChecks: std::fmt::Debug + Send + Sync {
     > + Send {
         gaxi::unimplemented::unimplemented_stub()
     }
-
-    /// Implements [super::client::HealthChecks::get_operation].
-    fn get_operation(
-        &self,
-        _req: crate::model::global_operations::GetRequest,
-        _options: gax::options::RequestOptions,
-    ) -> impl std::future::Future<
-        Output = crate::Result<gax::response::Response<crate::model::Operation>>,
-    > + Send {
-        gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Returns the polling error policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_error_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        std::sync::Arc::new(gax::polling_error_policy::Aip194Strict)
-    }
-
-    /// Returns the polling backoff policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_backoff_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        std::sync::Arc::new(gax::exponential_backoff::ExponentialBackoff::default())
-    }
 }
 
 /// Defines the trait used to implement [super::client::HttpHealthChecks].
@@ -2734,39 +2206,6 @@ pub trait HttpHealthChecks: std::fmt::Debug + Send + Sync {
     > + Send {
         gaxi::unimplemented::unimplemented_stub()
     }
-
-    /// Implements [super::client::HttpHealthChecks::get_operation].
-    fn get_operation(
-        &self,
-        _req: crate::model::global_operations::GetRequest,
-        _options: gax::options::RequestOptions,
-    ) -> impl std::future::Future<
-        Output = crate::Result<gax::response::Response<crate::model::Operation>>,
-    > + Send {
-        gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Returns the polling error policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_error_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        std::sync::Arc::new(gax::polling_error_policy::Aip194Strict)
-    }
-
-    /// Returns the polling backoff policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_backoff_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        std::sync::Arc::new(gax::exponential_backoff::ExponentialBackoff::default())
-    }
 }
 
 /// Defines the trait used to implement [super::client::HttpsHealthChecks].
@@ -2847,39 +2286,6 @@ pub trait HttpsHealthChecks: std::fmt::Debug + Send + Sync {
         Output = crate::Result<gax::response::Response<crate::model::Operation>>,
     > + Send {
         gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Implements [super::client::HttpsHealthChecks::get_operation].
-    fn get_operation(
-        &self,
-        _req: crate::model::global_operations::GetRequest,
-        _options: gax::options::RequestOptions,
-    ) -> impl std::future::Future<
-        Output = crate::Result<gax::response::Response<crate::model::Operation>>,
-    > + Send {
-        gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Returns the polling error policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_error_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        std::sync::Arc::new(gax::polling_error_policy::Aip194Strict)
-    }
-
-    /// Returns the polling backoff policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_backoff_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        std::sync::Arc::new(gax::exponential_backoff::ExponentialBackoff::default())
     }
 }
 
@@ -3043,39 +2449,6 @@ pub trait Images: std::fmt::Debug + Send + Sync {
     > + Send {
         gaxi::unimplemented::unimplemented_stub()
     }
-
-    /// Implements [super::client::Images::get_operation].
-    fn get_operation(
-        &self,
-        _req: crate::model::global_operations::GetRequest,
-        _options: gax::options::RequestOptions,
-    ) -> impl std::future::Future<
-        Output = crate::Result<gax::response::Response<crate::model::Operation>>,
-    > + Send {
-        gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Returns the polling error policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_error_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        std::sync::Arc::new(gax::polling_error_policy::Aip194Strict)
-    }
-
-    /// Returns the polling backoff policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_backoff_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        std::sync::Arc::new(gax::exponential_backoff::ExponentialBackoff::default())
-    }
 }
 
 /// Defines the trait used to implement [super::client::InstanceGroupManagerResizeRequests].
@@ -3149,39 +2522,6 @@ pub trait InstanceGroupManagerResizeRequests: std::fmt::Debug + Send + Sync {
         >,
     > + Send {
         gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Implements [super::client::InstanceGroupManagerResizeRequests::get_operation].
-    fn get_operation(
-        &self,
-        _req: crate::model::zone_operations::GetRequest,
-        _options: gax::options::RequestOptions,
-    ) -> impl std::future::Future<
-        Output = crate::Result<gax::response::Response<crate::model::Operation>>,
-    > + Send {
-        gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Returns the polling error policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_error_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        std::sync::Arc::new(gax::polling_error_policy::Aip194Strict)
-    }
-
-    /// Returns the polling backoff policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_backoff_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        std::sync::Arc::new(gax::exponential_backoff::ExponentialBackoff::default())
     }
 }
 
@@ -3472,39 +2812,6 @@ pub trait InstanceGroupManagers: std::fmt::Debug + Send + Sync {
     > + Send {
         gaxi::unimplemented::unimplemented_stub()
     }
-
-    /// Implements [super::client::InstanceGroupManagers::get_operation].
-    fn get_operation(
-        &self,
-        _req: crate::model::zone_operations::GetRequest,
-        _options: gax::options::RequestOptions,
-    ) -> impl std::future::Future<
-        Output = crate::Result<gax::response::Response<crate::model::Operation>>,
-    > + Send {
-        gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Returns the polling error policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_error_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        std::sync::Arc::new(gax::polling_error_policy::Aip194Strict)
-    }
-
-    /// Returns the polling backoff policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_backoff_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        std::sync::Arc::new(gax::exponential_backoff::ExponentialBackoff::default())
-    }
 }
 
 /// Defines the trait used to implement [super::client::InstanceGroups].
@@ -3630,39 +2937,6 @@ pub trait InstanceGroups: std::fmt::Debug + Send + Sync {
     > + Send {
         gaxi::unimplemented::unimplemented_stub()
     }
-
-    /// Implements [super::client::InstanceGroups::get_operation].
-    fn get_operation(
-        &self,
-        _req: crate::model::zone_operations::GetRequest,
-        _options: gax::options::RequestOptions,
-    ) -> impl std::future::Future<
-        Output = crate::Result<gax::response::Response<crate::model::Operation>>,
-    > + Send {
-        gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Returns the polling error policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_error_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        std::sync::Arc::new(gax::polling_error_policy::Aip194Strict)
-    }
-
-    /// Returns the polling backoff policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_backoff_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        std::sync::Arc::new(gax::exponential_backoff::ExponentialBackoff::default())
-    }
 }
 
 /// Defines the trait used to implement [super::client::InstanceSettings].
@@ -3699,39 +2973,6 @@ pub trait InstanceSettings: std::fmt::Debug + Send + Sync {
         Output = crate::Result<gax::response::Response<crate::model::Operation>>,
     > + Send {
         gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Implements [super::client::InstanceSettings::get_operation].
-    fn get_operation(
-        &self,
-        _req: crate::model::zone_operations::GetRequest,
-        _options: gax::options::RequestOptions,
-    ) -> impl std::future::Future<
-        Output = crate::Result<gax::response::Response<crate::model::Operation>>,
-    > + Send {
-        gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Returns the polling error policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_error_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        std::sync::Arc::new(gax::polling_error_policy::Aip194Strict)
-    }
-
-    /// Returns the polling backoff policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_backoff_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        std::sync::Arc::new(gax::exponential_backoff::ExponentialBackoff::default())
     }
 }
 
@@ -3837,39 +3078,6 @@ pub trait InstanceTemplates: std::fmt::Debug + Send + Sync {
         Output = crate::Result<gax::response::Response<crate::model::TestPermissionsResponse>>,
     > + Send {
         gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Implements [super::client::InstanceTemplates::get_operation].
-    fn get_operation(
-        &self,
-        _req: crate::model::global_operations::GetRequest,
-        _options: gax::options::RequestOptions,
-    ) -> impl std::future::Future<
-        Output = crate::Result<gax::response::Response<crate::model::Operation>>,
-    > + Send {
-        gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Returns the polling error policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_error_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        std::sync::Arc::new(gax::polling_error_policy::Aip194Strict)
-    }
-
-    /// Returns the polling backoff policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_backoff_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        std::sync::Arc::new(gax::exponential_backoff::ExponentialBackoff::default())
     }
 }
 
@@ -4447,39 +3655,6 @@ pub trait Instances: std::fmt::Debug + Send + Sync {
     > + Send {
         gaxi::unimplemented::unimplemented_stub()
     }
-
-    /// Implements [super::client::Instances::get_operation].
-    fn get_operation(
-        &self,
-        _req: crate::model::zone_operations::GetRequest,
-        _options: gax::options::RequestOptions,
-    ) -> impl std::future::Future<
-        Output = crate::Result<gax::response::Response<crate::model::Operation>>,
-    > + Send {
-        gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Returns the polling error policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_error_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        std::sync::Arc::new(gax::polling_error_policy::Aip194Strict)
-    }
-
-    /// Returns the polling backoff policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_backoff_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        std::sync::Arc::new(gax::exponential_backoff::ExponentialBackoff::default())
-    }
 }
 
 /// Defines the trait used to implement [super::client::InstantSnapshots].
@@ -4595,39 +3770,6 @@ pub trait InstantSnapshots: std::fmt::Debug + Send + Sync {
         Output = crate::Result<gax::response::Response<crate::model::TestPermissionsResponse>>,
     > + Send {
         gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Implements [super::client::InstantSnapshots::get_operation].
-    fn get_operation(
-        &self,
-        _req: crate::model::zone_operations::GetRequest,
-        _options: gax::options::RequestOptions,
-    ) -> impl std::future::Future<
-        Output = crate::Result<gax::response::Response<crate::model::Operation>>,
-    > + Send {
-        gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Returns the polling error policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_error_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        std::sync::Arc::new(gax::polling_error_policy::Aip194Strict)
-    }
-
-    /// Returns the polling backoff policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_backoff_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        std::sync::Arc::new(gax::exponential_backoff::ExponentialBackoff::default())
     }
 }
 
@@ -4749,39 +3891,6 @@ pub trait InterconnectAttachmentGroups: std::fmt::Debug + Send + Sync {
     > + Send {
         gaxi::unimplemented::unimplemented_stub()
     }
-
-    /// Implements [super::client::InterconnectAttachmentGroups::get_operation].
-    fn get_operation(
-        &self,
-        _req: crate::model::global_operations::GetRequest,
-        _options: gax::options::RequestOptions,
-    ) -> impl std::future::Future<
-        Output = crate::Result<gax::response::Response<crate::model::Operation>>,
-    > + Send {
-        gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Returns the polling error policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_error_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        std::sync::Arc::new(gax::polling_error_policy::Aip194Strict)
-    }
-
-    /// Returns the polling backoff policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_backoff_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        std::sync::Arc::new(gax::exponential_backoff::ExponentialBackoff::default())
-    }
 }
 
 /// Defines the trait used to implement [super::client::InterconnectAttachments].
@@ -4875,39 +3984,6 @@ pub trait InterconnectAttachments: std::fmt::Debug + Send + Sync {
         Output = crate::Result<gax::response::Response<crate::model::Operation>>,
     > + Send {
         gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Implements [super::client::InterconnectAttachments::get_operation].
-    fn get_operation(
-        &self,
-        _req: crate::model::region_operations::GetRequest,
-        _options: gax::options::RequestOptions,
-    ) -> impl std::future::Future<
-        Output = crate::Result<gax::response::Response<crate::model::Operation>>,
-    > + Send {
-        gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Returns the polling error policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_error_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        std::sync::Arc::new(gax::polling_error_policy::Aip194Strict)
-    }
-
-    /// Returns the polling backoff policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_backoff_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        std::sync::Arc::new(gax::exponential_backoff::ExponentialBackoff::default())
     }
 }
 
@@ -5037,39 +4113,6 @@ pub trait InterconnectGroups: std::fmt::Debug + Send + Sync {
         Output = crate::Result<gax::response::Response<crate::model::TestPermissionsResponse>>,
     > + Send {
         gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Implements [super::client::InterconnectGroups::get_operation].
-    fn get_operation(
-        &self,
-        _req: crate::model::global_operations::GetRequest,
-        _options: gax::options::RequestOptions,
-    ) -> impl std::future::Future<
-        Output = crate::Result<gax::response::Response<crate::model::Operation>>,
-    > + Send {
-        gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Returns the polling error policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_error_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        std::sync::Arc::new(gax::polling_error_policy::Aip194Strict)
-    }
-
-    /// Returns the polling backoff policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_backoff_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        std::sync::Arc::new(gax::exponential_backoff::ExponentialBackoff::default())
     }
 }
 
@@ -5254,39 +4297,6 @@ pub trait Interconnects: std::fmt::Debug + Send + Sync {
     > + Send {
         gaxi::unimplemented::unimplemented_stub()
     }
-
-    /// Implements [super::client::Interconnects::get_operation].
-    fn get_operation(
-        &self,
-        _req: crate::model::global_operations::GetRequest,
-        _options: gax::options::RequestOptions,
-    ) -> impl std::future::Future<
-        Output = crate::Result<gax::response::Response<crate::model::Operation>>,
-    > + Send {
-        gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Returns the polling error policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_error_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        std::sync::Arc::new(gax::polling_error_policy::Aip194Strict)
-    }
-
-    /// Returns the polling backoff policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_backoff_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        std::sync::Arc::new(gax::exponential_backoff::ExponentialBackoff::default())
-    }
 }
 
 /// Defines the trait used to implement [super::client::LicenseCodes].
@@ -5427,39 +4437,6 @@ pub trait Licenses: std::fmt::Debug + Send + Sync {
     > + Send {
         gaxi::unimplemented::unimplemented_stub()
     }
-
-    /// Implements [super::client::Licenses::get_operation].
-    fn get_operation(
-        &self,
-        _req: crate::model::global_operations::GetRequest,
-        _options: gax::options::RequestOptions,
-    ) -> impl std::future::Future<
-        Output = crate::Result<gax::response::Response<crate::model::Operation>>,
-    > + Send {
-        gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Returns the polling error policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_error_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        std::sync::Arc::new(gax::polling_error_policy::Aip194Strict)
-    }
-
-    /// Returns the polling backoff policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_backoff_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        std::sync::Arc::new(gax::exponential_backoff::ExponentialBackoff::default())
-    }
 }
 
 /// Defines the trait used to implement [super::client::MachineImages].
@@ -5562,39 +4539,6 @@ pub trait MachineImages: std::fmt::Debug + Send + Sync {
         Output = crate::Result<gax::response::Response<crate::model::TestPermissionsResponse>>,
     > + Send {
         gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Implements [super::client::MachineImages::get_operation].
-    fn get_operation(
-        &self,
-        _req: crate::model::global_operations::GetRequest,
-        _options: gax::options::RequestOptions,
-    ) -> impl std::future::Future<
-        Output = crate::Result<gax::response::Response<crate::model::Operation>>,
-    > + Send {
-        gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Returns the polling error policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_error_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        std::sync::Arc::new(gax::polling_error_policy::Aip194Strict)
-    }
-
-    /// Returns the polling backoff policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_backoff_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        std::sync::Arc::new(gax::exponential_backoff::ExponentialBackoff::default())
     }
 }
 
@@ -5760,39 +4704,6 @@ pub trait NetworkAttachments: std::fmt::Debug + Send + Sync {
     > + Send {
         gaxi::unimplemented::unimplemented_stub()
     }
-
-    /// Implements [super::client::NetworkAttachments::get_operation].
-    fn get_operation(
-        &self,
-        _req: crate::model::region_operations::GetRequest,
-        _options: gax::options::RequestOptions,
-    ) -> impl std::future::Future<
-        Output = crate::Result<gax::response::Response<crate::model::Operation>>,
-    > + Send {
-        gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Returns the polling error policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_error_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        std::sync::Arc::new(gax::polling_error_policy::Aip194Strict)
-    }
-
-    /// Returns the polling backoff policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_backoff_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        std::sync::Arc::new(gax::exponential_backoff::ExponentialBackoff::default())
-    }
 }
 
 /// Defines the trait used to implement [super::client::NetworkEdgeSecurityServices].
@@ -5864,39 +4775,6 @@ pub trait NetworkEdgeSecurityServices: std::fmt::Debug + Send + Sync {
         Output = crate::Result<gax::response::Response<crate::model::Operation>>,
     > + Send {
         gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Implements [super::client::NetworkEdgeSecurityServices::get_operation].
-    fn get_operation(
-        &self,
-        _req: crate::model::region_operations::GetRequest,
-        _options: gax::options::RequestOptions,
-    ) -> impl std::future::Future<
-        Output = crate::Result<gax::response::Response<crate::model::Operation>>,
-    > + Send {
-        gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Returns the polling error policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_error_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        std::sync::Arc::new(gax::polling_error_policy::Aip194Strict)
-    }
-
-    /// Returns the polling backoff policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_backoff_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        std::sync::Arc::new(gax::exponential_backoff::ExponentialBackoff::default())
     }
 }
 
@@ -6015,39 +4893,6 @@ pub trait NetworkEndpointGroups: std::fmt::Debug + Send + Sync {
         Output = crate::Result<gax::response::Response<crate::model::TestPermissionsResponse>>,
     > + Send {
         gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Implements [super::client::NetworkEndpointGroups::get_operation].
-    fn get_operation(
-        &self,
-        _req: crate::model::zone_operations::GetRequest,
-        _options: gax::options::RequestOptions,
-    ) -> impl std::future::Future<
-        Output = crate::Result<gax::response::Response<crate::model::Operation>>,
-    > + Send {
-        gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Returns the polling error policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_error_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        std::sync::Arc::new(gax::polling_error_policy::Aip194Strict)
-    }
-
-    /// Returns the polling backoff policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_backoff_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        std::sync::Arc::new(gax::exponential_backoff::ExponentialBackoff::default())
     }
 }
 
@@ -6297,39 +5142,6 @@ pub trait NetworkFirewallPolicies: std::fmt::Debug + Send + Sync {
     > + Send {
         gaxi::unimplemented::unimplemented_stub()
     }
-
-    /// Implements [super::client::NetworkFirewallPolicies::get_operation].
-    fn get_operation(
-        &self,
-        _req: crate::model::global_operations::GetRequest,
-        _options: gax::options::RequestOptions,
-    ) -> impl std::future::Future<
-        Output = crate::Result<gax::response::Response<crate::model::Operation>>,
-    > + Send {
-        gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Returns the polling error policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_error_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        std::sync::Arc::new(gax::polling_error_policy::Aip194Strict)
-    }
-
-    /// Returns the polling backoff policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_backoff_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        std::sync::Arc::new(gax::exponential_backoff::ExponentialBackoff::default())
-    }
 }
 
 /// Defines the trait used to implement [super::client::NetworkProfiles].
@@ -6516,39 +5328,6 @@ pub trait Networks: std::fmt::Debug + Send + Sync {
     > + Send {
         gaxi::unimplemented::unimplemented_stub()
     }
-
-    /// Implements [super::client::Networks::get_operation].
-    fn get_operation(
-        &self,
-        _req: crate::model::global_operations::GetRequest,
-        _options: gax::options::RequestOptions,
-    ) -> impl std::future::Future<
-        Output = crate::Result<gax::response::Response<crate::model::Operation>>,
-    > + Send {
-        gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Returns the polling error policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_error_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        std::sync::Arc::new(gax::polling_error_policy::Aip194Strict)
-    }
-
-    /// Returns the polling backoff policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_backoff_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        std::sync::Arc::new(gax::exponential_backoff::ExponentialBackoff::default())
-    }
 }
 
 /// Defines the trait used to implement [super::client::NodeGroups].
@@ -6729,39 +5508,6 @@ pub trait NodeGroups: std::fmt::Debug + Send + Sync {
     > + Send {
         gaxi::unimplemented::unimplemented_stub()
     }
-
-    /// Implements [super::client::NodeGroups::get_operation].
-    fn get_operation(
-        &self,
-        _req: crate::model::zone_operations::GetRequest,
-        _options: gax::options::RequestOptions,
-    ) -> impl std::future::Future<
-        Output = crate::Result<gax::response::Response<crate::model::Operation>>,
-    > + Send {
-        gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Returns the polling error policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_error_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        std::sync::Arc::new(gax::polling_error_policy::Aip194Strict)
-    }
-
-    /// Returns the polling backoff policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_backoff_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        std::sync::Arc::new(gax::exponential_backoff::ExponentialBackoff::default())
-    }
 }
 
 /// Defines the trait used to implement [super::client::NodeTemplates].
@@ -6864,39 +5610,6 @@ pub trait NodeTemplates: std::fmt::Debug + Send + Sync {
         Output = crate::Result<gax::response::Response<crate::model::TestPermissionsResponse>>,
     > + Send {
         gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Implements [super::client::NodeTemplates::get_operation].
-    fn get_operation(
-        &self,
-        _req: crate::model::region_operations::GetRequest,
-        _options: gax::options::RequestOptions,
-    ) -> impl std::future::Future<
-        Output = crate::Result<gax::response::Response<crate::model::Operation>>,
-    > + Send {
-        gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Returns the polling error policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_error_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        std::sync::Arc::new(gax::polling_error_policy::Aip194Strict)
-    }
-
-    /// Returns the polling backoff policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_backoff_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        std::sync::Arc::new(gax::exponential_backoff::ExponentialBackoff::default())
     }
 }
 
@@ -7145,39 +5858,6 @@ pub trait OrganizationSecurityPolicies: std::fmt::Debug + Send + Sync {
     > + Send {
         gaxi::unimplemented::unimplemented_stub()
     }
-
-    /// Implements [super::client::OrganizationSecurityPolicies::get_operation].
-    fn get_operation(
-        &self,
-        _req: crate::model::global_organization_operations::GetRequest,
-        _options: gax::options::RequestOptions,
-    ) -> impl std::future::Future<
-        Output = crate::Result<gax::response::Response<crate::model::Operation>>,
-    > + Send {
-        gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Returns the polling error policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_error_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        std::sync::Arc::new(gax::polling_error_policy::Aip194Strict)
-    }
-
-    /// Returns the polling backoff policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_backoff_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        std::sync::Arc::new(gax::exponential_backoff::ExponentialBackoff::default())
-    }
 }
 
 /// Defines the trait used to implement [super::client::PacketMirrorings].
@@ -7272,39 +5952,6 @@ pub trait PacketMirrorings: std::fmt::Debug + Send + Sync {
     > + Send {
         gaxi::unimplemented::unimplemented_stub()
     }
-
-    /// Implements [super::client::PacketMirrorings::get_operation].
-    fn get_operation(
-        &self,
-        _req: crate::model::region_operations::GetRequest,
-        _options: gax::options::RequestOptions,
-    ) -> impl std::future::Future<
-        Output = crate::Result<gax::response::Response<crate::model::Operation>>,
-    > + Send {
-        gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Returns the polling error policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_error_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        std::sync::Arc::new(gax::polling_error_policy::Aip194Strict)
-    }
-
-    /// Returns the polling backoff policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_backoff_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        std::sync::Arc::new(gax::exponential_backoff::ExponentialBackoff::default())
-    }
 }
 
 /// Defines the trait used to implement [super::client::PreviewFeatures].
@@ -7352,39 +5999,6 @@ pub trait PreviewFeatures: std::fmt::Debug + Send + Sync {
         Output = crate::Result<gax::response::Response<crate::model::Operation>>,
     > + Send {
         gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Implements [super::client::PreviewFeatures::get_operation].
-    fn get_operation(
-        &self,
-        _req: crate::model::global_operations::GetRequest,
-        _options: gax::options::RequestOptions,
-    ) -> impl std::future::Future<
-        Output = crate::Result<gax::response::Response<crate::model::Operation>>,
-    > + Send {
-        gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Returns the polling error policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_error_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        std::sync::Arc::new(gax::polling_error_policy::Aip194Strict)
-    }
-
-    /// Returns the polling backoff policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_backoff_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        std::sync::Arc::new(gax::exponential_backoff::ExponentialBackoff::default())
     }
 }
 
@@ -7555,39 +6169,6 @@ pub trait Projects: std::fmt::Debug + Send + Sync {
     > + Send {
         gaxi::unimplemented::unimplemented_stub()
     }
-
-    /// Implements [super::client::Projects::get_operation].
-    fn get_operation(
-        &self,
-        _req: crate::model::global_operations::GetRequest,
-        _options: gax::options::RequestOptions,
-    ) -> impl std::future::Future<
-        Output = crate::Result<gax::response::Response<crate::model::Operation>>,
-    > + Send {
-        gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Returns the polling error policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_error_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        std::sync::Arc::new(gax::polling_error_policy::Aip194Strict)
-    }
-
-    /// Returns the polling backoff policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_backoff_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        std::sync::Arc::new(gax::exponential_backoff::ExponentialBackoff::default())
-    }
 }
 
 /// Defines the trait used to implement [super::client::PublicAdvertisedPrefixes].
@@ -7679,39 +6260,6 @@ pub trait PublicAdvertisedPrefixes: std::fmt::Debug + Send + Sync {
         Output = crate::Result<gax::response::Response<crate::model::Operation>>,
     > + Send {
         gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Implements [super::client::PublicAdvertisedPrefixes::get_operation].
-    fn get_operation(
-        &self,
-        _req: crate::model::global_operations::GetRequest,
-        _options: gax::options::RequestOptions,
-    ) -> impl std::future::Future<
-        Output = crate::Result<gax::response::Response<crate::model::Operation>>,
-    > + Send {
-        gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Returns the polling error policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_error_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        std::sync::Arc::new(gax::polling_error_policy::Aip194Strict)
-    }
-
-    /// Returns the polling backoff policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_backoff_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        std::sync::Arc::new(gax::exponential_backoff::ExponentialBackoff::default())
     }
 }
 
@@ -7818,39 +6366,6 @@ pub trait PublicDelegatedPrefixes: std::fmt::Debug + Send + Sync {
     > + Send {
         gaxi::unimplemented::unimplemented_stub()
     }
-
-    /// Implements [super::client::PublicDelegatedPrefixes::get_operation].
-    fn get_operation(
-        &self,
-        _req: crate::model::region_operations::GetRequest,
-        _options: gax::options::RequestOptions,
-    ) -> impl std::future::Future<
-        Output = crate::Result<gax::response::Response<crate::model::Operation>>,
-    > + Send {
-        gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Returns the polling error policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_error_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        std::sync::Arc::new(gax::polling_error_policy::Aip194Strict)
-    }
-
-    /// Returns the polling backoff policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_backoff_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        std::sync::Arc::new(gax::exponential_backoff::ExponentialBackoff::default())
-    }
 }
 
 /// Defines the trait used to implement [super::client::RegionAutoscalers].
@@ -7931,39 +6446,6 @@ pub trait RegionAutoscalers: std::fmt::Debug + Send + Sync {
         Output = crate::Result<gax::response::Response<crate::model::Operation>>,
     > + Send {
         gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Implements [super::client::RegionAutoscalers::get_operation].
-    fn get_operation(
-        &self,
-        _req: crate::model::region_operations::GetRequest,
-        _options: gax::options::RequestOptions,
-    ) -> impl std::future::Future<
-        Output = crate::Result<gax::response::Response<crate::model::Operation>>,
-    > + Send {
-        gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Returns the polling error policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_error_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        std::sync::Arc::new(gax::polling_error_policy::Aip194Strict)
-    }
-
-    /// Returns the polling backoff policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_backoff_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        std::sync::Arc::new(gax::exponential_backoff::ExponentialBackoff::default())
     }
 }
 
@@ -8112,39 +6594,6 @@ pub trait RegionBackendServices: std::fmt::Debug + Send + Sync {
     > + Send {
         gaxi::unimplemented::unimplemented_stub()
     }
-
-    /// Implements [super::client::RegionBackendServices::get_operation].
-    fn get_operation(
-        &self,
-        _req: crate::model::region_operations::GetRequest,
-        _options: gax::options::RequestOptions,
-    ) -> impl std::future::Future<
-        Output = crate::Result<gax::response::Response<crate::model::Operation>>,
-    > + Send {
-        gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Returns the polling error policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_error_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        std::sync::Arc::new(gax::polling_error_policy::Aip194Strict)
-    }
-
-    /// Returns the polling backoff policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_backoff_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        std::sync::Arc::new(gax::exponential_backoff::ExponentialBackoff::default())
-    }
 }
 
 /// Defines the trait used to implement [super::client::RegionCommitments].
@@ -8214,39 +6663,6 @@ pub trait RegionCommitments: std::fmt::Debug + Send + Sync {
         Output = crate::Result<gax::response::Response<crate::model::Operation>>,
     > + Send {
         gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Implements [super::client::RegionCommitments::get_operation].
-    fn get_operation(
-        &self,
-        _req: crate::model::region_operations::GetRequest,
-        _options: gax::options::RequestOptions,
-    ) -> impl std::future::Future<
-        Output = crate::Result<gax::response::Response<crate::model::Operation>>,
-    > + Send {
-        gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Returns the polling error policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_error_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        std::sync::Arc::new(gax::polling_error_policy::Aip194Strict)
-    }
-
-    /// Returns the polling backoff policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_backoff_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        std::sync::Arc::new(gax::exponential_backoff::ExponentialBackoff::default())
     }
 }
 
@@ -8487,39 +6903,6 @@ pub trait RegionDisks: std::fmt::Debug + Send + Sync {
     > + Send {
         gaxi::unimplemented::unimplemented_stub()
     }
-
-    /// Implements [super::client::RegionDisks::get_operation].
-    fn get_operation(
-        &self,
-        _req: crate::model::region_operations::GetRequest,
-        _options: gax::options::RequestOptions,
-    ) -> impl std::future::Future<
-        Output = crate::Result<gax::response::Response<crate::model::Operation>>,
-    > + Send {
-        gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Returns the polling error policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_error_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        std::sync::Arc::new(gax::polling_error_policy::Aip194Strict)
-    }
-
-    /// Returns the polling backoff policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_backoff_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        std::sync::Arc::new(gax::exponential_backoff::ExponentialBackoff::default())
-    }
 }
 
 /// Defines the trait used to implement [super::client::RegionHealthCheckServices].
@@ -8589,39 +6972,6 @@ pub trait RegionHealthCheckServices: std::fmt::Debug + Send + Sync {
         Output = crate::Result<gax::response::Response<crate::model::Operation>>,
     > + Send {
         gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Implements [super::client::RegionHealthCheckServices::get_operation].
-    fn get_operation(
-        &self,
-        _req: crate::model::region_operations::GetRequest,
-        _options: gax::options::RequestOptions,
-    ) -> impl std::future::Future<
-        Output = crate::Result<gax::response::Response<crate::model::Operation>>,
-    > + Send {
-        gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Returns the polling error policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_error_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        std::sync::Arc::new(gax::polling_error_policy::Aip194Strict)
-    }
-
-    /// Returns the polling backoff policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_backoff_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        std::sync::Arc::new(gax::exponential_backoff::ExponentialBackoff::default())
     }
 }
 
@@ -8703,39 +7053,6 @@ pub trait RegionHealthChecks: std::fmt::Debug + Send + Sync {
         Output = crate::Result<gax::response::Response<crate::model::Operation>>,
     > + Send {
         gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Implements [super::client::RegionHealthChecks::get_operation].
-    fn get_operation(
-        &self,
-        _req: crate::model::region_operations::GetRequest,
-        _options: gax::options::RequestOptions,
-    ) -> impl std::future::Future<
-        Output = crate::Result<gax::response::Response<crate::model::Operation>>,
-    > + Send {
-        gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Returns the polling error policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_error_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        std::sync::Arc::new(gax::polling_error_policy::Aip194Strict)
-    }
-
-    /// Returns the polling backoff policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_backoff_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        std::sync::Arc::new(gax::exponential_backoff::ExponentialBackoff::default())
     }
 }
 
@@ -9015,39 +7332,6 @@ pub trait RegionInstanceGroupManagers: std::fmt::Debug + Send + Sync {
     > + Send {
         gaxi::unimplemented::unimplemented_stub()
     }
-
-    /// Implements [super::client::RegionInstanceGroupManagers::get_operation].
-    fn get_operation(
-        &self,
-        _req: crate::model::region_operations::GetRequest,
-        _options: gax::options::RequestOptions,
-    ) -> impl std::future::Future<
-        Output = crate::Result<gax::response::Response<crate::model::Operation>>,
-    > + Send {
-        gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Returns the polling error policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_error_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        std::sync::Arc::new(gax::polling_error_policy::Aip194Strict)
-    }
-
-    /// Returns the polling backoff policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_backoff_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        std::sync::Arc::new(gax::exponential_backoff::ExponentialBackoff::default())
-    }
 }
 
 /// Defines the trait used to implement [super::client::RegionInstanceGroups].
@@ -9120,39 +7404,6 @@ pub trait RegionInstanceGroups: std::fmt::Debug + Send + Sync {
     > + Send {
         gaxi::unimplemented::unimplemented_stub()
     }
-
-    /// Implements [super::client::RegionInstanceGroups::get_operation].
-    fn get_operation(
-        &self,
-        _req: crate::model::region_operations::GetRequest,
-        _options: gax::options::RequestOptions,
-    ) -> impl std::future::Future<
-        Output = crate::Result<gax::response::Response<crate::model::Operation>>,
-    > + Send {
-        gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Returns the polling error policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_error_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        std::sync::Arc::new(gax::polling_error_policy::Aip194Strict)
-    }
-
-    /// Returns the polling backoff policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_backoff_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        std::sync::Arc::new(gax::exponential_backoff::ExponentialBackoff::default())
-    }
 }
 
 /// Defines the trait used to implement [super::client::RegionInstanceTemplates].
@@ -9212,39 +7463,6 @@ pub trait RegionInstanceTemplates: std::fmt::Debug + Send + Sync {
     > + Send {
         gaxi::unimplemented::unimplemented_stub()
     }
-
-    /// Implements [super::client::RegionInstanceTemplates::get_operation].
-    fn get_operation(
-        &self,
-        _req: crate::model::region_operations::GetRequest,
-        _options: gax::options::RequestOptions,
-    ) -> impl std::future::Future<
-        Output = crate::Result<gax::response::Response<crate::model::Operation>>,
-    > + Send {
-        gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Returns the polling error policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_error_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        std::sync::Arc::new(gax::polling_error_policy::Aip194Strict)
-    }
-
-    /// Returns the polling backoff policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_backoff_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        std::sync::Arc::new(gax::exponential_backoff::ExponentialBackoff::default())
-    }
 }
 
 /// Defines the trait used to implement [super::client::RegionInstances].
@@ -9270,39 +7488,6 @@ pub trait RegionInstances: std::fmt::Debug + Send + Sync {
         Output = crate::Result<gax::response::Response<crate::model::Operation>>,
     > + Send {
         gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Implements [super::client::RegionInstances::get_operation].
-    fn get_operation(
-        &self,
-        _req: crate::model::region_operations::GetRequest,
-        _options: gax::options::RequestOptions,
-    ) -> impl std::future::Future<
-        Output = crate::Result<gax::response::Response<crate::model::Operation>>,
-    > + Send {
-        gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Returns the polling error policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_error_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        std::sync::Arc::new(gax::polling_error_policy::Aip194Strict)
-    }
-
-    /// Returns the polling backoff policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_backoff_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        std::sync::Arc::new(gax::exponential_backoff::ExponentialBackoff::default())
     }
 }
 
@@ -9407,39 +7592,6 @@ pub trait RegionInstantSnapshots: std::fmt::Debug + Send + Sync {
     > + Send {
         gaxi::unimplemented::unimplemented_stub()
     }
-
-    /// Implements [super::client::RegionInstantSnapshots::get_operation].
-    fn get_operation(
-        &self,
-        _req: crate::model::region_operations::GetRequest,
-        _options: gax::options::RequestOptions,
-    ) -> impl std::future::Future<
-        Output = crate::Result<gax::response::Response<crate::model::Operation>>,
-    > + Send {
-        gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Returns the polling error policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_error_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        std::sync::Arc::new(gax::polling_error_policy::Aip194Strict)
-    }
-
-    /// Returns the polling backoff policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_backoff_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        std::sync::Arc::new(gax::exponential_backoff::ExponentialBackoff::default())
-    }
 }
 
 /// Defines the trait used to implement [super::client::RegionNetworkEndpointGroups].
@@ -9533,39 +7685,6 @@ pub trait RegionNetworkEndpointGroups: std::fmt::Debug + Send + Sync {
         >,
     > + Send {
         gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Implements [super::client::RegionNetworkEndpointGroups::get_operation].
-    fn get_operation(
-        &self,
-        _req: crate::model::region_operations::GetRequest,
-        _options: gax::options::RequestOptions,
-    ) -> impl std::future::Future<
-        Output = crate::Result<gax::response::Response<crate::model::Operation>>,
-    > + Send {
-        gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Returns the polling error policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_error_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        std::sync::Arc::new(gax::polling_error_policy::Aip194Strict)
-    }
-
-    /// Returns the polling backoff policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_backoff_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        std::sync::Arc::new(gax::exponential_backoff::ExponentialBackoff::default())
     }
 }
 
@@ -9773,39 +7892,6 @@ pub trait RegionNetworkFirewallPolicies: std::fmt::Debug + Send + Sync {
     > + Send {
         gaxi::unimplemented::unimplemented_stub()
     }
-
-    /// Implements [super::client::RegionNetworkFirewallPolicies::get_operation].
-    fn get_operation(
-        &self,
-        _req: crate::model::region_operations::GetRequest,
-        _options: gax::options::RequestOptions,
-    ) -> impl std::future::Future<
-        Output = crate::Result<gax::response::Response<crate::model::Operation>>,
-    > + Send {
-        gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Returns the polling error policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_error_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        std::sync::Arc::new(gax::polling_error_policy::Aip194Strict)
-    }
-
-    /// Returns the polling backoff policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_backoff_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        std::sync::Arc::new(gax::exponential_backoff::ExponentialBackoff::default())
-    }
 }
 
 /// Defines the trait used to implement [super::client::RegionNotificationEndpoints].
@@ -9864,39 +7950,6 @@ pub trait RegionNotificationEndpoints: std::fmt::Debug + Send + Sync {
         Output = crate::Result<gax::response::Response<crate::model::NotificationEndpointList>>,
     > + Send {
         gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Implements [super::client::RegionNotificationEndpoints::get_operation].
-    fn get_operation(
-        &self,
-        _req: crate::model::region_operations::GetRequest,
-        _options: gax::options::RequestOptions,
-    ) -> impl std::future::Future<
-        Output = crate::Result<gax::response::Response<crate::model::Operation>>,
-    > + Send {
-        gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Returns the polling error policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_error_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        std::sync::Arc::new(gax::polling_error_policy::Aip194Strict)
-    }
-
-    /// Returns the polling backoff policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_backoff_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        std::sync::Arc::new(gax::exponential_backoff::ExponentialBackoff::default())
     }
 }
 
@@ -10080,39 +8133,6 @@ pub trait RegionSecurityPolicies: std::fmt::Debug + Send + Sync {
     > + Send {
         gaxi::unimplemented::unimplemented_stub()
     }
-
-    /// Implements [super::client::RegionSecurityPolicies::get_operation].
-    fn get_operation(
-        &self,
-        _req: crate::model::region_operations::GetRequest,
-        _options: gax::options::RequestOptions,
-    ) -> impl std::future::Future<
-        Output = crate::Result<gax::response::Response<crate::model::Operation>>,
-    > + Send {
-        gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Returns the polling error policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_error_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        std::sync::Arc::new(gax::polling_error_policy::Aip194Strict)
-    }
-
-    /// Returns the polling backoff policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_backoff_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        std::sync::Arc::new(gax::exponential_backoff::ExponentialBackoff::default())
-    }
 }
 
 /// Defines the trait used to implement [super::client::RegionSslCertificates].
@@ -10171,39 +8191,6 @@ pub trait RegionSslCertificates: std::fmt::Debug + Send + Sync {
         Output = crate::Result<gax::response::Response<crate::model::SslCertificateList>>,
     > + Send {
         gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Implements [super::client::RegionSslCertificates::get_operation].
-    fn get_operation(
-        &self,
-        _req: crate::model::region_operations::GetRequest,
-        _options: gax::options::RequestOptions,
-    ) -> impl std::future::Future<
-        Output = crate::Result<gax::response::Response<crate::model::Operation>>,
-    > + Send {
-        gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Returns the polling error policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_error_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        std::sync::Arc::new(gax::polling_error_policy::Aip194Strict)
-    }
-
-    /// Returns the polling backoff policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_backoff_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        std::sync::Arc::new(gax::exponential_backoff::ExponentialBackoff::default())
     }
 }
 
@@ -10288,39 +8275,6 @@ pub trait RegionSslPolicies: std::fmt::Debug + Send + Sync {
     > + Send {
         gaxi::unimplemented::unimplemented_stub()
     }
-
-    /// Implements [super::client::RegionSslPolicies::get_operation].
-    fn get_operation(
-        &self,
-        _req: crate::model::region_operations::GetRequest,
-        _options: gax::options::RequestOptions,
-    ) -> impl std::future::Future<
-        Output = crate::Result<gax::response::Response<crate::model::Operation>>,
-    > + Send {
-        gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Returns the polling error policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_error_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        std::sync::Arc::new(gax::polling_error_policy::Aip194Strict)
-    }
-
-    /// Returns the polling backoff policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_backoff_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        std::sync::Arc::new(gax::exponential_backoff::ExponentialBackoff::default())
-    }
 }
 
 /// Defines the trait used to implement [super::client::RegionTargetHttpProxies].
@@ -10390,39 +8344,6 @@ pub trait RegionTargetHttpProxies: std::fmt::Debug + Send + Sync {
         Output = crate::Result<gax::response::Response<crate::model::Operation>>,
     > + Send {
         gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Implements [super::client::RegionTargetHttpProxies::get_operation].
-    fn get_operation(
-        &self,
-        _req: crate::model::region_operations::GetRequest,
-        _options: gax::options::RequestOptions,
-    ) -> impl std::future::Future<
-        Output = crate::Result<gax::response::Response<crate::model::Operation>>,
-    > + Send {
-        gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Returns the polling error policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_error_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        std::sync::Arc::new(gax::polling_error_policy::Aip194Strict)
-    }
-
-    /// Returns the polling backoff policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_backoff_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        std::sync::Arc::new(gax::exponential_backoff::ExponentialBackoff::default())
     }
 }
 
@@ -10516,39 +8437,6 @@ pub trait RegionTargetHttpsProxies: std::fmt::Debug + Send + Sync {
     > + Send {
         gaxi::unimplemented::unimplemented_stub()
     }
-
-    /// Implements [super::client::RegionTargetHttpsProxies::get_operation].
-    fn get_operation(
-        &self,
-        _req: crate::model::region_operations::GetRequest,
-        _options: gax::options::RequestOptions,
-    ) -> impl std::future::Future<
-        Output = crate::Result<gax::response::Response<crate::model::Operation>>,
-    > + Send {
-        gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Returns the polling error policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_error_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        std::sync::Arc::new(gax::polling_error_policy::Aip194Strict)
-    }
-
-    /// Returns the polling backoff policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_backoff_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        std::sync::Arc::new(gax::exponential_backoff::ExponentialBackoff::default())
-    }
 }
 
 /// Defines the trait used to implement [super::client::RegionTargetTcpProxies].
@@ -10607,39 +8495,6 @@ pub trait RegionTargetTcpProxies: std::fmt::Debug + Send + Sync {
         Output = crate::Result<gax::response::Response<crate::model::TargetTcpProxyList>>,
     > + Send {
         gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Implements [super::client::RegionTargetTcpProxies::get_operation].
-    fn get_operation(
-        &self,
-        _req: crate::model::region_operations::GetRequest,
-        _options: gax::options::RequestOptions,
-    ) -> impl std::future::Future<
-        Output = crate::Result<gax::response::Response<crate::model::Operation>>,
-    > + Send {
-        gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Returns the polling error policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_error_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        std::sync::Arc::new(gax::polling_error_policy::Aip194Strict)
-    }
-
-    /// Returns the polling backoff policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_backoff_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        std::sync::Arc::new(gax::exponential_backoff::ExponentialBackoff::default())
     }
 }
 
@@ -10732,39 +8587,6 @@ pub trait RegionUrlMaps: std::fmt::Debug + Send + Sync {
         Output = crate::Result<gax::response::Response<crate::model::UrlMapsValidateResponse>>,
     > + Send {
         gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Implements [super::client::RegionUrlMaps::get_operation].
-    fn get_operation(
-        &self,
-        _req: crate::model::region_operations::GetRequest,
-        _options: gax::options::RequestOptions,
-    ) -> impl std::future::Future<
-        Output = crate::Result<gax::response::Response<crate::model::Operation>>,
-    > + Send {
-        gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Returns the polling error policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_error_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        std::sync::Arc::new(gax::polling_error_policy::Aip194Strict)
-    }
-
-    /// Returns the polling backoff policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_backoff_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        std::sync::Arc::new(gax::exponential_backoff::ExponentialBackoff::default())
     }
 }
 
@@ -10912,39 +8734,6 @@ pub trait ReservationBlocks: std::fmt::Debug + Send + Sync {
     > + Send {
         gaxi::unimplemented::unimplemented_stub()
     }
-
-    /// Implements [super::client::ReservationBlocks::get_operation].
-    fn get_operation(
-        &self,
-        _req: crate::model::zone_operations::GetRequest,
-        _options: gax::options::RequestOptions,
-    ) -> impl std::future::Future<
-        Output = crate::Result<gax::response::Response<crate::model::Operation>>,
-    > + Send {
-        gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Returns the polling error policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_error_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        std::sync::Arc::new(gax::polling_error_policy::Aip194Strict)
-    }
-
-    /// Returns the polling backoff policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_backoff_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        std::sync::Arc::new(gax::exponential_backoff::ExponentialBackoff::default())
-    }
 }
 
 /// Defines the trait used to implement [super::client::ReservationSubBlocks].
@@ -11040,39 +8829,6 @@ pub trait ReservationSubBlocks: std::fmt::Debug + Send + Sync {
         Output = crate::Result<gax::response::Response<crate::model::TestPermissionsResponse>>,
     > + Send {
         gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Implements [super::client::ReservationSubBlocks::get_operation].
-    fn get_operation(
-        &self,
-        _req: crate::model::zone_operations::GetRequest,
-        _options: gax::options::RequestOptions,
-    ) -> impl std::future::Future<
-        Output = crate::Result<gax::response::Response<crate::model::Operation>>,
-    > + Send {
-        gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Returns the polling error policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_error_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        std::sync::Arc::new(gax::polling_error_policy::Aip194Strict)
-    }
-
-    /// Returns the polling backoff policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_backoff_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        std::sync::Arc::new(gax::exponential_backoff::ExponentialBackoff::default())
     }
 }
 
@@ -11210,39 +8966,6 @@ pub trait Reservations: std::fmt::Debug + Send + Sync {
     > + Send {
         gaxi::unimplemented::unimplemented_stub()
     }
-
-    /// Implements [super::client::Reservations::get_operation].
-    fn get_operation(
-        &self,
-        _req: crate::model::zone_operations::GetRequest,
-        _options: gax::options::RequestOptions,
-    ) -> impl std::future::Future<
-        Output = crate::Result<gax::response::Response<crate::model::Operation>>,
-    > + Send {
-        gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Returns the polling error policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_error_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        std::sync::Arc::new(gax::polling_error_policy::Aip194Strict)
-    }
-
-    /// Returns the polling backoff policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_backoff_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        std::sync::Arc::new(gax::exponential_backoff::ExponentialBackoff::default())
-    }
 }
 
 /// Defines the trait used to implement [super::client::ResourcePolicies].
@@ -11356,39 +9079,6 @@ pub trait ResourcePolicies: std::fmt::Debug + Send + Sync {
         Output = crate::Result<gax::response::Response<crate::model::TestPermissionsResponse>>,
     > + Send {
         gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Implements [super::client::ResourcePolicies::get_operation].
-    fn get_operation(
-        &self,
-        _req: crate::model::region_operations::GetRequest,
-        _options: gax::options::RequestOptions,
-    ) -> impl std::future::Future<
-        Output = crate::Result<gax::response::Response<crate::model::Operation>>,
-    > + Send {
-        gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Returns the polling error policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_error_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        std::sync::Arc::new(gax::polling_error_policy::Aip194Strict)
-    }
-
-    /// Returns the polling backoff policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_backoff_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        std::sync::Arc::new(gax::exponential_backoff::ExponentialBackoff::default())
     }
 }
 
@@ -11594,39 +9284,6 @@ pub trait Routers: std::fmt::Debug + Send + Sync {
     > + Send {
         gaxi::unimplemented::unimplemented_stub()
     }
-
-    /// Implements [super::client::Routers::get_operation].
-    fn get_operation(
-        &self,
-        _req: crate::model::region_operations::GetRequest,
-        _options: gax::options::RequestOptions,
-    ) -> impl std::future::Future<
-        Output = crate::Result<gax::response::Response<crate::model::Operation>>,
-    > + Send {
-        gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Returns the polling error policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_error_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        std::sync::Arc::new(gax::polling_error_policy::Aip194Strict)
-    }
-
-    /// Returns the polling backoff policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_backoff_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        std::sync::Arc::new(gax::exponential_backoff::ExponentialBackoff::default())
-    }
 }
 
 /// Defines the trait used to implement [super::client::Routes].
@@ -11685,39 +9342,6 @@ pub trait Routes: std::fmt::Debug + Send + Sync {
         Output = crate::Result<gax::response::Response<crate::model::RouteList>>,
     > + Send {
         gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Implements [super::client::Routes::get_operation].
-    fn get_operation(
-        &self,
-        _req: crate::model::global_operations::GetRequest,
-        _options: gax::options::RequestOptions,
-    ) -> impl std::future::Future<
-        Output = crate::Result<gax::response::Response<crate::model::Operation>>,
-    > + Send {
-        gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Returns the polling error policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_error_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        std::sync::Arc::new(gax::polling_error_policy::Aip194Strict)
-    }
-
-    /// Returns the polling backoff policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_backoff_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        std::sync::Arc::new(gax::exponential_backoff::ExponentialBackoff::default())
     }
 }
 
@@ -11872,39 +9496,6 @@ pub trait SecurityPolicies: std::fmt::Debug + Send + Sync {
     > + Send {
         gaxi::unimplemented::unimplemented_stub()
     }
-
-    /// Implements [super::client::SecurityPolicies::get_operation].
-    fn get_operation(
-        &self,
-        _req: crate::model::global_operations::GetRequest,
-        _options: gax::options::RequestOptions,
-    ) -> impl std::future::Future<
-        Output = crate::Result<gax::response::Response<crate::model::Operation>>,
-    > + Send {
-        gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Returns the polling error policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_error_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        std::sync::Arc::new(gax::polling_error_policy::Aip194Strict)
-    }
-
-    /// Returns the polling backoff policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_backoff_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        std::sync::Arc::new(gax::exponential_backoff::ExponentialBackoff::default())
-    }
 }
 
 /// Defines the trait used to implement [super::client::ServiceAttachments].
@@ -12021,39 +9612,6 @@ pub trait ServiceAttachments: std::fmt::Debug + Send + Sync {
     > + Send {
         gaxi::unimplemented::unimplemented_stub()
     }
-
-    /// Implements [super::client::ServiceAttachments::get_operation].
-    fn get_operation(
-        &self,
-        _req: crate::model::region_operations::GetRequest,
-        _options: gax::options::RequestOptions,
-    ) -> impl std::future::Future<
-        Output = crate::Result<gax::response::Response<crate::model::Operation>>,
-    > + Send {
-        gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Returns the polling error policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_error_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        std::sync::Arc::new(gax::polling_error_policy::Aip194Strict)
-    }
-
-    /// Returns the polling backoff policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_backoff_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        std::sync::Arc::new(gax::exponential_backoff::ExponentialBackoff::default())
-    }
 }
 
 /// Defines the trait used to implement [super::client::SnapshotSettings].
@@ -12090,39 +9648,6 @@ pub trait SnapshotSettings: std::fmt::Debug + Send + Sync {
         Output = crate::Result<gax::response::Response<crate::model::Operation>>,
     > + Send {
         gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Implements [super::client::SnapshotSettings::get_operation].
-    fn get_operation(
-        &self,
-        _req: crate::model::global_operations::GetRequest,
-        _options: gax::options::RequestOptions,
-    ) -> impl std::future::Future<
-        Output = crate::Result<gax::response::Response<crate::model::Operation>>,
-    > + Send {
-        gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Returns the polling error policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_error_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        std::sync::Arc::new(gax::polling_error_policy::Aip194Strict)
-    }
-
-    /// Returns the polling backoff policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_backoff_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        std::sync::Arc::new(gax::exponential_backoff::ExponentialBackoff::default())
     }
 }
 
@@ -12227,39 +9752,6 @@ pub trait Snapshots: std::fmt::Debug + Send + Sync {
     > + Send {
         gaxi::unimplemented::unimplemented_stub()
     }
-
-    /// Implements [super::client::Snapshots::get_operation].
-    fn get_operation(
-        &self,
-        _req: crate::model::global_operations::GetRequest,
-        _options: gax::options::RequestOptions,
-    ) -> impl std::future::Future<
-        Output = crate::Result<gax::response::Response<crate::model::Operation>>,
-    > + Send {
-        gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Returns the polling error policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_error_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        std::sync::Arc::new(gax::polling_error_policy::Aip194Strict)
-    }
-
-    /// Returns the polling backoff policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_backoff_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        std::sync::Arc::new(gax::exponential_backoff::ExponentialBackoff::default())
-    }
 }
 
 /// Defines the trait used to implement [super::client::SslCertificates].
@@ -12329,39 +9821,6 @@ pub trait SslCertificates: std::fmt::Debug + Send + Sync {
         Output = crate::Result<gax::response::Response<crate::model::SslCertificateList>>,
     > + Send {
         gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Implements [super::client::SslCertificates::get_operation].
-    fn get_operation(
-        &self,
-        _req: crate::model::global_operations::GetRequest,
-        _options: gax::options::RequestOptions,
-    ) -> impl std::future::Future<
-        Output = crate::Result<gax::response::Response<crate::model::Operation>>,
-    > + Send {
-        gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Returns the polling error policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_error_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        std::sync::Arc::new(gax::polling_error_policy::Aip194Strict)
-    }
-
-    /// Returns the polling backoff policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_backoff_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        std::sync::Arc::new(gax::exponential_backoff::ExponentialBackoff::default())
     }
 }
 
@@ -12456,39 +9915,6 @@ pub trait SslPolicies: std::fmt::Debug + Send + Sync {
         Output = crate::Result<gax::response::Response<crate::model::Operation>>,
     > + Send {
         gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Implements [super::client::SslPolicies::get_operation].
-    fn get_operation(
-        &self,
-        _req: crate::model::global_operations::GetRequest,
-        _options: gax::options::RequestOptions,
-    ) -> impl std::future::Future<
-        Output = crate::Result<gax::response::Response<crate::model::Operation>>,
-    > + Send {
-        gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Returns the polling error policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_error_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        std::sync::Arc::new(gax::polling_error_policy::Aip194Strict)
-    }
-
-    /// Returns the polling backoff policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_backoff_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        std::sync::Arc::new(gax::exponential_backoff::ExponentialBackoff::default())
     }
 }
 
@@ -12665,39 +10091,6 @@ pub trait StoragePools: std::fmt::Debug + Send + Sync {
     > + Send {
         gaxi::unimplemented::unimplemented_stub()
     }
-
-    /// Implements [super::client::StoragePools::get_operation].
-    fn get_operation(
-        &self,
-        _req: crate::model::zone_operations::GetRequest,
-        _options: gax::options::RequestOptions,
-    ) -> impl std::future::Future<
-        Output = crate::Result<gax::response::Response<crate::model::Operation>>,
-    > + Send {
-        gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Returns the polling error policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_error_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        std::sync::Arc::new(gax::polling_error_policy::Aip194Strict)
-    }
-
-    /// Returns the polling backoff policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_backoff_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        std::sync::Arc::new(gax::exponential_backoff::ExponentialBackoff::default())
-    }
 }
 
 /// Defines the trait used to implement [super::client::Subnetworks].
@@ -12847,39 +10240,6 @@ pub trait Subnetworks: std::fmt::Debug + Send + Sync {
     > + Send {
         gaxi::unimplemented::unimplemented_stub()
     }
-
-    /// Implements [super::client::Subnetworks::get_operation].
-    fn get_operation(
-        &self,
-        _req: crate::model::region_operations::GetRequest,
-        _options: gax::options::RequestOptions,
-    ) -> impl std::future::Future<
-        Output = crate::Result<gax::response::Response<crate::model::Operation>>,
-    > + Send {
-        gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Returns the polling error policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_error_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        std::sync::Arc::new(gax::polling_error_policy::Aip194Strict)
-    }
-
-    /// Returns the polling backoff policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_backoff_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        std::sync::Arc::new(gax::exponential_backoff::ExponentialBackoff::default())
-    }
 }
 
 /// Defines the trait used to implement [super::client::TargetGrpcProxies].
@@ -12949,39 +10309,6 @@ pub trait TargetGrpcProxies: std::fmt::Debug + Send + Sync {
         Output = crate::Result<gax::response::Response<crate::model::Operation>>,
     > + Send {
         gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Implements [super::client::TargetGrpcProxies::get_operation].
-    fn get_operation(
-        &self,
-        _req: crate::model::global_operations::GetRequest,
-        _options: gax::options::RequestOptions,
-    ) -> impl std::future::Future<
-        Output = crate::Result<gax::response::Response<crate::model::Operation>>,
-    > + Send {
-        gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Returns the polling error policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_error_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        std::sync::Arc::new(gax::polling_error_policy::Aip194Strict)
-    }
-
-    /// Returns the polling backoff policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_backoff_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        std::sync::Arc::new(gax::exponential_backoff::ExponentialBackoff::default())
     }
 }
 
@@ -13076,39 +10403,6 @@ pub trait TargetHttpProxies: std::fmt::Debug + Send + Sync {
         Output = crate::Result<gax::response::Response<crate::model::Operation>>,
     > + Send {
         gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Implements [super::client::TargetHttpProxies::get_operation].
-    fn get_operation(
-        &self,
-        _req: crate::model::global_operations::GetRequest,
-        _options: gax::options::RequestOptions,
-    ) -> impl std::future::Future<
-        Output = crate::Result<gax::response::Response<crate::model::Operation>>,
-    > + Send {
-        gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Returns the polling error policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_error_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        std::sync::Arc::new(gax::polling_error_policy::Aip194Strict)
-    }
-
-    /// Returns the polling backoff policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_backoff_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        std::sync::Arc::new(gax::exponential_backoff::ExponentialBackoff::default())
     }
 }
 
@@ -13248,39 +10542,6 @@ pub trait TargetHttpsProxies: std::fmt::Debug + Send + Sync {
     > + Send {
         gaxi::unimplemented::unimplemented_stub()
     }
-
-    /// Implements [super::client::TargetHttpsProxies::get_operation].
-    fn get_operation(
-        &self,
-        _req: crate::model::global_operations::GetRequest,
-        _options: gax::options::RequestOptions,
-    ) -> impl std::future::Future<
-        Output = crate::Result<gax::response::Response<crate::model::Operation>>,
-    > + Send {
-        gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Returns the polling error policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_error_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        std::sync::Arc::new(gax::polling_error_policy::Aip194Strict)
-    }
-
-    /// Returns the polling backoff policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_backoff_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        std::sync::Arc::new(gax::exponential_backoff::ExponentialBackoff::default())
-    }
 }
 
 /// Defines the trait used to implement [super::client::TargetInstances].
@@ -13372,39 +10633,6 @@ pub trait TargetInstances: std::fmt::Debug + Send + Sync {
         Output = crate::Result<gax::response::Response<crate::model::TestPermissionsResponse>>,
     > + Send {
         gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Implements [super::client::TargetInstances::get_operation].
-    fn get_operation(
-        &self,
-        _req: crate::model::zone_operations::GetRequest,
-        _options: gax::options::RequestOptions,
-    ) -> impl std::future::Future<
-        Output = crate::Result<gax::response::Response<crate::model::Operation>>,
-    > + Send {
-        gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Returns the polling error policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_error_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        std::sync::Arc::new(gax::polling_error_policy::Aip194Strict)
-    }
-
-    /// Returns the polling backoff policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_backoff_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        std::sync::Arc::new(gax::exponential_backoff::ExponentialBackoff::default())
     }
 }
 
@@ -13564,39 +10792,6 @@ pub trait TargetPools: std::fmt::Debug + Send + Sync {
     > + Send {
         gaxi::unimplemented::unimplemented_stub()
     }
-
-    /// Implements [super::client::TargetPools::get_operation].
-    fn get_operation(
-        &self,
-        _req: crate::model::region_operations::GetRequest,
-        _options: gax::options::RequestOptions,
-    ) -> impl std::future::Future<
-        Output = crate::Result<gax::response::Response<crate::model::Operation>>,
-    > + Send {
-        gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Returns the polling error policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_error_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        std::sync::Arc::new(gax::polling_error_policy::Aip194Strict)
-    }
-
-    /// Returns the polling backoff policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_backoff_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        std::sync::Arc::new(gax::exponential_backoff::ExponentialBackoff::default())
-    }
 }
 
 /// Defines the trait used to implement [super::client::TargetSslProxies].
@@ -13711,39 +10906,6 @@ pub trait TargetSslProxies: std::fmt::Debug + Send + Sync {
     > + Send {
         gaxi::unimplemented::unimplemented_stub()
     }
-
-    /// Implements [super::client::TargetSslProxies::get_operation].
-    fn get_operation(
-        &self,
-        _req: crate::model::global_operations::GetRequest,
-        _options: gax::options::RequestOptions,
-    ) -> impl std::future::Future<
-        Output = crate::Result<gax::response::Response<crate::model::Operation>>,
-    > + Send {
-        gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Returns the polling error policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_error_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        std::sync::Arc::new(gax::polling_error_policy::Aip194Strict)
-    }
-
-    /// Returns the polling backoff policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_backoff_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        std::sync::Arc::new(gax::exponential_backoff::ExponentialBackoff::default())
-    }
 }
 
 /// Defines the trait used to implement [super::client::TargetTcpProxies].
@@ -13836,39 +10998,6 @@ pub trait TargetTcpProxies: std::fmt::Debug + Send + Sync {
     > + Send {
         gaxi::unimplemented::unimplemented_stub()
     }
-
-    /// Implements [super::client::TargetTcpProxies::get_operation].
-    fn get_operation(
-        &self,
-        _req: crate::model::global_operations::GetRequest,
-        _options: gax::options::RequestOptions,
-    ) -> impl std::future::Future<
-        Output = crate::Result<gax::response::Response<crate::model::Operation>>,
-    > + Send {
-        gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Returns the polling error policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_error_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        std::sync::Arc::new(gax::polling_error_policy::Aip194Strict)
-    }
-
-    /// Returns the polling backoff policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_backoff_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        std::sync::Arc::new(gax::exponential_backoff::ExponentialBackoff::default())
-    }
 }
 
 /// Defines the trait used to implement [super::client::TargetVpnGateways].
@@ -13951,39 +11080,6 @@ pub trait TargetVpnGateways: std::fmt::Debug + Send + Sync {
         Output = crate::Result<gax::response::Response<crate::model::Operation>>,
     > + Send {
         gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Implements [super::client::TargetVpnGateways::get_operation].
-    fn get_operation(
-        &self,
-        _req: crate::model::region_operations::GetRequest,
-        _options: gax::options::RequestOptions,
-    ) -> impl std::future::Future<
-        Output = crate::Result<gax::response::Response<crate::model::Operation>>,
-    > + Send {
-        gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Returns the polling error policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_error_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        std::sync::Arc::new(gax::polling_error_policy::Aip194Strict)
-    }
-
-    /// Returns the polling backoff policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_backoff_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        std::sync::Arc::new(gax::exponential_backoff::ExponentialBackoff::default())
     }
 }
 
@@ -14099,39 +11195,6 @@ pub trait UrlMaps: std::fmt::Debug + Send + Sync {
     > + Send {
         gaxi::unimplemented::unimplemented_stub()
     }
-
-    /// Implements [super::client::UrlMaps::get_operation].
-    fn get_operation(
-        &self,
-        _req: crate::model::global_operations::GetRequest,
-        _options: gax::options::RequestOptions,
-    ) -> impl std::future::Future<
-        Output = crate::Result<gax::response::Response<crate::model::Operation>>,
-    > + Send {
-        gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Returns the polling error policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_error_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        std::sync::Arc::new(gax::polling_error_policy::Aip194Strict)
-    }
-
-    /// Returns the polling backoff policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_backoff_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        std::sync::Arc::new(gax::exponential_backoff::ExponentialBackoff::default())
-    }
 }
 
 /// Defines the trait used to implement [super::client::VpnGateways].
@@ -14235,39 +11298,6 @@ pub trait VpnGateways: std::fmt::Debug + Send + Sync {
     > + Send {
         gaxi::unimplemented::unimplemented_stub()
     }
-
-    /// Implements [super::client::VpnGateways::get_operation].
-    fn get_operation(
-        &self,
-        _req: crate::model::region_operations::GetRequest,
-        _options: gax::options::RequestOptions,
-    ) -> impl std::future::Future<
-        Output = crate::Result<gax::response::Response<crate::model::Operation>>,
-    > + Send {
-        gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Returns the polling error policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_error_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        std::sync::Arc::new(gax::polling_error_policy::Aip194Strict)
-    }
-
-    /// Returns the polling backoff policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_backoff_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        std::sync::Arc::new(gax::exponential_backoff::ExponentialBackoff::default())
-    }
 }
 
 /// Defines the trait used to implement [super::client::VpnTunnels].
@@ -14349,39 +11379,6 @@ pub trait VpnTunnels: std::fmt::Debug + Send + Sync {
     > + Send {
         gaxi::unimplemented::unimplemented_stub()
     }
-
-    /// Implements [super::client::VpnTunnels::get_operation].
-    fn get_operation(
-        &self,
-        _req: crate::model::region_operations::GetRequest,
-        _options: gax::options::RequestOptions,
-    ) -> impl std::future::Future<
-        Output = crate::Result<gax::response::Response<crate::model::Operation>>,
-    > + Send {
-        gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Returns the polling error policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_error_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        std::sync::Arc::new(gax::polling_error_policy::Aip194Strict)
-    }
-
-    /// Returns the polling backoff policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_backoff_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        std::sync::Arc::new(gax::exponential_backoff::ExponentialBackoff::default())
-    }
 }
 
 /// Defines the trait used to implement [super::client::WireGroups].
@@ -14451,39 +11448,6 @@ pub trait WireGroups: std::fmt::Debug + Send + Sync {
         Output = crate::Result<gax::response::Response<crate::model::Operation>>,
     > + Send {
         gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Implements [super::client::WireGroups::get_operation].
-    fn get_operation(
-        &self,
-        _req: crate::model::global_operations::GetRequest,
-        _options: gax::options::RequestOptions,
-    ) -> impl std::future::Future<
-        Output = crate::Result<gax::response::Response<crate::model::Operation>>,
-    > + Send {
-        gaxi::unimplemented::unimplemented_stub()
-    }
-
-    /// Returns the polling error policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_error_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        std::sync::Arc::new(gax::polling_error_policy::Aip194Strict)
-    }
-
-    /// Returns the polling backoff policy.
-    ///
-    /// When mocking, this method is typically irrelevant. Do not try to verify
-    /// it is called by your mocks.
-    fn get_polling_backoff_policy(
-        &self,
-        _options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        std::sync::Arc::new(gax::exponential_backoff::ExponentialBackoff::default())
     }
 }
 

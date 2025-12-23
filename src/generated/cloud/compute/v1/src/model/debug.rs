@@ -25172,46 +25172,7 @@ impl std::fmt::Debug for super::global_operations::DeleteRequest {
     }
 }
 
-#[cfg(any(
-    feature = "backend-buckets",
-    feature = "backend-services",
-    feature = "cross-site-networks",
-    feature = "external-vpn-gateways",
-    feature = "firewalls",
-    feature = "global-addresses",
-    feature = "global-forwarding-rules",
-    feature = "global-network-endpoint-groups",
-    feature = "global-operations",
-    feature = "global-public-delegated-prefixes",
-    feature = "health-checks",
-    feature = "http-health-checks",
-    feature = "https-health-checks",
-    feature = "images",
-    feature = "instance-templates",
-    feature = "interconnect-attachment-groups",
-    feature = "interconnect-groups",
-    feature = "interconnects",
-    feature = "licenses",
-    feature = "machine-images",
-    feature = "network-firewall-policies",
-    feature = "networks",
-    feature = "preview-features",
-    feature = "projects",
-    feature = "public-advertised-prefixes",
-    feature = "routes",
-    feature = "security-policies",
-    feature = "snapshot-settings",
-    feature = "snapshots",
-    feature = "ssl-certificates",
-    feature = "ssl-policies",
-    feature = "target-grpc-proxies",
-    feature = "target-http-proxies",
-    feature = "target-https-proxies",
-    feature = "target-ssl-proxies",
-    feature = "target-tcp-proxies",
-    feature = "url-maps",
-    feature = "wire-groups",
-))]
+#[cfg(feature = "global-operations")]
 impl std::fmt::Debug for super::global_operations::GetRequest {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
         let mut debug_struct = f.debug_struct("GetRequest");
@@ -25267,11 +25228,7 @@ impl std::fmt::Debug for super::global_organization_operations::DeleteRequest {
     }
 }
 
-#[cfg(any(
-    feature = "firewall-policies",
-    feature = "global-organization-operations",
-    feature = "organization-security-policies",
-))]
+#[cfg(feature = "global-organization-operations")]
 impl std::fmt::Debug for super::global_organization_operations::GetRequest {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
         let mut debug_struct = f.debug_struct("GetRequest");
@@ -32605,46 +32562,7 @@ impl std::fmt::Debug for super::region_operations::DeleteRequest {
     }
 }
 
-#[cfg(any(
-    feature = "addresses",
-    feature = "forwarding-rules",
-    feature = "interconnect-attachments",
-    feature = "network-attachments",
-    feature = "network-edge-security-services",
-    feature = "node-templates",
-    feature = "packet-mirrorings",
-    feature = "public-delegated-prefixes",
-    feature = "region-autoscalers",
-    feature = "region-backend-services",
-    feature = "region-commitments",
-    feature = "region-disks",
-    feature = "region-health-check-services",
-    feature = "region-health-checks",
-    feature = "region-instance-group-managers",
-    feature = "region-instance-groups",
-    feature = "region-instance-templates",
-    feature = "region-instances",
-    feature = "region-instant-snapshots",
-    feature = "region-network-endpoint-groups",
-    feature = "region-network-firewall-policies",
-    feature = "region-notification-endpoints",
-    feature = "region-operations",
-    feature = "region-security-policies",
-    feature = "region-ssl-certificates",
-    feature = "region-ssl-policies",
-    feature = "region-target-http-proxies",
-    feature = "region-target-https-proxies",
-    feature = "region-target-tcp-proxies",
-    feature = "region-url-maps",
-    feature = "resource-policies",
-    feature = "routers",
-    feature = "service-attachments",
-    feature = "subnetworks",
-    feature = "target-pools",
-    feature = "target-vpn-gateways",
-    feature = "vpn-gateways",
-    feature = "vpn-tunnels",
-))]
+#[cfg(feature = "region-operations")]
 impl std::fmt::Debug for super::region_operations::GetRequest {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
         let mut debug_struct = f.debug_struct("GetRequest");
@@ -36837,25 +36755,7 @@ impl std::fmt::Debug for super::zone_operations::DeleteRequest {
     }
 }
 
-#[cfg(any(
-    feature = "autoscalers",
-    feature = "disks",
-    feature = "future-reservations",
-    feature = "instance-group-manager-resize-requests",
-    feature = "instance-group-managers",
-    feature = "instance-groups",
-    feature = "instance-settings",
-    feature = "instances",
-    feature = "instant-snapshots",
-    feature = "network-endpoint-groups",
-    feature = "node-groups",
-    feature = "reservation-blocks",
-    feature = "reservation-sub-blocks",
-    feature = "reservations",
-    feature = "storage-pools",
-    feature = "target-instances",
-    feature = "zone-operations",
-))]
+#[cfg(feature = "zone-operations")]
 impl std::fmt::Debug for super::zone_operations::GetRequest {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
         let mut debug_struct = f.debug_struct("GetRequest");

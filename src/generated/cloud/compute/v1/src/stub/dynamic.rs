@@ -120,22 +120,6 @@ pub trait Addresses: std::fmt::Debug + Send + Sync {
         req: crate::model::addresses::TestIamPermissionsRequest,
         options: gax::options::RequestOptions,
     ) -> crate::Result<gax::response::Response<crate::model::TestPermissionsResponse>>;
-
-    async fn get_operation(
-        &self,
-        req: crate::model::region_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy>;
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy>;
 }
 
 /// All implementations of [super::Addresses] also implement [Addresses].
@@ -213,29 +197,6 @@ impl<T: super::Addresses> Addresses for T {
     ) -> crate::Result<gax::response::Response<crate::model::TestPermissionsResponse>> {
         T::test_iam_permissions(self, req, options).await
     }
-
-    /// Forwards the call to the implementation provided by `T`.
-    async fn get_operation(
-        &self,
-        req: crate::model::region_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
-        T::get_operation(self, req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        T::get_polling_error_policy(self, options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        T::get_polling_backoff_policy(self, options)
-    }
 }
 
 /// A dyn-compatible, crate-private version of [super::Advice].
@@ -308,22 +269,6 @@ pub trait Autoscalers: std::fmt::Debug + Send + Sync {
         req: crate::model::autoscalers::UpdateRequest,
         options: gax::options::RequestOptions,
     ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    async fn get_operation(
-        &self,
-        req: crate::model::zone_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy>;
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy>;
 }
 
 /// All implementations of [super::Autoscalers] also implement [Autoscalers].
@@ -391,29 +336,6 @@ impl<T: super::Autoscalers> Autoscalers for T {
         options: gax::options::RequestOptions,
     ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
         T::update(self, req, options).await
-    }
-
-    /// Forwards the call to the implementation provided by `T`.
-    async fn get_operation(
-        &self,
-        req: crate::model::zone_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
-        T::get_operation(self, req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        T::get_polling_error_policy(self, options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        T::get_polling_backoff_policy(self, options)
     }
 }
 
@@ -492,22 +414,6 @@ pub trait BackendBuckets: std::fmt::Debug + Send + Sync {
         req: crate::model::backend_buckets::UpdateRequest,
         options: gax::options::RequestOptions,
     ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    async fn get_operation(
-        &self,
-        req: crate::model::global_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy>;
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy>;
 }
 
 /// All implementations of [super::BackendBuckets] also implement [BackendBuckets].
@@ -621,29 +527,6 @@ impl<T: super::BackendBuckets> BackendBuckets for T {
     ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
         T::update(self, req, options).await
     }
-
-    /// Forwards the call to the implementation provided by `T`.
-    async fn get_operation(
-        &self,
-        req: crate::model::global_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
-        T::get_operation(self, req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        T::get_polling_error_policy(self, options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        T::get_polling_backoff_policy(self, options)
-    }
 }
 
 /// A dyn-compatible, crate-private version of [super::BackendServices].
@@ -751,22 +634,6 @@ pub trait BackendServices: std::fmt::Debug + Send + Sync {
         req: crate::model::backend_services::UpdateRequest,
         options: gax::options::RequestOptions,
     ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    async fn get_operation(
-        &self,
-        req: crate::model::global_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy>;
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy>;
 }
 
 /// All implementations of [super::BackendServices] also implement [BackendServices].
@@ -925,29 +792,6 @@ impl<T: super::BackendServices> BackendServices for T {
     ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
         T::update(self, req, options).await
     }
-
-    /// Forwards the call to the implementation provided by `T`.
-    async fn get_operation(
-        &self,
-        req: crate::model::global_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
-        T::get_operation(self, req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        T::get_polling_error_policy(self, options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        T::get_polling_backoff_policy(self, options)
-    }
 }
 
 /// A dyn-compatible, crate-private version of [super::CrossSiteNetworks].
@@ -983,22 +827,6 @@ pub trait CrossSiteNetworks: std::fmt::Debug + Send + Sync {
         req: crate::model::cross_site_networks::PatchRequest,
         options: gax::options::RequestOptions,
     ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    async fn get_operation(
-        &self,
-        req: crate::model::global_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy>;
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy>;
 }
 
 /// All implementations of [super::CrossSiteNetworks] also implement [CrossSiteNetworks].
@@ -1048,29 +876,6 @@ impl<T: super::CrossSiteNetworks> CrossSiteNetworks for T {
         options: gax::options::RequestOptions,
     ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
         T::patch(self, req, options).await
-    }
-
-    /// Forwards the call to the implementation provided by `T`.
-    async fn get_operation(
-        &self,
-        req: crate::model::global_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
-        T::get_operation(self, req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        T::get_polling_error_policy(self, options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        T::get_polling_backoff_policy(self, options)
     }
 }
 
@@ -1246,22 +1051,6 @@ pub trait Disks: std::fmt::Debug + Send + Sync {
         req: crate::model::disks::UpdateRequest,
         options: gax::options::RequestOptions,
     ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    async fn get_operation(
-        &self,
-        req: crate::model::zone_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy>;
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy>;
 }
 
 /// All implementations of [super::Disks] also implement [Disks].
@@ -1438,29 +1227,6 @@ impl<T: super::Disks> Disks for T {
     ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
         T::update(self, req, options).await
     }
-
-    /// Forwards the call to the implementation provided by `T`.
-    async fn get_operation(
-        &self,
-        req: crate::model::zone_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
-        T::get_operation(self, req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        T::get_polling_error_policy(self, options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        T::get_polling_backoff_policy(self, options)
-    }
 }
 
 /// A dyn-compatible, crate-private version of [super::ExternalVpnGateways].
@@ -1502,22 +1268,6 @@ pub trait ExternalVpnGateways: std::fmt::Debug + Send + Sync {
         req: crate::model::external_vpn_gateways::TestIamPermissionsRequest,
         options: gax::options::RequestOptions,
     ) -> crate::Result<gax::response::Response<crate::model::TestPermissionsResponse>>;
-
-    async fn get_operation(
-        &self,
-        req: crate::model::global_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy>;
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy>;
 }
 
 /// All implementations of [super::ExternalVpnGateways] also implement [ExternalVpnGateways].
@@ -1576,29 +1326,6 @@ impl<T: super::ExternalVpnGateways> ExternalVpnGateways for T {
         options: gax::options::RequestOptions,
     ) -> crate::Result<gax::response::Response<crate::model::TestPermissionsResponse>> {
         T::test_iam_permissions(self, req, options).await
-    }
-
-    /// Forwards the call to the implementation provided by `T`.
-    async fn get_operation(
-        &self,
-        req: crate::model::global_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
-        T::get_operation(self, req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        T::get_polling_error_policy(self, options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        T::get_polling_backoff_policy(self, options)
     }
 }
 
@@ -1715,22 +1442,6 @@ pub trait FirewallPolicies: std::fmt::Debug + Send + Sync {
         req: crate::model::firewall_policies::TestIamPermissionsRequest,
         options: gax::options::RequestOptions,
     ) -> crate::Result<gax::response::Response<crate::model::TestPermissionsResponse>>;
-
-    async fn get_operation(
-        &self,
-        req: crate::model::global_organization_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy>;
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy>;
 }
 
 /// All implementations of [super::FirewallPolicies] also implement [FirewallPolicies].
@@ -1900,29 +1611,6 @@ impl<T: super::FirewallPolicies> FirewallPolicies for T {
     ) -> crate::Result<gax::response::Response<crate::model::TestPermissionsResponse>> {
         T::test_iam_permissions(self, req, options).await
     }
-
-    /// Forwards the call to the implementation provided by `T`.
-    async fn get_operation(
-        &self,
-        req: crate::model::global_organization_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
-        T::get_operation(self, req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        T::get_polling_error_policy(self, options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        T::get_polling_backoff_policy(self, options)
-    }
 }
 
 /// A dyn-compatible, crate-private version of [super::Firewalls].
@@ -1970,22 +1658,6 @@ pub trait Firewalls: std::fmt::Debug + Send + Sync {
         req: crate::model::firewalls::UpdateRequest,
         options: gax::options::RequestOptions,
     ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    async fn get_operation(
-        &self,
-        req: crate::model::global_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy>;
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy>;
 }
 
 /// All implementations of [super::Firewalls] also implement [Firewalls].
@@ -2054,29 +1726,6 @@ impl<T: super::Firewalls> Firewalls for T {
     ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
         T::update(self, req, options).await
     }
-
-    /// Forwards the call to the implementation provided by `T`.
-    async fn get_operation(
-        &self,
-        req: crate::model::global_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
-        T::get_operation(self, req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        T::get_polling_error_policy(self, options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        T::get_polling_backoff_policy(self, options)
-    }
 }
 
 /// A dyn-compatible, crate-private version of [super::ForwardingRules].
@@ -2130,22 +1779,6 @@ pub trait ForwardingRules: std::fmt::Debug + Send + Sync {
         req: crate::model::forwarding_rules::SetTargetRequest,
         options: gax::options::RequestOptions,
     ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    async fn get_operation(
-        &self,
-        req: crate::model::region_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy>;
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy>;
 }
 
 /// All implementations of [super::ForwardingRules] also implement [ForwardingRules].
@@ -2223,29 +1856,6 @@ impl<T: super::ForwardingRules> ForwardingRules for T {
     ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
         T::set_target(self, req, options).await
     }
-
-    /// Forwards the call to the implementation provided by `T`.
-    async fn get_operation(
-        &self,
-        req: crate::model::region_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
-        T::get_operation(self, req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        T::get_polling_error_policy(self, options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        T::get_polling_backoff_policy(self, options)
-    }
 }
 
 /// A dyn-compatible, crate-private version of [super::FutureReservations].
@@ -2295,22 +1905,6 @@ pub trait FutureReservations: std::fmt::Debug + Send + Sync {
         req: crate::model::future_reservations::UpdateRequest,
         options: gax::options::RequestOptions,
     ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    async fn get_operation(
-        &self,
-        req: crate::model::zone_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy>;
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy>;
 }
 
 /// All implementations of [super::FutureReservations] also implement [FutureReservations].
@@ -2381,29 +1975,6 @@ impl<T: super::FutureReservations> FutureReservations for T {
     ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
         T::update(self, req, options).await
     }
-
-    /// Forwards the call to the implementation provided by `T`.
-    async fn get_operation(
-        &self,
-        req: crate::model::zone_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
-        T::get_operation(self, req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        T::get_polling_error_policy(self, options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        T::get_polling_backoff_policy(self, options)
-    }
 }
 
 /// A dyn-compatible, crate-private version of [super::GlobalAddresses].
@@ -2451,22 +2022,6 @@ pub trait GlobalAddresses: std::fmt::Debug + Send + Sync {
         req: crate::model::global_addresses::TestIamPermissionsRequest,
         options: gax::options::RequestOptions,
     ) -> crate::Result<gax::response::Response<crate::model::TestPermissionsResponse>>;
-
-    async fn get_operation(
-        &self,
-        req: crate::model::global_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy>;
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy>;
 }
 
 /// All implementations of [super::GlobalAddresses] also implement [GlobalAddresses].
@@ -2535,29 +2090,6 @@ impl<T: super::GlobalAddresses> GlobalAddresses for T {
     ) -> crate::Result<gax::response::Response<crate::model::TestPermissionsResponse>> {
         T::test_iam_permissions(self, req, options).await
     }
-
-    /// Forwards the call to the implementation provided by `T`.
-    async fn get_operation(
-        &self,
-        req: crate::model::global_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
-        T::get_operation(self, req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        T::get_polling_error_policy(self, options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        T::get_polling_backoff_policy(self, options)
-    }
 }
 
 /// A dyn-compatible, crate-private version of [super::GlobalForwardingRules].
@@ -2605,22 +2137,6 @@ pub trait GlobalForwardingRules: std::fmt::Debug + Send + Sync {
         req: crate::model::global_forwarding_rules::SetTargetRequest,
         options: gax::options::RequestOptions,
     ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    async fn get_operation(
-        &self,
-        req: crate::model::global_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy>;
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy>;
 }
 
 /// All implementations of [super::GlobalForwardingRules] also implement [GlobalForwardingRules].
@@ -2689,29 +2205,6 @@ impl<T: super::GlobalForwardingRules> GlobalForwardingRules for T {
     ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
         T::set_target(self, req, options).await
     }
-
-    /// Forwards the call to the implementation provided by `T`.
-    async fn get_operation(
-        &self,
-        req: crate::model::global_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
-        T::get_operation(self, req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        T::get_polling_error_policy(self, options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        T::get_polling_backoff_policy(self, options)
-    }
 }
 
 /// A dyn-compatible, crate-private version of [super::GlobalNetworkEndpointGroups].
@@ -2761,22 +2254,6 @@ pub trait GlobalNetworkEndpointGroups: std::fmt::Debug + Send + Sync {
     ) -> crate::Result<
         gax::response::Response<crate::model::NetworkEndpointGroupsListNetworkEndpoints>,
     >;
-
-    async fn get_operation(
-        &self,
-        req: crate::model::global_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy>;
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy>;
 }
 
 /// All implementations of [super::GlobalNetworkEndpointGroups] also implement [GlobalNetworkEndpointGroups].
@@ -2846,29 +2323,6 @@ impl<T: super::GlobalNetworkEndpointGroups> GlobalNetworkEndpointGroups for T {
         gax::response::Response<crate::model::NetworkEndpointGroupsListNetworkEndpoints>,
     > {
         T::list_network_endpoints(self, req, options).await
-    }
-
-    /// Forwards the call to the implementation provided by `T`.
-    async fn get_operation(
-        &self,
-        req: crate::model::global_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
-        T::get_operation(self, req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        T::get_polling_error_policy(self, options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        T::get_polling_backoff_policy(self, options)
     }
 }
 
@@ -3045,22 +2499,6 @@ pub trait GlobalPublicDelegatedPrefixes: std::fmt::Debug + Send + Sync {
         req: crate::model::global_public_delegated_prefixes::PatchRequest,
         options: gax::options::RequestOptions,
     ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    async fn get_operation(
-        &self,
-        req: crate::model::global_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy>;
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy>;
 }
 
 /// All implementations of [super::GlobalPublicDelegatedPrefixes] also implement [GlobalPublicDelegatedPrefixes].
@@ -3111,29 +2549,6 @@ impl<T: super::GlobalPublicDelegatedPrefixes> GlobalPublicDelegatedPrefixes for 
     ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
         T::patch(self, req, options).await
     }
-
-    /// Forwards the call to the implementation provided by `T`.
-    async fn get_operation(
-        &self,
-        req: crate::model::global_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
-        T::get_operation(self, req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        T::get_polling_error_policy(self, options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        T::get_polling_backoff_policy(self, options)
-    }
 }
 
 /// A dyn-compatible, crate-private version of [super::HealthChecks].
@@ -3181,22 +2596,6 @@ pub trait HealthChecks: std::fmt::Debug + Send + Sync {
         req: crate::model::health_checks::UpdateRequest,
         options: gax::options::RequestOptions,
     ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    async fn get_operation(
-        &self,
-        req: crate::model::global_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy>;
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy>;
 }
 
 /// All implementations of [super::HealthChecks] also implement [HealthChecks].
@@ -3265,29 +2664,6 @@ impl<T: super::HealthChecks> HealthChecks for T {
     ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
         T::update(self, req, options).await
     }
-
-    /// Forwards the call to the implementation provided by `T`.
-    async fn get_operation(
-        &self,
-        req: crate::model::global_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
-        T::get_operation(self, req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        T::get_polling_error_policy(self, options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        T::get_polling_backoff_policy(self, options)
-    }
 }
 
 /// A dyn-compatible, crate-private version of [super::HttpHealthChecks].
@@ -3329,22 +2705,6 @@ pub trait HttpHealthChecks: std::fmt::Debug + Send + Sync {
         req: crate::model::http_health_checks::UpdateRequest,
         options: gax::options::RequestOptions,
     ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    async fn get_operation(
-        &self,
-        req: crate::model::global_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy>;
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy>;
 }
 
 /// All implementations of [super::HttpHealthChecks] also implement [HttpHealthChecks].
@@ -3404,29 +2764,6 @@ impl<T: super::HttpHealthChecks> HttpHealthChecks for T {
     ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
         T::update(self, req, options).await
     }
-
-    /// Forwards the call to the implementation provided by `T`.
-    async fn get_operation(
-        &self,
-        req: crate::model::global_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
-        T::get_operation(self, req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        T::get_polling_error_policy(self, options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        T::get_polling_backoff_policy(self, options)
-    }
 }
 
 /// A dyn-compatible, crate-private version of [super::HttpsHealthChecks].
@@ -3468,22 +2805,6 @@ pub trait HttpsHealthChecks: std::fmt::Debug + Send + Sync {
         req: crate::model::https_health_checks::UpdateRequest,
         options: gax::options::RequestOptions,
     ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    async fn get_operation(
-        &self,
-        req: crate::model::global_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy>;
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy>;
 }
 
 /// All implementations of [super::HttpsHealthChecks] also implement [HttpsHealthChecks].
@@ -3542,29 +2863,6 @@ impl<T: super::HttpsHealthChecks> HttpsHealthChecks for T {
         options: gax::options::RequestOptions,
     ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
         T::update(self, req, options).await
-    }
-
-    /// Forwards the call to the implementation provided by `T`.
-    async fn get_operation(
-        &self,
-        req: crate::model::global_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
-        T::get_operation(self, req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        T::get_polling_error_policy(self, options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        T::get_polling_backoff_policy(self, options)
     }
 }
 
@@ -3662,22 +2960,6 @@ pub trait Images: std::fmt::Debug + Send + Sync {
         req: crate::model::images::TestIamPermissionsRequest,
         options: gax::options::RequestOptions,
     ) -> crate::Result<gax::response::Response<crate::model::TestPermissionsResponse>>;
-
-    async fn get_operation(
-        &self,
-        req: crate::model::global_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy>;
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy>;
 }
 
 /// All implementations of [super::Images] also implement [Images].
@@ -3782,29 +3064,6 @@ impl<T: super::Images> Images for T {
     ) -> crate::Result<gax::response::Response<crate::model::TestPermissionsResponse>> {
         T::test_iam_permissions(self, req, options).await
     }
-
-    /// Forwards the call to the implementation provided by `T`.
-    async fn get_operation(
-        &self,
-        req: crate::model::global_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
-        T::get_operation(self, req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        T::get_polling_error_policy(self, options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        T::get_polling_backoff_policy(self, options)
-    }
 }
 
 /// A dyn-compatible, crate-private version of [super::InstanceGroupManagerResizeRequests].
@@ -3842,22 +3101,6 @@ pub trait InstanceGroupManagerResizeRequests: std::fmt::Debug + Send + Sync {
     ) -> crate::Result<
         gax::response::Response<crate::model::InstanceGroupManagerResizeRequestsListResponse>,
     >;
-
-    async fn get_operation(
-        &self,
-        req: crate::model::zone_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy>;
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy>;
 }
 
 /// All implementations of [super::InstanceGroupManagerResizeRequests] also implement [InstanceGroupManagerResizeRequests].
@@ -3910,29 +3153,6 @@ impl<T: super::InstanceGroupManagerResizeRequests> InstanceGroupManagerResizeReq
         gax::response::Response<crate::model::InstanceGroupManagerResizeRequestsListResponse>,
     > {
         T::list(self, req, options).await
-    }
-
-    /// Forwards the call to the implementation provided by `T`.
-    async fn get_operation(
-        &self,
-        req: crate::model::zone_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
-        T::get_operation(self, req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        T::get_polling_error_policy(self, options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        T::get_polling_backoff_policy(self, options)
     }
 }
 
@@ -4087,22 +3307,6 @@ pub trait InstanceGroupManagers: std::fmt::Debug + Send + Sync {
         req: crate::model::instance_group_managers::UpdatePerInstanceConfigsRequest,
         options: gax::options::RequestOptions,
     ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    async fn get_operation(
-        &self,
-        req: crate::model::zone_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy>;
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy>;
 }
 
 /// All implementations of [super::InstanceGroupManagers] also implement [InstanceGroupManagers].
@@ -4330,29 +3534,6 @@ impl<T: super::InstanceGroupManagers> InstanceGroupManagers for T {
     ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
         T::update_per_instance_configs(self, req, options).await
     }
-
-    /// Forwards the call to the implementation provided by `T`.
-    async fn get_operation(
-        &self,
-        req: crate::model::zone_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
-        T::get_operation(self, req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        T::get_polling_error_policy(self, options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        T::get_polling_backoff_policy(self, options)
-    }
 }
 
 /// A dyn-compatible, crate-private version of [super::InstanceGroups].
@@ -4418,22 +3599,6 @@ pub trait InstanceGroups: std::fmt::Debug + Send + Sync {
         req: crate::model::instance_groups::TestIamPermissionsRequest,
         options: gax::options::RequestOptions,
     ) -> crate::Result<gax::response::Response<crate::model::TestPermissionsResponse>>;
-
-    async fn get_operation(
-        &self,
-        req: crate::model::zone_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy>;
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy>;
 }
 
 /// All implementations of [super::InstanceGroups] also implement [InstanceGroups].
@@ -4529,29 +3694,6 @@ impl<T: super::InstanceGroups> InstanceGroups for T {
     ) -> crate::Result<gax::response::Response<crate::model::TestPermissionsResponse>> {
         T::test_iam_permissions(self, req, options).await
     }
-
-    /// Forwards the call to the implementation provided by `T`.
-    async fn get_operation(
-        &self,
-        req: crate::model::zone_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
-        T::get_operation(self, req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        T::get_polling_error_policy(self, options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        T::get_polling_backoff_policy(self, options)
-    }
 }
 
 /// A dyn-compatible, crate-private version of [super::InstanceSettings].
@@ -4569,22 +3711,6 @@ pub trait InstanceSettings: std::fmt::Debug + Send + Sync {
         req: crate::model::instance_settings::PatchRequest,
         options: gax::options::RequestOptions,
     ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    async fn get_operation(
-        &self,
-        req: crate::model::zone_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy>;
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy>;
 }
 
 /// All implementations of [super::InstanceSettings] also implement [InstanceSettings].
@@ -4607,29 +3733,6 @@ impl<T: super::InstanceSettings> InstanceSettings for T {
         options: gax::options::RequestOptions,
     ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
         T::patch(self, req, options).await
-    }
-
-    /// Forwards the call to the implementation provided by `T`.
-    async fn get_operation(
-        &self,
-        req: crate::model::zone_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
-        T::get_operation(self, req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        T::get_polling_error_policy(self, options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        T::get_polling_backoff_policy(self, options)
     }
 }
 
@@ -4684,22 +3787,6 @@ pub trait InstanceTemplates: std::fmt::Debug + Send + Sync {
         req: crate::model::instance_templates::TestIamPermissionsRequest,
         options: gax::options::RequestOptions,
     ) -> crate::Result<gax::response::Response<crate::model::TestPermissionsResponse>>;
-
-    async fn get_operation(
-        &self,
-        req: crate::model::global_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy>;
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy>;
 }
 
 /// All implementations of [super::InstanceTemplates] also implement [InstanceTemplates].
@@ -4776,29 +3863,6 @@ impl<T: super::InstanceTemplates> InstanceTemplates for T {
         options: gax::options::RequestOptions,
     ) -> crate::Result<gax::response::Response<crate::model::TestPermissionsResponse>> {
         T::test_iam_permissions(self, req, options).await
-    }
-
-    /// Forwards the call to the implementation provided by `T`.
-    async fn get_operation(
-        &self,
-        req: crate::model::global_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
-        T::get_operation(self, req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        T::get_polling_error_policy(self, options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        T::get_polling_backoff_policy(self, options)
     }
 }
 
@@ -5111,22 +4175,6 @@ pub trait Instances: std::fmt::Debug + Send + Sync {
         req: crate::model::instances::UpdateShieldedInstanceConfigRequest,
         options: gax::options::RequestOptions,
     ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    async fn get_operation(
-        &self,
-        req: crate::model::zone_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy>;
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy>;
 }
 
 /// All implementations of [super::Instances] also implement [Instances].
@@ -5592,29 +4640,6 @@ impl<T: super::Instances> Instances for T {
     ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
         T::update_shielded_instance_config(self, req, options).await
     }
-
-    /// Forwards the call to the implementation provided by `T`.
-    async fn get_operation(
-        &self,
-        req: crate::model::zone_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
-        T::get_operation(self, req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        T::get_polling_error_policy(self, options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        T::get_polling_backoff_policy(self, options)
-    }
 }
 
 /// A dyn-compatible, crate-private version of [super::InstantSnapshots].
@@ -5674,22 +4699,6 @@ pub trait InstantSnapshots: std::fmt::Debug + Send + Sync {
         req: crate::model::instant_snapshots::TestIamPermissionsRequest,
         options: gax::options::RequestOptions,
     ) -> crate::Result<gax::response::Response<crate::model::TestPermissionsResponse>>;
-
-    async fn get_operation(
-        &self,
-        req: crate::model::zone_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy>;
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy>;
 }
 
 /// All implementations of [super::InstantSnapshots] also implement [InstantSnapshots].
@@ -5776,29 +4785,6 @@ impl<T: super::InstantSnapshots> InstantSnapshots for T {
     ) -> crate::Result<gax::response::Response<crate::model::TestPermissionsResponse>> {
         T::test_iam_permissions(self, req, options).await
     }
-
-    /// Forwards the call to the implementation provided by `T`.
-    async fn get_operation(
-        &self,
-        req: crate::model::zone_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
-        T::get_operation(self, req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        T::get_polling_error_policy(self, options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        T::get_polling_backoff_policy(self, options)
-    }
 }
 
 /// A dyn-compatible, crate-private version of [super::InterconnectAttachmentGroups].
@@ -5864,22 +4850,6 @@ pub trait InterconnectAttachmentGroups: std::fmt::Debug + Send + Sync {
         req: crate::model::interconnect_attachment_groups::TestIamPermissionsRequest,
         options: gax::options::RequestOptions,
     ) -> crate::Result<gax::response::Response<crate::model::TestPermissionsResponse>>;
-
-    async fn get_operation(
-        &self,
-        req: crate::model::global_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy>;
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy>;
 }
 
 /// All implementations of [super::InterconnectAttachmentGroups] also implement [InterconnectAttachmentGroups].
@@ -5972,29 +4942,6 @@ impl<T: super::InterconnectAttachmentGroups> InterconnectAttachmentGroups for T 
     ) -> crate::Result<gax::response::Response<crate::model::TestPermissionsResponse>> {
         T::test_iam_permissions(self, req, options).await
     }
-
-    /// Forwards the call to the implementation provided by `T`.
-    async fn get_operation(
-        &self,
-        req: crate::model::global_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
-        T::get_operation(self, req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        T::get_polling_error_policy(self, options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        T::get_polling_backoff_policy(self, options)
-    }
 }
 
 /// A dyn-compatible, crate-private version of [super::InterconnectAttachments].
@@ -6042,22 +4989,6 @@ pub trait InterconnectAttachments: std::fmt::Debug + Send + Sync {
         req: crate::model::interconnect_attachments::SetLabelsRequest,
         options: gax::options::RequestOptions,
     ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    async fn get_operation(
-        &self,
-        req: crate::model::region_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy>;
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy>;
 }
 
 /// All implementations of [super::InterconnectAttachments] also implement [InterconnectAttachments].
@@ -6127,29 +5058,6 @@ impl<T: super::InterconnectAttachments> InterconnectAttachments for T {
     ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
         T::set_labels(self, req, options).await
     }
-
-    /// Forwards the call to the implementation provided by `T`.
-    async fn get_operation(
-        &self,
-        req: crate::model::region_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
-        T::get_operation(self, req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        T::get_polling_error_policy(self, options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        T::get_polling_backoff_policy(self, options)
-    }
 }
 
 /// A dyn-compatible, crate-private version of [super::InterconnectGroups].
@@ -6217,22 +5125,6 @@ pub trait InterconnectGroups: std::fmt::Debug + Send + Sync {
         req: crate::model::interconnect_groups::TestIamPermissionsRequest,
         options: gax::options::RequestOptions,
     ) -> crate::Result<gax::response::Response<crate::model::TestPermissionsResponse>>;
-
-    async fn get_operation(
-        &self,
-        req: crate::model::global_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy>;
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy>;
 }
 
 /// All implementations of [super::InterconnectGroups] also implement [InterconnectGroups].
@@ -6329,29 +5221,6 @@ impl<T: super::InterconnectGroups> InterconnectGroups for T {
         options: gax::options::RequestOptions,
     ) -> crate::Result<gax::response::Response<crate::model::TestPermissionsResponse>> {
         T::test_iam_permissions(self, req, options).await
-    }
-
-    /// Forwards the call to the implementation provided by `T`.
-    async fn get_operation(
-        &self,
-        req: crate::model::global_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
-        T::get_operation(self, req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        T::get_polling_error_policy(self, options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        T::get_polling_backoff_policy(self, options)
     }
 }
 
@@ -6486,22 +5355,6 @@ pub trait Interconnects: std::fmt::Debug + Send + Sync {
         req: crate::model::interconnects::SetLabelsRequest,
         options: gax::options::RequestOptions,
     ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    async fn get_operation(
-        &self,
-        req: crate::model::global_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy>;
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy>;
 }
 
 /// All implementations of [super::Interconnects] also implement [Interconnects].
@@ -6580,29 +5433,6 @@ impl<T: super::Interconnects> Interconnects for T {
         options: gax::options::RequestOptions,
     ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
         T::set_labels(self, req, options).await
-    }
-
-    /// Forwards the call to the implementation provided by `T`.
-    async fn get_operation(
-        &self,
-        req: crate::model::global_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
-        T::get_operation(self, req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        T::get_polling_error_policy(self, options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        T::get_polling_backoff_policy(self, options)
     }
 }
 
@@ -6697,22 +5527,6 @@ pub trait Licenses: std::fmt::Debug + Send + Sync {
         req: crate::model::licenses::UpdateRequest,
         options: gax::options::RequestOptions,
     ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    async fn get_operation(
-        &self,
-        req: crate::model::global_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy>;
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy>;
 }
 
 /// All implementations of [super::Licenses] also implement [Licenses].
@@ -6790,29 +5604,6 @@ impl<T: super::Licenses> Licenses for T {
     ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
         T::update(self, req, options).await
     }
-
-    /// Forwards the call to the implementation provided by `T`.
-    async fn get_operation(
-        &self,
-        req: crate::model::global_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
-        T::get_operation(self, req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        T::get_polling_error_policy(self, options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        T::get_polling_backoff_policy(self, options)
-    }
 }
 
 /// A dyn-compatible, crate-private version of [super::MachineImages].
@@ -6866,22 +5657,6 @@ pub trait MachineImages: std::fmt::Debug + Send + Sync {
         req: crate::model::machine_images::TestIamPermissionsRequest,
         options: gax::options::RequestOptions,
     ) -> crate::Result<gax::response::Response<crate::model::TestPermissionsResponse>>;
-
-    async fn get_operation(
-        &self,
-        req: crate::model::global_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy>;
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy>;
 }
 
 /// All implementations of [super::MachineImages] also implement [MachineImages].
@@ -6958,29 +5733,6 @@ impl<T: super::MachineImages> MachineImages for T {
         options: gax::options::RequestOptions,
     ) -> crate::Result<gax::response::Response<crate::model::TestPermissionsResponse>> {
         T::test_iam_permissions(self, req, options).await
-    }
-
-    /// Forwards the call to the implementation provided by `T`.
-    async fn get_operation(
-        &self,
-        req: crate::model::global_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
-        T::get_operation(self, req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        T::get_polling_error_policy(self, options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        T::get_polling_backoff_policy(self, options)
     }
 }
 
@@ -7096,22 +5848,6 @@ pub trait NetworkAttachments: std::fmt::Debug + Send + Sync {
         req: crate::model::network_attachments::TestIamPermissionsRequest,
         options: gax::options::RequestOptions,
     ) -> crate::Result<gax::response::Response<crate::model::TestPermissionsResponse>>;
-
-    async fn get_operation(
-        &self,
-        req: crate::model::region_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy>;
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy>;
 }
 
 /// All implementations of [super::NetworkAttachments] also implement [NetworkAttachments].
@@ -7198,29 +5934,6 @@ impl<T: super::NetworkAttachments> NetworkAttachments for T {
     ) -> crate::Result<gax::response::Response<crate::model::TestPermissionsResponse>> {
         T::test_iam_permissions(self, req, options).await
     }
-
-    /// Forwards the call to the implementation provided by `T`.
-    async fn get_operation(
-        &self,
-        req: crate::model::region_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
-        T::get_operation(self, req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        T::get_polling_error_policy(self, options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        T::get_polling_backoff_policy(self, options)
-    }
 }
 
 /// A dyn-compatible, crate-private version of [super::NetworkEdgeSecurityServices].
@@ -7258,22 +5971,6 @@ pub trait NetworkEdgeSecurityServices: std::fmt::Debug + Send + Sync {
         req: crate::model::network_edge_security_services::PatchRequest,
         options: gax::options::RequestOptions,
     ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    async fn get_operation(
-        &self,
-        req: crate::model::region_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy>;
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy>;
 }
 
 /// All implementations of [super::NetworkEdgeSecurityServices] also implement [NetworkEdgeSecurityServices].
@@ -7325,29 +6022,6 @@ impl<T: super::NetworkEdgeSecurityServices> NetworkEdgeSecurityServices for T {
         options: gax::options::RequestOptions,
     ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
         T::patch(self, req, options).await
-    }
-
-    /// Forwards the call to the implementation provided by `T`.
-    async fn get_operation(
-        &self,
-        req: crate::model::region_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
-        T::get_operation(self, req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        T::get_polling_error_policy(self, options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        T::get_polling_backoff_policy(self, options)
     }
 }
 
@@ -7410,22 +6084,6 @@ pub trait NetworkEndpointGroups: std::fmt::Debug + Send + Sync {
         req: crate::model::network_endpoint_groups::TestIamPermissionsRequest,
         options: gax::options::RequestOptions,
     ) -> crate::Result<gax::response::Response<crate::model::TestPermissionsResponse>>;
-
-    async fn get_operation(
-        &self,
-        req: crate::model::zone_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy>;
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy>;
 }
 
 /// All implementations of [super::NetworkEndpointGroups] also implement [NetworkEndpointGroups].
@@ -7514,29 +6172,6 @@ impl<T: super::NetworkEndpointGroups> NetworkEndpointGroups for T {
         options: gax::options::RequestOptions,
     ) -> crate::Result<gax::response::Response<crate::model::TestPermissionsResponse>> {
         T::test_iam_permissions(self, req, options).await
-    }
-
-    /// Forwards the call to the implementation provided by `T`.
-    async fn get_operation(
-        &self,
-        req: crate::model::zone_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
-        T::get_operation(self, req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        T::get_polling_error_policy(self, options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        T::get_polling_backoff_policy(self, options)
     }
 }
 
@@ -7669,22 +6304,6 @@ pub trait NetworkFirewallPolicies: std::fmt::Debug + Send + Sync {
         req: crate::model::network_firewall_policies::TestIamPermissionsRequest,
         options: gax::options::RequestOptions,
     ) -> crate::Result<gax::response::Response<crate::model::TestPermissionsResponse>>;
-
-    async fn get_operation(
-        &self,
-        req: crate::model::global_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy>;
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy>;
 }
 
 /// All implementations of [super::NetworkFirewallPolicies] also implement [NetworkFirewallPolicies].
@@ -7880,29 +6499,6 @@ impl<T: super::NetworkFirewallPolicies> NetworkFirewallPolicies for T {
     ) -> crate::Result<gax::response::Response<crate::model::TestPermissionsResponse>> {
         T::test_iam_permissions(self, req, options).await
     }
-
-    /// Forwards the call to the implementation provided by `T`.
-    async fn get_operation(
-        &self,
-        req: crate::model::global_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
-        T::get_operation(self, req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        T::get_polling_error_policy(self, options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        T::get_polling_backoff_policy(self, options)
-    }
 }
 
 /// A dyn-compatible, crate-private version of [super::NetworkProfiles].
@@ -8020,22 +6616,6 @@ pub trait Networks: std::fmt::Debug + Send + Sync {
         req: crate::model::networks::UpdatePeeringRequest,
         options: gax::options::RequestOptions,
     ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    async fn get_operation(
-        &self,
-        req: crate::model::global_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy>;
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy>;
 }
 
 /// All implementations of [super::Networks] also implement [Networks].
@@ -8150,29 +6730,6 @@ impl<T: super::Networks> Networks for T {
     ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
         T::update_peering(self, req, options).await
     }
-
-    /// Forwards the call to the implementation provided by `T`.
-    async fn get_operation(
-        &self,
-        req: crate::model::global_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
-        T::get_operation(self, req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        T::get_polling_error_policy(self, options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        T::get_polling_backoff_policy(self, options)
-    }
 }
 
 /// A dyn-compatible, crate-private version of [super::NodeGroups].
@@ -8268,22 +6825,6 @@ pub trait NodeGroups: std::fmt::Debug + Send + Sync {
         req: crate::model::node_groups::TestIamPermissionsRequest,
         options: gax::options::RequestOptions,
     ) -> crate::Result<gax::response::Response<crate::model::TestPermissionsResponse>>;
-
-    async fn get_operation(
-        &self,
-        req: crate::model::zone_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy>;
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy>;
 }
 
 /// All implementations of [super::NodeGroups] also implement [NodeGroups].
@@ -8424,29 +6965,6 @@ impl<T: super::NodeGroups> NodeGroups for T {
     ) -> crate::Result<gax::response::Response<crate::model::TestPermissionsResponse>> {
         T::test_iam_permissions(self, req, options).await
     }
-
-    /// Forwards the call to the implementation provided by `T`.
-    async fn get_operation(
-        &self,
-        req: crate::model::zone_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
-        T::get_operation(self, req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        T::get_polling_error_policy(self, options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        T::get_polling_backoff_policy(self, options)
-    }
 }
 
 /// A dyn-compatible, crate-private version of [super::NodeTemplates].
@@ -8500,22 +7018,6 @@ pub trait NodeTemplates: std::fmt::Debug + Send + Sync {
         req: crate::model::node_templates::TestIamPermissionsRequest,
         options: gax::options::RequestOptions,
     ) -> crate::Result<gax::response::Response<crate::model::TestPermissionsResponse>>;
-
-    async fn get_operation(
-        &self,
-        req: crate::model::region_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy>;
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy>;
 }
 
 /// All implementations of [super::NodeTemplates] also implement [NodeTemplates].
@@ -8592,29 +7094,6 @@ impl<T: super::NodeTemplates> NodeTemplates for T {
         options: gax::options::RequestOptions,
     ) -> crate::Result<gax::response::Response<crate::model::TestPermissionsResponse>> {
         T::test_iam_permissions(self, req, options).await
-    }
-
-    /// Forwards the call to the implementation provided by `T`.
-    async fn get_operation(
-        &self,
-        req: crate::model::region_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
-        T::get_operation(self, req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        T::get_polling_error_policy(self, options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        T::get_polling_backoff_policy(self, options)
     }
 }
 
@@ -8778,22 +7257,6 @@ pub trait OrganizationSecurityPolicies: std::fmt::Debug + Send + Sync {
         req: crate::model::organization_security_policies::RemoveRuleRequest,
         options: gax::options::RequestOptions,
     ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    async fn get_operation(
-        &self,
-        req: crate::model::global_organization_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy>;
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy>;
 }
 
 /// All implementations of [super::OrganizationSecurityPolicies] also implement [OrganizationSecurityPolicies].
@@ -8949,29 +7412,6 @@ impl<T: super::OrganizationSecurityPolicies> OrganizationSecurityPolicies for T 
     ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
         T::remove_rule(self, req, options).await
     }
-
-    /// Forwards the call to the implementation provided by `T`.
-    async fn get_operation(
-        &self,
-        req: crate::model::global_organization_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
-        T::get_operation(self, req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        T::get_polling_error_policy(self, options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        T::get_polling_backoff_policy(self, options)
-    }
 }
 
 /// A dyn-compatible, crate-private version of [super::PacketMirrorings].
@@ -9019,22 +7459,6 @@ pub trait PacketMirrorings: std::fmt::Debug + Send + Sync {
         req: crate::model::packet_mirrorings::TestIamPermissionsRequest,
         options: gax::options::RequestOptions,
     ) -> crate::Result<gax::response::Response<crate::model::TestPermissionsResponse>>;
-
-    async fn get_operation(
-        &self,
-        req: crate::model::region_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy>;
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy>;
 }
 
 /// All implementations of [super::PacketMirrorings] also implement [PacketMirrorings].
@@ -9103,29 +7527,6 @@ impl<T: super::PacketMirrorings> PacketMirrorings for T {
     ) -> crate::Result<gax::response::Response<crate::model::TestPermissionsResponse>> {
         T::test_iam_permissions(self, req, options).await
     }
-
-    /// Forwards the call to the implementation provided by `T`.
-    async fn get_operation(
-        &self,
-        req: crate::model::region_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
-        T::get_operation(self, req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        T::get_polling_error_policy(self, options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        T::get_polling_backoff_policy(self, options)
-    }
 }
 
 /// A dyn-compatible, crate-private version of [super::PreviewFeatures].
@@ -9149,22 +7550,6 @@ pub trait PreviewFeatures: std::fmt::Debug + Send + Sync {
         req: crate::model::preview_features::UpdateRequest,
         options: gax::options::RequestOptions,
     ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    async fn get_operation(
-        &self,
-        req: crate::model::global_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy>;
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy>;
 }
 
 /// All implementations of [super::PreviewFeatures] also implement [PreviewFeatures].
@@ -9196,29 +7581,6 @@ impl<T: super::PreviewFeatures> PreviewFeatures for T {
         options: gax::options::RequestOptions,
     ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
         T::update(self, req, options).await
-    }
-
-    /// Forwards the call to the implementation provided by `T`.
-    async fn get_operation(
-        &self,
-        req: crate::model::global_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
-        T::get_operation(self, req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        T::get_polling_error_policy(self, options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        T::get_polling_backoff_policy(self, options)
     }
 }
 
@@ -9309,22 +7671,6 @@ pub trait Projects: std::fmt::Debug + Send + Sync {
         req: crate::model::projects::SetUsageExportBucketRequest,
         options: gax::options::RequestOptions,
     ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    async fn get_operation(
-        &self,
-        req: crate::model::global_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy>;
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy>;
 }
 
 /// All implementations of [super::Projects] also implement [Projects].
@@ -9456,29 +7802,6 @@ impl<T: super::Projects> Projects for T {
     ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
         T::set_usage_export_bucket(self, req, options).await
     }
-
-    /// Forwards the call to the implementation provided by `T`.
-    async fn get_operation(
-        &self,
-        req: crate::model::global_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
-        T::get_operation(self, req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        T::get_polling_error_policy(self, options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        T::get_polling_backoff_policy(self, options)
-    }
 }
 
 /// A dyn-compatible, crate-private version of [super::PublicAdvertisedPrefixes].
@@ -9526,22 +7849,6 @@ pub trait PublicAdvertisedPrefixes: std::fmt::Debug + Send + Sync {
         req: crate::model::public_advertised_prefixes::WithdrawRequest,
         options: gax::options::RequestOptions,
     ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    async fn get_operation(
-        &self,
-        req: crate::model::global_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy>;
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy>;
 }
 
 /// All implementations of [super::PublicAdvertisedPrefixes] also implement [PublicAdvertisedPrefixes].
@@ -9610,29 +7917,6 @@ impl<T: super::PublicAdvertisedPrefixes> PublicAdvertisedPrefixes for T {
     ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
         T::withdraw(self, req, options).await
     }
-
-    /// Forwards the call to the implementation provided by `T`.
-    async fn get_operation(
-        &self,
-        req: crate::model::global_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
-        T::get_operation(self, req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        T::get_polling_error_policy(self, options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        T::get_polling_backoff_policy(self, options)
-    }
 }
 
 /// A dyn-compatible, crate-private version of [super::PublicDelegatedPrefixes].
@@ -9686,22 +7970,6 @@ pub trait PublicDelegatedPrefixes: std::fmt::Debug + Send + Sync {
         req: crate::model::public_delegated_prefixes::WithdrawRequest,
         options: gax::options::RequestOptions,
     ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    async fn get_operation(
-        &self,
-        req: crate::model::region_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy>;
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy>;
 }
 
 /// All implementations of [super::PublicDelegatedPrefixes] also implement [PublicDelegatedPrefixes].
@@ -9780,29 +8048,6 @@ impl<T: super::PublicDelegatedPrefixes> PublicDelegatedPrefixes for T {
     ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
         T::withdraw(self, req, options).await
     }
-
-    /// Forwards the call to the implementation provided by `T`.
-    async fn get_operation(
-        &self,
-        req: crate::model::region_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
-        T::get_operation(self, req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        T::get_polling_error_policy(self, options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        T::get_polling_backoff_policy(self, options)
-    }
 }
 
 /// A dyn-compatible, crate-private version of [super::RegionAutoscalers].
@@ -9844,22 +8089,6 @@ pub trait RegionAutoscalers: std::fmt::Debug + Send + Sync {
         req: crate::model::region_autoscalers::UpdateRequest,
         options: gax::options::RequestOptions,
     ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    async fn get_operation(
-        &self,
-        req: crate::model::region_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy>;
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy>;
 }
 
 /// All implementations of [super::RegionAutoscalers] also implement [RegionAutoscalers].
@@ -9918,29 +8147,6 @@ impl<T: super::RegionAutoscalers> RegionAutoscalers for T {
         options: gax::options::RequestOptions,
     ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
         T::update(self, req, options).await
-    }
-
-    /// Forwards the call to the implementation provided by `T`.
-    async fn get_operation(
-        &self,
-        req: crate::model::region_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
-        T::get_operation(self, req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        T::get_polling_error_policy(self, options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        T::get_polling_backoff_policy(self, options)
     }
 }
 
@@ -10019,22 +8225,6 @@ pub trait RegionBackendServices: std::fmt::Debug + Send + Sync {
         req: crate::model::region_backend_services::UpdateRequest,
         options: gax::options::RequestOptions,
     ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    async fn get_operation(
-        &self,
-        req: crate::model::region_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy>;
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy>;
 }
 
 /// All implementations of [super::RegionBackendServices] also implement [RegionBackendServices].
@@ -10148,29 +8338,6 @@ impl<T: super::RegionBackendServices> RegionBackendServices for T {
     ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
         T::update(self, req, options).await
     }
-
-    /// Forwards the call to the implementation provided by `T`.
-    async fn get_operation(
-        &self,
-        req: crate::model::region_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
-        T::get_operation(self, req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        T::get_polling_error_policy(self, options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        T::get_polling_backoff_policy(self, options)
-    }
 }
 
 /// A dyn-compatible, crate-private version of [super::RegionCommitments].
@@ -10206,22 +8373,6 @@ pub trait RegionCommitments: std::fmt::Debug + Send + Sync {
         req: crate::model::region_commitments::UpdateRequest,
         options: gax::options::RequestOptions,
     ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    async fn get_operation(
-        &self,
-        req: crate::model::region_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy>;
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy>;
 }
 
 /// All implementations of [super::RegionCommitments] also implement [RegionCommitments].
@@ -10271,29 +8422,6 @@ impl<T: super::RegionCommitments> RegionCommitments for T {
         options: gax::options::RequestOptions,
     ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
         T::update(self, req, options).await
-    }
-
-    /// Forwards the call to the implementation provided by `T`.
-    async fn get_operation(
-        &self,
-        req: crate::model::region_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
-        T::get_operation(self, req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        T::get_polling_error_policy(self, options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        T::get_polling_backoff_policy(self, options)
     }
 }
 
@@ -10442,22 +8570,6 @@ pub trait RegionDisks: std::fmt::Debug + Send + Sync {
         req: crate::model::region_disks::UpdateRequest,
         options: gax::options::RequestOptions,
     ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    async fn get_operation(
-        &self,
-        req: crate::model::region_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy>;
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy>;
 }
 
 /// All implementations of [super::RegionDisks] also implement [RegionDisks].
@@ -10616,29 +8728,6 @@ impl<T: super::RegionDisks> RegionDisks for T {
     ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
         T::update(self, req, options).await
     }
-
-    /// Forwards the call to the implementation provided by `T`.
-    async fn get_operation(
-        &self,
-        req: crate::model::region_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
-        T::get_operation(self, req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        T::get_polling_error_policy(self, options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        T::get_polling_backoff_policy(self, options)
-    }
 }
 
 /// A dyn-compatible, crate-private version of [super::RegionHealthCheckServices].
@@ -10674,22 +8763,6 @@ pub trait RegionHealthCheckServices: std::fmt::Debug + Send + Sync {
         req: crate::model::region_health_check_services::PatchRequest,
         options: gax::options::RequestOptions,
     ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    async fn get_operation(
-        &self,
-        req: crate::model::region_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy>;
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy>;
 }
 
 /// All implementations of [super::RegionHealthCheckServices] also implement [RegionHealthCheckServices].
@@ -10740,29 +8813,6 @@ impl<T: super::RegionHealthCheckServices> RegionHealthCheckServices for T {
     ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
         T::patch(self, req, options).await
     }
-
-    /// Forwards the call to the implementation provided by `T`.
-    async fn get_operation(
-        &self,
-        req: crate::model::region_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
-        T::get_operation(self, req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        T::get_polling_error_policy(self, options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        T::get_polling_backoff_policy(self, options)
-    }
 }
 
 /// A dyn-compatible, crate-private version of [super::RegionHealthChecks].
@@ -10804,22 +8854,6 @@ pub trait RegionHealthChecks: std::fmt::Debug + Send + Sync {
         req: crate::model::region_health_checks::UpdateRequest,
         options: gax::options::RequestOptions,
     ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    async fn get_operation(
-        &self,
-        req: crate::model::region_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy>;
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy>;
 }
 
 /// All implementations of [super::RegionHealthChecks] also implement [RegionHealthChecks].
@@ -10878,29 +8912,6 @@ impl<T: super::RegionHealthChecks> RegionHealthChecks for T {
         options: gax::options::RequestOptions,
     ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
         T::update(self, req, options).await
-    }
-
-    /// Forwards the call to the implementation provided by `T`.
-    async fn get_operation(
-        &self,
-        req: crate::model::region_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
-        T::get_operation(self, req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        T::get_polling_error_policy(self, options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        T::get_polling_backoff_policy(self, options)
     }
 }
 
@@ -11051,22 +9062,6 @@ pub trait RegionInstanceGroupManagers: std::fmt::Debug + Send + Sync {
         req: crate::model::region_instance_group_managers::UpdatePerInstanceConfigsRequest,
         options: gax::options::RequestOptions,
     ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    async fn get_operation(
-        &self,
-        req: crate::model::region_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy>;
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy>;
 }
 
 /// All implementations of [super::RegionInstanceGroupManagers] also implement [RegionInstanceGroupManagers].
@@ -11285,29 +9280,6 @@ impl<T: super::RegionInstanceGroupManagers> RegionInstanceGroupManagers for T {
     ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
         T::update_per_instance_configs(self, req, options).await
     }
-
-    /// Forwards the call to the implementation provided by `T`.
-    async fn get_operation(
-        &self,
-        req: crate::model::region_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
-        T::get_operation(self, req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        T::get_polling_error_policy(self, options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        T::get_polling_backoff_policy(self, options)
-    }
 }
 
 /// A dyn-compatible, crate-private version of [super::RegionInstanceGroups].
@@ -11343,22 +9315,6 @@ pub trait RegionInstanceGroups: std::fmt::Debug + Send + Sync {
         req: crate::model::region_instance_groups::TestIamPermissionsRequest,
         options: gax::options::RequestOptions,
     ) -> crate::Result<gax::response::Response<crate::model::TestPermissionsResponse>>;
-
-    async fn get_operation(
-        &self,
-        req: crate::model::region_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy>;
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy>;
 }
 
 /// All implementations of [super::RegionInstanceGroups] also implement [RegionInstanceGroups].
@@ -11410,29 +9366,6 @@ impl<T: super::RegionInstanceGroups> RegionInstanceGroups for T {
     ) -> crate::Result<gax::response::Response<crate::model::TestPermissionsResponse>> {
         T::test_iam_permissions(self, req, options).await
     }
-
-    /// Forwards the call to the implementation provided by `T`.
-    async fn get_operation(
-        &self,
-        req: crate::model::region_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
-        T::get_operation(self, req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        T::get_polling_error_policy(self, options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        T::get_polling_backoff_policy(self, options)
-    }
 }
 
 /// A dyn-compatible, crate-private version of [super::RegionInstanceTemplates].
@@ -11462,22 +9395,6 @@ pub trait RegionInstanceTemplates: std::fmt::Debug + Send + Sync {
         req: crate::model::region_instance_templates::ListRequest,
         options: gax::options::RequestOptions,
     ) -> crate::Result<gax::response::Response<crate::model::InstanceTemplateList>>;
-
-    async fn get_operation(
-        &self,
-        req: crate::model::region_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy>;
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy>;
 }
 
 /// All implementations of [super::RegionInstanceTemplates] also implement [RegionInstanceTemplates].
@@ -11519,29 +9436,6 @@ impl<T: super::RegionInstanceTemplates> RegionInstanceTemplates for T {
     ) -> crate::Result<gax::response::Response<crate::model::InstanceTemplateList>> {
         T::list(self, req, options).await
     }
-
-    /// Forwards the call to the implementation provided by `T`.
-    async fn get_operation(
-        &self,
-        req: crate::model::region_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
-        T::get_operation(self, req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        T::get_polling_error_policy(self, options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        T::get_polling_backoff_policy(self, options)
-    }
 }
 
 /// A dyn-compatible, crate-private version of [super::RegionInstances].
@@ -11553,22 +9447,6 @@ pub trait RegionInstances: std::fmt::Debug + Send + Sync {
         req: crate::model::region_instances::BulkInsertRequest,
         options: gax::options::RequestOptions,
     ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    async fn get_operation(
-        &self,
-        req: crate::model::region_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy>;
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy>;
 }
 
 /// All implementations of [super::RegionInstances] also implement [RegionInstances].
@@ -11582,29 +9460,6 @@ impl<T: super::RegionInstances> RegionInstances for T {
         options: gax::options::RequestOptions,
     ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
         T::bulk_insert(self, req, options).await
-    }
-
-    /// Forwards the call to the implementation provided by `T`.
-    async fn get_operation(
-        &self,
-        req: crate::model::region_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
-        T::get_operation(self, req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        T::get_polling_error_policy(self, options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        T::get_polling_backoff_policy(self, options)
     }
 }
 
@@ -11659,22 +9514,6 @@ pub trait RegionInstantSnapshots: std::fmt::Debug + Send + Sync {
         req: crate::model::region_instant_snapshots::TestIamPermissionsRequest,
         options: gax::options::RequestOptions,
     ) -> crate::Result<gax::response::Response<crate::model::TestPermissionsResponse>>;
-
-    async fn get_operation(
-        &self,
-        req: crate::model::region_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy>;
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy>;
 }
 
 /// All implementations of [super::RegionInstantSnapshots] also implement [RegionInstantSnapshots].
@@ -11752,29 +9591,6 @@ impl<T: super::RegionInstantSnapshots> RegionInstantSnapshots for T {
     ) -> crate::Result<gax::response::Response<crate::model::TestPermissionsResponse>> {
         T::test_iam_permissions(self, req, options).await
     }
-
-    /// Forwards the call to the implementation provided by `T`.
-    async fn get_operation(
-        &self,
-        req: crate::model::region_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
-        T::get_operation(self, req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        T::get_polling_error_policy(self, options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        T::get_polling_backoff_policy(self, options)
-    }
 }
 
 /// A dyn-compatible, crate-private version of [super::RegionNetworkEndpointGroups].
@@ -11824,22 +9640,6 @@ pub trait RegionNetworkEndpointGroups: std::fmt::Debug + Send + Sync {
     ) -> crate::Result<
         gax::response::Response<crate::model::NetworkEndpointGroupsListNetworkEndpoints>,
     >;
-
-    async fn get_operation(
-        &self,
-        req: crate::model::region_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy>;
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy>;
 }
 
 /// All implementations of [super::RegionNetworkEndpointGroups] also implement [RegionNetworkEndpointGroups].
@@ -11909,29 +9709,6 @@ impl<T: super::RegionNetworkEndpointGroups> RegionNetworkEndpointGroups for T {
         gax::response::Response<crate::model::NetworkEndpointGroupsListNetworkEndpoints>,
     > {
         T::list_network_endpoints(self, req, options).await
-    }
-
-    /// Forwards the call to the implementation provided by `T`.
-    async fn get_operation(
-        &self,
-        req: crate::model::region_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
-        T::get_operation(self, req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        T::get_polling_error_policy(self, options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        T::get_polling_backoff_policy(self, options)
     }
 }
 
@@ -12044,22 +9821,6 @@ pub trait RegionNetworkFirewallPolicies: std::fmt::Debug + Send + Sync {
         req: crate::model::region_network_firewall_policies::TestIamPermissionsRequest,
         options: gax::options::RequestOptions,
     ) -> crate::Result<gax::response::Response<crate::model::TestPermissionsResponse>>;
-
-    async fn get_operation(
-        &self,
-        req: crate::model::region_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy>;
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy>;
 }
 
 /// All implementations of [super::RegionNetworkFirewallPolicies] also implement [RegionNetworkFirewallPolicies].
@@ -12222,29 +9983,6 @@ impl<T: super::RegionNetworkFirewallPolicies> RegionNetworkFirewallPolicies for 
     ) -> crate::Result<gax::response::Response<crate::model::TestPermissionsResponse>> {
         T::test_iam_permissions(self, req, options).await
     }
-
-    /// Forwards the call to the implementation provided by `T`.
-    async fn get_operation(
-        &self,
-        req: crate::model::region_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
-        T::get_operation(self, req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        T::get_polling_error_policy(self, options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        T::get_polling_backoff_policy(self, options)
-    }
 }
 
 /// A dyn-compatible, crate-private version of [super::RegionNotificationEndpoints].
@@ -12274,22 +10012,6 @@ pub trait RegionNotificationEndpoints: std::fmt::Debug + Send + Sync {
         req: crate::model::region_notification_endpoints::ListRequest,
         options: gax::options::RequestOptions,
     ) -> crate::Result<gax::response::Response<crate::model::NotificationEndpointList>>;
-
-    async fn get_operation(
-        &self,
-        req: crate::model::region_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy>;
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy>;
 }
 
 /// All implementations of [super::RegionNotificationEndpoints] also implement [RegionNotificationEndpoints].
@@ -12330,29 +10052,6 @@ impl<T: super::RegionNotificationEndpoints> RegionNotificationEndpoints for T {
         options: gax::options::RequestOptions,
     ) -> crate::Result<gax::response::Response<crate::model::NotificationEndpointList>> {
         T::list(self, req, options).await
-    }
-
-    /// Forwards the call to the implementation provided by `T`.
-    async fn get_operation(
-        &self,
-        req: crate::model::region_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
-        T::get_operation(self, req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        T::get_polling_error_policy(self, options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        T::get_polling_backoff_policy(self, options)
     }
 }
 
@@ -12489,22 +10188,6 @@ pub trait RegionSecurityPolicies: std::fmt::Debug + Send + Sync {
         req: crate::model::region_security_policies::SetLabelsRequest,
         options: gax::options::RequestOptions,
     ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    async fn get_operation(
-        &self,
-        req: crate::model::region_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy>;
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy>;
 }
 
 /// All implementations of [super::RegionSecurityPolicies] also implement [RegionSecurityPolicies].
@@ -12600,29 +10283,6 @@ impl<T: super::RegionSecurityPolicies> RegionSecurityPolicies for T {
     ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
         T::set_labels(self, req, options).await
     }
-
-    /// Forwards the call to the implementation provided by `T`.
-    async fn get_operation(
-        &self,
-        req: crate::model::region_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
-        T::get_operation(self, req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        T::get_polling_error_policy(self, options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        T::get_polling_backoff_policy(self, options)
-    }
 }
 
 /// A dyn-compatible, crate-private version of [super::RegionSslCertificates].
@@ -12652,22 +10312,6 @@ pub trait RegionSslCertificates: std::fmt::Debug + Send + Sync {
         req: crate::model::region_ssl_certificates::ListRequest,
         options: gax::options::RequestOptions,
     ) -> crate::Result<gax::response::Response<crate::model::SslCertificateList>>;
-
-    async fn get_operation(
-        &self,
-        req: crate::model::region_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy>;
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy>;
 }
 
 /// All implementations of [super::RegionSslCertificates] also implement [RegionSslCertificates].
@@ -12708,29 +10352,6 @@ impl<T: super::RegionSslCertificates> RegionSslCertificates for T {
         options: gax::options::RequestOptions,
     ) -> crate::Result<gax::response::Response<crate::model::SslCertificateList>> {
         T::list(self, req, options).await
-    }
-
-    /// Forwards the call to the implementation provided by `T`.
-    async fn get_operation(
-        &self,
-        req: crate::model::region_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
-        T::get_operation(self, req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        T::get_polling_error_policy(self, options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        T::get_polling_backoff_policy(self, options)
     }
 }
 
@@ -12775,22 +10396,6 @@ pub trait RegionSslPolicies: std::fmt::Debug + Send + Sync {
         req: crate::model::region_ssl_policies::PatchRequest,
         options: gax::options::RequestOptions,
     ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    async fn get_operation(
-        &self,
-        req: crate::model::region_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy>;
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy>;
 }
 
 /// All implementations of [super::RegionSslPolicies] also implement [RegionSslPolicies].
@@ -12852,29 +10457,6 @@ impl<T: super::RegionSslPolicies> RegionSslPolicies for T {
     ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
         T::patch(self, req, options).await
     }
-
-    /// Forwards the call to the implementation provided by `T`.
-    async fn get_operation(
-        &self,
-        req: crate::model::region_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
-        T::get_operation(self, req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        T::get_polling_error_policy(self, options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        T::get_polling_backoff_policy(self, options)
-    }
 }
 
 /// A dyn-compatible, crate-private version of [super::RegionTargetHttpProxies].
@@ -12910,22 +10492,6 @@ pub trait RegionTargetHttpProxies: std::fmt::Debug + Send + Sync {
         req: crate::model::region_target_http_proxies::SetUrlMapRequest,
         options: gax::options::RequestOptions,
     ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    async fn get_operation(
-        &self,
-        req: crate::model::region_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy>;
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy>;
 }
 
 /// All implementations of [super::RegionTargetHttpProxies] also implement [RegionTargetHttpProxies].
@@ -12976,29 +10542,6 @@ impl<T: super::RegionTargetHttpProxies> RegionTargetHttpProxies for T {
     ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
         T::set_url_map(self, req, options).await
     }
-
-    /// Forwards the call to the implementation provided by `T`.
-    async fn get_operation(
-        &self,
-        req: crate::model::region_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
-        T::get_operation(self, req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        T::get_polling_error_policy(self, options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        T::get_polling_backoff_policy(self, options)
-    }
 }
 
 /// A dyn-compatible, crate-private version of [super::RegionTargetHttpsProxies].
@@ -13046,22 +10589,6 @@ pub trait RegionTargetHttpsProxies: std::fmt::Debug + Send + Sync {
         req: crate::model::region_target_https_proxies::SetUrlMapRequest,
         options: gax::options::RequestOptions,
     ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    async fn get_operation(
-        &self,
-        req: crate::model::region_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy>;
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy>;
 }
 
 /// All implementations of [super::RegionTargetHttpsProxies] also implement [RegionTargetHttpsProxies].
@@ -13130,29 +10657,6 @@ impl<T: super::RegionTargetHttpsProxies> RegionTargetHttpsProxies for T {
     ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
         T::set_url_map(self, req, options).await
     }
-
-    /// Forwards the call to the implementation provided by `T`.
-    async fn get_operation(
-        &self,
-        req: crate::model::region_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
-        T::get_operation(self, req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        T::get_polling_error_policy(self, options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        T::get_polling_backoff_policy(self, options)
-    }
 }
 
 /// A dyn-compatible, crate-private version of [super::RegionTargetTcpProxies].
@@ -13182,22 +10686,6 @@ pub trait RegionTargetTcpProxies: std::fmt::Debug + Send + Sync {
         req: crate::model::region_target_tcp_proxies::ListRequest,
         options: gax::options::RequestOptions,
     ) -> crate::Result<gax::response::Response<crate::model::TargetTcpProxyList>>;
-
-    async fn get_operation(
-        &self,
-        req: crate::model::region_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy>;
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy>;
 }
 
 /// All implementations of [super::RegionTargetTcpProxies] also implement [RegionTargetTcpProxies].
@@ -13238,29 +10726,6 @@ impl<T: super::RegionTargetTcpProxies> RegionTargetTcpProxies for T {
         options: gax::options::RequestOptions,
     ) -> crate::Result<gax::response::Response<crate::model::TargetTcpProxyList>> {
         T::list(self, req, options).await
-    }
-
-    /// Forwards the call to the implementation provided by `T`.
-    async fn get_operation(
-        &self,
-        req: crate::model::region_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
-        T::get_operation(self, req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        T::get_polling_error_policy(self, options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        T::get_polling_backoff_policy(self, options)
     }
 }
 
@@ -13309,22 +10774,6 @@ pub trait RegionUrlMaps: std::fmt::Debug + Send + Sync {
         req: crate::model::region_url_maps::ValidateRequest,
         options: gax::options::RequestOptions,
     ) -> crate::Result<gax::response::Response<crate::model::UrlMapsValidateResponse>>;
-
-    async fn get_operation(
-        &self,
-        req: crate::model::region_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy>;
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy>;
 }
 
 /// All implementations of [super::RegionUrlMaps] also implement [RegionUrlMaps].
@@ -13392,29 +10841,6 @@ impl<T: super::RegionUrlMaps> RegionUrlMaps for T {
         options: gax::options::RequestOptions,
     ) -> crate::Result<gax::response::Response<crate::model::UrlMapsValidateResponse>> {
         T::validate(self, req, options).await
-    }
-
-    /// Forwards the call to the implementation provided by `T`.
-    async fn get_operation(
-        &self,
-        req: crate::model::region_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
-        T::get_operation(self, req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        T::get_polling_error_policy(self, options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        T::get_polling_backoff_policy(self, options)
     }
 }
 
@@ -13522,22 +10948,6 @@ pub trait ReservationBlocks: std::fmt::Debug + Send + Sync {
         req: crate::model::reservation_blocks::TestIamPermissionsRequest,
         options: gax::options::RequestOptions,
     ) -> crate::Result<gax::response::Response<crate::model::TestPermissionsResponse>>;
-
-    async fn get_operation(
-        &self,
-        req: crate::model::zone_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy>;
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy>;
 }
 
 /// All implementations of [super::ReservationBlocks] also implement [ReservationBlocks].
@@ -13597,29 +11007,6 @@ impl<T: super::ReservationBlocks> ReservationBlocks for T {
     ) -> crate::Result<gax::response::Response<crate::model::TestPermissionsResponse>> {
         T::test_iam_permissions(self, req, options).await
     }
-
-    /// Forwards the call to the implementation provided by `T`.
-    async fn get_operation(
-        &self,
-        req: crate::model::zone_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
-        T::get_operation(self, req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        T::get_polling_error_policy(self, options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        T::get_polling_backoff_policy(self, options)
-    }
 }
 
 /// A dyn-compatible, crate-private version of [super::ReservationSubBlocks].
@@ -13667,22 +11054,6 @@ pub trait ReservationSubBlocks: std::fmt::Debug + Send + Sync {
         req: crate::model::reservation_sub_blocks::TestIamPermissionsRequest,
         options: gax::options::RequestOptions,
     ) -> crate::Result<gax::response::Response<crate::model::TestPermissionsResponse>>;
-
-    async fn get_operation(
-        &self,
-        req: crate::model::zone_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy>;
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy>;
 }
 
 /// All implementations of [super::ReservationSubBlocks] also implement [ReservationSubBlocks].
@@ -13751,29 +11122,6 @@ impl<T: super::ReservationSubBlocks> ReservationSubBlocks for T {
         options: gax::options::RequestOptions,
     ) -> crate::Result<gax::response::Response<crate::model::TestPermissionsResponse>> {
         T::test_iam_permissions(self, req, options).await
-    }
-
-    /// Forwards the call to the implementation provided by `T`.
-    async fn get_operation(
-        &self,
-        req: crate::model::zone_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
-        T::get_operation(self, req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        T::get_polling_error_policy(self, options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        T::get_polling_backoff_policy(self, options)
     }
 }
 
@@ -13846,22 +11194,6 @@ pub trait Reservations: std::fmt::Debug + Send + Sync {
         req: crate::model::reservations::UpdateRequest,
         options: gax::options::RequestOptions,
     ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    async fn get_operation(
-        &self,
-        req: crate::model::zone_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy>;
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy>;
 }
 
 /// All implementations of [super::Reservations] also implement [Reservations].
@@ -13966,29 +11298,6 @@ impl<T: super::Reservations> Reservations for T {
     ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
         T::update(self, req, options).await
     }
-
-    /// Forwards the call to the implementation provided by `T`.
-    async fn get_operation(
-        &self,
-        req: crate::model::zone_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
-        T::get_operation(self, req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        T::get_polling_error_policy(self, options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        T::get_polling_backoff_policy(self, options)
-    }
 }
 
 /// A dyn-compatible, crate-private version of [super::ResourcePolicies].
@@ -14048,22 +11357,6 @@ pub trait ResourcePolicies: std::fmt::Debug + Send + Sync {
         req: crate::model::resource_policies::TestIamPermissionsRequest,
         options: gax::options::RequestOptions,
     ) -> crate::Result<gax::response::Response<crate::model::TestPermissionsResponse>>;
-
-    async fn get_operation(
-        &self,
-        req: crate::model::region_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy>;
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy>;
 }
 
 /// All implementations of [super::ResourcePolicies] also implement [ResourcePolicies].
@@ -14149,29 +11442,6 @@ impl<T: super::ResourcePolicies> ResourcePolicies for T {
         options: gax::options::RequestOptions,
     ) -> crate::Result<gax::response::Response<crate::model::TestPermissionsResponse>> {
         T::test_iam_permissions(self, req, options).await
-    }
-
-    /// Forwards the call to the implementation provided by `T`.
-    async fn get_operation(
-        &self,
-        req: crate::model::region_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
-        T::get_operation(self, req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        T::get_polling_error_policy(self, options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        T::get_polling_backoff_policy(self, options)
     }
 }
 
@@ -14280,22 +11550,6 @@ pub trait Routers: std::fmt::Debug + Send + Sync {
         req: crate::model::routers::UpdateRoutePolicyRequest,
         options: gax::options::RequestOptions,
     ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    async fn get_operation(
-        &self,
-        req: crate::model::region_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy>;
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy>;
 }
 
 /// All implementations of [super::Routers] also implement [Routers].
@@ -14454,29 +11708,6 @@ impl<T: super::Routers> Routers for T {
     ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
         T::update_route_policy(self, req, options).await
     }
-
-    /// Forwards the call to the implementation provided by `T`.
-    async fn get_operation(
-        &self,
-        req: crate::model::region_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
-        T::get_operation(self, req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        T::get_polling_error_policy(self, options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        T::get_polling_backoff_policy(self, options)
-    }
 }
 
 /// A dyn-compatible, crate-private version of [super::Routes].
@@ -14506,22 +11737,6 @@ pub trait Routes: std::fmt::Debug + Send + Sync {
         req: crate::model::routes::ListRequest,
         options: gax::options::RequestOptions,
     ) -> crate::Result<gax::response::Response<crate::model::RouteList>>;
-
-    async fn get_operation(
-        &self,
-        req: crate::model::global_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy>;
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy>;
 }
 
 /// All implementations of [super::Routes] also implement [Routes].
@@ -14562,29 +11777,6 @@ impl<T: super::Routes> Routes for T {
         options: gax::options::RequestOptions,
     ) -> crate::Result<gax::response::Response<crate::model::RouteList>> {
         T::list(self, req, options).await
-    }
-
-    /// Forwards the call to the implementation provided by `T`.
-    async fn get_operation(
-        &self,
-        req: crate::model::global_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
-        T::get_operation(self, req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        T::get_polling_error_policy(self, options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        T::get_polling_backoff_policy(self, options)
     }
 }
 
@@ -14667,22 +11859,6 @@ pub trait SecurityPolicies: std::fmt::Debug + Send + Sync {
         req: crate::model::security_policies::SetLabelsRequest,
         options: gax::options::RequestOptions,
     ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    async fn get_operation(
-        &self,
-        req: crate::model::global_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy>;
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy>;
 }
 
 /// All implementations of [super::SecurityPolicies] also implement [SecurityPolicies].
@@ -14800,29 +11976,6 @@ impl<T: super::SecurityPolicies> SecurityPolicies for T {
     ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
         T::set_labels(self, req, options).await
     }
-
-    /// Forwards the call to the implementation provided by `T`.
-    async fn get_operation(
-        &self,
-        req: crate::model::global_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
-        T::get_operation(self, req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        T::get_polling_error_policy(self, options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        T::get_polling_backoff_policy(self, options)
-    }
 }
 
 /// A dyn-compatible, crate-private version of [super::ServiceAttachments].
@@ -14882,22 +12035,6 @@ pub trait ServiceAttachments: std::fmt::Debug + Send + Sync {
         req: crate::model::service_attachments::TestIamPermissionsRequest,
         options: gax::options::RequestOptions,
     ) -> crate::Result<gax::response::Response<crate::model::TestPermissionsResponse>>;
-
-    async fn get_operation(
-        &self,
-        req: crate::model::region_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy>;
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy>;
 }
 
 /// All implementations of [super::ServiceAttachments] also implement [ServiceAttachments].
@@ -14984,29 +12121,6 @@ impl<T: super::ServiceAttachments> ServiceAttachments for T {
     ) -> crate::Result<gax::response::Response<crate::model::TestPermissionsResponse>> {
         T::test_iam_permissions(self, req, options).await
     }
-
-    /// Forwards the call to the implementation provided by `T`.
-    async fn get_operation(
-        &self,
-        req: crate::model::region_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
-        T::get_operation(self, req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        T::get_polling_error_policy(self, options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        T::get_polling_backoff_policy(self, options)
-    }
 }
 
 /// A dyn-compatible, crate-private version of [super::SnapshotSettings].
@@ -15024,22 +12138,6 @@ pub trait SnapshotSettings: std::fmt::Debug + Send + Sync {
         req: crate::model::snapshot_settings::PatchRequest,
         options: gax::options::RequestOptions,
     ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    async fn get_operation(
-        &self,
-        req: crate::model::global_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy>;
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy>;
 }
 
 /// All implementations of [super::SnapshotSettings] also implement [SnapshotSettings].
@@ -15062,29 +12160,6 @@ impl<T: super::SnapshotSettings> SnapshotSettings for T {
         options: gax::options::RequestOptions,
     ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
         T::patch(self, req, options).await
-    }
-
-    /// Forwards the call to the implementation provided by `T`.
-    async fn get_operation(
-        &self,
-        req: crate::model::global_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
-        T::get_operation(self, req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        T::get_polling_error_policy(self, options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        T::get_polling_backoff_policy(self, options)
     }
 }
 
@@ -15139,22 +12214,6 @@ pub trait Snapshots: std::fmt::Debug + Send + Sync {
         req: crate::model::snapshots::TestIamPermissionsRequest,
         options: gax::options::RequestOptions,
     ) -> crate::Result<gax::response::Response<crate::model::TestPermissionsResponse>>;
-
-    async fn get_operation(
-        &self,
-        req: crate::model::global_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy>;
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy>;
 }
 
 /// All implementations of [super::Snapshots] also implement [Snapshots].
@@ -15232,29 +12291,6 @@ impl<T: super::Snapshots> Snapshots for T {
     ) -> crate::Result<gax::response::Response<crate::model::TestPermissionsResponse>> {
         T::test_iam_permissions(self, req, options).await
     }
-
-    /// Forwards the call to the implementation provided by `T`.
-    async fn get_operation(
-        &self,
-        req: crate::model::global_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
-        T::get_operation(self, req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        T::get_polling_error_policy(self, options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        T::get_polling_backoff_policy(self, options)
-    }
 }
 
 /// A dyn-compatible, crate-private version of [super::SslCertificates].
@@ -15290,22 +12326,6 @@ pub trait SslCertificates: std::fmt::Debug + Send + Sync {
         req: crate::model::ssl_certificates::ListRequest,
         options: gax::options::RequestOptions,
     ) -> crate::Result<gax::response::Response<crate::model::SslCertificateList>>;
-
-    async fn get_operation(
-        &self,
-        req: crate::model::global_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy>;
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy>;
 }
 
 /// All implementations of [super::SslCertificates] also implement [SslCertificates].
@@ -15356,29 +12376,6 @@ impl<T: super::SslCertificates> SslCertificates for T {
     ) -> crate::Result<gax::response::Response<crate::model::SslCertificateList>> {
         T::list(self, req, options).await
     }
-
-    /// Forwards the call to the implementation provided by `T`.
-    async fn get_operation(
-        &self,
-        req: crate::model::global_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
-        T::get_operation(self, req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        T::get_polling_error_policy(self, options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        T::get_polling_backoff_policy(self, options)
-    }
 }
 
 /// A dyn-compatible, crate-private version of [super::SslPolicies].
@@ -15428,22 +12425,6 @@ pub trait SslPolicies: std::fmt::Debug + Send + Sync {
         req: crate::model::ssl_policies::PatchRequest,
         options: gax::options::RequestOptions,
     ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    async fn get_operation(
-        &self,
-        req: crate::model::global_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy>;
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy>;
 }
 
 /// All implementations of [super::SslPolicies] also implement [SslPolicies].
@@ -15513,29 +12494,6 @@ impl<T: super::SslPolicies> SslPolicies for T {
         options: gax::options::RequestOptions,
     ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
         T::patch(self, req, options).await
-    }
-
-    /// Forwards the call to the implementation provided by `T`.
-    async fn get_operation(
-        &self,
-        req: crate::model::global_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
-        T::get_operation(self, req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        T::get_polling_error_policy(self, options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        T::get_polling_backoff_policy(self, options)
     }
 }
 
@@ -15657,22 +12615,6 @@ pub trait StoragePools: std::fmt::Debug + Send + Sync {
         req: crate::model::storage_pools::UpdateRequest,
         options: gax::options::RequestOptions,
     ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    async fn get_operation(
-        &self,
-        req: crate::model::zone_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy>;
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy>;
 }
 
 /// All implementations of [super::StoragePools] also implement [StoragePools].
@@ -15768,29 +12710,6 @@ impl<T: super::StoragePools> StoragePools for T {
     ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
         T::update(self, req, options).await
     }
-
-    /// Forwards the call to the implementation provided by `T`.
-    async fn get_operation(
-        &self,
-        req: crate::model::zone_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
-        T::get_operation(self, req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        T::get_polling_error_policy(self, options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        T::get_polling_backoff_policy(self, options)
-    }
 }
 
 /// A dyn-compatible, crate-private version of [super::Subnetworks].
@@ -15868,22 +12787,6 @@ pub trait Subnetworks: std::fmt::Debug + Send + Sync {
         req: crate::model::subnetworks::TestIamPermissionsRequest,
         options: gax::options::RequestOptions,
     ) -> crate::Result<gax::response::Response<crate::model::TestPermissionsResponse>>;
-
-    async fn get_operation(
-        &self,
-        req: crate::model::region_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy>;
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy>;
 }
 
 /// All implementations of [super::Subnetworks] also implement [Subnetworks].
@@ -15997,29 +12900,6 @@ impl<T: super::Subnetworks> Subnetworks for T {
     ) -> crate::Result<gax::response::Response<crate::model::TestPermissionsResponse>> {
         T::test_iam_permissions(self, req, options).await
     }
-
-    /// Forwards the call to the implementation provided by `T`.
-    async fn get_operation(
-        &self,
-        req: crate::model::region_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
-        T::get_operation(self, req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        T::get_polling_error_policy(self, options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        T::get_polling_backoff_policy(self, options)
-    }
 }
 
 /// A dyn-compatible, crate-private version of [super::TargetGrpcProxies].
@@ -16055,22 +12935,6 @@ pub trait TargetGrpcProxies: std::fmt::Debug + Send + Sync {
         req: crate::model::target_grpc_proxies::PatchRequest,
         options: gax::options::RequestOptions,
     ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    async fn get_operation(
-        &self,
-        req: crate::model::global_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy>;
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy>;
 }
 
 /// All implementations of [super::TargetGrpcProxies] also implement [TargetGrpcProxies].
@@ -16121,29 +12985,6 @@ impl<T: super::TargetGrpcProxies> TargetGrpcProxies for T {
     ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
         T::patch(self, req, options).await
     }
-
-    /// Forwards the call to the implementation provided by `T`.
-    async fn get_operation(
-        &self,
-        req: crate::model::global_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
-        T::get_operation(self, req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        T::get_polling_error_policy(self, options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        T::get_polling_backoff_policy(self, options)
-    }
 }
 
 /// A dyn-compatible, crate-private version of [super::TargetHttpProxies].
@@ -16191,22 +13032,6 @@ pub trait TargetHttpProxies: std::fmt::Debug + Send + Sync {
         req: crate::model::target_http_proxies::SetUrlMapRequest,
         options: gax::options::RequestOptions,
     ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    async fn get_operation(
-        &self,
-        req: crate::model::global_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy>;
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy>;
 }
 
 /// All implementations of [super::TargetHttpProxies] also implement [TargetHttpProxies].
@@ -16274,29 +13099,6 @@ impl<T: super::TargetHttpProxies> TargetHttpProxies for T {
         options: gax::options::RequestOptions,
     ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
         T::set_url_map(self, req, options).await
-    }
-
-    /// Forwards the call to the implementation provided by `T`.
-    async fn get_operation(
-        &self,
-        req: crate::model::global_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
-        T::get_operation(self, req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        T::get_polling_error_policy(self, options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        T::get_polling_backoff_policy(self, options)
     }
 }
 
@@ -16369,22 +13171,6 @@ pub trait TargetHttpsProxies: std::fmt::Debug + Send + Sync {
         req: crate::model::target_https_proxies::SetUrlMapRequest,
         options: gax::options::RequestOptions,
     ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    async fn get_operation(
-        &self,
-        req: crate::model::global_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy>;
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy>;
 }
 
 /// All implementations of [super::TargetHttpsProxies] also implement [TargetHttpsProxies].
@@ -16489,29 +13275,6 @@ impl<T: super::TargetHttpsProxies> TargetHttpsProxies for T {
     ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
         T::set_url_map(self, req, options).await
     }
-
-    /// Forwards the call to the implementation provided by `T`.
-    async fn get_operation(
-        &self,
-        req: crate::model::global_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
-        T::get_operation(self, req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        T::get_polling_error_policy(self, options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        T::get_polling_backoff_policy(self, options)
-    }
 }
 
 /// A dyn-compatible, crate-private version of [super::TargetInstances].
@@ -16559,22 +13322,6 @@ pub trait TargetInstances: std::fmt::Debug + Send + Sync {
         req: crate::model::target_instances::TestIamPermissionsRequest,
         options: gax::options::RequestOptions,
     ) -> crate::Result<gax::response::Response<crate::model::TestPermissionsResponse>>;
-
-    async fn get_operation(
-        &self,
-        req: crate::model::zone_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy>;
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy>;
 }
 
 /// All implementations of [super::TargetInstances] also implement [TargetInstances].
@@ -16642,29 +13389,6 @@ impl<T: super::TargetInstances> TargetInstances for T {
         options: gax::options::RequestOptions,
     ) -> crate::Result<gax::response::Response<crate::model::TestPermissionsResponse>> {
         T::test_iam_permissions(self, req, options).await
-    }
-
-    /// Forwards the call to the implementation provided by `T`.
-    async fn get_operation(
-        &self,
-        req: crate::model::zone_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
-        T::get_operation(self, req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        T::get_polling_error_policy(self, options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        T::get_polling_backoff_policy(self, options)
     }
 }
 
@@ -16749,22 +13473,6 @@ pub trait TargetPools: std::fmt::Debug + Send + Sync {
         req: crate::model::target_pools::TestIamPermissionsRequest,
         options: gax::options::RequestOptions,
     ) -> crate::Result<gax::response::Response<crate::model::TestPermissionsResponse>>;
-
-    async fn get_operation(
-        &self,
-        req: crate::model::region_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy>;
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy>;
 }
 
 /// All implementations of [super::TargetPools] also implement [TargetPools].
@@ -16887,29 +13595,6 @@ impl<T: super::TargetPools> TargetPools for T {
     ) -> crate::Result<gax::response::Response<crate::model::TestPermissionsResponse>> {
         T::test_iam_permissions(self, req, options).await
     }
-
-    /// Forwards the call to the implementation provided by `T`.
-    async fn get_operation(
-        &self,
-        req: crate::model::region_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
-        T::get_operation(self, req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        T::get_polling_error_policy(self, options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        T::get_polling_backoff_policy(self, options)
-    }
 }
 
 /// A dyn-compatible, crate-private version of [super::TargetSslProxies].
@@ -16969,22 +13654,6 @@ pub trait TargetSslProxies: std::fmt::Debug + Send + Sync {
         req: crate::model::target_ssl_proxies::SetSslPolicyRequest,
         options: gax::options::RequestOptions,
     ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    async fn get_operation(
-        &self,
-        req: crate::model::global_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy>;
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy>;
 }
 
 /// All implementations of [super::TargetSslProxies] also implement [TargetSslProxies].
@@ -17071,29 +13740,6 @@ impl<T: super::TargetSslProxies> TargetSslProxies for T {
     ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
         T::set_ssl_policy(self, req, options).await
     }
-
-    /// Forwards the call to the implementation provided by `T`.
-    async fn get_operation(
-        &self,
-        req: crate::model::global_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
-        T::get_operation(self, req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        T::get_polling_error_policy(self, options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        T::get_polling_backoff_policy(self, options)
-    }
 }
 
 /// A dyn-compatible, crate-private version of [super::TargetTcpProxies].
@@ -17141,22 +13787,6 @@ pub trait TargetTcpProxies: std::fmt::Debug + Send + Sync {
         req: crate::model::target_tcp_proxies::SetProxyHeaderRequest,
         options: gax::options::RequestOptions,
     ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    async fn get_operation(
-        &self,
-        req: crate::model::global_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy>;
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy>;
 }
 
 /// All implementations of [super::TargetTcpProxies] also implement [TargetTcpProxies].
@@ -17225,29 +13855,6 @@ impl<T: super::TargetTcpProxies> TargetTcpProxies for T {
     ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
         T::set_proxy_header(self, req, options).await
     }
-
-    /// Forwards the call to the implementation provided by `T`.
-    async fn get_operation(
-        &self,
-        req: crate::model::global_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
-        T::get_operation(self, req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        T::get_polling_error_policy(self, options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        T::get_polling_backoff_policy(self, options)
-    }
 }
 
 /// A dyn-compatible, crate-private version of [super::TargetVpnGateways].
@@ -17289,22 +13896,6 @@ pub trait TargetVpnGateways: std::fmt::Debug + Send + Sync {
         req: crate::model::target_vpn_gateways::SetLabelsRequest,
         options: gax::options::RequestOptions,
     ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    async fn get_operation(
-        &self,
-        req: crate::model::region_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy>;
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy>;
 }
 
 /// All implementations of [super::TargetVpnGateways] also implement [TargetVpnGateways].
@@ -17363,29 +13954,6 @@ impl<T: super::TargetVpnGateways> TargetVpnGateways for T {
         options: gax::options::RequestOptions,
     ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
         T::set_labels(self, req, options).await
-    }
-
-    /// Forwards the call to the implementation provided by `T`.
-    async fn get_operation(
-        &self,
-        req: crate::model::region_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
-        T::get_operation(self, req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        T::get_polling_error_policy(self, options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        T::get_polling_backoff_policy(self, options)
     }
 }
 
@@ -17446,22 +14014,6 @@ pub trait UrlMaps: std::fmt::Debug + Send + Sync {
         req: crate::model::url_maps::ValidateRequest,
         options: gax::options::RequestOptions,
     ) -> crate::Result<gax::response::Response<crate::model::UrlMapsValidateResponse>>;
-
-    async fn get_operation(
-        &self,
-        req: crate::model::global_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy>;
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy>;
 }
 
 /// All implementations of [super::UrlMaps] also implement [UrlMaps].
@@ -17548,29 +14100,6 @@ impl<T: super::UrlMaps> UrlMaps for T {
     ) -> crate::Result<gax::response::Response<crate::model::UrlMapsValidateResponse>> {
         T::validate(self, req, options).await
     }
-
-    /// Forwards the call to the implementation provided by `T`.
-    async fn get_operation(
-        &self,
-        req: crate::model::global_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
-        T::get_operation(self, req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        T::get_polling_error_policy(self, options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        T::get_polling_backoff_policy(self, options)
-    }
 }
 
 /// A dyn-compatible, crate-private version of [super::VpnGateways].
@@ -17624,22 +14153,6 @@ pub trait VpnGateways: std::fmt::Debug + Send + Sync {
         req: crate::model::vpn_gateways::TestIamPermissionsRequest,
         options: gax::options::RequestOptions,
     ) -> crate::Result<gax::response::Response<crate::model::TestPermissionsResponse>>;
-
-    async fn get_operation(
-        &self,
-        req: crate::model::region_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy>;
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy>;
 }
 
 /// All implementations of [super::VpnGateways] also implement [VpnGateways].
@@ -17717,29 +14230,6 @@ impl<T: super::VpnGateways> VpnGateways for T {
     ) -> crate::Result<gax::response::Response<crate::model::TestPermissionsResponse>> {
         T::test_iam_permissions(self, req, options).await
     }
-
-    /// Forwards the call to the implementation provided by `T`.
-    async fn get_operation(
-        &self,
-        req: crate::model::region_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
-        T::get_operation(self, req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        T::get_polling_error_policy(self, options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        T::get_polling_backoff_policy(self, options)
-    }
 }
 
 /// A dyn-compatible, crate-private version of [super::VpnTunnels].
@@ -17781,22 +14271,6 @@ pub trait VpnTunnels: std::fmt::Debug + Send + Sync {
         req: crate::model::vpn_tunnels::SetLabelsRequest,
         options: gax::options::RequestOptions,
     ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    async fn get_operation(
-        &self,
-        req: crate::model::region_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy>;
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy>;
 }
 
 /// All implementations of [super::VpnTunnels] also implement [VpnTunnels].
@@ -17856,29 +14330,6 @@ impl<T: super::VpnTunnels> VpnTunnels for T {
     ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
         T::set_labels(self, req, options).await
     }
-
-    /// Forwards the call to the implementation provided by `T`.
-    async fn get_operation(
-        &self,
-        req: crate::model::region_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
-        T::get_operation(self, req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        T::get_polling_error_policy(self, options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        T::get_polling_backoff_policy(self, options)
-    }
 }
 
 /// A dyn-compatible, crate-private version of [super::WireGroups].
@@ -17914,22 +14365,6 @@ pub trait WireGroups: std::fmt::Debug + Send + Sync {
         req: crate::model::wire_groups::PatchRequest,
         options: gax::options::RequestOptions,
     ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    async fn get_operation(
-        &self,
-        req: crate::model::global_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>>;
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy>;
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy>;
 }
 
 /// All implementations of [super::WireGroups] also implement [WireGroups].
@@ -17979,29 +14414,6 @@ impl<T: super::WireGroups> WireGroups for T {
         options: gax::options::RequestOptions,
     ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
         T::patch(self, req, options).await
-    }
-
-    /// Forwards the call to the implementation provided by `T`.
-    async fn get_operation(
-        &self,
-        req: crate::model::global_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> crate::Result<gax::response::Response<crate::model::Operation>> {
-        T::get_operation(self, req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        T::get_polling_error_policy(self, options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        T::get_polling_backoff_policy(self, options)
     }
 }
 

@@ -277,29 +277,6 @@ where
     ) -> Result<gax::response::Response<crate::model::TestPermissionsResponse>> {
         self.inner.test_iam_permissions(req, options).await
     }
-
-    #[tracing::instrument(ret)]
-    async fn get_operation(
-        &self,
-        req: crate::model::region_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> Result<gax::response::Response<crate::model::Operation>> {
-        self.inner.get_operation(req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        self.inner.get_polling_error_policy(options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        self.inner.get_polling_backoff_policy(options)
-    }
 }
 
 /// Implements a [Advice](super::stub::Advice) decorator for logging and tracing.
@@ -423,29 +400,6 @@ where
         options: gax::options::RequestOptions,
     ) -> Result<gax::response::Response<crate::model::Operation>> {
         self.inner.update(req, options).await
-    }
-
-    #[tracing::instrument(ret)]
-    async fn get_operation(
-        &self,
-        req: crate::model::zone_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> Result<gax::response::Response<crate::model::Operation>> {
-        self.inner.get_operation(req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        self.inner.get_polling_error_policy(options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        self.inner.get_polling_backoff_policy(options)
     }
 }
 
@@ -580,29 +534,6 @@ where
         options: gax::options::RequestOptions,
     ) -> Result<gax::response::Response<crate::model::Operation>> {
         self.inner.update(req, options).await
-    }
-
-    #[tracing::instrument(ret)]
-    async fn get_operation(
-        &self,
-        req: crate::model::global_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> Result<gax::response::Response<crate::model::Operation>> {
-        self.inner.get_operation(req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        self.inner.get_polling_error_policy(options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        self.inner.get_polling_backoff_policy(options)
     }
 }
 
@@ -785,29 +716,6 @@ where
     ) -> Result<gax::response::Response<crate::model::Operation>> {
         self.inner.update(req, options).await
     }
-
-    #[tracing::instrument(ret)]
-    async fn get_operation(
-        &self,
-        req: crate::model::global_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> Result<gax::response::Response<crate::model::Operation>> {
-        self.inner.get_operation(req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        self.inner.get_polling_error_policy(options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        self.inner.get_polling_backoff_policy(options)
-    }
 }
 
 /// Implements a [CrossSiteNetworks](super::stub::CrossSiteNetworks) decorator for logging and tracing.
@@ -878,29 +786,6 @@ where
         options: gax::options::RequestOptions,
     ) -> Result<gax::response::Response<crate::model::Operation>> {
         self.inner.patch(req, options).await
-    }
-
-    #[tracing::instrument(ret)]
-    async fn get_operation(
-        &self,
-        req: crate::model::global_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> Result<gax::response::Response<crate::model::Operation>> {
-        self.inner.get_operation(req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        self.inner.get_polling_error_policy(options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        self.inner.get_polling_backoff_policy(options)
     }
 }
 
@@ -1152,29 +1037,6 @@ where
     ) -> Result<gax::response::Response<crate::model::Operation>> {
         self.inner.update(req, options).await
     }
-
-    #[tracing::instrument(ret)]
-    async fn get_operation(
-        &self,
-        req: crate::model::zone_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> Result<gax::response::Response<crate::model::Operation>> {
-        self.inner.get_operation(req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        self.inner.get_polling_error_policy(options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        self.inner.get_polling_backoff_policy(options)
-    }
 }
 
 /// Implements a [ExternalVpnGateways](super::stub::ExternalVpnGateways) decorator for logging and tracing.
@@ -1254,29 +1116,6 @@ where
         options: gax::options::RequestOptions,
     ) -> Result<gax::response::Response<crate::model::TestPermissionsResponse>> {
         self.inner.test_iam_permissions(req, options).await
-    }
-
-    #[tracing::instrument(ret)]
-    async fn get_operation(
-        &self,
-        req: crate::model::global_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> Result<gax::response::Response<crate::model::Operation>> {
-        self.inner.get_operation(req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        self.inner.get_polling_error_policy(options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        self.inner.get_polling_backoff_policy(options)
     }
 }
 
@@ -1467,29 +1306,6 @@ where
     ) -> Result<gax::response::Response<crate::model::TestPermissionsResponse>> {
         self.inner.test_iam_permissions(req, options).await
     }
-
-    #[tracing::instrument(ret)]
-    async fn get_operation(
-        &self,
-        req: crate::model::global_organization_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> Result<gax::response::Response<crate::model::Operation>> {
-        self.inner.get_operation(req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        self.inner.get_polling_error_policy(options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        self.inner.get_polling_backoff_policy(options)
-    }
 }
 
 /// Implements a [Firewalls](super::stub::Firewalls) decorator for logging and tracing.
@@ -1578,29 +1394,6 @@ where
         options: gax::options::RequestOptions,
     ) -> Result<gax::response::Response<crate::model::Operation>> {
         self.inner.update(req, options).await
-    }
-
-    #[tracing::instrument(ret)]
-    async fn get_operation(
-        &self,
-        req: crate::model::global_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> Result<gax::response::Response<crate::model::Operation>> {
-        self.inner.get_operation(req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        self.inner.get_polling_error_policy(options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        self.inner.get_polling_backoff_policy(options)
     }
 }
 
@@ -1700,29 +1493,6 @@ where
     ) -> Result<gax::response::Response<crate::model::Operation>> {
         self.inner.set_target(req, options).await
     }
-
-    #[tracing::instrument(ret)]
-    async fn get_operation(
-        &self,
-        req: crate::model::region_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> Result<gax::response::Response<crate::model::Operation>> {
-        self.inner.get_operation(req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        self.inner.get_polling_error_policy(options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        self.inner.get_polling_backoff_policy(options)
-    }
 }
 
 /// Implements a [FutureReservations](super::stub::FutureReservations) decorator for logging and tracing.
@@ -1813,29 +1583,6 @@ where
     ) -> Result<gax::response::Response<crate::model::Operation>> {
         self.inner.update(req, options).await
     }
-
-    #[tracing::instrument(ret)]
-    async fn get_operation(
-        &self,
-        req: crate::model::zone_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> Result<gax::response::Response<crate::model::Operation>> {
-        self.inner.get_operation(req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        self.inner.get_polling_error_policy(options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        self.inner.get_polling_backoff_policy(options)
-    }
 }
 
 /// Implements a [GlobalAddresses](super::stub::GlobalAddresses) decorator for logging and tracing.
@@ -1924,29 +1671,6 @@ where
         options: gax::options::RequestOptions,
     ) -> Result<gax::response::Response<crate::model::TestPermissionsResponse>> {
         self.inner.test_iam_permissions(req, options).await
-    }
-
-    #[tracing::instrument(ret)]
-    async fn get_operation(
-        &self,
-        req: crate::model::global_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> Result<gax::response::Response<crate::model::Operation>> {
-        self.inner.get_operation(req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        self.inner.get_polling_error_policy(options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        self.inner.get_polling_backoff_policy(options)
     }
 }
 
@@ -2037,29 +1761,6 @@ where
     ) -> Result<gax::response::Response<crate::model::Operation>> {
         self.inner.set_target(req, options).await
     }
-
-    #[tracing::instrument(ret)]
-    async fn get_operation(
-        &self,
-        req: crate::model::global_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> Result<gax::response::Response<crate::model::Operation>> {
-        self.inner.get_operation(req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        self.inner.get_polling_error_policy(options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        self.inner.get_polling_backoff_policy(options)
-    }
 }
 
 /// Implements a [GlobalNetworkEndpointGroups](super::stub::GlobalNetworkEndpointGroups) decorator for logging and tracing.
@@ -2149,29 +1850,6 @@ where
     ) -> Result<gax::response::Response<crate::model::NetworkEndpointGroupsListNetworkEndpoints>>
     {
         self.inner.list_network_endpoints(req, options).await
-    }
-
-    #[tracing::instrument(ret)]
-    async fn get_operation(
-        &self,
-        req: crate::model::global_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> Result<gax::response::Response<crate::model::Operation>> {
-        self.inner.get_operation(req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        self.inner.get_polling_error_policy(options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        self.inner.get_polling_backoff_policy(options)
     }
 }
 
@@ -2368,29 +2046,6 @@ where
     ) -> Result<gax::response::Response<crate::model::Operation>> {
         self.inner.patch(req, options).await
     }
-
-    #[tracing::instrument(ret)]
-    async fn get_operation(
-        &self,
-        req: crate::model::global_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> Result<gax::response::Response<crate::model::Operation>> {
-        self.inner.get_operation(req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        self.inner.get_polling_error_policy(options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        self.inner.get_polling_backoff_policy(options)
-    }
 }
 
 /// Implements a [HealthChecks](super::stub::HealthChecks) decorator for logging and tracing.
@@ -2480,29 +2135,6 @@ where
     ) -> Result<gax::response::Response<crate::model::Operation>> {
         self.inner.update(req, options).await
     }
-
-    #[tracing::instrument(ret)]
-    async fn get_operation(
-        &self,
-        req: crate::model::global_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> Result<gax::response::Response<crate::model::Operation>> {
-        self.inner.get_operation(req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        self.inner.get_polling_error_policy(options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        self.inner.get_polling_backoff_policy(options)
-    }
 }
 
 /// Implements a [HttpHealthChecks](super::stub::HttpHealthChecks) decorator for logging and tracing.
@@ -2583,29 +2215,6 @@ where
     ) -> Result<gax::response::Response<crate::model::Operation>> {
         self.inner.update(req, options).await
     }
-
-    #[tracing::instrument(ret)]
-    async fn get_operation(
-        &self,
-        req: crate::model::global_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> Result<gax::response::Response<crate::model::Operation>> {
-        self.inner.get_operation(req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        self.inner.get_polling_error_policy(options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        self.inner.get_polling_backoff_policy(options)
-    }
 }
 
 /// Implements a [HttpsHealthChecks](super::stub::HttpsHealthChecks) decorator for logging and tracing.
@@ -2685,29 +2294,6 @@ where
         options: gax::options::RequestOptions,
     ) -> Result<gax::response::Response<crate::model::Operation>> {
         self.inner.update(req, options).await
-    }
-
-    #[tracing::instrument(ret)]
-    async fn get_operation(
-        &self,
-        req: crate::model::global_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> Result<gax::response::Response<crate::model::Operation>> {
-        self.inner.get_operation(req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        self.inner.get_polling_error_policy(options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        self.inner.get_polling_backoff_policy(options)
     }
 }
 
@@ -2869,29 +2455,6 @@ where
     ) -> Result<gax::response::Response<crate::model::TestPermissionsResponse>> {
         self.inner.test_iam_permissions(req, options).await
     }
-
-    #[tracing::instrument(ret)]
-    async fn get_operation(
-        &self,
-        req: crate::model::global_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> Result<gax::response::Response<crate::model::Operation>> {
-        self.inner.get_operation(req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        self.inner.get_polling_error_policy(options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        self.inner.get_polling_backoff_policy(options)
-    }
 }
 
 /// Implements a [InstanceGroupManagerResizeRequests](super::stub::InstanceGroupManagerResizeRequests) decorator for logging and tracing.
@@ -2963,29 +2526,6 @@ where
     ) -> Result<gax::response::Response<crate::model::InstanceGroupManagerResizeRequestsListResponse>>
     {
         self.inner.list(req, options).await
-    }
-
-    #[tracing::instrument(ret)]
-    async fn get_operation(
-        &self,
-        req: crate::model::zone_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> Result<gax::response::Response<crate::model::Operation>> {
-        self.inner.get_operation(req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        self.inner.get_polling_error_policy(options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        self.inner.get_polling_backoff_policy(options)
     }
 }
 
@@ -3234,29 +2774,6 @@ where
     ) -> Result<gax::response::Response<crate::model::Operation>> {
         self.inner.update_per_instance_configs(req, options).await
     }
-
-    #[tracing::instrument(ret)]
-    async fn get_operation(
-        &self,
-        req: crate::model::zone_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> Result<gax::response::Response<crate::model::Operation>> {
-        self.inner.get_operation(req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        self.inner.get_polling_error_policy(options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        self.inner.get_polling_backoff_policy(options)
-    }
 }
 
 /// Implements a [InstanceGroups](super::stub::InstanceGroups) decorator for logging and tracing.
@@ -3373,29 +2890,6 @@ where
     ) -> Result<gax::response::Response<crate::model::TestPermissionsResponse>> {
         self.inner.test_iam_permissions(req, options).await
     }
-
-    #[tracing::instrument(ret)]
-    async fn get_operation(
-        &self,
-        req: crate::model::zone_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> Result<gax::response::Response<crate::model::Operation>> {
-        self.inner.get_operation(req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        self.inner.get_polling_error_policy(options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        self.inner.get_polling_backoff_policy(options)
-    }
 }
 
 /// Implements a [InstanceSettings](super::stub::InstanceSettings) decorator for logging and tracing.
@@ -3439,29 +2933,6 @@ where
         options: gax::options::RequestOptions,
     ) -> Result<gax::response::Response<crate::model::Operation>> {
         self.inner.patch(req, options).await
-    }
-
-    #[tracing::instrument(ret)]
-    async fn get_operation(
-        &self,
-        req: crate::model::zone_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> Result<gax::response::Response<crate::model::Operation>> {
-        self.inner.get_operation(req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        self.inner.get_polling_error_policy(options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        self.inner.get_polling_backoff_policy(options)
     }
 }
 
@@ -3560,29 +3031,6 @@ where
         options: gax::options::RequestOptions,
     ) -> Result<gax::response::Response<crate::model::TestPermissionsResponse>> {
         self.inner.test_iam_permissions(req, options).await
-    }
-
-    #[tracing::instrument(ret)]
-    async fn get_operation(
-        &self,
-        req: crate::model::global_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> Result<gax::response::Response<crate::model::Operation>> {
-        self.inner.get_operation(req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        self.inner.get_polling_error_policy(options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        self.inner.get_polling_backoff_policy(options)
     }
 }
 
@@ -4075,29 +3523,6 @@ where
             .update_shielded_instance_config(req, options)
             .await
     }
-
-    #[tracing::instrument(ret)]
-    async fn get_operation(
-        &self,
-        req: crate::model::zone_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> Result<gax::response::Response<crate::model::Operation>> {
-        self.inner.get_operation(req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        self.inner.get_polling_error_policy(options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        self.inner.get_polling_backoff_policy(options)
-    }
 }
 
 /// Implements a [InstantSnapshots](super::stub::InstantSnapshots) decorator for logging and tracing.
@@ -4204,29 +3629,6 @@ where
         options: gax::options::RequestOptions,
     ) -> Result<gax::response::Response<crate::model::TestPermissionsResponse>> {
         self.inner.test_iam_permissions(req, options).await
-    }
-
-    #[tracing::instrument(ret)]
-    async fn get_operation(
-        &self,
-        req: crate::model::zone_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> Result<gax::response::Response<crate::model::Operation>> {
-        self.inner.get_operation(req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        self.inner.get_polling_error_policy(options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        self.inner.get_polling_backoff_policy(options)
     }
 }
 
@@ -4340,29 +3742,6 @@ where
     ) -> Result<gax::response::Response<crate::model::TestPermissionsResponse>> {
         self.inner.test_iam_permissions(req, options).await
     }
-
-    #[tracing::instrument(ret)]
-    async fn get_operation(
-        &self,
-        req: crate::model::global_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> Result<gax::response::Response<crate::model::Operation>> {
-        self.inner.get_operation(req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        self.inner.get_polling_error_policy(options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        self.inner.get_polling_backoff_policy(options)
-    }
 }
 
 /// Implements a [InterconnectAttachments](super::stub::InterconnectAttachments) decorator for logging and tracing.
@@ -4451,29 +3830,6 @@ where
         options: gax::options::RequestOptions,
     ) -> Result<gax::response::Response<crate::model::Operation>> {
         self.inner.set_labels(req, options).await
-    }
-
-    #[tracing::instrument(ret)]
-    async fn get_operation(
-        &self,
-        req: crate::model::region_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> Result<gax::response::Response<crate::model::Operation>> {
-        self.inner.get_operation(req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        self.inner.get_polling_error_policy(options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        self.inner.get_polling_backoff_policy(options)
     }
 }
 
@@ -4591,29 +3947,6 @@ where
         options: gax::options::RequestOptions,
     ) -> Result<gax::response::Response<crate::model::TestPermissionsResponse>> {
         self.inner.test_iam_permissions(req, options).await
-    }
-
-    #[tracing::instrument(ret)]
-    async fn get_operation(
-        &self,
-        req: crate::model::global_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> Result<gax::response::Response<crate::model::Operation>> {
-        self.inner.get_operation(req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        self.inner.get_polling_error_policy(options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        self.inner.get_polling_backoff_policy(options)
     }
 }
 
@@ -4801,29 +4134,6 @@ where
     ) -> Result<gax::response::Response<crate::model::Operation>> {
         self.inner.set_labels(req, options).await
     }
-
-    #[tracing::instrument(ret)]
-    async fn get_operation(
-        &self,
-        req: crate::model::global_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> Result<gax::response::Response<crate::model::Operation>> {
-        self.inner.get_operation(req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        self.inner.get_polling_error_policy(options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        self.inner.get_polling_backoff_policy(options)
-    }
 }
 
 /// Implements a [LicenseCodes](super::stub::LicenseCodes) decorator for logging and tracing.
@@ -4966,29 +4276,6 @@ where
     ) -> Result<gax::response::Response<crate::model::Operation>> {
         self.inner.update(req, options).await
     }
-
-    #[tracing::instrument(ret)]
-    async fn get_operation(
-        &self,
-        req: crate::model::global_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> Result<gax::response::Response<crate::model::Operation>> {
-        self.inner.get_operation(req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        self.inner.get_polling_error_policy(options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        self.inner.get_polling_backoff_policy(options)
-    }
 }
 
 /// Implements a [MachineImages](super::stub::MachineImages) decorator for logging and tracing.
@@ -5086,29 +4373,6 @@ where
         options: gax::options::RequestOptions,
     ) -> Result<gax::response::Response<crate::model::TestPermissionsResponse>> {
         self.inner.test_iam_permissions(req, options).await
-    }
-
-    #[tracing::instrument(ret)]
-    async fn get_operation(
-        &self,
-        req: crate::model::global_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> Result<gax::response::Response<crate::model::Operation>> {
-        self.inner.get_operation(req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        self.inner.get_polling_error_policy(options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        self.inner.get_polling_backoff_policy(options)
     }
 }
 
@@ -5270,29 +4534,6 @@ where
     ) -> Result<gax::response::Response<crate::model::TestPermissionsResponse>> {
         self.inner.test_iam_permissions(req, options).await
     }
-
-    #[tracing::instrument(ret)]
-    async fn get_operation(
-        &self,
-        req: crate::model::region_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> Result<gax::response::Response<crate::model::Operation>> {
-        self.inner.get_operation(req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        self.inner.get_polling_error_policy(options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        self.inner.get_polling_backoff_policy(options)
-    }
 }
 
 /// Implements a [NetworkEdgeSecurityServices](super::stub::NetworkEdgeSecurityServices) decorator for logging and tracing.
@@ -5364,29 +4605,6 @@ where
         options: gax::options::RequestOptions,
     ) -> Result<gax::response::Response<crate::model::Operation>> {
         self.inner.patch(req, options).await
-    }
-
-    #[tracing::instrument(ret)]
-    async fn get_operation(
-        &self,
-        req: crate::model::region_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> Result<gax::response::Response<crate::model::Operation>> {
-        self.inner.get_operation(req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        self.inner.get_polling_error_policy(options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        self.inner.get_polling_backoff_policy(options)
     }
 }
 
@@ -5495,29 +4713,6 @@ where
         options: gax::options::RequestOptions,
     ) -> Result<gax::response::Response<crate::model::TestPermissionsResponse>> {
         self.inner.test_iam_permissions(req, options).await
-    }
-
-    #[tracing::instrument(ret)]
-    async fn get_operation(
-        &self,
-        req: crate::model::zone_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> Result<gax::response::Response<crate::model::Operation>> {
-        self.inner.get_operation(req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        self.inner.get_polling_error_policy(options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        self.inner.get_polling_backoff_policy(options)
     }
 }
 
@@ -5734,29 +4929,6 @@ where
     ) -> Result<gax::response::Response<crate::model::TestPermissionsResponse>> {
         self.inner.test_iam_permissions(req, options).await
     }
-
-    #[tracing::instrument(ret)]
-    async fn get_operation(
-        &self,
-        req: crate::model::global_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> Result<gax::response::Response<crate::model::Operation>> {
-        self.inner.get_operation(req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        self.inner.get_polling_error_policy(options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        self.inner.get_polling_backoff_policy(options)
-    }
 }
 
 /// Implements a [NetworkProfiles](super::stub::NetworkProfiles) decorator for logging and tracing.
@@ -5935,29 +5107,6 @@ where
     ) -> Result<gax::response::Response<crate::model::Operation>> {
         self.inner.update_peering(req, options).await
     }
-
-    #[tracing::instrument(ret)]
-    async fn get_operation(
-        &self,
-        req: crate::model::global_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> Result<gax::response::Response<crate::model::Operation>> {
-        self.inner.get_operation(req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        self.inner.get_polling_error_policy(options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        self.inner.get_polling_backoff_policy(options)
-    }
 }
 
 /// Implements a [NodeGroups](super::stub::NodeGroups) decorator for logging and tracing.
@@ -6119,29 +5268,6 @@ where
     ) -> Result<gax::response::Response<crate::model::TestPermissionsResponse>> {
         self.inner.test_iam_permissions(req, options).await
     }
-
-    #[tracing::instrument(ret)]
-    async fn get_operation(
-        &self,
-        req: crate::model::zone_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> Result<gax::response::Response<crate::model::Operation>> {
-        self.inner.get_operation(req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        self.inner.get_polling_error_policy(options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        self.inner.get_polling_backoff_policy(options)
-    }
 }
 
 /// Implements a [NodeTemplates](super::stub::NodeTemplates) decorator for logging and tracing.
@@ -6239,29 +5365,6 @@ where
         options: gax::options::RequestOptions,
     ) -> Result<gax::response::Response<crate::model::TestPermissionsResponse>> {
         self.inner.test_iam_permissions(req, options).await
-    }
-
-    #[tracing::instrument(ret)]
-    async fn get_operation(
-        &self,
-        req: crate::model::region_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> Result<gax::response::Response<crate::model::Operation>> {
-        self.inner.get_operation(req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        self.inner.get_polling_error_policy(options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        self.inner.get_polling_backoff_policy(options)
     }
 }
 
@@ -6494,29 +5597,6 @@ where
     ) -> Result<gax::response::Response<crate::model::Operation>> {
         self.inner.remove_rule(req, options).await
     }
-
-    #[tracing::instrument(ret)]
-    async fn get_operation(
-        &self,
-        req: crate::model::global_organization_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> Result<gax::response::Response<crate::model::Operation>> {
-        self.inner.get_operation(req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        self.inner.get_polling_error_policy(options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        self.inner.get_polling_backoff_policy(options)
-    }
 }
 
 /// Implements a [PacketMirrorings](super::stub::PacketMirrorings) decorator for logging and tracing.
@@ -6606,29 +5686,6 @@ where
     ) -> Result<gax::response::Response<crate::model::TestPermissionsResponse>> {
         self.inner.test_iam_permissions(req, options).await
     }
-
-    #[tracing::instrument(ret)]
-    async fn get_operation(
-        &self,
-        req: crate::model::region_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> Result<gax::response::Response<crate::model::Operation>> {
-        self.inner.get_operation(req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        self.inner.get_polling_error_policy(options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        self.inner.get_polling_backoff_policy(options)
-    }
 }
 
 /// Implements a [PreviewFeatures](super::stub::PreviewFeatures) decorator for logging and tracing.
@@ -6681,29 +5738,6 @@ where
         options: gax::options::RequestOptions,
     ) -> Result<gax::response::Response<crate::model::Operation>> {
         self.inner.update(req, options).await
-    }
-
-    #[tracing::instrument(ret)]
-    async fn get_operation(
-        &self,
-        req: crate::model::global_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> Result<gax::response::Response<crate::model::Operation>> {
-        self.inner.get_operation(req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        self.inner.get_polling_error_policy(options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        self.inner.get_polling_backoff_policy(options)
     }
 }
 
@@ -6857,29 +5891,6 @@ where
     ) -> Result<gax::response::Response<crate::model::Operation>> {
         self.inner.set_usage_export_bucket(req, options).await
     }
-
-    #[tracing::instrument(ret)]
-    async fn get_operation(
-        &self,
-        req: crate::model::global_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> Result<gax::response::Response<crate::model::Operation>> {
-        self.inner.get_operation(req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        self.inner.get_polling_error_policy(options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        self.inner.get_polling_backoff_policy(options)
-    }
 }
 
 /// Implements a [PublicAdvertisedPrefixes](super::stub::PublicAdvertisedPrefixes) decorator for logging and tracing.
@@ -6968,29 +5979,6 @@ where
         options: gax::options::RequestOptions,
     ) -> Result<gax::response::Response<crate::model::Operation>> {
         self.inner.withdraw(req, options).await
-    }
-
-    #[tracing::instrument(ret)]
-    async fn get_operation(
-        &self,
-        req: crate::model::global_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> Result<gax::response::Response<crate::model::Operation>> {
-        self.inner.get_operation(req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        self.inner.get_polling_error_policy(options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        self.inner.get_polling_backoff_policy(options)
     }
 }
 
@@ -7090,29 +6078,6 @@ where
     ) -> Result<gax::response::Response<crate::model::Operation>> {
         self.inner.withdraw(req, options).await
     }
-
-    #[tracing::instrument(ret)]
-    async fn get_operation(
-        &self,
-        req: crate::model::region_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> Result<gax::response::Response<crate::model::Operation>> {
-        self.inner.get_operation(req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        self.inner.get_polling_error_policy(options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        self.inner.get_polling_backoff_policy(options)
-    }
 }
 
 /// Implements a [RegionAutoscalers](super::stub::RegionAutoscalers) decorator for logging and tracing.
@@ -7192,29 +6157,6 @@ where
         options: gax::options::RequestOptions,
     ) -> Result<gax::response::Response<crate::model::Operation>> {
         self.inner.update(req, options).await
-    }
-
-    #[tracing::instrument(ret)]
-    async fn get_operation(
-        &self,
-        req: crate::model::region_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> Result<gax::response::Response<crate::model::Operation>> {
-        self.inner.get_operation(req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        self.inner.get_polling_error_policy(options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        self.inner.get_polling_backoff_policy(options)
     }
 }
 
@@ -7350,29 +6292,6 @@ where
     ) -> Result<gax::response::Response<crate::model::Operation>> {
         self.inner.update(req, options).await
     }
-
-    #[tracing::instrument(ret)]
-    async fn get_operation(
-        &self,
-        req: crate::model::region_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> Result<gax::response::Response<crate::model::Operation>> {
-        self.inner.get_operation(req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        self.inner.get_polling_error_policy(options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        self.inner.get_polling_backoff_policy(options)
-    }
 }
 
 /// Implements a [RegionCommitments](super::stub::RegionCommitments) decorator for logging and tracing.
@@ -7443,29 +6362,6 @@ where
         options: gax::options::RequestOptions,
     ) -> Result<gax::response::Response<crate::model::Operation>> {
         self.inner.update(req, options).await
-    }
-
-    #[tracing::instrument(ret)]
-    async fn get_operation(
-        &self,
-        req: crate::model::region_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> Result<gax::response::Response<crate::model::Operation>> {
-        self.inner.get_operation(req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        self.inner.get_polling_error_policy(options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        self.inner.get_polling_backoff_policy(options)
     }
 }
 
@@ -7690,29 +6586,6 @@ where
     ) -> Result<gax::response::Response<crate::model::Operation>> {
         self.inner.update(req, options).await
     }
-
-    #[tracing::instrument(ret)]
-    async fn get_operation(
-        &self,
-        req: crate::model::region_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> Result<gax::response::Response<crate::model::Operation>> {
-        self.inner.get_operation(req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        self.inner.get_polling_error_policy(options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        self.inner.get_polling_backoff_policy(options)
-    }
 }
 
 /// Implements a [RegionHealthCheckServices](super::stub::RegionHealthCheckServices) decorator for logging and tracing.
@@ -7783,29 +6656,6 @@ where
         options: gax::options::RequestOptions,
     ) -> Result<gax::response::Response<crate::model::Operation>> {
         self.inner.patch(req, options).await
-    }
-
-    #[tracing::instrument(ret)]
-    async fn get_operation(
-        &self,
-        req: crate::model::region_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> Result<gax::response::Response<crate::model::Operation>> {
-        self.inner.get_operation(req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        self.inner.get_polling_error_policy(options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        self.inner.get_polling_backoff_policy(options)
     }
 }
 
@@ -7886,29 +6736,6 @@ where
         options: gax::options::RequestOptions,
     ) -> Result<gax::response::Response<crate::model::Operation>> {
         self.inner.update(req, options).await
-    }
-
-    #[tracing::instrument(ret)]
-    async fn get_operation(
-        &self,
-        req: crate::model::region_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> Result<gax::response::Response<crate::model::Operation>> {
-        self.inner.get_operation(req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        self.inner.get_polling_error_policy(options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        self.inner.get_polling_backoff_policy(options)
     }
 }
 
@@ -8148,29 +6975,6 @@ where
     ) -> Result<gax::response::Response<crate::model::Operation>> {
         self.inner.update_per_instance_configs(req, options).await
     }
-
-    #[tracing::instrument(ret)]
-    async fn get_operation(
-        &self,
-        req: crate::model::region_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> Result<gax::response::Response<crate::model::Operation>> {
-        self.inner.get_operation(req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        self.inner.get_polling_error_policy(options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        self.inner.get_polling_backoff_policy(options)
-    }
 }
 
 /// Implements a [RegionInstanceGroups](super::stub::RegionInstanceGroups) decorator for logging and tracing.
@@ -8242,29 +7046,6 @@ where
     ) -> Result<gax::response::Response<crate::model::TestPermissionsResponse>> {
         self.inner.test_iam_permissions(req, options).await
     }
-
-    #[tracing::instrument(ret)]
-    async fn get_operation(
-        &self,
-        req: crate::model::region_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> Result<gax::response::Response<crate::model::Operation>> {
-        self.inner.get_operation(req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        self.inner.get_polling_error_policy(options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        self.inner.get_polling_backoff_policy(options)
-    }
 }
 
 /// Implements a [RegionInstanceTemplates](super::stub::RegionInstanceTemplates) decorator for logging and tracing.
@@ -8327,29 +7108,6 @@ where
     ) -> Result<gax::response::Response<crate::model::InstanceTemplateList>> {
         self.inner.list(req, options).await
     }
-
-    #[tracing::instrument(ret)]
-    async fn get_operation(
-        &self,
-        req: crate::model::region_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> Result<gax::response::Response<crate::model::Operation>> {
-        self.inner.get_operation(req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        self.inner.get_polling_error_policy(options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        self.inner.get_polling_backoff_policy(options)
-    }
 }
 
 /// Implements a [RegionInstances](super::stub::RegionInstances) decorator for logging and tracing.
@@ -8384,29 +7142,6 @@ where
         options: gax::options::RequestOptions,
     ) -> Result<gax::response::Response<crate::model::Operation>> {
         self.inner.bulk_insert(req, options).await
-    }
-
-    #[tracing::instrument(ret)]
-    async fn get_operation(
-        &self,
-        req: crate::model::region_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> Result<gax::response::Response<crate::model::Operation>> {
-        self.inner.get_operation(req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        self.inner.get_polling_error_policy(options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        self.inner.get_polling_backoff_policy(options)
     }
 }
 
@@ -8506,29 +7241,6 @@ where
     ) -> Result<gax::response::Response<crate::model::TestPermissionsResponse>> {
         self.inner.test_iam_permissions(req, options).await
     }
-
-    #[tracing::instrument(ret)]
-    async fn get_operation(
-        &self,
-        req: crate::model::region_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> Result<gax::response::Response<crate::model::Operation>> {
-        self.inner.get_operation(req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        self.inner.get_polling_error_policy(options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        self.inner.get_polling_backoff_policy(options)
-    }
 }
 
 /// Implements a [RegionNetworkEndpointGroups](super::stub::RegionNetworkEndpointGroups) decorator for logging and tracing.
@@ -8618,29 +7330,6 @@ where
     ) -> Result<gax::response::Response<crate::model::NetworkEndpointGroupsListNetworkEndpoints>>
     {
         self.inner.list_network_endpoints(req, options).await
-    }
-
-    #[tracing::instrument(ret)]
-    async fn get_operation(
-        &self,
-        req: crate::model::region_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> Result<gax::response::Response<crate::model::Operation>> {
-        self.inner.get_operation(req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        self.inner.get_polling_error_policy(options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        self.inner.get_polling_backoff_policy(options)
     }
 }
 
@@ -8825,29 +7514,6 @@ where
     ) -> Result<gax::response::Response<crate::model::TestPermissionsResponse>> {
         self.inner.test_iam_permissions(req, options).await
     }
-
-    #[tracing::instrument(ret)]
-    async fn get_operation(
-        &self,
-        req: crate::model::region_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> Result<gax::response::Response<crate::model::Operation>> {
-        self.inner.get_operation(req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        self.inner.get_polling_error_policy(options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        self.inner.get_polling_backoff_policy(options)
-    }
 }
 
 /// Implements a [RegionNotificationEndpoints](super::stub::RegionNotificationEndpoints) decorator for logging and tracing.
@@ -8909,29 +7575,6 @@ where
         options: gax::options::RequestOptions,
     ) -> Result<gax::response::Response<crate::model::NotificationEndpointList>> {
         self.inner.list(req, options).await
-    }
-
-    #[tracing::instrument(ret)]
-    async fn get_operation(
-        &self,
-        req: crate::model::region_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> Result<gax::response::Response<crate::model::Operation>> {
-        self.inner.get_operation(req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        self.inner.get_polling_error_policy(options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        self.inner.get_polling_backoff_policy(options)
     }
 }
 
@@ -9111,29 +7754,6 @@ where
     ) -> Result<gax::response::Response<crate::model::Operation>> {
         self.inner.set_labels(req, options).await
     }
-
-    #[tracing::instrument(ret)]
-    async fn get_operation(
-        &self,
-        req: crate::model::region_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> Result<gax::response::Response<crate::model::Operation>> {
-        self.inner.get_operation(req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        self.inner.get_polling_error_policy(options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        self.inner.get_polling_backoff_policy(options)
-    }
 }
 
 /// Implements a [RegionSslCertificates](super::stub::RegionSslCertificates) decorator for logging and tracing.
@@ -9195,29 +7815,6 @@ where
         options: gax::options::RequestOptions,
     ) -> Result<gax::response::Response<crate::model::SslCertificateList>> {
         self.inner.list(req, options).await
-    }
-
-    #[tracing::instrument(ret)]
-    async fn get_operation(
-        &self,
-        req: crate::model::region_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> Result<gax::response::Response<crate::model::Operation>> {
-        self.inner.get_operation(req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        self.inner.get_polling_error_policy(options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        self.inner.get_polling_backoff_policy(options)
     }
 }
 
@@ -9300,29 +7897,6 @@ where
     ) -> Result<gax::response::Response<crate::model::Operation>> {
         self.inner.patch(req, options).await
     }
-
-    #[tracing::instrument(ret)]
-    async fn get_operation(
-        &self,
-        req: crate::model::region_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> Result<gax::response::Response<crate::model::Operation>> {
-        self.inner.get_operation(req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        self.inner.get_polling_error_policy(options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        self.inner.get_polling_backoff_policy(options)
-    }
 }
 
 /// Implements a [RegionTargetHttpProxies](super::stub::RegionTargetHttpProxies) decorator for logging and tracing.
@@ -9393,29 +7967,6 @@ where
         options: gax::options::RequestOptions,
     ) -> Result<gax::response::Response<crate::model::Operation>> {
         self.inner.set_url_map(req, options).await
-    }
-
-    #[tracing::instrument(ret)]
-    async fn get_operation(
-        &self,
-        req: crate::model::region_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> Result<gax::response::Response<crate::model::Operation>> {
-        self.inner.get_operation(req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        self.inner.get_polling_error_policy(options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        self.inner.get_polling_backoff_policy(options)
     }
 }
 
@@ -9506,29 +8057,6 @@ where
     ) -> Result<gax::response::Response<crate::model::Operation>> {
         self.inner.set_url_map(req, options).await
     }
-
-    #[tracing::instrument(ret)]
-    async fn get_operation(
-        &self,
-        req: crate::model::region_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> Result<gax::response::Response<crate::model::Operation>> {
-        self.inner.get_operation(req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        self.inner.get_polling_error_policy(options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        self.inner.get_polling_backoff_policy(options)
-    }
 }
 
 /// Implements a [RegionTargetTcpProxies](super::stub::RegionTargetTcpProxies) decorator for logging and tracing.
@@ -9590,29 +8118,6 @@ where
         options: gax::options::RequestOptions,
     ) -> Result<gax::response::Response<crate::model::TargetTcpProxyList>> {
         self.inner.list(req, options).await
-    }
-
-    #[tracing::instrument(ret)]
-    async fn get_operation(
-        &self,
-        req: crate::model::region_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> Result<gax::response::Response<crate::model::Operation>> {
-        self.inner.get_operation(req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        self.inner.get_polling_error_policy(options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        self.inner.get_polling_backoff_policy(options)
     }
 }
 
@@ -9702,29 +8207,6 @@ where
         options: gax::options::RequestOptions,
     ) -> Result<gax::response::Response<crate::model::UrlMapsValidateResponse>> {
         self.inner.validate(req, options).await
-    }
-
-    #[tracing::instrument(ret)]
-    async fn get_operation(
-        &self,
-        req: crate::model::region_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> Result<gax::response::Response<crate::model::Operation>> {
-        self.inner.get_operation(req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        self.inner.get_polling_error_policy(options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        self.inner.get_polling_backoff_policy(options)
     }
 }
 
@@ -9885,29 +8367,6 @@ where
     ) -> Result<gax::response::Response<crate::model::TestPermissionsResponse>> {
         self.inner.test_iam_permissions(req, options).await
     }
-
-    #[tracing::instrument(ret)]
-    async fn get_operation(
-        &self,
-        req: crate::model::zone_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> Result<gax::response::Response<crate::model::Operation>> {
-        self.inner.get_operation(req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        self.inner.get_polling_error_policy(options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        self.inner.get_polling_backoff_policy(options)
-    }
 }
 
 /// Implements a [ReservationSubBlocks](super::stub::ReservationSubBlocks) decorator for logging and tracing.
@@ -9996,29 +8455,6 @@ where
         options: gax::options::RequestOptions,
     ) -> Result<gax::response::Response<crate::model::TestPermissionsResponse>> {
         self.inner.test_iam_permissions(req, options).await
-    }
-
-    #[tracing::instrument(ret)]
-    async fn get_operation(
-        &self,
-        req: crate::model::zone_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> Result<gax::response::Response<crate::model::Operation>> {
-        self.inner.get_operation(req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        self.inner.get_polling_error_policy(options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        self.inner.get_polling_backoff_policy(options)
     }
 }
 
@@ -10145,29 +8581,6 @@ where
     ) -> Result<gax::response::Response<crate::model::Operation>> {
         self.inner.update(req, options).await
     }
-
-    #[tracing::instrument(ret)]
-    async fn get_operation(
-        &self,
-        req: crate::model::zone_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> Result<gax::response::Response<crate::model::Operation>> {
-        self.inner.get_operation(req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        self.inner.get_polling_error_policy(options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        self.inner.get_polling_backoff_policy(options)
-    }
 }
 
 /// Implements a [ResourcePolicies](super::stub::ResourcePolicies) decorator for logging and tracing.
@@ -10274,29 +8687,6 @@ where
         options: gax::options::RequestOptions,
     ) -> Result<gax::response::Response<crate::model::TestPermissionsResponse>> {
         self.inner.test_iam_permissions(req, options).await
-    }
-
-    #[tracing::instrument(ret)]
-    async fn get_operation(
-        &self,
-        req: crate::model::region_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> Result<gax::response::Response<crate::model::Operation>> {
-        self.inner.get_operation(req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        self.inner.get_polling_error_policy(options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        self.inner.get_polling_backoff_policy(options)
     }
 }
 
@@ -10477,29 +8867,6 @@ where
     ) -> Result<gax::response::Response<crate::model::Operation>> {
         self.inner.update_route_policy(req, options).await
     }
-
-    #[tracing::instrument(ret)]
-    async fn get_operation(
-        &self,
-        req: crate::model::region_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> Result<gax::response::Response<crate::model::Operation>> {
-        self.inner.get_operation(req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        self.inner.get_polling_error_policy(options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        self.inner.get_polling_backoff_policy(options)
-    }
 }
 
 /// Implements a [Routes](super::stub::Routes) decorator for logging and tracing.
@@ -10561,29 +8928,6 @@ where
         options: gax::options::RequestOptions,
     ) -> Result<gax::response::Response<crate::model::RouteList>> {
         self.inner.list(req, options).await
-    }
-
-    #[tracing::instrument(ret)]
-    async fn get_operation(
-        &self,
-        req: crate::model::global_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> Result<gax::response::Response<crate::model::Operation>> {
-        self.inner.get_operation(req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        self.inner.get_polling_error_policy(options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        self.inner.get_polling_backoff_policy(options)
     }
 }
 
@@ -10725,29 +9069,6 @@ where
     ) -> Result<gax::response::Response<crate::model::Operation>> {
         self.inner.set_labels(req, options).await
     }
-
-    #[tracing::instrument(ret)]
-    async fn get_operation(
-        &self,
-        req: crate::model::global_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> Result<gax::response::Response<crate::model::Operation>> {
-        self.inner.get_operation(req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        self.inner.get_polling_error_policy(options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        self.inner.get_polling_backoff_policy(options)
-    }
 }
 
 /// Implements a [ServiceAttachments](super::stub::ServiceAttachments) decorator for logging and tracing.
@@ -10855,29 +9176,6 @@ where
     ) -> Result<gax::response::Response<crate::model::TestPermissionsResponse>> {
         self.inner.test_iam_permissions(req, options).await
     }
-
-    #[tracing::instrument(ret)]
-    async fn get_operation(
-        &self,
-        req: crate::model::region_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> Result<gax::response::Response<crate::model::Operation>> {
-        self.inner.get_operation(req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        self.inner.get_polling_error_policy(options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        self.inner.get_polling_backoff_policy(options)
-    }
 }
 
 /// Implements a [SnapshotSettings](super::stub::SnapshotSettings) decorator for logging and tracing.
@@ -10921,29 +9219,6 @@ where
         options: gax::options::RequestOptions,
     ) -> Result<gax::response::Response<crate::model::Operation>> {
         self.inner.patch(req, options).await
-    }
-
-    #[tracing::instrument(ret)]
-    async fn get_operation(
-        &self,
-        req: crate::model::global_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> Result<gax::response::Response<crate::model::Operation>> {
-        self.inner.get_operation(req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        self.inner.get_polling_error_policy(options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        self.inner.get_polling_backoff_policy(options)
     }
 }
 
@@ -11043,29 +9318,6 @@ where
     ) -> Result<gax::response::Response<crate::model::TestPermissionsResponse>> {
         self.inner.test_iam_permissions(req, options).await
     }
-
-    #[tracing::instrument(ret)]
-    async fn get_operation(
-        &self,
-        req: crate::model::global_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> Result<gax::response::Response<crate::model::Operation>> {
-        self.inner.get_operation(req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        self.inner.get_polling_error_policy(options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        self.inner.get_polling_backoff_policy(options)
-    }
 }
 
 /// Implements a [SslCertificates](super::stub::SslCertificates) decorator for logging and tracing.
@@ -11136,29 +9388,6 @@ where
         options: gax::options::RequestOptions,
     ) -> Result<gax::response::Response<crate::model::SslCertificateList>> {
         self.inner.list(req, options).await
-    }
-
-    #[tracing::instrument(ret)]
-    async fn get_operation(
-        &self,
-        req: crate::model::global_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> Result<gax::response::Response<crate::model::Operation>> {
-        self.inner.get_operation(req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        self.inner.get_polling_error_policy(options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        self.inner.get_polling_backoff_policy(options)
     }
 }
 
@@ -11249,29 +9478,6 @@ where
         options: gax::options::RequestOptions,
     ) -> Result<gax::response::Response<crate::model::Operation>> {
         self.inner.patch(req, options).await
-    }
-
-    #[tracing::instrument(ret)]
-    async fn get_operation(
-        &self,
-        req: crate::model::global_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> Result<gax::response::Response<crate::model::Operation>> {
-        self.inner.get_operation(req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        self.inner.get_polling_error_policy(options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        self.inner.get_polling_backoff_policy(options)
     }
 }
 
@@ -11442,29 +9648,6 @@ where
     ) -> Result<gax::response::Response<crate::model::Operation>> {
         self.inner.update(req, options).await
     }
-
-    #[tracing::instrument(ret)]
-    async fn get_operation(
-        &self,
-        req: crate::model::zone_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> Result<gax::response::Response<crate::model::Operation>> {
-        self.inner.get_operation(req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        self.inner.get_polling_error_policy(options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        self.inner.get_polling_backoff_policy(options)
-    }
 }
 
 /// Implements a [Subnetworks](super::stub::Subnetworks) decorator for logging and tracing.
@@ -11599,29 +9782,6 @@ where
     ) -> Result<gax::response::Response<crate::model::TestPermissionsResponse>> {
         self.inner.test_iam_permissions(req, options).await
     }
-
-    #[tracing::instrument(ret)]
-    async fn get_operation(
-        &self,
-        req: crate::model::region_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> Result<gax::response::Response<crate::model::Operation>> {
-        self.inner.get_operation(req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        self.inner.get_polling_error_policy(options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        self.inner.get_polling_backoff_policy(options)
-    }
 }
 
 /// Implements a [TargetGrpcProxies](super::stub::TargetGrpcProxies) decorator for logging and tracing.
@@ -11692,29 +9852,6 @@ where
         options: gax::options::RequestOptions,
     ) -> Result<gax::response::Response<crate::model::Operation>> {
         self.inner.patch(req, options).await
-    }
-
-    #[tracing::instrument(ret)]
-    async fn get_operation(
-        &self,
-        req: crate::model::global_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> Result<gax::response::Response<crate::model::Operation>> {
-        self.inner.get_operation(req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        self.inner.get_polling_error_policy(options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        self.inner.get_polling_backoff_policy(options)
     }
 }
 
@@ -11804,29 +9941,6 @@ where
         options: gax::options::RequestOptions,
     ) -> Result<gax::response::Response<crate::model::Operation>> {
         self.inner.set_url_map(req, options).await
-    }
-
-    #[tracing::instrument(ret)]
-    async fn get_operation(
-        &self,
-        req: crate::model::global_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> Result<gax::response::Response<crate::model::Operation>> {
-        self.inner.get_operation(req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        self.inner.get_polling_error_policy(options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        self.inner.get_polling_backoff_policy(options)
     }
 }
 
@@ -11953,29 +10067,6 @@ where
     ) -> Result<gax::response::Response<crate::model::Operation>> {
         self.inner.set_url_map(req, options).await
     }
-
-    #[tracing::instrument(ret)]
-    async fn get_operation(
-        &self,
-        req: crate::model::global_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> Result<gax::response::Response<crate::model::Operation>> {
-        self.inner.get_operation(req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        self.inner.get_polling_error_policy(options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        self.inner.get_polling_backoff_policy(options)
-    }
 }
 
 /// Implements a [TargetInstances](super::stub::TargetInstances) decorator for logging and tracing.
@@ -12064,29 +10155,6 @@ where
         options: gax::options::RequestOptions,
     ) -> Result<gax::response::Response<crate::model::TestPermissionsResponse>> {
         self.inner.test_iam_permissions(req, options).await
-    }
-
-    #[tracing::instrument(ret)]
-    async fn get_operation(
-        &self,
-        req: crate::model::zone_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> Result<gax::response::Response<crate::model::Operation>> {
-        self.inner.get_operation(req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        self.inner.get_polling_error_policy(options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        self.inner.get_polling_backoff_policy(options)
     }
 }
 
@@ -12231,29 +10299,6 @@ where
     ) -> Result<gax::response::Response<crate::model::TestPermissionsResponse>> {
         self.inner.test_iam_permissions(req, options).await
     }
-
-    #[tracing::instrument(ret)]
-    async fn get_operation(
-        &self,
-        req: crate::model::region_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> Result<gax::response::Response<crate::model::Operation>> {
-        self.inner.get_operation(req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        self.inner.get_polling_error_policy(options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        self.inner.get_polling_backoff_policy(options)
-    }
 }
 
 /// Implements a [TargetSslProxies](super::stub::TargetSslProxies) decorator for logging and tracing.
@@ -12361,29 +10406,6 @@ where
     ) -> Result<gax::response::Response<crate::model::Operation>> {
         self.inner.set_ssl_policy(req, options).await
     }
-
-    #[tracing::instrument(ret)]
-    async fn get_operation(
-        &self,
-        req: crate::model::global_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> Result<gax::response::Response<crate::model::Operation>> {
-        self.inner.get_operation(req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        self.inner.get_polling_error_policy(options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        self.inner.get_polling_backoff_policy(options)
-    }
 }
 
 /// Implements a [TargetTcpProxies](super::stub::TargetTcpProxies) decorator for logging and tracing.
@@ -12473,29 +10495,6 @@ where
     ) -> Result<gax::response::Response<crate::model::Operation>> {
         self.inner.set_proxy_header(req, options).await
     }
-
-    #[tracing::instrument(ret)]
-    async fn get_operation(
-        &self,
-        req: crate::model::global_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> Result<gax::response::Response<crate::model::Operation>> {
-        self.inner.get_operation(req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        self.inner.get_polling_error_policy(options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        self.inner.get_polling_backoff_policy(options)
-    }
 }
 
 /// Implements a [TargetVpnGateways](super::stub::TargetVpnGateways) decorator for logging and tracing.
@@ -12575,29 +10574,6 @@ where
         options: gax::options::RequestOptions,
     ) -> Result<gax::response::Response<crate::model::Operation>> {
         self.inner.set_labels(req, options).await
-    }
-
-    #[tracing::instrument(ret)]
-    async fn get_operation(
-        &self,
-        req: crate::model::region_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> Result<gax::response::Response<crate::model::Operation>> {
-        self.inner.get_operation(req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        self.inner.get_polling_error_policy(options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        self.inner.get_polling_backoff_policy(options)
     }
 }
 
@@ -12706,29 +10682,6 @@ where
     ) -> Result<gax::response::Response<crate::model::UrlMapsValidateResponse>> {
         self.inner.validate(req, options).await
     }
-
-    #[tracing::instrument(ret)]
-    async fn get_operation(
-        &self,
-        req: crate::model::global_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> Result<gax::response::Response<crate::model::Operation>> {
-        self.inner.get_operation(req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        self.inner.get_polling_error_policy(options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        self.inner.get_polling_backoff_policy(options)
-    }
 }
 
 /// Implements a [VpnGateways](super::stub::VpnGateways) decorator for logging and tracing.
@@ -12827,29 +10780,6 @@ where
     ) -> Result<gax::response::Response<crate::model::TestPermissionsResponse>> {
         self.inner.test_iam_permissions(req, options).await
     }
-
-    #[tracing::instrument(ret)]
-    async fn get_operation(
-        &self,
-        req: crate::model::region_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> Result<gax::response::Response<crate::model::Operation>> {
-        self.inner.get_operation(req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        self.inner.get_polling_error_policy(options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        self.inner.get_polling_backoff_policy(options)
-    }
 }
 
 /// Implements a [VpnTunnels](super::stub::VpnTunnels) decorator for logging and tracing.
@@ -12930,29 +10860,6 @@ where
     ) -> Result<gax::response::Response<crate::model::Operation>> {
         self.inner.set_labels(req, options).await
     }
-
-    #[tracing::instrument(ret)]
-    async fn get_operation(
-        &self,
-        req: crate::model::region_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> Result<gax::response::Response<crate::model::Operation>> {
-        self.inner.get_operation(req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        self.inner.get_polling_error_policy(options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        self.inner.get_polling_backoff_policy(options)
-    }
 }
 
 /// Implements a [WireGroups](super::stub::WireGroups) decorator for logging and tracing.
@@ -13023,29 +10930,6 @@ where
         options: gax::options::RequestOptions,
     ) -> Result<gax::response::Response<crate::model::Operation>> {
         self.inner.patch(req, options).await
-    }
-
-    #[tracing::instrument(ret)]
-    async fn get_operation(
-        &self,
-        req: crate::model::global_operations::GetRequest,
-        options: gax::options::RequestOptions,
-    ) -> Result<gax::response::Response<crate::model::Operation>> {
-        self.inner.get_operation(req, options).await
-    }
-
-    fn get_polling_error_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_error_policy::PollingErrorPolicy> {
-        self.inner.get_polling_error_policy(options)
-    }
-
-    fn get_polling_backoff_policy(
-        &self,
-        options: &gax::options::RequestOptions,
-    ) -> std::sync::Arc<dyn gax::polling_backoff_policy::PollingBackoffPolicy> {
-        self.inner.get_polling_backoff_policy(options)
     }
 }
 

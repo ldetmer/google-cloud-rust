@@ -134,6 +134,22 @@ impl AcceleratorTypes {
     }
 
     /// Returns the specified accelerator type.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::AcceleratorTypes;
+    /// async fn sample(
+    ///    client: &AcceleratorTypes
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get(&self) -> super::builder::accelerator_types::Get {
         super::builder::accelerator_types::Get::new(self.inner.clone())
     }
@@ -259,17 +275,65 @@ impl Addresses {
     }
 
     /// Deletes the specified address resource.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Addresses;
+    /// async fn sample(
+    ///    client: &Addresses
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .delete()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn delete(&self) -> super::builder::addresses::Delete {
         super::builder::addresses::Delete::new(self.inner.clone())
     }
 
     /// Returns the specified address resource.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Addresses;
+    /// async fn sample(
+    ///    client: &Addresses
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get(&self) -> super::builder::addresses::Get {
         super::builder::addresses::Get::new(self.inner.clone())
     }
 
     /// Creates an address resource in the specified project by using the data
     /// included in the request.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Addresses;
+    /// async fn sample(
+    ///    client: &Addresses
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .insert()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn insert(&self) -> super::builder::addresses::Insert {
         super::builder::addresses::Insert::new(self.inner.clone())
     }
@@ -281,24 +345,67 @@ impl Addresses {
     }
 
     /// Moves the specified address resource.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Addresses;
+    /// async fn sample(
+    ///    client: &Addresses
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .r#move()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn r#move(&self) -> super::builder::addresses::Move {
         super::builder::addresses::Move::new(self.inner.clone())
     }
 
     /// Sets the labels on an Address. To learn more about labels, read theLabeling
     /// Resources documentation.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Addresses;
+    /// async fn sample(
+    ///    client: &Addresses
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .set_labels()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn set_labels(&self) -> super::builder::addresses::SetLabels {
         super::builder::addresses::SetLabels::new(self.inner.clone())
     }
 
     /// Returns permissions that a caller has on the specified resource.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Addresses;
+    /// async fn sample(
+    ///    client: &Addresses
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .test_iam_permissions()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn test_iam_permissions(&self) -> super::builder::addresses::TestIamPermissions {
         super::builder::addresses::TestIamPermissions::new(self.inner.clone())
-    }
-
-    /// Retrieves the specified region-specific Operations resource.
-    pub fn get_operation(&self) -> super::builder::addresses::GetOperation {
-        super::builder::addresses::GetOperation::new(self.inner.clone())
     }
 }
 
@@ -411,6 +518,22 @@ impl Advice {
     /// with specified accelerators, within the specified time and location limits.
     /// The method recommends creating future reservations for the requested
     /// resources.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Advice;
+    /// async fn sample(
+    ///    client: &Advice
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .calendar_mode()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn calendar_mode(&self) -> super::builder::advice::CalendarMode {
         super::builder::advice::CalendarMode::new(self.inner.clone())
     }
@@ -530,17 +653,65 @@ impl Autoscalers {
     }
 
     /// Deletes the specified autoscaler.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Autoscalers;
+    /// async fn sample(
+    ///    client: &Autoscalers
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .delete()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn delete(&self) -> super::builder::autoscalers::Delete {
         super::builder::autoscalers::Delete::new(self.inner.clone())
     }
 
     /// Returns the specified autoscaler resource.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Autoscalers;
+    /// async fn sample(
+    ///    client: &Autoscalers
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get(&self) -> super::builder::autoscalers::Get {
         super::builder::autoscalers::Get::new(self.inner.clone())
     }
 
     /// Creates an autoscaler in the specified project using the data
     /// included in the request.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Autoscalers;
+    /// async fn sample(
+    ///    client: &Autoscalers
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .insert()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn insert(&self) -> super::builder::autoscalers::Insert {
         super::builder::autoscalers::Insert::new(self.inner.clone())
     }
@@ -555,19 +726,46 @@ impl Autoscalers {
     /// included in the request. This method supportsPATCH
     /// semantics and uses theJSON merge
     /// patch format and processing rules.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Autoscalers;
+    /// async fn sample(
+    ///    client: &Autoscalers
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .patch()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn patch(&self) -> super::builder::autoscalers::Patch {
         super::builder::autoscalers::Patch::new(self.inner.clone())
     }
 
     /// Updates an autoscaler in the specified project using the data
     /// included in the request.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Autoscalers;
+    /// async fn sample(
+    ///    client: &Autoscalers
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .update()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn update(&self) -> super::builder::autoscalers::Update {
         super::builder::autoscalers::Update::new(self.inner.clone())
-    }
-
-    /// Retrieves the specified zone-specific Operations resource.
-    pub fn get_operation(&self) -> super::builder::autoscalers::GetOperation {
-        super::builder::autoscalers::GetOperation::new(self.inner.clone())
     }
 }
 
@@ -678,34 +876,130 @@ impl BackendBuckets {
 
     /// Adds a key for validating requests with signed URLs for this backend
     /// bucket.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::BackendBuckets;
+    /// async fn sample(
+    ///    client: &BackendBuckets
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .add_signed_url_key()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn add_signed_url_key(&self) -> super::builder::backend_buckets::AddSignedUrlKey {
         super::builder::backend_buckets::AddSignedUrlKey::new(self.inner.clone())
     }
 
     /// Deletes the specified BackendBucket resource.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::BackendBuckets;
+    /// async fn sample(
+    ///    client: &BackendBuckets
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .delete()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn delete(&self) -> super::builder::backend_buckets::Delete {
         super::builder::backend_buckets::Delete::new(self.inner.clone())
     }
 
     /// Deletes a key for validating requests with signed URLs for this backend
     /// bucket.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::BackendBuckets;
+    /// async fn sample(
+    ///    client: &BackendBuckets
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .delete_signed_url_key()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn delete_signed_url_key(&self) -> super::builder::backend_buckets::DeleteSignedUrlKey {
         super::builder::backend_buckets::DeleteSignedUrlKey::new(self.inner.clone())
     }
 
     /// Returns the specified BackendBucket resource.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::BackendBuckets;
+    /// async fn sample(
+    ///    client: &BackendBuckets
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get(&self) -> super::builder::backend_buckets::Get {
         super::builder::backend_buckets::Get::new(self.inner.clone())
     }
 
     /// Gets the access control policy for a resource. May be empty if no such
     /// policy or resource exists.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::BackendBuckets;
+    /// async fn sample(
+    ///    client: &BackendBuckets
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get_iam_policy()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get_iam_policy(&self) -> super::builder::backend_buckets::GetIamPolicy {
         super::builder::backend_buckets::GetIamPolicy::new(self.inner.clone())
     }
 
     /// Creates a BackendBucket resource in the specified project using
     /// the data included in the request.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::BackendBuckets;
+    /// async fn sample(
+    ///    client: &BackendBuckets
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .insert()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn insert(&self) -> super::builder::backend_buckets::Insert {
         super::builder::backend_buckets::Insert::new(self.inner.clone())
     }
@@ -720,11 +1014,43 @@ impl BackendBuckets {
     /// request. This method supportsPATCH
     /// semantics and uses theJSON merge
     /// patch format and processing rules.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::BackendBuckets;
+    /// async fn sample(
+    ///    client: &BackendBuckets
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .patch()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn patch(&self) -> super::builder::backend_buckets::Patch {
         super::builder::backend_buckets::Patch::new(self.inner.clone())
     }
 
     /// Sets the edge security policy for the specified backend bucket.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::BackendBuckets;
+    /// async fn sample(
+    ///    client: &BackendBuckets
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .set_edge_security_policy()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn set_edge_security_policy(
         &self,
     ) -> super::builder::backend_buckets::SetEdgeSecurityPolicy {
@@ -733,24 +1059,67 @@ impl BackendBuckets {
 
     /// Sets the access control policy on the specified resource.
     /// Replaces any existing policy.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::BackendBuckets;
+    /// async fn sample(
+    ///    client: &BackendBuckets
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .set_iam_policy()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn set_iam_policy(&self) -> super::builder::backend_buckets::SetIamPolicy {
         super::builder::backend_buckets::SetIamPolicy::new(self.inner.clone())
     }
 
     /// Returns permissions that a caller has on the specified resource.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::BackendBuckets;
+    /// async fn sample(
+    ///    client: &BackendBuckets
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .test_iam_permissions()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn test_iam_permissions(&self) -> super::builder::backend_buckets::TestIamPermissions {
         super::builder::backend_buckets::TestIamPermissions::new(self.inner.clone())
     }
 
     /// Updates the specified BackendBucket resource with the data included in the
     /// request.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::BackendBuckets;
+    /// async fn sample(
+    ///    client: &BackendBuckets
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .update()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn update(&self) -> super::builder::backend_buckets::Update {
         super::builder::backend_buckets::Update::new(self.inner.clone())
-    }
-
-    /// Retrieves the specified Operations resource.
-    pub fn get_operation(&self) -> super::builder::backend_buckets::GetOperation {
-        super::builder::backend_buckets::GetOperation::new(self.inner.clone())
     }
 }
 
@@ -864,6 +1233,22 @@ impl BackendServices {
 
     /// Adds a key for validating requests with signed URLs for this backend
     /// service.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::BackendServices;
+    /// async fn sample(
+    ///    client: &BackendServices
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .add_signed_url_key()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn add_signed_url_key(&self) -> super::builder::backend_services::AddSignedUrlKey {
         super::builder::backend_services::AddSignedUrlKey::new(self.inner.clone())
     }
@@ -878,22 +1263,85 @@ impl BackendServices {
     }
 
     /// Deletes the specified BackendService resource.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::BackendServices;
+    /// async fn sample(
+    ///    client: &BackendServices
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .delete()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn delete(&self) -> super::builder::backend_services::Delete {
         super::builder::backend_services::Delete::new(self.inner.clone())
     }
 
     /// Deletes a key for validating requests with signed URLs for this backend
     /// service.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::BackendServices;
+    /// async fn sample(
+    ///    client: &BackendServices
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .delete_signed_url_key()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn delete_signed_url_key(&self) -> super::builder::backend_services::DeleteSignedUrlKey {
         super::builder::backend_services::DeleteSignedUrlKey::new(self.inner.clone())
     }
 
     /// Returns the specified BackendService resource.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::BackendServices;
+    /// async fn sample(
+    ///    client: &BackendServices
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get(&self) -> super::builder::backend_services::Get {
         super::builder::backend_services::Get::new(self.inner.clone())
     }
 
     /// Returns effective security policies applied to this backend service.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::BackendServices;
+    /// async fn sample(
+    ///    client: &BackendServices
+    /// ) -> gax::Result<()> {
+    ///     client
+    ///         .get_effective_security_policies()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get_effective_security_policies(
         &self,
     ) -> super::builder::backend_services::GetEffectiveSecurityPolicies {
@@ -908,12 +1356,44 @@ impl BackendServices {
     /// {
     /// "group": "/zones/us-east1-b/instanceGroups/lb-backend-example"
     /// }
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::BackendServices;
+    /// async fn sample(
+    ///    client: &BackendServices
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get_health()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get_health(&self) -> super::builder::backend_services::GetHealth {
         super::builder::backend_services::GetHealth::new(self.inner.clone())
     }
 
     /// Gets the access control policy for a resource. May be empty if no such
     /// policy or resource exists.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::BackendServices;
+    /// async fn sample(
+    ///    client: &BackendServices
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get_iam_policy()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get_iam_policy(&self) -> super::builder::backend_services::GetIamPolicy {
         super::builder::backend_services::GetIamPolicy::new(self.inner.clone())
     }
@@ -921,6 +1401,22 @@ impl BackendServices {
     /// Creates a BackendService resource in the specified project using
     /// the data included in the request. For more information, see
     /// Backend services overview.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::BackendServices;
+    /// async fn sample(
+    ///    client: &BackendServices
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .insert()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn insert(&self) -> super::builder::backend_services::Insert {
         super::builder::backend_services::Insert::new(self.inner.clone())
     }
@@ -941,11 +1437,43 @@ impl BackendServices {
     /// Backend services overview. This method
     /// supports PATCH semantics and uses the JSON merge
     /// patch format and processing rules.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::BackendServices;
+    /// async fn sample(
+    ///    client: &BackendServices
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .patch()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn patch(&self) -> super::builder::backend_services::Patch {
         super::builder::backend_services::Patch::new(self.inner.clone())
     }
 
     /// Sets the edge security policy for the specified backend service.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::BackendServices;
+    /// async fn sample(
+    ///    client: &BackendServices
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .set_edge_security_policy()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn set_edge_security_policy(
         &self,
     ) -> super::builder::backend_services::SetEdgeSecurityPolicy {
@@ -954,6 +1482,22 @@ impl BackendServices {
 
     /// Sets the access control policy on the specified resource.
     /// Replaces any existing policy.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::BackendServices;
+    /// async fn sample(
+    ///    client: &BackendServices
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .set_iam_policy()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn set_iam_policy(&self) -> super::builder::backend_services::SetIamPolicy {
         super::builder::backend_services::SetIamPolicy::new(self.inner.clone())
     }
@@ -961,11 +1505,43 @@ impl BackendServices {
     /// Sets the Google Cloud Armor security policy for the specified backend
     /// service. For more information, seeGoogle
     /// Cloud Armor Overview
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::BackendServices;
+    /// async fn sample(
+    ///    client: &BackendServices
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .set_security_policy()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn set_security_policy(&self) -> super::builder::backend_services::SetSecurityPolicy {
         super::builder::backend_services::SetSecurityPolicy::new(self.inner.clone())
     }
 
     /// Returns permissions that a caller has on the specified resource.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::BackendServices;
+    /// async fn sample(
+    ///    client: &BackendServices
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .test_iam_permissions()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn test_iam_permissions(&self) -> super::builder::backend_services::TestIamPermissions {
         super::builder::backend_services::TestIamPermissions::new(self.inner.clone())
     }
@@ -973,13 +1549,24 @@ impl BackendServices {
     /// Updates the specified BackendService resource with the data included in the
     /// request. For more information, seeBackend
     /// services overview.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::BackendServices;
+    /// async fn sample(
+    ///    client: &BackendServices
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .update()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn update(&self) -> super::builder::backend_services::Update {
         super::builder::backend_services::Update::new(self.inner.clone())
-    }
-
-    /// Retrieves the specified Operations resource.
-    pub fn get_operation(&self) -> super::builder::backend_services::GetOperation {
-        super::builder::backend_services::GetOperation::new(self.inner.clone())
     }
 }
 
@@ -1092,17 +1679,65 @@ impl CrossSiteNetworks {
     }
 
     /// Deletes the specified cross-site network in the given scope.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::CrossSiteNetworks;
+    /// async fn sample(
+    ///    client: &CrossSiteNetworks
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .delete()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn delete(&self) -> super::builder::cross_site_networks::Delete {
         super::builder::cross_site_networks::Delete::new(self.inner.clone())
     }
 
     /// Returns the specified cross-site network in the given scope.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::CrossSiteNetworks;
+    /// async fn sample(
+    ///    client: &CrossSiteNetworks
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get(&self) -> super::builder::cross_site_networks::Get {
         super::builder::cross_site_networks::Get::new(self.inner.clone())
     }
 
     /// Creates a cross-site network in the specified project in the given scope
     /// using the parameters that are included in the request.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::CrossSiteNetworks;
+    /// async fn sample(
+    ///    client: &CrossSiteNetworks
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .insert()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn insert(&self) -> super::builder::cross_site_networks::Insert {
         super::builder::cross_site_networks::Insert::new(self.inner.clone())
     }
@@ -1116,13 +1751,24 @@ impl CrossSiteNetworks {
     /// the request. This method supportsPATCH
     /// semantics and uses theJSON merge
     /// patch format and processing rules.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::CrossSiteNetworks;
+    /// async fn sample(
+    ///    client: &CrossSiteNetworks
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .patch()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn patch(&self) -> super::builder::cross_site_networks::Patch {
         super::builder::cross_site_networks::Patch::new(self.inner.clone())
-    }
-
-    /// Retrieves the specified Operations resource.
-    pub fn get_operation(&self) -> super::builder::cross_site_networks::GetOperation {
-        super::builder::cross_site_networks::GetOperation::new(self.inner.clone())
     }
 }
 
@@ -1240,6 +1886,22 @@ impl DiskTypes {
     }
 
     /// Returns the specified disk type.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::DiskTypes;
+    /// async fn sample(
+    ///    client: &DiskTypes
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get(&self) -> super::builder::disk_types::Get {
         super::builder::disk_types::Get::new(self.inner.clone())
     }
@@ -1359,6 +2021,22 @@ impl Disks {
     /// Adds existing resource policies to a disk. You can only add one
     /// policy which will be applied to this disk for scheduling snapshot
     /// creation.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Disks;
+    /// async fn sample(
+    ///    client: &Disks
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .add_resource_policies()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn add_resource_policies(&self) -> super::builder::disks::AddResourcePolicies {
         super::builder::disks::AddResourcePolicies::new(self.inner.clone())
     }
@@ -1372,12 +2050,44 @@ impl Disks {
     }
 
     /// Bulk create a set of disks.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Disks;
+    /// async fn sample(
+    ///    client: &Disks
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .bulk_insert()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn bulk_insert(&self) -> super::builder::disks::BulkInsert {
         super::builder::disks::BulkInsert::new(self.inner.clone())
     }
 
     /// Sets the labels on many disks at once. To learn more about labels, read theLabeling
     /// Resources documentation.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Disks;
+    /// async fn sample(
+    ///    client: &Disks
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .bulk_set_labels()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn bulk_set_labels(&self) -> super::builder::disks::BulkSetLabels {
         super::builder::disks::BulkSetLabels::new(self.inner.clone())
     }
@@ -1386,6 +2096,22 @@ impl Disks {
     /// creation, consider using snapshots.insert
     /// instead, as that method supports more features, such as creating snapshots
     /// in a project different from the source disk project.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Disks;
+    /// async fn sample(
+    ///    client: &Disks
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .create_snapshot()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn create_snapshot(&self) -> super::builder::disks::CreateSnapshot {
         super::builder::disks::CreateSnapshot::new(self.inner.clone())
     }
@@ -1395,17 +2121,65 @@ impl Disks {
     /// delete any snapshots
     /// previously made from the disk. You must separatelydelete
     /// snapshots.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Disks;
+    /// async fn sample(
+    ///    client: &Disks
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .delete()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn delete(&self) -> super::builder::disks::Delete {
         super::builder::disks::Delete::new(self.inner.clone())
     }
 
     /// Returns the specified persistent disk.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Disks;
+    /// async fn sample(
+    ///    client: &Disks
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get(&self) -> super::builder::disks::Get {
         super::builder::disks::Get::new(self.inner.clone())
     }
 
     /// Gets the access control policy for a resource. May be empty if no such
     /// policy or resource exists.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Disks;
+    /// async fn sample(
+    ///    client: &Disks
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get_iam_policy()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get_iam_policy(&self) -> super::builder::disks::GetIamPolicy {
         super::builder::disks::GetIamPolicy::new(self.inner.clone())
     }
@@ -1415,6 +2189,22 @@ impl Disks {
     /// (sourceImage, sourceSnapshot, orsourceDisk) or create an empty 500 GB data disk by
     /// omitting all properties. You can also create a disk that is larger than
     /// the default size by specifying the sizeGb property.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Disks;
+    /// async fn sample(
+    ///    client: &Disks
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .insert()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn insert(&self) -> super::builder::disks::Insert {
         super::builder::disks::Insert::new(self.inner.clone())
     }
@@ -1426,47 +2216,175 @@ impl Disks {
     }
 
     /// Removes resource policies from a disk.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Disks;
+    /// async fn sample(
+    ///    client: &Disks
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .remove_resource_policies()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn remove_resource_policies(&self) -> super::builder::disks::RemoveResourcePolicies {
         super::builder::disks::RemoveResourcePolicies::new(self.inner.clone())
     }
 
     /// Resizes the specified persistent disk.
     /// You can only increase the size of the disk.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Disks;
+    /// async fn sample(
+    ///    client: &Disks
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .resize()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn resize(&self) -> super::builder::disks::Resize {
         super::builder::disks::Resize::new(self.inner.clone())
     }
 
     /// Sets the access control policy on the specified resource.
     /// Replaces any existing policy.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Disks;
+    /// async fn sample(
+    ///    client: &Disks
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .set_iam_policy()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn set_iam_policy(&self) -> super::builder::disks::SetIamPolicy {
         super::builder::disks::SetIamPolicy::new(self.inner.clone())
     }
 
     /// Sets the labels on a disk. To learn more about labels, read theLabeling
     /// Resources documentation.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Disks;
+    /// async fn sample(
+    ///    client: &Disks
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .set_labels()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn set_labels(&self) -> super::builder::disks::SetLabels {
         super::builder::disks::SetLabels::new(self.inner.clone())
     }
 
     /// Starts asynchronous replication.
     /// Must be invoked on the primary disk.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Disks;
+    /// async fn sample(
+    ///    client: &Disks
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .start_async_replication()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn start_async_replication(&self) -> super::builder::disks::StartAsyncReplication {
         super::builder::disks::StartAsyncReplication::new(self.inner.clone())
     }
 
     /// Stops asynchronous replication.
     /// Can be invoked either on the primary or on the secondary disk.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Disks;
+    /// async fn sample(
+    ///    client: &Disks
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .stop_async_replication()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn stop_async_replication(&self) -> super::builder::disks::StopAsyncReplication {
         super::builder::disks::StopAsyncReplication::new(self.inner.clone())
     }
 
     /// Stops asynchronous replication for a consistency group of disks.
     /// Can be invoked either in the primary or secondary scope.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Disks;
+    /// async fn sample(
+    ///    client: &Disks
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .stop_group_async_replication()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn stop_group_async_replication(&self) -> super::builder::disks::StopGroupAsyncReplication {
         super::builder::disks::StopGroupAsyncReplication::new(self.inner.clone())
     }
 
     /// Returns permissions that a caller has on the specified resource.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Disks;
+    /// async fn sample(
+    ///    client: &Disks
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .test_iam_permissions()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn test_iam_permissions(&self) -> super::builder::disks::TestIamPermissions {
         super::builder::disks::TestIamPermissions::new(self.inner.clone())
     }
@@ -1474,13 +2392,24 @@ impl Disks {
     /// Updates the specified disk with the data included in the request.
     /// The update is performed only on selected fields included as part
     /// of update-mask. Only the following fields can be modified: user_license.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Disks;
+    /// async fn sample(
+    ///    client: &Disks
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .update()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn update(&self) -> super::builder::disks::Update {
         super::builder::disks::Update::new(self.inner.clone())
-    }
-
-    /// Retrieves the specified zone-specific Operations resource.
-    pub fn get_operation(&self) -> super::builder::disks::GetOperation {
-        super::builder::disks::GetOperation::new(self.inner.clone())
     }
 }
 
@@ -1593,18 +2522,66 @@ impl ExternalVpnGateways {
     }
 
     /// Deletes the specified externalVpnGateway.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::ExternalVpnGateways;
+    /// async fn sample(
+    ///    client: &ExternalVpnGateways
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .delete()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn delete(&self) -> super::builder::external_vpn_gateways::Delete {
         super::builder::external_vpn_gateways::Delete::new(self.inner.clone())
     }
 
     /// Returns the specified externalVpnGateway. Get a list of available
     /// externalVpnGateways by making a list() request.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::ExternalVpnGateways;
+    /// async fn sample(
+    ///    client: &ExternalVpnGateways
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get(&self) -> super::builder::external_vpn_gateways::Get {
         super::builder::external_vpn_gateways::Get::new(self.inner.clone())
     }
 
     /// Creates a ExternalVpnGateway in the specified project using
     /// the data included in the request.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::ExternalVpnGateways;
+    /// async fn sample(
+    ///    client: &ExternalVpnGateways
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .insert()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn insert(&self) -> super::builder::external_vpn_gateways::Insert {
         super::builder::external_vpn_gateways::Insert::new(self.inner.clone())
     }
@@ -1618,20 +2595,47 @@ impl ExternalVpnGateways {
     /// Sets the labels on an ExternalVpnGateway. To learn more about labels,
     /// read the Labeling
     /// Resources documentation.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::ExternalVpnGateways;
+    /// async fn sample(
+    ///    client: &ExternalVpnGateways
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .set_labels()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn set_labels(&self) -> super::builder::external_vpn_gateways::SetLabels {
         super::builder::external_vpn_gateways::SetLabels::new(self.inner.clone())
     }
 
     /// Returns permissions that a caller has on the specified resource.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::ExternalVpnGateways;
+    /// async fn sample(
+    ///    client: &ExternalVpnGateways
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .test_iam_permissions()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn test_iam_permissions(
         &self,
     ) -> super::builder::external_vpn_gateways::TestIamPermissions {
         super::builder::external_vpn_gateways::TestIamPermissions::new(self.inner.clone())
-    }
-
-    /// Retrieves the specified Operations resource.
-    pub fn get_operation(&self) -> super::builder::external_vpn_gateways::GetOperation {
-        super::builder::external_vpn_gateways::GetOperation::new(self.inner.clone())
     }
 }
 
@@ -1744,48 +2748,192 @@ impl FirewallPolicies {
     }
 
     /// Inserts an association for the specified firewall policy.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::FirewallPolicies;
+    /// async fn sample(
+    ///    client: &FirewallPolicies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .add_association()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn add_association(&self) -> super::builder::firewall_policies::AddAssociation {
         super::builder::firewall_policies::AddAssociation::new(self.inner.clone())
     }
 
     /// Inserts a rule into a firewall policy.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::FirewallPolicies;
+    /// async fn sample(
+    ///    client: &FirewallPolicies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .add_rule()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn add_rule(&self) -> super::builder::firewall_policies::AddRule {
         super::builder::firewall_policies::AddRule::new(self.inner.clone())
     }
 
     /// Copies rules to the specified firewall policy.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::FirewallPolicies;
+    /// async fn sample(
+    ///    client: &FirewallPolicies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .clone_rules()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn clone_rules(&self) -> super::builder::firewall_policies::CloneRules {
         super::builder::firewall_policies::CloneRules::new(self.inner.clone())
     }
 
     /// Deletes the specified policy.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::FirewallPolicies;
+    /// async fn sample(
+    ///    client: &FirewallPolicies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .delete()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn delete(&self) -> super::builder::firewall_policies::Delete {
         super::builder::firewall_policies::Delete::new(self.inner.clone())
     }
 
     /// Returns the specified firewall policy.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::FirewallPolicies;
+    /// async fn sample(
+    ///    client: &FirewallPolicies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get(&self) -> super::builder::firewall_policies::Get {
         super::builder::firewall_policies::Get::new(self.inner.clone())
     }
 
     /// Gets an association with the specified name.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::FirewallPolicies;
+    /// async fn sample(
+    ///    client: &FirewallPolicies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get_association()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get_association(&self) -> super::builder::firewall_policies::GetAssociation {
         super::builder::firewall_policies::GetAssociation::new(self.inner.clone())
     }
 
     /// Gets the access control policy for a resource. May be empty if no such
     /// policy or resource exists.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::FirewallPolicies;
+    /// async fn sample(
+    ///    client: &FirewallPolicies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get_iam_policy()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get_iam_policy(&self) -> super::builder::firewall_policies::GetIamPolicy {
         super::builder::firewall_policies::GetIamPolicy::new(self.inner.clone())
     }
 
     /// Gets a rule of the specified priority.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::FirewallPolicies;
+    /// async fn sample(
+    ///    client: &FirewallPolicies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get_rule()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get_rule(&self) -> super::builder::firewall_policies::GetRule {
         super::builder::firewall_policies::GetRule::new(self.inner.clone())
     }
 
     /// Creates a new policy in the specified project using the data included in
     /// the request.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::FirewallPolicies;
+    /// async fn sample(
+    ///    client: &FirewallPolicies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .insert()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn insert(&self) -> super::builder::firewall_policies::Insert {
         super::builder::firewall_policies::Insert::new(self.inner.clone())
     }
@@ -1797,50 +2945,172 @@ impl FirewallPolicies {
     }
 
     /// Lists associations of a specified target, i.e., organization or folder.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::FirewallPolicies;
+    /// async fn sample(
+    ///    client: &FirewallPolicies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .list_associations()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn list_associations(&self) -> super::builder::firewall_policies::ListAssociations {
         super::builder::firewall_policies::ListAssociations::new(self.inner.clone())
     }
 
     /// Moves the specified firewall policy.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::FirewallPolicies;
+    /// async fn sample(
+    ///    client: &FirewallPolicies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .r#move()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn r#move(&self) -> super::builder::firewall_policies::Move {
         super::builder::firewall_policies::Move::new(self.inner.clone())
     }
 
     /// Patches the specified policy with the data included in the request.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::FirewallPolicies;
+    /// async fn sample(
+    ///    client: &FirewallPolicies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .patch()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn patch(&self) -> super::builder::firewall_policies::Patch {
         super::builder::firewall_policies::Patch::new(self.inner.clone())
     }
 
     /// Patches a rule of the specified priority.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::FirewallPolicies;
+    /// async fn sample(
+    ///    client: &FirewallPolicies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .patch_rule()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn patch_rule(&self) -> super::builder::firewall_policies::PatchRule {
         super::builder::firewall_policies::PatchRule::new(self.inner.clone())
     }
 
     /// Removes an association for the specified firewall policy.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::FirewallPolicies;
+    /// async fn sample(
+    ///    client: &FirewallPolicies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .remove_association()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn remove_association(&self) -> super::builder::firewall_policies::RemoveAssociation {
         super::builder::firewall_policies::RemoveAssociation::new(self.inner.clone())
     }
 
     /// Deletes a rule of the specified priority.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::FirewallPolicies;
+    /// async fn sample(
+    ///    client: &FirewallPolicies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .remove_rule()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn remove_rule(&self) -> super::builder::firewall_policies::RemoveRule {
         super::builder::firewall_policies::RemoveRule::new(self.inner.clone())
     }
 
     /// Sets the access control policy on the specified resource.
     /// Replaces any existing policy.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::FirewallPolicies;
+    /// async fn sample(
+    ///    client: &FirewallPolicies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .set_iam_policy()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn set_iam_policy(&self) -> super::builder::firewall_policies::SetIamPolicy {
         super::builder::firewall_policies::SetIamPolicy::new(self.inner.clone())
     }
 
     /// Returns permissions that a caller has on the specified resource.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::FirewallPolicies;
+    /// async fn sample(
+    ///    client: &FirewallPolicies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .test_iam_permissions()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn test_iam_permissions(&self) -> super::builder::firewall_policies::TestIamPermissions {
         super::builder::firewall_policies::TestIamPermissions::new(self.inner.clone())
-    }
-
-    /// Retrieves the specified Operations resource. Gets a list of operations
-    /// by making a `list()` request.
-    pub fn get_operation(&self) -> super::builder::firewall_policies::GetOperation {
-        super::builder::firewall_policies::GetOperation::new(self.inner.clone())
     }
 }
 
@@ -1950,17 +3220,65 @@ impl Firewalls {
     }
 
     /// Deletes the specified firewall.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Firewalls;
+    /// async fn sample(
+    ///    client: &Firewalls
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .delete()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn delete(&self) -> super::builder::firewalls::Delete {
         super::builder::firewalls::Delete::new(self.inner.clone())
     }
 
     /// Returns the specified firewall.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Firewalls;
+    /// async fn sample(
+    ///    client: &Firewalls
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get(&self) -> super::builder::firewalls::Get {
         super::builder::firewalls::Get::new(self.inner.clone())
     }
 
     /// Creates a firewall rule in the specified project using the data
     /// included in the request.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Firewalls;
+    /// async fn sample(
+    ///    client: &Firewalls
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .insert()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn insert(&self) -> super::builder::firewalls::Insert {
         super::builder::firewalls::Insert::new(self.inner.clone())
     }
@@ -1975,11 +3293,43 @@ impl Firewalls {
     /// request. This method supportsPATCH
     /// semantics and uses theJSON merge
     /// patch format and processing rules.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Firewalls;
+    /// async fn sample(
+    ///    client: &Firewalls
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .patch()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn patch(&self) -> super::builder::firewalls::Patch {
         super::builder::firewalls::Patch::new(self.inner.clone())
     }
 
     /// Returns permissions that a caller has on the specified resource.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Firewalls;
+    /// async fn sample(
+    ///    client: &Firewalls
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .test_iam_permissions()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn test_iam_permissions(&self) -> super::builder::firewalls::TestIamPermissions {
         super::builder::firewalls::TestIamPermissions::new(self.inner.clone())
     }
@@ -1988,13 +3338,24 @@ impl Firewalls {
     /// request.
     /// Note that all fields will be updated if using PUT, even fields that are not
     /// specified. To update individual fields, please use PATCH instead.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Firewalls;
+    /// async fn sample(
+    ///    client: &Firewalls
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .update()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn update(&self) -> super::builder::firewalls::Update {
         super::builder::firewalls::Update::new(self.inner.clone())
-    }
-
-    /// Retrieves the specified Operations resource.
-    pub fn get_operation(&self) -> super::builder::firewalls::GetOperation {
-        super::builder::firewalls::GetOperation::new(self.inner.clone())
     }
 }
 
@@ -2115,17 +3476,65 @@ impl ForwardingRules {
     }
 
     /// Deletes the specified ForwardingRule resource.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::ForwardingRules;
+    /// async fn sample(
+    ///    client: &ForwardingRules
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .delete()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn delete(&self) -> super::builder::forwarding_rules::Delete {
         super::builder::forwarding_rules::Delete::new(self.inner.clone())
     }
 
     /// Returns the specified ForwardingRule resource.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::ForwardingRules;
+    /// async fn sample(
+    ///    client: &ForwardingRules
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get(&self) -> super::builder::forwarding_rules::Get {
         super::builder::forwarding_rules::Get::new(self.inner.clone())
     }
 
     /// Creates a ForwardingRule resource in the specified project and region using
     /// the data included in the request.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::ForwardingRules;
+    /// async fn sample(
+    ///    client: &ForwardingRules
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .insert()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn insert(&self) -> super::builder::forwarding_rules::Insert {
         super::builder::forwarding_rules::Insert::new(self.inner.clone())
     }
@@ -2141,6 +3550,22 @@ impl ForwardingRules {
     /// semantics and uses theJSON merge
     /// patch format and processing rules. Currently, you can only
     /// patch the network_tier field.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::ForwardingRules;
+    /// async fn sample(
+    ///    client: &ForwardingRules
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .patch()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn patch(&self) -> super::builder::forwarding_rules::Patch {
         super::builder::forwarding_rules::Patch::new(self.inner.clone())
     }
@@ -2148,19 +3573,46 @@ impl ForwardingRules {
     /// Sets the labels on the specified resource. To learn more about labels,
     /// read the
     /// Labeling Resources documentation.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::ForwardingRules;
+    /// async fn sample(
+    ///    client: &ForwardingRules
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .set_labels()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn set_labels(&self) -> super::builder::forwarding_rules::SetLabels {
         super::builder::forwarding_rules::SetLabels::new(self.inner.clone())
     }
 
     /// Changes target URL for forwarding rule. The new target should be of the
     /// same type as the old target.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::ForwardingRules;
+    /// async fn sample(
+    ///    client: &ForwardingRules
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .set_target()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn set_target(&self) -> super::builder::forwarding_rules::SetTarget {
         super::builder::forwarding_rules::SetTarget::new(self.inner.clone())
-    }
-
-    /// Retrieves the specified region-specific Operations resource.
-    pub fn get_operation(&self) -> super::builder::forwarding_rules::GetOperation {
-        super::builder::forwarding_rules::GetOperation::new(self.inner.clone())
     }
 }
 
@@ -2281,21 +3733,85 @@ impl FutureReservations {
     }
 
     /// Cancel the specified future reservation.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::FutureReservations;
+    /// async fn sample(
+    ///    client: &FutureReservations
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .cancel()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn cancel(&self) -> super::builder::future_reservations::Cancel {
         super::builder::future_reservations::Cancel::new(self.inner.clone())
     }
 
     /// Deletes the specified future reservation.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::FutureReservations;
+    /// async fn sample(
+    ///    client: &FutureReservations
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .delete()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn delete(&self) -> super::builder::future_reservations::Delete {
         super::builder::future_reservations::Delete::new(self.inner.clone())
     }
 
     /// Retrieves information about the specified future reservation.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::FutureReservations;
+    /// async fn sample(
+    ///    client: &FutureReservations
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get(&self) -> super::builder::future_reservations::Get {
         super::builder::future_reservations::Get::new(self.inner.clone())
     }
 
     /// Creates a new Future Reservation.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::FutureReservations;
+    /// async fn sample(
+    ///    client: &FutureReservations
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .insert()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn insert(&self) -> super::builder::future_reservations::Insert {
         super::builder::future_reservations::Insert::new(self.inner.clone())
     }
@@ -2307,13 +3823,24 @@ impl FutureReservations {
     }
 
     /// Updates the specified future reservation.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::FutureReservations;
+    /// async fn sample(
+    ///    client: &FutureReservations
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .update()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn update(&self) -> super::builder::future_reservations::Update {
         super::builder::future_reservations::Update::new(self.inner.clone())
-    }
-
-    /// Retrieves the specified zone-specific Operations resource.
-    pub fn get_operation(&self) -> super::builder::future_reservations::GetOperation {
-        super::builder::future_reservations::GetOperation::new(self.inner.clone())
     }
 }
 
@@ -2426,17 +3953,65 @@ impl GlobalAddresses {
     }
 
     /// Deletes the specified address resource.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::GlobalAddresses;
+    /// async fn sample(
+    ///    client: &GlobalAddresses
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .delete()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn delete(&self) -> super::builder::global_addresses::Delete {
         super::builder::global_addresses::Delete::new(self.inner.clone())
     }
 
     /// Returns the specified address resource.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::GlobalAddresses;
+    /// async fn sample(
+    ///    client: &GlobalAddresses
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get(&self) -> super::builder::global_addresses::Get {
         super::builder::global_addresses::Get::new(self.inner.clone())
     }
 
     /// Creates an address resource in the specified project by using the data
     /// included in the request.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::GlobalAddresses;
+    /// async fn sample(
+    ///    client: &GlobalAddresses
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .insert()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn insert(&self) -> super::builder::global_addresses::Insert {
         super::builder::global_addresses::Insert::new(self.inner.clone())
     }
@@ -2447,24 +4022,67 @@ impl GlobalAddresses {
     }
 
     /// Moves the specified address resource from one project to another project.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::GlobalAddresses;
+    /// async fn sample(
+    ///    client: &GlobalAddresses
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .r#move()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn r#move(&self) -> super::builder::global_addresses::Move {
         super::builder::global_addresses::Move::new(self.inner.clone())
     }
 
     /// Sets the labels on a GlobalAddress. To learn more about labels, read theLabeling
     /// Resources documentation.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::GlobalAddresses;
+    /// async fn sample(
+    ///    client: &GlobalAddresses
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .set_labels()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn set_labels(&self) -> super::builder::global_addresses::SetLabels {
         super::builder::global_addresses::SetLabels::new(self.inner.clone())
     }
 
     /// Returns permissions that a caller has on the specified resource.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::GlobalAddresses;
+    /// async fn sample(
+    ///    client: &GlobalAddresses
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .test_iam_permissions()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn test_iam_permissions(&self) -> super::builder::global_addresses::TestIamPermissions {
         super::builder::global_addresses::TestIamPermissions::new(self.inner.clone())
-    }
-
-    /// Retrieves the specified Operations resource.
-    pub fn get_operation(&self) -> super::builder::global_addresses::GetOperation {
-        super::builder::global_addresses::GetOperation::new(self.inner.clone())
     }
 }
 
@@ -2577,18 +4195,66 @@ impl GlobalForwardingRules {
     }
 
     /// Deletes the specified GlobalForwardingRule resource.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::GlobalForwardingRules;
+    /// async fn sample(
+    ///    client: &GlobalForwardingRules
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .delete()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn delete(&self) -> super::builder::global_forwarding_rules::Delete {
         super::builder::global_forwarding_rules::Delete::new(self.inner.clone())
     }
 
     /// Returns the specified GlobalForwardingRule resource. Gets a list of
     /// available forwarding rules by making a list() request.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::GlobalForwardingRules;
+    /// async fn sample(
+    ///    client: &GlobalForwardingRules
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get(&self) -> super::builder::global_forwarding_rules::Get {
         super::builder::global_forwarding_rules::Get::new(self.inner.clone())
     }
 
     /// Creates a GlobalForwardingRule resource in the specified project using
     /// the data included in the request.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::GlobalForwardingRules;
+    /// async fn sample(
+    ///    client: &GlobalForwardingRules
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .insert()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn insert(&self) -> super::builder::global_forwarding_rules::Insert {
         super::builder::global_forwarding_rules::Insert::new(self.inner.clone())
     }
@@ -2604,6 +4270,22 @@ impl GlobalForwardingRules {
     /// semantics and uses theJSON merge
     /// patch format and processing rules. Currently, you can only
     /// patch the network_tier field.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::GlobalForwardingRules;
+    /// async fn sample(
+    ///    client: &GlobalForwardingRules
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .patch()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn patch(&self) -> super::builder::global_forwarding_rules::Patch {
         super::builder::global_forwarding_rules::Patch::new(self.inner.clone())
     }
@@ -2611,19 +4293,46 @@ impl GlobalForwardingRules {
     /// Sets the labels on the specified resource. To learn more about labels,
     /// read the
     /// Labeling resources documentation.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::GlobalForwardingRules;
+    /// async fn sample(
+    ///    client: &GlobalForwardingRules
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .set_labels()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn set_labels(&self) -> super::builder::global_forwarding_rules::SetLabels {
         super::builder::global_forwarding_rules::SetLabels::new(self.inner.clone())
     }
 
     /// Changes target URL for the GlobalForwardingRule resource. The new target
     /// should be of the same type as the old target.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::GlobalForwardingRules;
+    /// async fn sample(
+    ///    client: &GlobalForwardingRules
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .set_target()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn set_target(&self) -> super::builder::global_forwarding_rules::SetTarget {
         super::builder::global_forwarding_rules::SetTarget::new(self.inner.clone())
-    }
-
-    /// Retrieves the specified Operations resource.
-    pub fn get_operation(&self) -> super::builder::global_forwarding_rules::GetOperation {
-        super::builder::global_forwarding_rules::GetOperation::new(self.inner.clone())
     }
 }
 
@@ -2737,6 +4446,22 @@ impl GlobalNetworkEndpointGroups {
     }
 
     /// Attach a network endpoint to the specified network endpoint group.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::GlobalNetworkEndpointGroups;
+    /// async fn sample(
+    ///    client: &GlobalNetworkEndpointGroups
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .attach_network_endpoints()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn attach_network_endpoints(
         &self,
     ) -> super::builder::global_network_endpoint_groups::AttachNetworkEndpoints {
@@ -2747,11 +4472,43 @@ impl GlobalNetworkEndpointGroups {
 
     /// Deletes the specified network endpoint group.Note that the NEG cannot be
     /// deleted if there are backend services referencing it.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::GlobalNetworkEndpointGroups;
+    /// async fn sample(
+    ///    client: &GlobalNetworkEndpointGroups
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .delete()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn delete(&self) -> super::builder::global_network_endpoint_groups::Delete {
         super::builder::global_network_endpoint_groups::Delete::new(self.inner.clone())
     }
 
     /// Detach the network endpoint from the specified network endpoint group.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::GlobalNetworkEndpointGroups;
+    /// async fn sample(
+    ///    client: &GlobalNetworkEndpointGroups
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .detach_network_endpoints()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn detach_network_endpoints(
         &self,
     ) -> super::builder::global_network_endpoint_groups::DetachNetworkEndpoints {
@@ -2761,12 +4518,44 @@ impl GlobalNetworkEndpointGroups {
     }
 
     /// Returns the specified network endpoint group.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::GlobalNetworkEndpointGroups;
+    /// async fn sample(
+    ///    client: &GlobalNetworkEndpointGroups
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get(&self) -> super::builder::global_network_endpoint_groups::Get {
         super::builder::global_network_endpoint_groups::Get::new(self.inner.clone())
     }
 
     /// Creates a network endpoint group in the specified project using the
     /// parameters that are included in the request.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::GlobalNetworkEndpointGroups;
+    /// async fn sample(
+    ///    client: &GlobalNetworkEndpointGroups
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .insert()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn insert(&self) -> super::builder::global_network_endpoint_groups::Insert {
         super::builder::global_network_endpoint_groups::Insert::new(self.inner.clone())
     }
@@ -2784,11 +4573,6 @@ impl GlobalNetworkEndpointGroups {
         super::builder::global_network_endpoint_groups::ListNetworkEndpoints::new(
             self.inner.clone(),
         )
-    }
-
-    /// Retrieves the specified Operations resource.
-    pub fn get_operation(&self) -> super::builder::global_network_endpoint_groups::GetOperation {
-        super::builder::global_network_endpoint_groups::GetOperation::new(self.inner.clone())
     }
 }
 
@@ -2909,11 +4693,42 @@ impl GlobalOperations {
     }
 
     /// Deletes the specified Operations resource.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::GlobalOperations;
+    /// async fn sample(
+    ///    client: &GlobalOperations
+    /// ) -> gax::Result<()> {
+    ///     client
+    ///         .delete()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn delete(&self) -> super::builder::global_operations::Delete {
         super::builder::global_operations::Delete::new(self.inner.clone())
     }
 
     /// Retrieves the specified Operations resource.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::GlobalOperations;
+    /// async fn sample(
+    ///    client: &GlobalOperations
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get(&self) -> super::builder::global_operations::Get {
         super::builder::global_operations::Get::new(self.inner.clone())
     }
@@ -2942,6 +4757,22 @@ impl GlobalOperations {
     /// - If the default deadline is reached, there is no guarantee that the
     ///   operation is actually done when the method returns. Be prepared to retry
     ///   if the operation is not `DONE`.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::GlobalOperations;
+    /// async fn sample(
+    ///    client: &GlobalOperations
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .wait()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn wait(&self) -> super::builder::global_operations::Wait {
         super::builder::global_operations::Wait::new(self.inner.clone())
     }
@@ -3057,12 +4888,43 @@ impl GlobalOrganizationOperations {
     }
 
     /// Deletes the specified Operations resource.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::GlobalOrganizationOperations;
+    /// async fn sample(
+    ///    client: &GlobalOrganizationOperations
+    /// ) -> gax::Result<()> {
+    ///     client
+    ///         .delete()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn delete(&self) -> super::builder::global_organization_operations::Delete {
         super::builder::global_organization_operations::Delete::new(self.inner.clone())
     }
 
     /// Retrieves the specified Operations resource. Gets a list of operations
     /// by making a `list()` request.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::GlobalOrganizationOperations;
+    /// async fn sample(
+    ///    client: &GlobalOrganizationOperations
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get(&self) -> super::builder::global_organization_operations::Get {
         super::builder::global_organization_operations::Get::new(self.inner.clone())
     }
@@ -3184,17 +5046,65 @@ impl GlobalPublicDelegatedPrefixes {
     }
 
     /// Deletes the specified global PublicDelegatedPrefix.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::GlobalPublicDelegatedPrefixes;
+    /// async fn sample(
+    ///    client: &GlobalPublicDelegatedPrefixes
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .delete()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn delete(&self) -> super::builder::global_public_delegated_prefixes::Delete {
         super::builder::global_public_delegated_prefixes::Delete::new(self.inner.clone())
     }
 
     /// Returns the specified global PublicDelegatedPrefix resource.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::GlobalPublicDelegatedPrefixes;
+    /// async fn sample(
+    ///    client: &GlobalPublicDelegatedPrefixes
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get(&self) -> super::builder::global_public_delegated_prefixes::Get {
         super::builder::global_public_delegated_prefixes::Get::new(self.inner.clone())
     }
 
     /// Creates a global PublicDelegatedPrefix in the specified project using the
     /// parameters that are included in the request.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::GlobalPublicDelegatedPrefixes;
+    /// async fn sample(
+    ///    client: &GlobalPublicDelegatedPrefixes
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .insert()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn insert(&self) -> super::builder::global_public_delegated_prefixes::Insert {
         super::builder::global_public_delegated_prefixes::Insert::new(self.inner.clone())
     }
@@ -3208,13 +5118,24 @@ impl GlobalPublicDelegatedPrefixes {
     /// included in the request. This method supportsPATCH
     /// semantics and usesJSON merge
     /// patch format and processing rules.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::GlobalPublicDelegatedPrefixes;
+    /// async fn sample(
+    ///    client: &GlobalPublicDelegatedPrefixes
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .patch()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn patch(&self) -> super::builder::global_public_delegated_prefixes::Patch {
         super::builder::global_public_delegated_prefixes::Patch::new(self.inner.clone())
-    }
-
-    /// Retrieves the specified Operations resource.
-    pub fn get_operation(&self) -> super::builder::global_public_delegated_prefixes::GetOperation {
-        super::builder::global_public_delegated_prefixes::GetOperation::new(self.inner.clone())
     }
 }
 
@@ -3333,17 +5254,65 @@ impl HealthChecks {
     }
 
     /// Deletes the specified HealthCheck resource.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::HealthChecks;
+    /// async fn sample(
+    ///    client: &HealthChecks
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .delete()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn delete(&self) -> super::builder::health_checks::Delete {
         super::builder::health_checks::Delete::new(self.inner.clone())
     }
 
     /// Returns the specified HealthCheck resource.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::HealthChecks;
+    /// async fn sample(
+    ///    client: &HealthChecks
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get(&self) -> super::builder::health_checks::Get {
         super::builder::health_checks::Get::new(self.inner.clone())
     }
 
     /// Creates a HealthCheck resource in the specified project using the data
     /// included in the request.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::HealthChecks;
+    /// async fn sample(
+    ///    client: &HealthChecks
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .insert()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn insert(&self) -> super::builder::health_checks::Insert {
         super::builder::health_checks::Insert::new(self.inner.clone())
     }
@@ -3358,19 +5327,46 @@ impl HealthChecks {
     /// included in the request. This method supportsPATCH
     /// semantics and uses theJSON merge
     /// patch format and processing rules.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::HealthChecks;
+    /// async fn sample(
+    ///    client: &HealthChecks
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .patch()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn patch(&self) -> super::builder::health_checks::Patch {
         super::builder::health_checks::Patch::new(self.inner.clone())
     }
 
     /// Updates a HealthCheck resource in the specified project using the data
     /// included in the request.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::HealthChecks;
+    /// async fn sample(
+    ///    client: &HealthChecks
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .update()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn update(&self) -> super::builder::health_checks::Update {
         super::builder::health_checks::Update::new(self.inner.clone())
-    }
-
-    /// Retrieves the specified Operations resource.
-    pub fn get_operation(&self) -> super::builder::health_checks::GetOperation {
-        super::builder::health_checks::GetOperation::new(self.inner.clone())
     }
 }
 
@@ -3483,17 +5479,65 @@ impl HttpHealthChecks {
     }
 
     /// Deletes the specified HttpHealthCheck resource.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::HttpHealthChecks;
+    /// async fn sample(
+    ///    client: &HttpHealthChecks
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .delete()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn delete(&self) -> super::builder::http_health_checks::Delete {
         super::builder::http_health_checks::Delete::new(self.inner.clone())
     }
 
     /// Returns the specified HttpHealthCheck resource.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::HttpHealthChecks;
+    /// async fn sample(
+    ///    client: &HttpHealthChecks
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get(&self) -> super::builder::http_health_checks::Get {
         super::builder::http_health_checks::Get::new(self.inner.clone())
     }
 
     /// Creates a HttpHealthCheck resource in the specified project using the data
     /// included in the request.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::HttpHealthChecks;
+    /// async fn sample(
+    ///    client: &HttpHealthChecks
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .insert()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn insert(&self) -> super::builder::http_health_checks::Insert {
         super::builder::http_health_checks::Insert::new(self.inner.clone())
     }
@@ -3508,19 +5552,46 @@ impl HttpHealthChecks {
     /// included in the request. This method supportsPATCH
     /// semantics and uses theJSON merge
     /// patch format and processing rules.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::HttpHealthChecks;
+    /// async fn sample(
+    ///    client: &HttpHealthChecks
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .patch()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn patch(&self) -> super::builder::http_health_checks::Patch {
         super::builder::http_health_checks::Patch::new(self.inner.clone())
     }
 
     /// Updates a HttpHealthCheck resource in the specified project using the data
     /// included in the request.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::HttpHealthChecks;
+    /// async fn sample(
+    ///    client: &HttpHealthChecks
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .update()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn update(&self) -> super::builder::http_health_checks::Update {
         super::builder::http_health_checks::Update::new(self.inner.clone())
-    }
-
-    /// Retrieves the specified Operations resource.
-    pub fn get_operation(&self) -> super::builder::http_health_checks::GetOperation {
-        super::builder::http_health_checks::GetOperation::new(self.inner.clone())
     }
 }
 
@@ -3633,17 +5704,65 @@ impl HttpsHealthChecks {
     }
 
     /// Deletes the specified HttpsHealthCheck resource.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::HttpsHealthChecks;
+    /// async fn sample(
+    ///    client: &HttpsHealthChecks
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .delete()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn delete(&self) -> super::builder::https_health_checks::Delete {
         super::builder::https_health_checks::Delete::new(self.inner.clone())
     }
 
     /// Returns the specified HttpsHealthCheck resource.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::HttpsHealthChecks;
+    /// async fn sample(
+    ///    client: &HttpsHealthChecks
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get(&self) -> super::builder::https_health_checks::Get {
         super::builder::https_health_checks::Get::new(self.inner.clone())
     }
 
     /// Creates a HttpsHealthCheck resource in the specified project using the data
     /// included in the request.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::HttpsHealthChecks;
+    /// async fn sample(
+    ///    client: &HttpsHealthChecks
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .insert()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn insert(&self) -> super::builder::https_health_checks::Insert {
         super::builder::https_health_checks::Insert::new(self.inner.clone())
     }
@@ -3658,19 +5777,46 @@ impl HttpsHealthChecks {
     /// included in the request. This method supportsPATCH
     /// semantics and uses theJSON merge
     /// patch format and processing rules.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::HttpsHealthChecks;
+    /// async fn sample(
+    ///    client: &HttpsHealthChecks
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .patch()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn patch(&self) -> super::builder::https_health_checks::Patch {
         super::builder::https_health_checks::Patch::new(self.inner.clone())
     }
 
     /// Updates a HttpsHealthCheck resource in the specified project using the data
     /// included in the request.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::HttpsHealthChecks;
+    /// async fn sample(
+    ///    client: &HttpsHealthChecks
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .update()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn update(&self) -> super::builder::https_health_checks::Update {
         super::builder::https_health_checks::Update::new(self.inner.clone())
-    }
-
-    /// Retrieves the specified Operations resource.
-    pub fn get_operation(&self) -> super::builder::https_health_checks::GetOperation {
-        super::builder::https_health_checks::GetOperation::new(self.inner.clone())
     }
 }
 
@@ -3784,6 +5930,22 @@ impl ImageFamilyViews {
 
     /// Returns the latest image that is part of an image family, is not
     /// deprecated and is rolled out in the specified zone.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::ImageFamilyViews;
+    /// async fn sample(
+    ///    client: &ImageFamilyViews
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get(&self) -> super::builder::image_family_views::Get {
         super::builder::image_family_views::Get::new(self.inner.clone())
     }
@@ -3895,6 +6057,22 @@ impl Images {
     }
 
     /// Deletes the specified image.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Images;
+    /// async fn sample(
+    ///    client: &Images
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .delete()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn delete(&self) -> super::builder::images::Delete {
         super::builder::images::Delete::new(self.inner.clone())
     }
@@ -3902,11 +6080,43 @@ impl Images {
     /// Sets the deprecation status of an image.
     ///
     /// If an empty request body is given, clears the deprecation status instead.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Images;
+    /// async fn sample(
+    ///    client: &Images
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .deprecate()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn deprecate(&self) -> super::builder::images::Deprecate {
         super::builder::images::Deprecate::new(self.inner.clone())
     }
 
     /// Returns the specified image.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Images;
+    /// async fn sample(
+    ///    client: &Images
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get(&self) -> super::builder::images::Get {
         super::builder::images::Get::new(self.inner.clone())
     }
@@ -3914,18 +6124,66 @@ impl Images {
     /// Returns the latest image that is part of an image family and is not
     /// deprecated. For more information on image families, seePublic
     /// image families documentation.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Images;
+    /// async fn sample(
+    ///    client: &Images
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get_from_family()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get_from_family(&self) -> super::builder::images::GetFromFamily {
         super::builder::images::GetFromFamily::new(self.inner.clone())
     }
 
     /// Gets the access control policy for a resource. May be empty if no such
     /// policy or resource exists.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Images;
+    /// async fn sample(
+    ///    client: &Images
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get_iam_policy()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get_iam_policy(&self) -> super::builder::images::GetIamPolicy {
         super::builder::images::GetIamPolicy::new(self.inner.clone())
     }
 
     /// Creates an image in the specified project using the data included
     /// in the request.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Images;
+    /// async fn sample(
+    ///    client: &Images
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .insert()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn insert(&self) -> super::builder::images::Insert {
         super::builder::images::Insert::new(self.inner.clone())
     }
@@ -3944,30 +6202,89 @@ impl Images {
     /// Patches the specified image with the data included in the request.
     /// Only the following fields can be modified: family, description,
     /// deprecation status.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Images;
+    /// async fn sample(
+    ///    client: &Images
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .patch()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn patch(&self) -> super::builder::images::Patch {
         super::builder::images::Patch::new(self.inner.clone())
     }
 
     /// Sets the access control policy on the specified resource.
     /// Replaces any existing policy.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Images;
+    /// async fn sample(
+    ///    client: &Images
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .set_iam_policy()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn set_iam_policy(&self) -> super::builder::images::SetIamPolicy {
         super::builder::images::SetIamPolicy::new(self.inner.clone())
     }
 
     /// Sets the labels on an image. To learn more about labels, read theLabeling
     /// Resources documentation.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Images;
+    /// async fn sample(
+    ///    client: &Images
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .set_labels()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn set_labels(&self) -> super::builder::images::SetLabels {
         super::builder::images::SetLabels::new(self.inner.clone())
     }
 
     /// Returns permissions that a caller has on the specified resource.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Images;
+    /// async fn sample(
+    ///    client: &Images
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .test_iam_permissions()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn test_iam_permissions(&self) -> super::builder::images::TestIamPermissions {
         super::builder::images::TestIamPermissions::new(self.inner.clone())
-    }
-
-    /// Retrieves the specified Operations resource.
-    pub fn get_operation(&self) -> super::builder::images::GetOperation {
-        super::builder::images::GetOperation::new(self.inner.clone())
     }
 }
 
@@ -4084,6 +6401,22 @@ impl InstanceGroupManagerResizeRequests {
     /// Cancelled resize request does no longer wait for the resources to be
     /// provisioned. Cancel is only possible for requests that are accepted in the
     /// queue.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::InstanceGroupManagerResizeRequests;
+    /// async fn sample(
+    ///    client: &InstanceGroupManagerResizeRequests
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .cancel()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn cancel(&self) -> super::builder::instance_group_manager_resize_requests::Cancel {
         super::builder::instance_group_manager_resize_requests::Cancel::new(self.inner.clone())
     }
@@ -4091,17 +6424,65 @@ impl InstanceGroupManagerResizeRequests {
     /// Deletes the specified, inactive resize request. Requests that are still
     /// active cannot be deleted. Deleting request does not delete instances that
     /// were provisioned previously.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::InstanceGroupManagerResizeRequests;
+    /// async fn sample(
+    ///    client: &InstanceGroupManagerResizeRequests
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .delete()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn delete(&self) -> super::builder::instance_group_manager_resize_requests::Delete {
         super::builder::instance_group_manager_resize_requests::Delete::new(self.inner.clone())
     }
 
     /// Returns all of the details about the specified resize request.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::InstanceGroupManagerResizeRequests;
+    /// async fn sample(
+    ///    client: &InstanceGroupManagerResizeRequests
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get(&self) -> super::builder::instance_group_manager_resize_requests::Get {
         super::builder::instance_group_manager_resize_requests::Get::new(self.inner.clone())
     }
 
     /// Creates a new resize request that starts provisioning VMs immediately
     /// or queues VM creation.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::InstanceGroupManagerResizeRequests;
+    /// async fn sample(
+    ///    client: &InstanceGroupManagerResizeRequests
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .insert()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn insert(&self) -> super::builder::instance_group_manager_resize_requests::Insert {
         super::builder::instance_group_manager_resize_requests::Insert::new(self.inner.clone())
     }
@@ -4110,15 +6491,6 @@ impl InstanceGroupManagerResizeRequests {
     /// managed instance group.
     pub fn list(&self) -> super::builder::instance_group_manager_resize_requests::List {
         super::builder::instance_group_manager_resize_requests::List::new(self.inner.clone())
-    }
-
-    /// Retrieves the specified zone-specific Operations resource.
-    pub fn get_operation(
-        &self,
-    ) -> super::builder::instance_group_manager_resize_requests::GetOperation {
-        super::builder::instance_group_manager_resize_requests::GetOperation::new(
-            self.inner.clone(),
-        )
     }
 }
 
@@ -4245,6 +6617,22 @@ impl InstanceGroupManagers {
     /// draining duration has elapsed before the VM instance is removed or deleted.
     ///
     /// You can specify a maximum of 1000 instances with this method per request.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::InstanceGroupManagers;
+    /// async fn sample(
+    ///    client: &InstanceGroupManagers
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .abandon_instances()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn abandon_instances(&self) -> super::builder::instance_group_managers::AbandonInstances {
         super::builder::instance_group_managers::AbandonInstances::new(self.inner.clone())
     }
@@ -4259,6 +6647,22 @@ impl InstanceGroupManagers {
 
     /// Applies changes to selected instances on the managed instance group.
     /// This method can be used to apply new overrides and/or new versions.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::InstanceGroupManagers;
+    /// async fn sample(
+    ///    client: &InstanceGroupManagers
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .apply_updates_to_instances()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn apply_updates_to_instances(
         &self,
     ) -> super::builder::instance_group_managers::ApplyUpdatesToInstances {
@@ -4269,6 +6673,22 @@ impl InstanceGroupManagers {
     /// group. Instances are created using the current instance template. Thecreate instances operation is marked DONE if thecreateInstances request is successful. The underlying actions
     /// take additional time. You must separately verify the status of thecreating or actions with the listmanagedinstances
     /// method.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::InstanceGroupManagers;
+    /// async fn sample(
+    ///    client: &InstanceGroupManagers
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .create_instances()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn create_instances(&self) -> super::builder::instance_group_managers::CreateInstances {
         super::builder::instance_group_managers::CreateInstances::new(self.inner.clone())
     }
@@ -4277,6 +6697,22 @@ impl InstanceGroupManagers {
     /// in that group. Note that the instance group must not belong to a
     /// backend service. Read
     /// Deleting an instance group for more information.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::InstanceGroupManagers;
+    /// async fn sample(
+    ///    client: &InstanceGroupManagers
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .delete()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn delete(&self) -> super::builder::instance_group_managers::Delete {
         super::builder::instance_group_managers::Delete::new(self.inner.clone())
     }
@@ -4296,12 +6732,44 @@ impl InstanceGroupManagers {
     /// draining duration has elapsed before the VM instance is removed or deleted.
     ///
     /// You can specify a maximum of 1000 instances with this method per request.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::InstanceGroupManagers;
+    /// async fn sample(
+    ///    client: &InstanceGroupManagers
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .delete_instances()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn delete_instances(&self) -> super::builder::instance_group_managers::DeleteInstances {
         super::builder::instance_group_managers::DeleteInstances::new(self.inner.clone())
     }
 
     /// Deletes selected per-instance configurations for the managed instance
     /// group.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::InstanceGroupManagers;
+    /// async fn sample(
+    ///    client: &InstanceGroupManagers
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .delete_per_instance_configs()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn delete_per_instance_configs(
         &self,
     ) -> super::builder::instance_group_managers::DeletePerInstanceConfigs {
@@ -4309,6 +6777,22 @@ impl InstanceGroupManagers {
     }
 
     /// Returns all of the details about the specified managed instance group.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::InstanceGroupManagers;
+    /// async fn sample(
+    ///    client: &InstanceGroupManagers
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get(&self) -> super::builder::instance_group_managers::Get {
         super::builder::instance_group_managers::Get::new(self.inner.clone())
     }
@@ -4324,6 +6808,22 @@ impl InstanceGroupManagers {
     /// A managed instance group can have up to 1000 VM instances per group. Please
     /// contact Cloud Support if you need an increase in
     /// this limit.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::InstanceGroupManagers;
+    /// async fn sample(
+    ///    client: &InstanceGroupManagers
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .insert()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn insert(&self) -> super::builder::instance_group_managers::Insert {
         super::builder::instance_group_managers::Insert::new(self.inner.clone())
     }
@@ -4379,6 +6879,22 @@ impl InstanceGroupManagers {
     /// in the group is different from the current state of that VM. To learn how
     /// to apply an updated configuration to the VMs in a MIG, seeUpdating instances in
     /// a MIG.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::InstanceGroupManagers;
+    /// async fn sample(
+    ///    client: &InstanceGroupManagers
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .patch()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn patch(&self) -> super::builder::instance_group_managers::Patch {
         super::builder::instance_group_managers::Patch::new(self.inner.clone())
     }
@@ -4386,6 +6902,22 @@ impl InstanceGroupManagers {
     /// Inserts or patches per-instance configurations for the managed instance
     /// group. perInstanceConfig.name serves as a key used to
     /// distinguish whether to perform insert or patch.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::InstanceGroupManagers;
+    /// async fn sample(
+    ///    client: &InstanceGroupManagers
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .patch_per_instance_configs()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn patch_per_instance_configs(
         &self,
     ) -> super::builder::instance_group_managers::PatchPerInstanceConfigs {
@@ -4405,6 +6937,22 @@ impl InstanceGroupManagers {
     /// draining duration has elapsed before the VM instance is removed or deleted.
     ///
     /// You can specify a maximum of 1000 instances with this method per request.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::InstanceGroupManagers;
+    /// async fn sample(
+    ///    client: &InstanceGroupManagers
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .recreate_instances()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn recreate_instances(&self) -> super::builder::instance_group_managers::RecreateInstances {
         super::builder::instance_group_managers::RecreateInstances::new(self.inner.clone())
     }
@@ -4432,6 +6980,22 @@ impl InstanceGroupManagers {
     /// service that has enabled
     /// connection draining, it can take up to 60 seconds after the connection
     /// draining duration has elapsed before the VM instance is removed or deleted.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::InstanceGroupManagers;
+    /// async fn sample(
+    ///    client: &InstanceGroupManagers
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .resize()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn resize(&self) -> super::builder::instance_group_managers::Resize {
         super::builder::instance_group_managers::Resize::new(self.inner.clone())
     }
@@ -4452,6 +7016,22 @@ impl InstanceGroupManagers {
     /// instances will be verified as healthy after they are resumed.
     ///
     /// You can specify a maximum of 1000 instances with this method per request.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::InstanceGroupManagers;
+    /// async fn sample(
+    ///    client: &InstanceGroupManagers
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .resume_instances()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn resume_instances(&self) -> super::builder::instance_group_managers::ResumeInstances {
         super::builder::instance_group_managers::ResumeInstances::new(self.inner.clone())
     }
@@ -4459,6 +7039,22 @@ impl InstanceGroupManagers {
     /// Specifies the instance template to use when creating new instances in this
     /// group. The templates for existing instances in the group do not change
     /// unless you run recreateInstances, runapplyUpdatesToInstances, or set the group'supdatePolicy.type to PROACTIVE.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::InstanceGroupManagers;
+    /// async fn sample(
+    ///    client: &InstanceGroupManagers
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .set_instance_template()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn set_instance_template(
         &self,
     ) -> super::builder::instance_group_managers::SetInstanceTemplate {
@@ -4471,6 +7067,22 @@ impl InstanceGroupManagers {
     /// yet been added to their target pools. The change might take some time to
     /// apply to all of the instances in the group depending on the size of the
     /// group.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::InstanceGroupManagers;
+    /// async fn sample(
+    ///    client: &InstanceGroupManagers
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .set_target_pools()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn set_target_pools(&self) -> super::builder::instance_group_managers::SetTargetPools {
         super::builder::instance_group_managers::SetTargetPools::new(self.inner.clone())
     }
@@ -4491,6 +7103,22 @@ impl InstanceGroupManagers {
     /// instances will be verified as healthy after they are started.
     ///
     /// You can specify a maximum of 1000 instances with this method per request.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::InstanceGroupManagers;
+    /// async fn sample(
+    ///    client: &InstanceGroupManagers
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .start_instances()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn start_instances(&self) -> super::builder::instance_group_managers::StartInstances {
         super::builder::instance_group_managers::StartInstances::new(self.inner.clone())
     }
@@ -4520,6 +7148,22 @@ impl InstanceGroupManagers {
     /// method.
     ///
     /// You can specify a maximum of 1000 instances with this method per request.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::InstanceGroupManagers;
+    /// async fn sample(
+    ///    client: &InstanceGroupManagers
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .stop_instances()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn stop_instances(&self) -> super::builder::instance_group_managers::StopInstances {
         super::builder::instance_group_managers::StopInstances::new(self.inner.clone())
     }
@@ -4549,6 +7193,22 @@ impl InstanceGroupManagers {
     /// method.
     ///
     /// You can specify a maximum of 1000 instances with this method per request.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::InstanceGroupManagers;
+    /// async fn sample(
+    ///    client: &InstanceGroupManagers
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .suspend_instances()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn suspend_instances(&self) -> super::builder::instance_group_managers::SuspendInstances {
         super::builder::instance_group_managers::SuspendInstances::new(self.inner.clone())
     }
@@ -4556,15 +7216,26 @@ impl InstanceGroupManagers {
     /// Inserts or updates per-instance configurations for the managed instance
     /// group. perInstanceConfig.name serves as a key used to
     /// distinguish whether to perform insert or patch.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::InstanceGroupManagers;
+    /// async fn sample(
+    ///    client: &InstanceGroupManagers
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .update_per_instance_configs()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn update_per_instance_configs(
         &self,
     ) -> super::builder::instance_group_managers::UpdatePerInstanceConfigs {
         super::builder::instance_group_managers::UpdatePerInstanceConfigs::new(self.inner.clone())
-    }
-
-    /// Retrieves the specified zone-specific Operations resource.
-    pub fn get_operation(&self) -> super::builder::instance_group_managers::GetOperation {
-        super::builder::instance_group_managers::GetOperation::new(self.inner.clone())
     }
 }
 
@@ -4677,6 +7348,22 @@ impl InstanceGroups {
     /// instances in the instance group must be in the same network/subnetwork.
     /// Read
     /// Adding instances for more information.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::InstanceGroups;
+    /// async fn sample(
+    ///    client: &InstanceGroups
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .add_instances()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn add_instances(&self) -> super::builder::instance_groups::AddInstances {
         super::builder::instance_groups::AddInstances::new(self.inner.clone())
     }
@@ -4693,6 +7380,22 @@ impl InstanceGroups {
     /// deleted. Note that instance group must not belong to a backend service.
     /// Read
     /// Deleting an instance group for more information.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::InstanceGroups;
+    /// async fn sample(
+    ///    client: &InstanceGroups
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .delete()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn delete(&self) -> super::builder::instance_groups::Delete {
         super::builder::instance_groups::Delete::new(self.inner.clone())
     }
@@ -4703,12 +7406,44 @@ impl InstanceGroups {
     /// For managed instance groups, use theinstanceGroupManagers
     /// or regionInstanceGroupManagers
     /// methods instead.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::InstanceGroups;
+    /// async fn sample(
+    ///    client: &InstanceGroups
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get(&self) -> super::builder::instance_groups::Get {
         super::builder::instance_groups::Get::new(self.inner.clone())
     }
 
     /// Creates an instance group in the specified project using the
     /// parameters that are included in the request.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::InstanceGroups;
+    /// async fn sample(
+    ///    client: &InstanceGroups
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .insert()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn insert(&self) -> super::builder::instance_groups::Insert {
         super::builder::instance_groups::Insert::new(self.inner.clone())
     }
@@ -4738,23 +7473,66 @@ impl InstanceGroups {
     /// service that has enabled
     /// connection draining, it can take up to 60 seconds after the connection
     /// draining duration before the VM instance is removed or deleted.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::InstanceGroups;
+    /// async fn sample(
+    ///    client: &InstanceGroups
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .remove_instances()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn remove_instances(&self) -> super::builder::instance_groups::RemoveInstances {
         super::builder::instance_groups::RemoveInstances::new(self.inner.clone())
     }
 
     /// Sets the named ports for the specified instance group.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::InstanceGroups;
+    /// async fn sample(
+    ///    client: &InstanceGroups
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .set_named_ports()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn set_named_ports(&self) -> super::builder::instance_groups::SetNamedPorts {
         super::builder::instance_groups::SetNamedPorts::new(self.inner.clone())
     }
 
     /// Returns permissions that a caller has on the specified resource.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::InstanceGroups;
+    /// async fn sample(
+    ///    client: &InstanceGroups
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .test_iam_permissions()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn test_iam_permissions(&self) -> super::builder::instance_groups::TestIamPermissions {
         super::builder::instance_groups::TestIamPermissions::new(self.inner.clone())
-    }
-
-    /// Retrieves the specified zone-specific Operations resource.
-    pub fn get_operation(&self) -> super::builder::instance_groups::GetOperation {
-        super::builder::instance_groups::GetOperation::new(self.inner.clone())
     }
 }
 
@@ -4867,18 +7645,45 @@ impl InstanceSettings {
     }
 
     /// Get Instance settings.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::InstanceSettings;
+    /// async fn sample(
+    ///    client: &InstanceSettings
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get(&self) -> super::builder::instance_settings::Get {
         super::builder::instance_settings::Get::new(self.inner.clone())
     }
 
     /// Patch Instance settings
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::InstanceSettings;
+    /// async fn sample(
+    ///    client: &InstanceSettings
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .patch()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn patch(&self) -> super::builder::instance_settings::Patch {
         super::builder::instance_settings::Patch::new(self.inner.clone())
-    }
-
-    /// Retrieves the specified zone-specific Operations resource.
-    pub fn get_operation(&self) -> super::builder::instance_settings::GetOperation {
-        super::builder::instance_settings::GetOperation::new(self.inner.clone())
     }
 }
 
@@ -5002,17 +7807,65 @@ impl InstanceTemplates {
     /// Deletes the specified instance template. Deleting an instance template is
     /// permanent and cannot be undone. It is not possible to delete templates
     /// that are already in use by a managed instance group.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::InstanceTemplates;
+    /// async fn sample(
+    ///    client: &InstanceTemplates
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .delete()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn delete(&self) -> super::builder::instance_templates::Delete {
         super::builder::instance_templates::Delete::new(self.inner.clone())
     }
 
     /// Returns the specified instance template.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::InstanceTemplates;
+    /// async fn sample(
+    ///    client: &InstanceTemplates
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get(&self) -> super::builder::instance_templates::Get {
         super::builder::instance_templates::Get::new(self.inner.clone())
     }
 
     /// Gets the access control policy for a resource. May be empty if no such
     /// policy or resource exists.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::InstanceTemplates;
+    /// async fn sample(
+    ///    client: &InstanceTemplates
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get_iam_policy()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get_iam_policy(&self) -> super::builder::instance_templates::GetIamPolicy {
         super::builder::instance_templates::GetIamPolicy::new(self.inner.clone())
     }
@@ -5022,6 +7875,22 @@ impl InstanceTemplates {
     /// update an existing instance group, your new instance template must use the
     /// same network or, if applicable, the same subnetwork as the original
     /// template.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::InstanceTemplates;
+    /// async fn sample(
+    ///    client: &InstanceTemplates
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .insert()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn insert(&self) -> super::builder::instance_templates::Insert {
         super::builder::instance_templates::Insert::new(self.inner.clone())
     }
@@ -5034,18 +7903,45 @@ impl InstanceTemplates {
 
     /// Sets the access control policy on the specified resource.
     /// Replaces any existing policy.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::InstanceTemplates;
+    /// async fn sample(
+    ///    client: &InstanceTemplates
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .set_iam_policy()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn set_iam_policy(&self) -> super::builder::instance_templates::SetIamPolicy {
         super::builder::instance_templates::SetIamPolicy::new(self.inner.clone())
     }
 
     /// Returns permissions that a caller has on the specified resource.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::InstanceTemplates;
+    /// async fn sample(
+    ///    client: &InstanceTemplates
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .test_iam_permissions()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn test_iam_permissions(&self) -> super::builder::instance_templates::TestIamPermissions {
         super::builder::instance_templates::TestIamPermissions::new(self.inner.clone())
-    }
-
-    /// Retrieves the specified Operations resource.
-    pub fn get_operation(&self) -> super::builder::instance_templates::GetOperation {
-        super::builder::instance_templates::GetOperation::new(self.inner.clone())
     }
 }
 
@@ -5155,11 +8051,43 @@ impl Instances {
     }
 
     /// Adds an access config to an instance's network interface.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Instances;
+    /// async fn sample(
+    ///    client: &Instances
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .add_access_config()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn add_access_config(&self) -> super::builder::instances::AddAccessConfig {
         super::builder::instances::AddAccessConfig::new(self.inner.clone())
     }
 
     /// Adds one dynamic network interface to an active instance.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Instances;
+    /// async fn sample(
+    ///    client: &Instances
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .add_network_interface()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn add_network_interface(&self) -> super::builder::instances::AddNetworkInterface {
         super::builder::instances::AddNetworkInterface::new(self.inner.clone())
     }
@@ -5167,6 +8095,22 @@ impl Instances {
     /// Adds existing resource policies to an instance. You can only add one
     /// policy right now which will be applied to this instance for scheduling live
     /// migrations.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Instances;
+    /// async fn sample(
+    ///    client: &Instances
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .add_resource_policies()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn add_resource_policies(&self) -> super::builder::instances::AddResourcePolicies {
         super::builder::instances::AddResourcePolicies::new(self.inner.clone())
     }
@@ -5187,6 +8131,22 @@ impl Instances {
     /// create the disk before you can attach it. It is not possible to create
     /// and attach a disk at the same time. For more information, readAdding a
     /// persistent disk to your instance.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Instances;
+    /// async fn sample(
+    ///    client: &Instances
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .attach_disk()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn attach_disk(&self) -> super::builder::instances::AttachDisk {
         super::builder::instances::AttachDisk::new(self.inner.clone())
     }
@@ -5194,17 +8154,65 @@ impl Instances {
     /// Creates multiple instances. Count specifies the number of instances to
     /// create. For more information, seeAbout bulk
     /// creation of VMs.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Instances;
+    /// async fn sample(
+    ///    client: &Instances
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .bulk_insert()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn bulk_insert(&self) -> super::builder::instances::BulkInsert {
         super::builder::instances::BulkInsert::new(self.inner.clone())
     }
 
     /// Deletes the specified Instance resource. For more information, seeDeleting
     /// an instance.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Instances;
+    /// async fn sample(
+    ///    client: &Instances
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .delete()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn delete(&self) -> super::builder::instances::Delete {
         super::builder::instances::Delete::new(self.inner.clone())
     }
 
     /// Deletes an access config from an instance's network interface.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Instances;
+    /// async fn sample(
+    ///    client: &Instances
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .delete_access_config()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn delete_access_config(&self) -> super::builder::instances::DeleteAccessConfig {
         super::builder::instances::DeleteAccessConfig::new(self.inner.clone())
     }
@@ -5215,47 +8223,191 @@ impl Instances {
     /// - instance from which to delete, using project+zone+resource_id fields;
     /// - dynamic network interface to be deleted, using network_interface_name
     ///   field;
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Instances;
+    /// async fn sample(
+    ///    client: &Instances
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .delete_network_interface()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn delete_network_interface(&self) -> super::builder::instances::DeleteNetworkInterface {
         super::builder::instances::DeleteNetworkInterface::new(self.inner.clone())
     }
 
     /// Detaches a disk from an instance.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Instances;
+    /// async fn sample(
+    ///    client: &Instances
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .detach_disk()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn detach_disk(&self) -> super::builder::instances::DetachDisk {
         super::builder::instances::DetachDisk::new(self.inner.clone())
     }
 
     /// Returns the specified Instance resource.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Instances;
+    /// async fn sample(
+    ///    client: &Instances
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get(&self) -> super::builder::instances::Get {
         super::builder::instances::Get::new(self.inner.clone())
     }
 
     /// Returns effective firewalls applied to an interface of the instance.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Instances;
+    /// async fn sample(
+    ///    client: &Instances
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get_effective_firewalls()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get_effective_firewalls(&self) -> super::builder::instances::GetEffectiveFirewalls {
         super::builder::instances::GetEffectiveFirewalls::new(self.inner.clone())
     }
 
     /// Returns the specified guest attributes entry.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Instances;
+    /// async fn sample(
+    ///    client: &Instances
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get_guest_attributes()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get_guest_attributes(&self) -> super::builder::instances::GetGuestAttributes {
         super::builder::instances::GetGuestAttributes::new(self.inner.clone())
     }
 
     /// Gets the access control policy for a resource. May be empty if no such
     /// policy or resource exists.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Instances;
+    /// async fn sample(
+    ///    client: &Instances
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get_iam_policy()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get_iam_policy(&self) -> super::builder::instances::GetIamPolicy {
         super::builder::instances::GetIamPolicy::new(self.inner.clone())
     }
 
     /// Returns the screenshot from the specified instance.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Instances;
+    /// async fn sample(
+    ///    client: &Instances
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get_screenshot()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get_screenshot(&self) -> super::builder::instances::GetScreenshot {
         super::builder::instances::GetScreenshot::new(self.inner.clone())
     }
 
     /// Returns the last 1 MB of serial port output from the specified instance.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Instances;
+    /// async fn sample(
+    ///    client: &Instances
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get_serial_port_output()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get_serial_port_output(&self) -> super::builder::instances::GetSerialPortOutput {
         super::builder::instances::GetSerialPortOutput::new(self.inner.clone())
     }
 
     /// Returns the Shielded Instance Identity of an instance
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Instances;
+    /// async fn sample(
+    ///    client: &Instances
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get_shielded_instance_identity()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get_shielded_instance_identity(
         &self,
     ) -> super::builder::instances::GetShieldedInstanceIdentity {
@@ -5264,6 +8416,22 @@ impl Instances {
 
     /// Creates an instance resource in the specified project using the data
     /// included in the request.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Instances;
+    /// async fn sample(
+    ///    client: &Instances
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .insert()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn insert(&self) -> super::builder::instances::Insert {
         super::builder::instances::Insert::new(self.inner.clone())
     }
@@ -5284,16 +8452,64 @@ impl Instances {
     }
 
     /// Perform a manual maintenance on the instance.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Instances;
+    /// async fn sample(
+    ///    client: &Instances
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .perform_maintenance()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn perform_maintenance(&self) -> super::builder::instances::PerformMaintenance {
         super::builder::instances::PerformMaintenance::new(self.inner.clone())
     }
 
     /// Removes resource policies from an instance.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Instances;
+    /// async fn sample(
+    ///    client: &Instances
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .remove_resource_policies()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn remove_resource_policies(&self) -> super::builder::instances::RemoveResourcePolicies {
         super::builder::instances::RemoveResourcePolicies::new(self.inner.clone())
     }
 
     /// Mark the host as faulty and try to restart the instance on a new host.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Instances;
+    /// async fn sample(
+    ///    client: &Instances
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .report_host_as_faulty()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn report_host_as_faulty(&self) -> super::builder::instances::ReportHostAsFaulty {
         super::builder::instances::ReportHostAsFaulty::new(self.inner.clone())
     }
@@ -5301,57 +8517,216 @@ impl Instances {
     /// Performs a reset on the instance. This is a hard reset. The VM
     /// does not do a graceful shutdown. For more information, seeResetting
     /// an instance.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Instances;
+    /// async fn sample(
+    ///    client: &Instances
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .reset()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn reset(&self) -> super::builder::instances::Reset {
         super::builder::instances::Reset::new(self.inner.clone())
     }
 
     /// Resumes an instance that was suspended using theinstances().suspend
     /// method.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Instances;
+    /// async fn sample(
+    ///    client: &Instances
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .resume()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn resume(&self) -> super::builder::instances::Resume {
         super::builder::instances::Resume::new(self.inner.clone())
     }
 
     /// Sends diagnostic interrupt to the instance.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Instances;
+    /// async fn sample(
+    ///    client: &Instances
+    /// ) -> gax::Result<()> {
+    ///     client
+    ///         .send_diagnostic_interrupt()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn send_diagnostic_interrupt(&self) -> super::builder::instances::SendDiagnosticInterrupt {
         super::builder::instances::SendDiagnosticInterrupt::new(self.inner.clone())
     }
 
     /// Sets deletion protection on the instance.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Instances;
+    /// async fn sample(
+    ///    client: &Instances
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .set_deletion_protection()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn set_deletion_protection(&self) -> super::builder::instances::SetDeletionProtection {
         super::builder::instances::SetDeletionProtection::new(self.inner.clone())
     }
 
     /// Sets the auto-delete flag for a disk attached to an instance.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Instances;
+    /// async fn sample(
+    ///    client: &Instances
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .set_disk_auto_delete()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn set_disk_auto_delete(&self) -> super::builder::instances::SetDiskAutoDelete {
         super::builder::instances::SetDiskAutoDelete::new(self.inner.clone())
     }
 
     /// Sets the access control policy on the specified resource.
     /// Replaces any existing policy.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Instances;
+    /// async fn sample(
+    ///    client: &Instances
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .set_iam_policy()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn set_iam_policy(&self) -> super::builder::instances::SetIamPolicy {
         super::builder::instances::SetIamPolicy::new(self.inner.clone())
     }
 
     /// Sets labels on an instance.  To learn more about labels, read theLabeling
     /// Resources documentation.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Instances;
+    /// async fn sample(
+    ///    client: &Instances
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .set_labels()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn set_labels(&self) -> super::builder::instances::SetLabels {
         super::builder::instances::SetLabels::new(self.inner.clone())
     }
 
     /// Changes the number and/or type of accelerator for a stopped instance to the
     /// values specified in the request.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Instances;
+    /// async fn sample(
+    ///    client: &Instances
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .set_machine_resources()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn set_machine_resources(&self) -> super::builder::instances::SetMachineResources {
         super::builder::instances::SetMachineResources::new(self.inner.clone())
     }
 
     /// Changes the machine type for a stopped instance to the machine
     /// type specified in the request.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Instances;
+    /// async fn sample(
+    ///    client: &Instances
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .set_machine_type()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn set_machine_type(&self) -> super::builder::instances::SetMachineType {
         super::builder::instances::SetMachineType::new(self.inner.clone())
     }
 
     /// Sets metadata for the specified instance to the data included
     /// in the request.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Instances;
+    /// async fn sample(
+    ///    client: &Instances
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .set_metadata()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn set_metadata(&self) -> super::builder::instances::SetMetadata {
         super::builder::instances::SetMetadata::new(self.inner.clone())
     }
@@ -5360,11 +8735,43 @@ impl Instances {
     /// This method can only
     /// be called on a stopped instance. For more information, readSpecifying a
     /// Minimum CPU Platform.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Instances;
+    /// async fn sample(
+    ///    client: &Instances
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .set_min_cpu_platform()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn set_min_cpu_platform(&self) -> super::builder::instances::SetMinCpuPlatform {
         super::builder::instances::SetMinCpuPlatform::new(self.inner.clone())
     }
 
     /// Sets name of an instance.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Instances;
+    /// async fn sample(
+    ///    client: &Instances
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .set_name()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn set_name(&self) -> super::builder::instances::SetName {
         super::builder::instances::SetName::new(self.inner.clone())
     }
@@ -5374,6 +8781,22 @@ impl Instances {
     /// Cycle for more information on the possible instance states.
     /// For more information about setting scheduling options for a VM, seeSet
     /// VM host maintenance policy.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Instances;
+    /// async fn sample(
+    ///    client: &Instances
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .set_scheduling()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn set_scheduling(&self) -> super::builder::instances::SetScheduling {
         super::builder::instances::SetScheduling::new(self.inner.clone())
     }
@@ -5381,6 +8804,22 @@ impl Instances {
     /// Sets the Google Cloud Armor security policy for the specified instance.
     /// For more information, seeGoogle
     /// Cloud Armor Overview
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Instances;
+    /// async fn sample(
+    ///    client: &Instances
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .set_security_policy()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn set_security_policy(&self) -> super::builder::instances::SetSecurityPolicy {
         super::builder::instances::SetSecurityPolicy::new(self.inner.clone())
     }
@@ -5388,6 +8827,22 @@ impl Instances {
     /// Sets the service account on the instance. For more information,
     /// readChanging
     /// the service account and access scopes for an instance.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Instances;
+    /// async fn sample(
+    ///    client: &Instances
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .set_service_account()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn set_service_account(&self) -> super::builder::instances::SetServiceAccount {
         super::builder::instances::SetServiceAccount::new(self.inner.clone())
     }
@@ -5396,6 +8851,22 @@ impl Instances {
     /// only use this method on a running instance. This method
     /// supports PATCH semantics and uses the JSON merge
     /// patch format and processing rules.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Instances;
+    /// async fn sample(
+    ///    client: &Instances
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .set_shielded_instance_integrity_policy()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn set_shielded_instance_integrity_policy(
         &self,
     ) -> super::builder::instances::SetShieldedInstanceIntegrityPolicy {
@@ -5404,12 +8875,44 @@ impl Instances {
 
     /// Sets network tags
     /// for the specified instance to the data included in the request.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Instances;
+    /// async fn sample(
+    ///    client: &Instances
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .set_tags()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn set_tags(&self) -> super::builder::instances::SetTags {
         super::builder::instances::SetTags::new(self.inner.clone())
     }
 
     /// Simulates a host maintenance event on a VM. For more information, see
     /// Simulate a host maintenance event.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Instances;
+    /// async fn sample(
+    ///    client: &Instances
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .simulate_maintenance_event()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn simulate_maintenance_event(
         &self,
     ) -> super::builder::instances::SimulateMaintenanceEvent {
@@ -5419,6 +8922,22 @@ impl Instances {
     /// Starts an instance that was stopped using theinstances().stop
     /// method. For more information, seeRestart an
     /// instance.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Instances;
+    /// async fn sample(
+    ///    client: &Instances
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .start()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn start(&self) -> super::builder::instances::Start {
         super::builder::instances::Start::new(self.inner.clone())
     }
@@ -5426,6 +8945,22 @@ impl Instances {
     /// Starts an instance that was stopped using theinstances().stop
     /// method. For more information, seeRestart an
     /// instance.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Instances;
+    /// async fn sample(
+    ///    client: &Instances
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .start_with_encryption_key()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn start_with_encryption_key(&self) -> super::builder::instances::StartWithEncryptionKey {
         super::builder::instances::StartWithEncryptionKey::new(self.inner.clone())
     }
@@ -5436,6 +8971,22 @@ impl Instances {
     /// using, such as persistent disks and static IP addresses, will continue to
     /// be charged until they are deleted. For more information, seeStopping
     /// an instance.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Instances;
+    /// async fn sample(
+    ///    client: &Instances
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .stop()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn stop(&self) -> super::builder::instances::Stop {
         super::builder::instances::Stop::new(self.inner.clone())
     }
@@ -5448,11 +8999,43 @@ impl Instances {
     /// addresses, will continue to be charged while the instance is suspended.
     /// For more information, see
     /// Suspending and resuming an instance.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Instances;
+    /// async fn sample(
+    ///    client: &Instances
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .suspend()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn suspend(&self) -> super::builder::instances::Suspend {
         super::builder::instances::Suspend::new(self.inner.clone())
     }
 
     /// Returns permissions that a caller has on the specified resource.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Instances;
+    /// async fn sample(
+    ///    client: &Instances
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .test_iam_permissions()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn test_iam_permissions(&self) -> super::builder::instances::TestIamPermissions {
         super::builder::instances::TestIamPermissions::new(self.inner.clone())
     }
@@ -5461,6 +9044,22 @@ impl Instances {
     /// method can update only a specific set of instance properties. See
     /// Updating a running instance for a list of updatable instance
     /// properties.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Instances;
+    /// async fn sample(
+    ///    client: &Instances
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .update()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn update(&self) -> super::builder::instances::Update {
         super::builder::instances::Update::new(self.inner.clone())
     }
@@ -5469,6 +9068,22 @@ impl Instances {
     /// with the data included in the request. This method supportsPATCH
     /// semantics and uses theJSON merge
     /// patch format and processing rules.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Instances;
+    /// async fn sample(
+    ///    client: &Instances
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .update_access_config()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn update_access_config(&self) -> super::builder::instances::UpdateAccessConfig {
         super::builder::instances::UpdateAccessConfig::new(self.inner.clone())
     }
@@ -5477,6 +9092,22 @@ impl Instances {
     /// only use this method on a stopped VM instance. This method supportsPATCH
     /// semantics and uses theJSON merge
     /// patch format and processing rules.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Instances;
+    /// async fn sample(
+    ///    client: &Instances
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .update_display_device()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn update_display_device(&self) -> super::builder::instances::UpdateDisplayDevice {
         super::builder::instances::UpdateDisplayDevice::new(self.inner.clone())
     }
@@ -5487,6 +9118,22 @@ impl Instances {
     /// changing alias IP ranges. See Migrating
     /// a VM between networks for instructions on migrating an interface.
     /// This method follows PATCH semantics.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Instances;
+    /// async fn sample(
+    ///    client: &Instances
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .update_network_interface()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn update_network_interface(&self) -> super::builder::instances::UpdateNetworkInterface {
         super::builder::instances::UpdateNetworkInterface::new(self.inner.clone())
     }
@@ -5495,15 +9142,26 @@ impl Instances {
     /// only use this method on a stopped instance. This method supportsPATCH
     /// semantics and uses theJSON merge
     /// patch format and processing rules.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Instances;
+    /// async fn sample(
+    ///    client: &Instances
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .update_shielded_instance_config()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn update_shielded_instance_config(
         &self,
     ) -> super::builder::instances::UpdateShieldedInstanceConfig {
         super::builder::instances::UpdateShieldedInstanceConfig::new(self.inner.clone())
-    }
-
-    /// Retrieves the specified zone-specific Operations resource.
-    pub fn get_operation(&self) -> super::builder::instances::GetOperation {
-        super::builder::instances::GetOperation::new(self.inner.clone())
     }
 }
 
@@ -5631,22 +9289,86 @@ impl InstantSnapshots {
     ///
     /// For more information, seeDeleting
     /// instantSnapshots.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::InstantSnapshots;
+    /// async fn sample(
+    ///    client: &InstantSnapshots
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .delete()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn delete(&self) -> super::builder::instant_snapshots::Delete {
         super::builder::instant_snapshots::Delete::new(self.inner.clone())
     }
 
     /// Returns the specified InstantSnapshot resource in the specified zone.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::InstantSnapshots;
+    /// async fn sample(
+    ///    client: &InstantSnapshots
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get(&self) -> super::builder::instant_snapshots::Get {
         super::builder::instant_snapshots::Get::new(self.inner.clone())
     }
 
     /// Gets the access control policy for a resource. May be empty if no such
     /// policy or resource exists.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::InstantSnapshots;
+    /// async fn sample(
+    ///    client: &InstantSnapshots
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get_iam_policy()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get_iam_policy(&self) -> super::builder::instant_snapshots::GetIamPolicy {
         super::builder::instant_snapshots::GetIamPolicy::new(self.inner.clone())
     }
 
     /// Creates an instant snapshot in the specified zone.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::InstantSnapshots;
+    /// async fn sample(
+    ///    client: &InstantSnapshots
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .insert()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn insert(&self) -> super::builder::instant_snapshots::Insert {
         super::builder::instant_snapshots::Insert::new(self.inner.clone())
     }
@@ -5659,6 +9381,22 @@ impl InstantSnapshots {
 
     /// Sets the access control policy on the specified resource.
     /// Replaces any existing policy.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::InstantSnapshots;
+    /// async fn sample(
+    ///    client: &InstantSnapshots
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .set_iam_policy()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn set_iam_policy(&self) -> super::builder::instant_snapshots::SetIamPolicy {
         super::builder::instant_snapshots::SetIamPolicy::new(self.inner.clone())
     }
@@ -5666,18 +9404,45 @@ impl InstantSnapshots {
     /// Sets the labels on a instantSnapshot in the given zone. To learn more about
     /// labels, read the Labeling
     /// Resources documentation.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::InstantSnapshots;
+    /// async fn sample(
+    ///    client: &InstantSnapshots
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .set_labels()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn set_labels(&self) -> super::builder::instant_snapshots::SetLabels {
         super::builder::instant_snapshots::SetLabels::new(self.inner.clone())
     }
 
     /// Returns permissions that a caller has on the specified resource.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::InstantSnapshots;
+    /// async fn sample(
+    ///    client: &InstantSnapshots
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .test_iam_permissions()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn test_iam_permissions(&self) -> super::builder::instant_snapshots::TestIamPermissions {
         super::builder::instant_snapshots::TestIamPermissions::new(self.inner.clone())
-    }
-
-    /// Retrieves the specified zone-specific Operations resource.
-    pub fn get_operation(&self) -> super::builder::instant_snapshots::GetOperation {
-        super::builder::instant_snapshots::GetOperation::new(self.inner.clone())
     }
 }
 
@@ -5791,24 +9556,88 @@ impl InterconnectAttachmentGroups {
     }
 
     /// Deletes the specified InterconnectAttachmentGroup in the given scope
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::InterconnectAttachmentGroups;
+    /// async fn sample(
+    ///    client: &InterconnectAttachmentGroups
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .delete()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn delete(&self) -> super::builder::interconnect_attachment_groups::Delete {
         super::builder::interconnect_attachment_groups::Delete::new(self.inner.clone())
     }
 
     /// Returns the specified InterconnectAttachmentGroup resource in the given
     /// scope.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::InterconnectAttachmentGroups;
+    /// async fn sample(
+    ///    client: &InterconnectAttachmentGroups
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get(&self) -> super::builder::interconnect_attachment_groups::Get {
         super::builder::interconnect_attachment_groups::Get::new(self.inner.clone())
     }
 
     /// Gets the access control policy for a resource. May be empty if no such
     /// policy or resource exists.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::InterconnectAttachmentGroups;
+    /// async fn sample(
+    ///    client: &InterconnectAttachmentGroups
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get_iam_policy()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get_iam_policy(&self) -> super::builder::interconnect_attachment_groups::GetIamPolicy {
         super::builder::interconnect_attachment_groups::GetIamPolicy::new(self.inner.clone())
     }
 
     /// Returns the InterconnectAttachmentStatuses for the specified
     /// InterconnectAttachmentGroup resource.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::InterconnectAttachmentGroups;
+    /// async fn sample(
+    ///    client: &InterconnectAttachmentGroups
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get_operational_status()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get_operational_status(
         &self,
     ) -> super::builder::interconnect_attachment_groups::GetOperationalStatus {
@@ -5819,6 +9648,22 @@ impl InterconnectAttachmentGroups {
 
     /// Creates a InterconnectAttachmentGroup in the specified project in the given
     /// scope using the parameters that are included in the request.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::InterconnectAttachmentGroups;
+    /// async fn sample(
+    ///    client: &InterconnectAttachmentGroups
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .insert()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn insert(&self) -> super::builder::interconnect_attachment_groups::Insert {
         super::builder::interconnect_attachment_groups::Insert::new(self.inner.clone())
     }
@@ -5832,26 +9677,69 @@ impl InterconnectAttachmentGroups {
     /// included in the request. This method supports PATCH
     /// semantics and usesJSON merge
     /// patch format and processing rules.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::InterconnectAttachmentGroups;
+    /// async fn sample(
+    ///    client: &InterconnectAttachmentGroups
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .patch()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn patch(&self) -> super::builder::interconnect_attachment_groups::Patch {
         super::builder::interconnect_attachment_groups::Patch::new(self.inner.clone())
     }
 
     /// Sets the access control policy on the specified resource.
     /// Replaces any existing policy.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::InterconnectAttachmentGroups;
+    /// async fn sample(
+    ///    client: &InterconnectAttachmentGroups
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .set_iam_policy()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn set_iam_policy(&self) -> super::builder::interconnect_attachment_groups::SetIamPolicy {
         super::builder::interconnect_attachment_groups::SetIamPolicy::new(self.inner.clone())
     }
 
     /// Returns permissions that a caller has on the specified resource.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::InterconnectAttachmentGroups;
+    /// async fn sample(
+    ///    client: &InterconnectAttachmentGroups
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .test_iam_permissions()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn test_iam_permissions(
         &self,
     ) -> super::builder::interconnect_attachment_groups::TestIamPermissions {
         super::builder::interconnect_attachment_groups::TestIamPermissions::new(self.inner.clone())
-    }
-
-    /// Retrieves the specified Operations resource.
-    pub fn get_operation(&self) -> super::builder::interconnect_attachment_groups::GetOperation {
-        super::builder::interconnect_attachment_groups::GetOperation::new(self.inner.clone())
     }
 }
 
@@ -5973,17 +9861,65 @@ impl InterconnectAttachments {
     }
 
     /// Deletes the specified interconnect attachment.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::InterconnectAttachments;
+    /// async fn sample(
+    ///    client: &InterconnectAttachments
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .delete()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn delete(&self) -> super::builder::interconnect_attachments::Delete {
         super::builder::interconnect_attachments::Delete::new(self.inner.clone())
     }
 
     /// Returns the specified interconnect attachment.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::InterconnectAttachments;
+    /// async fn sample(
+    ///    client: &InterconnectAttachments
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get(&self) -> super::builder::interconnect_attachments::Get {
         super::builder::interconnect_attachments::Get::new(self.inner.clone())
     }
 
     /// Creates an InterconnectAttachment in the specified project using the data
     /// included in the request.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::InterconnectAttachments;
+    /// async fn sample(
+    ///    client: &InterconnectAttachments
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .insert()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn insert(&self) -> super::builder::interconnect_attachments::Insert {
         super::builder::interconnect_attachments::Insert::new(self.inner.clone())
     }
@@ -5998,6 +9934,22 @@ impl InterconnectAttachments {
     /// request. This method supportsPATCH
     /// semantics and uses theJSON merge
     /// patch format and processing rules.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::InterconnectAttachments;
+    /// async fn sample(
+    ///    client: &InterconnectAttachments
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .patch()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn patch(&self) -> super::builder::interconnect_attachments::Patch {
         super::builder::interconnect_attachments::Patch::new(self.inner.clone())
     }
@@ -6005,13 +9957,24 @@ impl InterconnectAttachments {
     /// Sets the labels on an InterconnectAttachment. To learn more about labels,
     /// read the Labeling
     /// Resources documentation.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::InterconnectAttachments;
+    /// async fn sample(
+    ///    client: &InterconnectAttachments
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .set_labels()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn set_labels(&self) -> super::builder::interconnect_attachments::SetLabels {
         super::builder::interconnect_attachments::SetLabels::new(self.inner.clone())
-    }
-
-    /// Retrieves the specified region-specific Operations resource.
-    pub fn get_operation(&self) -> super::builder::interconnect_attachments::GetOperation {
-        super::builder::interconnect_attachments::GetOperation::new(self.inner.clone())
     }
 }
 
@@ -6125,28 +10088,108 @@ impl InterconnectGroups {
 
     /// Create Interconnects with redundancy by creating them in a specified
     /// interconnect group.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::InterconnectGroups;
+    /// async fn sample(
+    ///    client: &InterconnectGroups
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .create_members()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn create_members(&self) -> super::builder::interconnect_groups::CreateMembers {
         super::builder::interconnect_groups::CreateMembers::new(self.inner.clone())
     }
 
     /// Deletes the specified InterconnectGroup in the given scope
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::InterconnectGroups;
+    /// async fn sample(
+    ///    client: &InterconnectGroups
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .delete()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn delete(&self) -> super::builder::interconnect_groups::Delete {
         super::builder::interconnect_groups::Delete::new(self.inner.clone())
     }
 
     /// Returns the specified InterconnectGroup resource in the given scope.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::InterconnectGroups;
+    /// async fn sample(
+    ///    client: &InterconnectGroups
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get(&self) -> super::builder::interconnect_groups::Get {
         super::builder::interconnect_groups::Get::new(self.inner.clone())
     }
 
     /// Gets the access control policy for a resource. May be empty if no such
     /// policy or resource exists.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::InterconnectGroups;
+    /// async fn sample(
+    ///    client: &InterconnectGroups
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get_iam_policy()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get_iam_policy(&self) -> super::builder::interconnect_groups::GetIamPolicy {
         super::builder::interconnect_groups::GetIamPolicy::new(self.inner.clone())
     }
 
     /// Returns the interconnectStatuses for the specified
     /// InterconnectGroup.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::InterconnectGroups;
+    /// async fn sample(
+    ///    client: &InterconnectGroups
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get_operational_status()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get_operational_status(
         &self,
     ) -> super::builder::interconnect_groups::GetOperationalStatus {
@@ -6155,6 +10198,22 @@ impl InterconnectGroups {
 
     /// Creates a InterconnectGroup in the specified project in the given scope
     /// using the parameters that are included in the request.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::InterconnectGroups;
+    /// async fn sample(
+    ///    client: &InterconnectGroups
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .insert()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn insert(&self) -> super::builder::interconnect_groups::Insert {
         super::builder::interconnect_groups::Insert::new(self.inner.clone())
     }
@@ -6168,24 +10227,67 @@ impl InterconnectGroups {
     /// the request. This method supports PATCH
     /// semantics and usesJSON merge
     /// patch format and processing rules.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::InterconnectGroups;
+    /// async fn sample(
+    ///    client: &InterconnectGroups
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .patch()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn patch(&self) -> super::builder::interconnect_groups::Patch {
         super::builder::interconnect_groups::Patch::new(self.inner.clone())
     }
 
     /// Sets the access control policy on the specified resource.
     /// Replaces any existing policy.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::InterconnectGroups;
+    /// async fn sample(
+    ///    client: &InterconnectGroups
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .set_iam_policy()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn set_iam_policy(&self) -> super::builder::interconnect_groups::SetIamPolicy {
         super::builder::interconnect_groups::SetIamPolicy::new(self.inner.clone())
     }
 
     /// Returns permissions that a caller has on the specified resource.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::InterconnectGroups;
+    /// async fn sample(
+    ///    client: &InterconnectGroups
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .test_iam_permissions()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn test_iam_permissions(&self) -> super::builder::interconnect_groups::TestIamPermissions {
         super::builder::interconnect_groups::TestIamPermissions::new(self.inner.clone())
-    }
-
-    /// Retrieves the specified Operations resource.
-    pub fn get_operation(&self) -> super::builder::interconnect_groups::GetOperation {
-        super::builder::interconnect_groups::GetOperation::new(self.inner.clone())
     }
 }
 
@@ -6299,6 +10401,22 @@ impl InterconnectLocations {
 
     /// Returns the details for the specified interconnect location. Gets a list of
     /// available interconnect locations by making a list() request.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::InterconnectLocations;
+    /// async fn sample(
+    ///    client: &InterconnectLocations
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get(&self) -> super::builder::interconnect_locations::Get {
         super::builder::interconnect_locations::Get::new(self.inner.clone())
     }
@@ -6421,6 +10539,22 @@ impl InterconnectRemoteLocations {
 
     /// Returns the details for the specified interconnect remote location. Gets a
     /// list of available interconnect remote locations by making alist() request.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::InterconnectRemoteLocations;
+    /// async fn sample(
+    ///    client: &InterconnectRemoteLocations
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get(&self) -> super::builder::interconnect_remote_locations::Get {
         super::builder::interconnect_remote_locations::Get::new(self.inner.clone())
     }
@@ -6538,12 +10672,44 @@ impl Interconnects {
     }
 
     /// Deletes the specified Interconnect.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Interconnects;
+    /// async fn sample(
+    ///    client: &Interconnects
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .delete()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn delete(&self) -> super::builder::interconnects::Delete {
         super::builder::interconnects::Delete::new(self.inner.clone())
     }
 
     /// Returns the specified Interconnect. Get a list of available Interconnects
     /// by making a list() request.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Interconnects;
+    /// async fn sample(
+    ///    client: &Interconnects
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get(&self) -> super::builder::interconnects::Get {
         super::builder::interconnects::Get::new(self.inner.clone())
     }
@@ -6558,18 +10724,66 @@ impl Interconnects {
     /// Unlike a VLAN attachment, which is regional, a Cloud Interconnect
     /// connection is a global resource. A global outage can prevent this
     /// API from functioning properly.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Interconnects;
+    /// async fn sample(
+    ///    client: &Interconnects
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get_diagnostics()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get_diagnostics(&self) -> super::builder::interconnects::GetDiagnostics {
         super::builder::interconnects::GetDiagnostics::new(self.inner.clone())
     }
 
     /// Returns the interconnectMacsecConfig for the specified
     /// Interconnect.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Interconnects;
+    /// async fn sample(
+    ///    client: &Interconnects
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get_macsec_config()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get_macsec_config(&self) -> super::builder::interconnects::GetMacsecConfig {
         super::builder::interconnects::GetMacsecConfig::new(self.inner.clone())
     }
 
     /// Creates an Interconnect in the specified project using
     /// the data included in the request.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Interconnects;
+    /// async fn sample(
+    ///    client: &Interconnects
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .insert()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn insert(&self) -> super::builder::interconnects::Insert {
         super::builder::interconnects::Insert::new(self.inner.clone())
     }
@@ -6583,6 +10797,22 @@ impl Interconnects {
     /// This method supportsPATCH
     /// semantics and uses theJSON merge
     /// patch format and processing rules.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Interconnects;
+    /// async fn sample(
+    ///    client: &Interconnects
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .patch()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn patch(&self) -> super::builder::interconnects::Patch {
         super::builder::interconnects::Patch::new(self.inner.clone())
     }
@@ -6590,13 +10820,24 @@ impl Interconnects {
     /// Sets the labels on an Interconnect. To learn more about labels,
     /// read the Labeling
     /// Resources documentation.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Interconnects;
+    /// async fn sample(
+    ///    client: &Interconnects
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .set_labels()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn set_labels(&self) -> super::builder::interconnects::SetLabels {
         super::builder::interconnects::SetLabels::new(self.inner.clone())
-    }
-
-    /// Retrieves the specified Operations resource.
-    pub fn get_operation(&self) -> super::builder::interconnects::GetOperation {
-        super::builder::interconnects::GetOperation::new(self.inner.clone())
     }
 }
 
@@ -6710,6 +10951,22 @@ impl LicenseCodes {
     /// *Caution* This resource is intended
     /// for use only by third-party partners who are creatingCloud Marketplace
     /// images.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::LicenseCodes;
+    /// async fn sample(
+    ///    client: &LicenseCodes
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get(&self) -> super::builder::license_codes::Get {
         super::builder::license_codes::Get::new(self.inner.clone())
     }
@@ -6718,6 +10975,22 @@ impl LicenseCodes {
     /// *Caution* This resource is intended
     /// for use only by third-party partners who are creatingCloud Marketplace
     /// images.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::LicenseCodes;
+    /// async fn sample(
+    ///    client: &LicenseCodes
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .test_iam_permissions()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn test_iam_permissions(&self) -> super::builder::license_codes::TestIamPermissions {
         super::builder::license_codes::TestIamPermissions::new(self.inner.clone())
     }
@@ -6832,6 +11105,22 @@ impl Licenses {
     /// *Caution* This resource is intended
     /// for use only by third-party partners who are creatingCloud Marketplace
     /// images.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Licenses;
+    /// async fn sample(
+    ///    client: &Licenses
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .delete()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn delete(&self) -> super::builder::licenses::Delete {
         super::builder::licenses::Delete::new(self.inner.clone())
     }
@@ -6840,6 +11129,22 @@ impl Licenses {
     /// *Caution* This resource is intended
     /// for use only by third-party partners who are creatingCloud Marketplace
     /// images.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Licenses;
+    /// async fn sample(
+    ///    client: &Licenses
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get(&self) -> super::builder::licenses::Get {
         super::builder::licenses::Get::new(self.inner.clone())
     }
@@ -6849,6 +11154,22 @@ impl Licenses {
     /// *Caution* This resource is intended
     /// for use only by third-party partners who are creatingCloud Marketplace
     /// images.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Licenses;
+    /// async fn sample(
+    ///    client: &Licenses
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get_iam_policy()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get_iam_policy(&self) -> super::builder::licenses::GetIamPolicy {
         super::builder::licenses::GetIamPolicy::new(self.inner.clone())
     }
@@ -6857,6 +11178,22 @@ impl Licenses {
     /// *Caution* This resource is intended
     /// for use only by third-party partners who are creatingCloud Marketplace
     /// images.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Licenses;
+    /// async fn sample(
+    ///    client: &Licenses
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .insert()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn insert(&self) -> super::builder::licenses::Insert {
         super::builder::licenses::Insert::new(self.inner.clone())
     }
@@ -6879,6 +11216,22 @@ impl Licenses {
     /// *Caution* This resource is intended
     /// for use only by third-party partners who are creatingCloud Marketplace
     /// images.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Licenses;
+    /// async fn sample(
+    ///    client: &Licenses
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .set_iam_policy()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn set_iam_policy(&self) -> super::builder::licenses::SetIamPolicy {
         super::builder::licenses::SetIamPolicy::new(self.inner.clone())
     }
@@ -6887,6 +11240,22 @@ impl Licenses {
     /// *Caution* This resource is intended
     /// for use only by third-party partners who are creatingCloud Marketplace
     /// images.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Licenses;
+    /// async fn sample(
+    ///    client: &Licenses
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .test_iam_permissions()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn test_iam_permissions(&self) -> super::builder::licenses::TestIamPermissions {
         super::builder::licenses::TestIamPermissions::new(self.inner.clone())
     }
@@ -6895,13 +11264,24 @@ impl Licenses {
     /// *Caution* This resource is intended
     /// for use only by third-party partners who are creatingCloud Marketplace
     /// images.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Licenses;
+    /// async fn sample(
+    ///    client: &Licenses
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .update()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn update(&self) -> super::builder::licenses::Update {
         super::builder::licenses::Update::new(self.inner.clone())
-    }
-
-    /// Retrieves the specified Operations resource.
-    pub fn get_operation(&self) -> super::builder::licenses::GetOperation {
-        super::builder::licenses::GetOperation::new(self.inner.clone())
     }
 }
 
@@ -7012,17 +11392,65 @@ impl MachineImages {
 
     /// Deletes the specified machine image. Deleting a machine image is permanent
     /// and cannot be undone.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::MachineImages;
+    /// async fn sample(
+    ///    client: &MachineImages
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .delete()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn delete(&self) -> super::builder::machine_images::Delete {
         super::builder::machine_images::Delete::new(self.inner.clone())
     }
 
     /// Returns the specified machine image.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::MachineImages;
+    /// async fn sample(
+    ///    client: &MachineImages
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get(&self) -> super::builder::machine_images::Get {
         super::builder::machine_images::Get::new(self.inner.clone())
     }
 
     /// Gets the access control policy for a resource. May be empty if no such
     /// policy or resource exists.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::MachineImages;
+    /// async fn sample(
+    ///    client: &MachineImages
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get_iam_policy()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get_iam_policy(&self) -> super::builder::machine_images::GetIamPolicy {
         super::builder::machine_images::GetIamPolicy::new(self.inner.clone())
     }
@@ -7032,6 +11460,22 @@ impl MachineImages {
     /// image to update an existing instance, your new machine image should use the
     /// same network or, if applicable, the same subnetwork as the original
     /// instance.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::MachineImages;
+    /// async fn sample(
+    ///    client: &MachineImages
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .insert()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn insert(&self) -> super::builder::machine_images::Insert {
         super::builder::machine_images::Insert::new(self.inner.clone())
     }
@@ -7044,24 +11488,67 @@ impl MachineImages {
 
     /// Sets the access control policy on the specified resource.
     /// Replaces any existing policy.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::MachineImages;
+    /// async fn sample(
+    ///    client: &MachineImages
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .set_iam_policy()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn set_iam_policy(&self) -> super::builder::machine_images::SetIamPolicy {
         super::builder::machine_images::SetIamPolicy::new(self.inner.clone())
     }
 
     /// Sets the labels on a machine image. To learn more about labels, read theLabeling
     /// Resources documentation.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::MachineImages;
+    /// async fn sample(
+    ///    client: &MachineImages
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .set_labels()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn set_labels(&self) -> super::builder::machine_images::SetLabels {
         super::builder::machine_images::SetLabels::new(self.inner.clone())
     }
 
     /// Returns permissions that a caller has on the specified resource.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::MachineImages;
+    /// async fn sample(
+    ///    client: &MachineImages
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .test_iam_permissions()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn test_iam_permissions(&self) -> super::builder::machine_images::TestIamPermissions {
         super::builder::machine_images::TestIamPermissions::new(self.inner.clone())
-    }
-
-    /// Retrieves the specified Operations resource.
-    pub fn get_operation(&self) -> super::builder::machine_images::GetOperation {
-        super::builder::machine_images::GetOperation::new(self.inner.clone())
     }
 }
 
@@ -7179,6 +11666,22 @@ impl MachineTypes {
     }
 
     /// Returns the specified machine type.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::MachineTypes;
+    /// async fn sample(
+    ///    client: &MachineTypes
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get(&self) -> super::builder::machine_types::Get {
         super::builder::machine_types::Get::new(self.inner.clone())
     }
@@ -7308,23 +11811,87 @@ impl NetworkAttachments {
     }
 
     /// Deletes the specified NetworkAttachment in the given scope
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::NetworkAttachments;
+    /// async fn sample(
+    ///    client: &NetworkAttachments
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .delete()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn delete(&self) -> super::builder::network_attachments::Delete {
         super::builder::network_attachments::Delete::new(self.inner.clone())
     }
 
     /// Returns the specified NetworkAttachment resource in the given scope.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::NetworkAttachments;
+    /// async fn sample(
+    ///    client: &NetworkAttachments
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get(&self) -> super::builder::network_attachments::Get {
         super::builder::network_attachments::Get::new(self.inner.clone())
     }
 
     /// Gets the access control policy for a resource. May be empty if no such
     /// policy or resource exists.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::NetworkAttachments;
+    /// async fn sample(
+    ///    client: &NetworkAttachments
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get_iam_policy()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get_iam_policy(&self) -> super::builder::network_attachments::GetIamPolicy {
         super::builder::network_attachments::GetIamPolicy::new(self.inner.clone())
     }
 
     /// Creates a NetworkAttachment in the specified project in the given scope
     /// using the parameters that are included in the request.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::NetworkAttachments;
+    /// async fn sample(
+    ///    client: &NetworkAttachments
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .insert()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn insert(&self) -> super::builder::network_attachments::Insert {
         super::builder::network_attachments::Insert::new(self.inner.clone())
     }
@@ -7338,24 +11905,67 @@ impl NetworkAttachments {
     /// the request. This method supports PATCH
     /// semantics and usesJSON merge
     /// patch format and processing rules.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::NetworkAttachments;
+    /// async fn sample(
+    ///    client: &NetworkAttachments
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .patch()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn patch(&self) -> super::builder::network_attachments::Patch {
         super::builder::network_attachments::Patch::new(self.inner.clone())
     }
 
     /// Sets the access control policy on the specified resource.
     /// Replaces any existing policy.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::NetworkAttachments;
+    /// async fn sample(
+    ///    client: &NetworkAttachments
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .set_iam_policy()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn set_iam_policy(&self) -> super::builder::network_attachments::SetIamPolicy {
         super::builder::network_attachments::SetIamPolicy::new(self.inner.clone())
     }
 
     /// Returns permissions that a caller has on the specified resource.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::NetworkAttachments;
+    /// async fn sample(
+    ///    client: &NetworkAttachments
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .test_iam_permissions()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn test_iam_permissions(&self) -> super::builder::network_attachments::TestIamPermissions {
         super::builder::network_attachments::TestIamPermissions::new(self.inner.clone())
-    }
-
-    /// Retrieves the specified region-specific Operations resource.
-    pub fn get_operation(&self) -> super::builder::network_attachments::GetOperation {
-        super::builder::network_attachments::GetOperation::new(self.inner.clone())
     }
 }
 
@@ -7480,29 +12090,88 @@ impl NetworkEdgeSecurityServices {
     }
 
     /// Deletes the specified service.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::NetworkEdgeSecurityServices;
+    /// async fn sample(
+    ///    client: &NetworkEdgeSecurityServices
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .delete()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn delete(&self) -> super::builder::network_edge_security_services::Delete {
         super::builder::network_edge_security_services::Delete::new(self.inner.clone())
     }
 
     /// Gets a specified NetworkEdgeSecurityService.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::NetworkEdgeSecurityServices;
+    /// async fn sample(
+    ///    client: &NetworkEdgeSecurityServices
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get(&self) -> super::builder::network_edge_security_services::Get {
         super::builder::network_edge_security_services::Get::new(self.inner.clone())
     }
 
     /// Creates a new service in the specified project using the data included in
     /// the request.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::NetworkEdgeSecurityServices;
+    /// async fn sample(
+    ///    client: &NetworkEdgeSecurityServices
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .insert()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn insert(&self) -> super::builder::network_edge_security_services::Insert {
         super::builder::network_edge_security_services::Insert::new(self.inner.clone())
     }
 
     /// Patches the specified policy with the data included in the request.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::NetworkEdgeSecurityServices;
+    /// async fn sample(
+    ///    client: &NetworkEdgeSecurityServices
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .patch()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn patch(&self) -> super::builder::network_edge_security_services::Patch {
         super::builder::network_edge_security_services::Patch::new(self.inner.clone())
-    }
-
-    /// Retrieves the specified region-specific Operations resource.
-    pub fn get_operation(&self) -> super::builder::network_edge_security_services::GetOperation {
-        super::builder::network_edge_security_services::GetOperation::new(self.inner.clone())
     }
 }
 
@@ -7623,6 +12292,22 @@ impl NetworkEndpointGroups {
     }
 
     /// Attach a list of network endpoints to the specified network endpoint group.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::NetworkEndpointGroups;
+    /// async fn sample(
+    ///    client: &NetworkEndpointGroups
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .attach_network_endpoints()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn attach_network_endpoints(
         &self,
     ) -> super::builder::network_endpoint_groups::AttachNetworkEndpoints {
@@ -7633,12 +12318,44 @@ impl NetworkEndpointGroups {
     /// NEG and the VM instances they belong to are not terminated when the NEG is
     /// deleted. Note that the NEG cannot be deleted if there are backend services
     /// referencing it.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::NetworkEndpointGroups;
+    /// async fn sample(
+    ///    client: &NetworkEndpointGroups
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .delete()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn delete(&self) -> super::builder::network_endpoint_groups::Delete {
         super::builder::network_endpoint_groups::Delete::new(self.inner.clone())
     }
 
     /// Detach a list of network endpoints from the specified network endpoint
     /// group.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::NetworkEndpointGroups;
+    /// async fn sample(
+    ///    client: &NetworkEndpointGroups
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .detach_network_endpoints()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn detach_network_endpoints(
         &self,
     ) -> super::builder::network_endpoint_groups::DetachNetworkEndpoints {
@@ -7646,12 +12363,44 @@ impl NetworkEndpointGroups {
     }
 
     /// Returns the specified network endpoint group.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::NetworkEndpointGroups;
+    /// async fn sample(
+    ///    client: &NetworkEndpointGroups
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get(&self) -> super::builder::network_endpoint_groups::Get {
         super::builder::network_endpoint_groups::Get::new(self.inner.clone())
     }
 
     /// Creates a network endpoint group in the specified project using the
     /// parameters that are included in the request.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::NetworkEndpointGroups;
+    /// async fn sample(
+    ///    client: &NetworkEndpointGroups
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .insert()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn insert(&self) -> super::builder::network_endpoint_groups::Insert {
         super::builder::network_endpoint_groups::Insert::new(self.inner.clone())
     }
@@ -7670,15 +12419,26 @@ impl NetworkEndpointGroups {
     }
 
     /// Returns permissions that a caller has on the specified resource.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::NetworkEndpointGroups;
+    /// async fn sample(
+    ///    client: &NetworkEndpointGroups
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .test_iam_permissions()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn test_iam_permissions(
         &self,
     ) -> super::builder::network_endpoint_groups::TestIamPermissions {
         super::builder::network_endpoint_groups::TestIamPermissions::new(self.inner.clone())
-    }
-
-    /// Retrieves the specified zone-specific Operations resource.
-    pub fn get_operation(&self) -> super::builder::network_endpoint_groups::GetOperation {
-        super::builder::network_endpoint_groups::GetOperation::new(self.inner.clone())
     }
 }
 
@@ -7792,11 +12552,43 @@ impl NetworkFirewallPolicies {
     }
 
     /// Inserts an association for the specified firewall policy.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::NetworkFirewallPolicies;
+    /// async fn sample(
+    ///    client: &NetworkFirewallPolicies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .add_association()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn add_association(&self) -> super::builder::network_firewall_policies::AddAssociation {
         super::builder::network_firewall_policies::AddAssociation::new(self.inner.clone())
     }
 
     /// Inserts a packet mirroring rule into a firewall policy.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::NetworkFirewallPolicies;
+    /// async fn sample(
+    ///    client: &NetworkFirewallPolicies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .add_packet_mirroring_rule()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn add_packet_mirroring_rule(
         &self,
     ) -> super::builder::network_firewall_policies::AddPacketMirroringRule {
@@ -7804,6 +12596,22 @@ impl NetworkFirewallPolicies {
     }
 
     /// Inserts a rule into a firewall policy.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::NetworkFirewallPolicies;
+    /// async fn sample(
+    ///    client: &NetworkFirewallPolicies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .add_rule()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn add_rule(&self) -> super::builder::network_firewall_policies::AddRule {
         super::builder::network_firewall_policies::AddRule::new(self.inner.clone())
     }
@@ -7819,32 +12627,128 @@ impl NetworkFirewallPolicies {
     }
 
     /// Copies rules to the specified firewall policy.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::NetworkFirewallPolicies;
+    /// async fn sample(
+    ///    client: &NetworkFirewallPolicies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .clone_rules()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn clone_rules(&self) -> super::builder::network_firewall_policies::CloneRules {
         super::builder::network_firewall_policies::CloneRules::new(self.inner.clone())
     }
 
     /// Deletes the specified policy.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::NetworkFirewallPolicies;
+    /// async fn sample(
+    ///    client: &NetworkFirewallPolicies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .delete()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn delete(&self) -> super::builder::network_firewall_policies::Delete {
         super::builder::network_firewall_policies::Delete::new(self.inner.clone())
     }
 
     /// Returns the specified network firewall policy.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::NetworkFirewallPolicies;
+    /// async fn sample(
+    ///    client: &NetworkFirewallPolicies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get(&self) -> super::builder::network_firewall_policies::Get {
         super::builder::network_firewall_policies::Get::new(self.inner.clone())
     }
 
     /// Gets an association with the specified name.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::NetworkFirewallPolicies;
+    /// async fn sample(
+    ///    client: &NetworkFirewallPolicies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get_association()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get_association(&self) -> super::builder::network_firewall_policies::GetAssociation {
         super::builder::network_firewall_policies::GetAssociation::new(self.inner.clone())
     }
 
     /// Gets the access control policy for a resource. May be empty if no such
     /// policy or resource exists.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::NetworkFirewallPolicies;
+    /// async fn sample(
+    ///    client: &NetworkFirewallPolicies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get_iam_policy()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get_iam_policy(&self) -> super::builder::network_firewall_policies::GetIamPolicy {
         super::builder::network_firewall_policies::GetIamPolicy::new(self.inner.clone())
     }
 
     /// Gets a packet mirroring rule of the specified priority.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::NetworkFirewallPolicies;
+    /// async fn sample(
+    ///    client: &NetworkFirewallPolicies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get_packet_mirroring_rule()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get_packet_mirroring_rule(
         &self,
     ) -> super::builder::network_firewall_policies::GetPacketMirroringRule {
@@ -7852,12 +12756,44 @@ impl NetworkFirewallPolicies {
     }
 
     /// Gets a rule of the specified priority.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::NetworkFirewallPolicies;
+    /// async fn sample(
+    ///    client: &NetworkFirewallPolicies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get_rule()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get_rule(&self) -> super::builder::network_firewall_policies::GetRule {
         super::builder::network_firewall_policies::GetRule::new(self.inner.clone())
     }
 
     /// Creates a new policy in the specified project using the data included in
     /// the request.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::NetworkFirewallPolicies;
+    /// async fn sample(
+    ///    client: &NetworkFirewallPolicies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .insert()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn insert(&self) -> super::builder::network_firewall_policies::Insert {
         super::builder::network_firewall_policies::Insert::new(self.inner.clone())
     }
@@ -7868,11 +12804,43 @@ impl NetworkFirewallPolicies {
     }
 
     /// Patches the specified policy with the data included in the request.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::NetworkFirewallPolicies;
+    /// async fn sample(
+    ///    client: &NetworkFirewallPolicies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .patch()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn patch(&self) -> super::builder::network_firewall_policies::Patch {
         super::builder::network_firewall_policies::Patch::new(self.inner.clone())
     }
 
     /// Patches a packet mirroring rule of the specified priority.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::NetworkFirewallPolicies;
+    /// async fn sample(
+    ///    client: &NetworkFirewallPolicies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .patch_packet_mirroring_rule()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn patch_packet_mirroring_rule(
         &self,
     ) -> super::builder::network_firewall_policies::PatchPacketMirroringRule {
@@ -7880,11 +12848,43 @@ impl NetworkFirewallPolicies {
     }
 
     /// Patches a rule of the specified priority.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::NetworkFirewallPolicies;
+    /// async fn sample(
+    ///    client: &NetworkFirewallPolicies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .patch_rule()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn patch_rule(&self) -> super::builder::network_firewall_policies::PatchRule {
         super::builder::network_firewall_policies::PatchRule::new(self.inner.clone())
     }
 
     /// Removes an association for the specified firewall policy.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::NetworkFirewallPolicies;
+    /// async fn sample(
+    ///    client: &NetworkFirewallPolicies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .remove_association()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn remove_association(
         &self,
     ) -> super::builder::network_firewall_policies::RemoveAssociation {
@@ -7892,6 +12892,22 @@ impl NetworkFirewallPolicies {
     }
 
     /// Deletes a packet mirroring rule of the specified priority.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::NetworkFirewallPolicies;
+    /// async fn sample(
+    ///    client: &NetworkFirewallPolicies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .remove_packet_mirroring_rule()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn remove_packet_mirroring_rule(
         &self,
     ) -> super::builder::network_firewall_policies::RemovePacketMirroringRule {
@@ -7901,26 +12917,69 @@ impl NetworkFirewallPolicies {
     }
 
     /// Deletes a rule of the specified priority.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::NetworkFirewallPolicies;
+    /// async fn sample(
+    ///    client: &NetworkFirewallPolicies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .remove_rule()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn remove_rule(&self) -> super::builder::network_firewall_policies::RemoveRule {
         super::builder::network_firewall_policies::RemoveRule::new(self.inner.clone())
     }
 
     /// Sets the access control policy on the specified resource.
     /// Replaces any existing policy.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::NetworkFirewallPolicies;
+    /// async fn sample(
+    ///    client: &NetworkFirewallPolicies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .set_iam_policy()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn set_iam_policy(&self) -> super::builder::network_firewall_policies::SetIamPolicy {
         super::builder::network_firewall_policies::SetIamPolicy::new(self.inner.clone())
     }
 
     /// Returns permissions that a caller has on the specified resource.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::NetworkFirewallPolicies;
+    /// async fn sample(
+    ///    client: &NetworkFirewallPolicies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .test_iam_permissions()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn test_iam_permissions(
         &self,
     ) -> super::builder::network_firewall_policies::TestIamPermissions {
         super::builder::network_firewall_policies::TestIamPermissions::new(self.inner.clone())
-    }
-
-    /// Retrieves the specified Operations resource.
-    pub fn get_operation(&self) -> super::builder::network_firewall_policies::GetOperation {
-        super::builder::network_firewall_policies::GetOperation::new(self.inner.clone())
     }
 }
 
@@ -8033,6 +13092,22 @@ impl NetworkProfiles {
     }
 
     /// Returns the specified network profile.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::NetworkProfiles;
+    /// async fn sample(
+    ///    client: &NetworkProfiles
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get(&self) -> super::builder::network_profiles::Get {
         super::builder::network_profiles::Get::new(self.inner.clone())
     }
@@ -8150,27 +13225,107 @@ impl Networks {
     }
 
     /// Adds a peering to the specified network.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Networks;
+    /// async fn sample(
+    ///    client: &Networks
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .add_peering()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn add_peering(&self) -> super::builder::networks::AddPeering {
         super::builder::networks::AddPeering::new(self.inner.clone())
     }
 
     /// Deletes the specified network.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Networks;
+    /// async fn sample(
+    ///    client: &Networks
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .delete()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn delete(&self) -> super::builder::networks::Delete {
         super::builder::networks::Delete::new(self.inner.clone())
     }
 
     /// Returns the specified network.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Networks;
+    /// async fn sample(
+    ///    client: &Networks
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get(&self) -> super::builder::networks::Get {
         super::builder::networks::Get::new(self.inner.clone())
     }
 
     /// Returns the effective firewalls on a given network.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Networks;
+    /// async fn sample(
+    ///    client: &Networks
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get_effective_firewalls()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get_effective_firewalls(&self) -> super::builder::networks::GetEffectiveFirewalls {
         super::builder::networks::GetEffectiveFirewalls::new(self.inner.clone())
     }
 
     /// Creates a network in the specified project using the data included
     /// in the request.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Networks;
+    /// async fn sample(
+    ///    client: &Networks
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .insert()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn insert(&self) -> super::builder::networks::Insert {
         super::builder::networks::Insert::new(self.inner.clone())
     }
@@ -8187,22 +13342,86 @@ impl Networks {
 
     /// Patches the specified network with the data included in the request.
     /// Only routingConfig can be modified.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Networks;
+    /// async fn sample(
+    ///    client: &Networks
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .patch()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn patch(&self) -> super::builder::networks::Patch {
         super::builder::networks::Patch::new(self.inner.clone())
     }
 
     /// Removes a peering from the specified network.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Networks;
+    /// async fn sample(
+    ///    client: &Networks
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .remove_peering()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn remove_peering(&self) -> super::builder::networks::RemovePeering {
         super::builder::networks::RemovePeering::new(self.inner.clone())
     }
 
     /// Requests to remove a peering from the specified network. Applicable only
     /// for PeeringConnection with update_strategy=CONSENSUS.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Networks;
+    /// async fn sample(
+    ///    client: &Networks
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .request_remove_peering()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn request_remove_peering(&self) -> super::builder::networks::RequestRemovePeering {
         super::builder::networks::RequestRemovePeering::new(self.inner.clone())
     }
 
     /// Switches the network mode from auto subnet mode to custom subnet mode.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Networks;
+    /// async fn sample(
+    ///    client: &Networks
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .switch_to_custom_mode()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn switch_to_custom_mode(&self) -> super::builder::networks::SwitchToCustomMode {
         super::builder::networks::SwitchToCustomMode::new(self.inner.clone())
     }
@@ -8210,13 +13429,24 @@ impl Networks {
     /// Updates the specified network peering with the data included in the
     /// request. You can only modify the NetworkPeering.export_custom_routes field
     /// and the NetworkPeering.import_custom_routes field.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Networks;
+    /// async fn sample(
+    ///    client: &Networks
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .update_peering()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn update_peering(&self) -> super::builder::networks::UpdatePeering {
         super::builder::networks::UpdatePeering::new(self.inner.clone())
-    }
-
-    /// Retrieves the specified Operations resource.
-    pub fn get_operation(&self) -> super::builder::networks::GetOperation {
-        super::builder::networks::GetOperation::new(self.inner.clone())
     }
 }
 
@@ -8326,6 +13556,22 @@ impl NodeGroups {
     }
 
     /// Adds specified number of nodes to the node group.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::NodeGroups;
+    /// async fn sample(
+    ///    client: &NodeGroups
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .add_nodes()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn add_nodes(&self) -> super::builder::node_groups::AddNodes {
         super::builder::node_groups::AddNodes::new(self.inner.clone())
     }
@@ -8340,11 +13586,43 @@ impl NodeGroups {
     }
 
     /// Deletes the specified NodeGroup resource.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::NodeGroups;
+    /// async fn sample(
+    ///    client: &NodeGroups
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .delete()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn delete(&self) -> super::builder::node_groups::Delete {
         super::builder::node_groups::Delete::new(self.inner.clone())
     }
 
     /// Deletes specified nodes from the node group.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::NodeGroups;
+    /// async fn sample(
+    ///    client: &NodeGroups
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .delete_nodes()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn delete_nodes(&self) -> super::builder::node_groups::DeleteNodes {
         super::builder::node_groups::DeleteNodes::new(self.inner.clone())
     }
@@ -8353,18 +13631,66 @@ impl NodeGroups {
     /// by making a list() request.
     /// Note: the "nodes" field should not be used. Use nodeGroups.listNodes
     /// instead.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::NodeGroups;
+    /// async fn sample(
+    ///    client: &NodeGroups
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get(&self) -> super::builder::node_groups::Get {
         super::builder::node_groups::Get::new(self.inner.clone())
     }
 
     /// Gets the access control policy for a resource. May be empty if no such
     /// policy or resource exists.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::NodeGroups;
+    /// async fn sample(
+    ///    client: &NodeGroups
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get_iam_policy()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get_iam_policy(&self) -> super::builder::node_groups::GetIamPolicy {
         super::builder::node_groups::GetIamPolicy::new(self.inner.clone())
     }
 
     /// Creates a NodeGroup resource in the specified project using the data
     /// included in the request.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::NodeGroups;
+    /// async fn sample(
+    ///    client: &NodeGroups
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .insert()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn insert(&self) -> super::builder::node_groups::Insert {
         super::builder::node_groups::Insert::new(self.inner.clone())
     }
@@ -8381,27 +13707,107 @@ impl NodeGroups {
     }
 
     /// Updates the specified node group.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::NodeGroups;
+    /// async fn sample(
+    ///    client: &NodeGroups
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .patch()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn patch(&self) -> super::builder::node_groups::Patch {
         super::builder::node_groups::Patch::new(self.inner.clone())
     }
 
     /// Perform maintenance on a subset of nodes in the node group.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::NodeGroups;
+    /// async fn sample(
+    ///    client: &NodeGroups
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .perform_maintenance()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn perform_maintenance(&self) -> super::builder::node_groups::PerformMaintenance {
         super::builder::node_groups::PerformMaintenance::new(self.inner.clone())
     }
 
     /// Sets the access control policy on the specified resource.
     /// Replaces any existing policy.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::NodeGroups;
+    /// async fn sample(
+    ///    client: &NodeGroups
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .set_iam_policy()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn set_iam_policy(&self) -> super::builder::node_groups::SetIamPolicy {
         super::builder::node_groups::SetIamPolicy::new(self.inner.clone())
     }
 
     /// Updates the node template of the node group.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::NodeGroups;
+    /// async fn sample(
+    ///    client: &NodeGroups
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .set_node_template()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn set_node_template(&self) -> super::builder::node_groups::SetNodeTemplate {
         super::builder::node_groups::SetNodeTemplate::new(self.inner.clone())
     }
 
     /// Simulates maintenance event on specified nodes from the node group.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::NodeGroups;
+    /// async fn sample(
+    ///    client: &NodeGroups
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .simulate_maintenance_event()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn simulate_maintenance_event(
         &self,
     ) -> super::builder::node_groups::SimulateMaintenanceEvent {
@@ -8409,13 +13815,24 @@ impl NodeGroups {
     }
 
     /// Returns permissions that a caller has on the specified resource.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::NodeGroups;
+    /// async fn sample(
+    ///    client: &NodeGroups
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .test_iam_permissions()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn test_iam_permissions(&self) -> super::builder::node_groups::TestIamPermissions {
         super::builder::node_groups::TestIamPermissions::new(self.inner.clone())
-    }
-
-    /// Retrieves the specified zone-specific Operations resource.
-    pub fn get_operation(&self) -> super::builder::node_groups::GetOperation {
-        super::builder::node_groups::GetOperation::new(self.inner.clone())
     }
 }
 
@@ -8533,23 +13950,87 @@ impl NodeTemplates {
     }
 
     /// Deletes the specified NodeTemplate resource.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::NodeTemplates;
+    /// async fn sample(
+    ///    client: &NodeTemplates
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .delete()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn delete(&self) -> super::builder::node_templates::Delete {
         super::builder::node_templates::Delete::new(self.inner.clone())
     }
 
     /// Returns the specified node template.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::NodeTemplates;
+    /// async fn sample(
+    ///    client: &NodeTemplates
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get(&self) -> super::builder::node_templates::Get {
         super::builder::node_templates::Get::new(self.inner.clone())
     }
 
     /// Gets the access control policy for a resource. May be empty if no such
     /// policy or resource exists.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::NodeTemplates;
+    /// async fn sample(
+    ///    client: &NodeTemplates
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get_iam_policy()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get_iam_policy(&self) -> super::builder::node_templates::GetIamPolicy {
         super::builder::node_templates::GetIamPolicy::new(self.inner.clone())
     }
 
     /// Creates a NodeTemplate resource in the specified project using the data
     /// included in the request.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::NodeTemplates;
+    /// async fn sample(
+    ///    client: &NodeTemplates
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .insert()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn insert(&self) -> super::builder::node_templates::Insert {
         super::builder::node_templates::Insert::new(self.inner.clone())
     }
@@ -8562,18 +14043,45 @@ impl NodeTemplates {
 
     /// Sets the access control policy on the specified resource.
     /// Replaces any existing policy.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::NodeTemplates;
+    /// async fn sample(
+    ///    client: &NodeTemplates
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .set_iam_policy()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn set_iam_policy(&self) -> super::builder::node_templates::SetIamPolicy {
         super::builder::node_templates::SetIamPolicy::new(self.inner.clone())
     }
 
     /// Returns permissions that a caller has on the specified resource.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::NodeTemplates;
+    /// async fn sample(
+    ///    client: &NodeTemplates
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .test_iam_permissions()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn test_iam_permissions(&self) -> super::builder::node_templates::TestIamPermissions {
         super::builder::node_templates::TestIamPermissions::new(self.inner.clone())
-    }
-
-    /// Retrieves the specified region-specific Operations resource.
-    pub fn get_operation(&self) -> super::builder::node_templates::GetOperation {
-        super::builder::node_templates::GetOperation::new(self.inner.clone())
     }
 }
 
@@ -8691,6 +14199,22 @@ impl NodeTypes {
     }
 
     /// Returns the specified node type.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::NodeTypes;
+    /// async fn sample(
+    ///    client: &NodeTypes
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get(&self) -> super::builder::node_types::Get {
         super::builder::node_types::Get::new(self.inner.clone())
     }
@@ -8821,6 +14345,22 @@ impl OrganizationSecurityPolicies {
     /// versions of this API were used to modify firewall policies. This usage is
     /// now disabled for most organizations. Use firewallPolicies.addAssociation
     /// instead.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::OrganizationSecurityPolicies;
+    /// async fn sample(
+    ///    client: &OrganizationSecurityPolicies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .add_association()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn add_association(
         &self,
     ) -> super::builder::organization_security_policies::AddAssociation {
@@ -8832,6 +14372,22 @@ impl OrganizationSecurityPolicies {
     /// Use this API to modify Cloud Armor policies. Previously, alpha and beta
     /// versions of this API were used to modify firewall policies. This usage is
     /// now disabled for most organizations. Use firewallPolicies.addRule instead.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::OrganizationSecurityPolicies;
+    /// async fn sample(
+    ///    client: &OrganizationSecurityPolicies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .add_rule()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn add_rule(&self) -> super::builder::organization_security_policies::AddRule {
         super::builder::organization_security_policies::AddRule::new(self.inner.clone())
     }
@@ -8842,6 +14398,22 @@ impl OrganizationSecurityPolicies {
     /// versions of this API were used to modify firewall policies. This usage is
     /// now disabled for most organizations. Use firewallPolicies.cloneRules
     /// instead.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::OrganizationSecurityPolicies;
+    /// async fn sample(
+    ///    client: &OrganizationSecurityPolicies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .copy_rules()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn copy_rules(&self) -> super::builder::organization_security_policies::CopyRules {
         super::builder::organization_security_policies::CopyRules::new(self.inner.clone())
     }
@@ -8851,6 +14423,22 @@ impl OrganizationSecurityPolicies {
     /// Use this API to remove Cloud Armor policies. Previously, alpha and beta
     /// versions of this API were used to remove firewall policies. This usage is
     /// now disabled for most organizations. Use firewallPolicies.delete instead.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::OrganizationSecurityPolicies;
+    /// async fn sample(
+    ///    client: &OrganizationSecurityPolicies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .delete()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn delete(&self) -> super::builder::organization_security_policies::Delete {
         super::builder::organization_security_policies::Delete::new(self.inner.clone())
     }
@@ -8860,6 +14448,22 @@ impl OrganizationSecurityPolicies {
     /// Use this API to read Cloud Armor policies. Previously, alpha and beta
     /// versions of this API were used to read firewall policies. This usage is now
     /// disabled for most organizations. Use firewallPolicies.get instead.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::OrganizationSecurityPolicies;
+    /// async fn sample(
+    ///    client: &OrganizationSecurityPolicies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get(&self) -> super::builder::organization_security_policies::Get {
         super::builder::organization_security_policies::Get::new(self.inner.clone())
     }
@@ -8870,6 +14474,22 @@ impl OrganizationSecurityPolicies {
     /// versions of this API were used to read firewall policies. This usage is
     /// now disabled for most organizations. Use firewallPolicies.getAssociation
     /// instead.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::OrganizationSecurityPolicies;
+    /// async fn sample(
+    ///    client: &OrganizationSecurityPolicies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get_association()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get_association(
         &self,
     ) -> super::builder::organization_security_policies::GetAssociation {
@@ -8881,6 +14501,22 @@ impl OrganizationSecurityPolicies {
     /// Use this API to read Cloud Armor policies. Previously, alpha and beta
     /// versions of this API were used to read firewall policies. This usage is now
     /// disabled for most organizations. Use firewallPolicies.getRule instead.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::OrganizationSecurityPolicies;
+    /// async fn sample(
+    ///    client: &OrganizationSecurityPolicies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get_rule()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get_rule(&self) -> super::builder::organization_security_policies::GetRule {
         super::builder::organization_security_policies::GetRule::new(self.inner.clone())
     }
@@ -8891,6 +14527,22 @@ impl OrganizationSecurityPolicies {
     /// Use this API to add Cloud Armor policies. Previously, alpha and beta
     /// versions of this API were used to add firewall policies. This usage is now
     /// disabled for most organizations. Use firewallPolicies.insert instead.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::OrganizationSecurityPolicies;
+    /// async fn sample(
+    ///    client: &OrganizationSecurityPolicies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .insert()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn insert(&self) -> super::builder::organization_security_policies::Insert {
         super::builder::organization_security_policies::Insert::new(self.inner.clone())
     }
@@ -8911,6 +14563,22 @@ impl OrganizationSecurityPolicies {
     /// versions of this API were used to read firewall policies. This usage is
     /// now disabled for most organizations. Use firewallPolicies.listAssociations
     /// instead.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::OrganizationSecurityPolicies;
+    /// async fn sample(
+    ///    client: &OrganizationSecurityPolicies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .list_associations()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn list_associations(
         &self,
     ) -> super::builder::organization_security_policies::ListAssociations {
@@ -8919,6 +14587,22 @@ impl OrganizationSecurityPolicies {
 
     /// Gets the current list of preconfigured Web Application Firewall (WAF)
     /// expressions.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::OrganizationSecurityPolicies;
+    /// async fn sample(
+    ///    client: &OrganizationSecurityPolicies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .list_preconfigured_expression_sets()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn list_preconfigured_expression_sets(
         &self,
     ) -> super::builder::organization_security_policies::ListPreconfiguredExpressionSets {
@@ -8932,6 +14616,22 @@ impl OrganizationSecurityPolicies {
     /// Use this API to modify Cloud Armor policies. Previously, alpha and beta
     /// versions of this API were used to modify firewall policies. This usage is
     /// now disabled for most organizations. Use firewallPolicies.move instead.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::OrganizationSecurityPolicies;
+    /// async fn sample(
+    ///    client: &OrganizationSecurityPolicies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .r#move()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn r#move(&self) -> super::builder::organization_security_policies::Move {
         super::builder::organization_security_policies::Move::new(self.inner.clone())
     }
@@ -8941,6 +14641,22 @@ impl OrganizationSecurityPolicies {
     /// Use this API to modify Cloud Armor policies. Previously, alpha and beta
     /// versions of this API were used to modify firewall policies. This usage is
     /// now disabled for most organizations. Use firewallPolicies.patch instead.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::OrganizationSecurityPolicies;
+    /// async fn sample(
+    ///    client: &OrganizationSecurityPolicies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .patch()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn patch(&self) -> super::builder::organization_security_policies::Patch {
         super::builder::organization_security_policies::Patch::new(self.inner.clone())
     }
@@ -8951,6 +14667,22 @@ impl OrganizationSecurityPolicies {
     /// versions of this API were used to modify firewall policies. This usage is
     /// now disabled for most organizations. Use firewallPolicies.patchRule
     /// instead.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::OrganizationSecurityPolicies;
+    /// async fn sample(
+    ///    client: &OrganizationSecurityPolicies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .patch_rule()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn patch_rule(&self) -> super::builder::organization_security_policies::PatchRule {
         super::builder::organization_security_policies::PatchRule::new(self.inner.clone())
     }
@@ -8961,6 +14693,22 @@ impl OrganizationSecurityPolicies {
     /// versions of this API were used to modify firewall policies. This usage is
     /// now disabled for most organizations. Use firewallPolicies.removeAssociation
     /// instead.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::OrganizationSecurityPolicies;
+    /// async fn sample(
+    ///    client: &OrganizationSecurityPolicies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .remove_association()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn remove_association(
         &self,
     ) -> super::builder::organization_security_policies::RemoveAssociation {
@@ -8973,14 +14721,24 @@ impl OrganizationSecurityPolicies {
     /// versions of this API were used to modify firewall policies. This usage is
     /// now disabled for most organizations. Use firewallPolicies.removeRule
     /// instead.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::OrganizationSecurityPolicies;
+    /// async fn sample(
+    ///    client: &OrganizationSecurityPolicies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .remove_rule()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn remove_rule(&self) -> super::builder::organization_security_policies::RemoveRule {
         super::builder::organization_security_policies::RemoveRule::new(self.inner.clone())
-    }
-
-    /// Retrieves the specified Operations resource. Gets a list of operations
-    /// by making a `list()` request.
-    pub fn get_operation(&self) -> super::builder::organization_security_policies::GetOperation {
-        super::builder::organization_security_policies::GetOperation::new(self.inner.clone())
     }
 }
 
@@ -9101,17 +14859,65 @@ impl PacketMirrorings {
     }
 
     /// Deletes the specified PacketMirroring resource.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::PacketMirrorings;
+    /// async fn sample(
+    ///    client: &PacketMirrorings
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .delete()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn delete(&self) -> super::builder::packet_mirrorings::Delete {
         super::builder::packet_mirrorings::Delete::new(self.inner.clone())
     }
 
     /// Returns the specified PacketMirroring resource.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::PacketMirrorings;
+    /// async fn sample(
+    ///    client: &PacketMirrorings
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get(&self) -> super::builder::packet_mirrorings::Get {
         super::builder::packet_mirrorings::Get::new(self.inner.clone())
     }
 
     /// Creates a PacketMirroring resource in the specified project and region
     /// using the data included in the request.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::PacketMirrorings;
+    /// async fn sample(
+    ///    client: &PacketMirrorings
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .insert()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn insert(&self) -> super::builder::packet_mirrorings::Insert {
         super::builder::packet_mirrorings::Insert::new(self.inner.clone())
     }
@@ -9126,18 +14932,45 @@ impl PacketMirrorings {
     /// the request. This method supportsPATCH
     /// semantics and usesJSON merge
     /// patch format and processing rules.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::PacketMirrorings;
+    /// async fn sample(
+    ///    client: &PacketMirrorings
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .patch()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn patch(&self) -> super::builder::packet_mirrorings::Patch {
         super::builder::packet_mirrorings::Patch::new(self.inner.clone())
     }
 
     /// Returns permissions that a caller has on the specified resource.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::PacketMirrorings;
+    /// async fn sample(
+    ///    client: &PacketMirrorings
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .test_iam_permissions()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn test_iam_permissions(&self) -> super::builder::packet_mirrorings::TestIamPermissions {
         super::builder::packet_mirrorings::TestIamPermissions::new(self.inner.clone())
-    }
-
-    /// Retrieves the specified region-specific Operations resource.
-    pub fn get_operation(&self) -> super::builder::packet_mirrorings::GetOperation {
-        super::builder::packet_mirrorings::GetOperation::new(self.inner.clone())
     }
 }
 
@@ -9250,6 +15083,22 @@ impl PreviewFeatures {
     }
 
     /// Returns the details of the given PreviewFeature.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::PreviewFeatures;
+    /// async fn sample(
+    ///    client: &PreviewFeatures
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get(&self) -> super::builder::preview_features::Get {
         super::builder::preview_features::Get::new(self.inner.clone())
     }
@@ -9261,13 +15110,24 @@ impl PreviewFeatures {
 
     /// Patches the given PreviewFeature. This method is used to enable or disable
     /// a PreviewFeature.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::PreviewFeatures;
+    /// async fn sample(
+    ///    client: &PreviewFeatures
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .update()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn update(&self) -> super::builder::preview_features::Update {
         super::builder::preview_features::Update::new(self.inner.clone())
-    }
-
-    /// Retrieves the specified Operations resource.
-    pub fn get_operation(&self) -> super::builder::preview_features::GetOperation {
-        super::builder::preview_features::GetOperation::new(self.inner.clone())
     }
 }
 
@@ -9377,17 +15237,65 @@ impl Projects {
     }
 
     /// Disable this project as a shared VPC host project.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Projects;
+    /// async fn sample(
+    ///    client: &Projects
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .disable_xpn_host()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn disable_xpn_host(&self) -> super::builder::projects::DisableXpnHost {
         super::builder::projects::DisableXpnHost::new(self.inner.clone())
     }
 
     /// Disable a service resource (also known as service project) associated with
     /// this host project.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Projects;
+    /// async fn sample(
+    ///    client: &Projects
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .disable_xpn_resource()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn disable_xpn_resource(&self) -> super::builder::projects::DisableXpnResource {
         super::builder::projects::DisableXpnResource::new(self.inner.clone())
     }
 
     /// Enable this project as a shared VPC host project.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Projects;
+    /// async fn sample(
+    ///    client: &Projects
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .enable_xpn_host()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn enable_xpn_host(&self) -> super::builder::projects::EnableXpnHost {
         super::builder::projects::EnableXpnHost::new(self.inner.clone())
     }
@@ -9395,6 +15303,22 @@ impl Projects {
     /// Enable service resource (a.k.a service project) for a host project, so that
     /// subnets in the host project can be used by instances in the service
     /// project.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Projects;
+    /// async fn sample(
+    ///    client: &Projects
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .enable_xpn_resource()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn enable_xpn_resource(&self) -> super::builder::projects::EnableXpnResource {
         super::builder::projects::EnableXpnResource::new(self.inner.clone())
     }
@@ -9408,12 +15332,44 @@ impl Projects {
     /// to only include the fields you need. For example, to only include the `id`
     /// and `selfLink` fields, add the query parameter `?fields=id,selfLink` to
     /// your request.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Projects;
+    /// async fn sample(
+    ///    client: &Projects
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get(&self) -> super::builder::projects::Get {
         super::builder::projects::Get::new(self.inner.clone())
     }
 
     /// Gets the shared VPC host project that this project links to. May be empty
     /// if no link exists.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Projects;
+    /// async fn sample(
+    ///    client: &Projects
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get_xpn_host()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get_xpn_host(&self) -> super::builder::projects::GetXpnHost {
         super::builder::projects::GetXpnHost::new(self.inner.clone())
     }
@@ -9443,6 +15399,22 @@ impl Projects {
     /// Starting November 1, 2025, API responses will include a warning message in
     /// the response body about the upcoming deprecation. You can skip the message
     /// to continue using the service without interruption.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Projects;
+    /// async fn sample(
+    ///    client: &Projects
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .move_disk()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     #[deprecated]
     pub fn move_disk(&self) -> super::builder::projects::MoveDisk {
         super::builder::projects::MoveDisk::new(self.inner.clone())
@@ -9455,6 +15427,22 @@ impl Projects {
     /// issue](/compute/docs/troubleshooting/known-issues#moving_vms_or_disks_using_the_moveinstance_api_or_the_causes_unexpected_behavior).
     /// [Deprecated] This method is deprecated. See [moving instance across
     /// zones](/compute/docs/instances/moving-instance-across-zones) instead.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Projects;
+    /// async fn sample(
+    ///    client: &Projects
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .move_instance()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     #[deprecated]
     pub fn move_instance(&self) -> super::builder::projects::MoveInstance {
         super::builder::projects::MoveInstance::new(self.inner.clone())
@@ -9464,12 +15452,44 @@ impl Projects {
     /// billing account of the project must be subscribed to Cloud Armor
     /// Enterprise. See Subscribing
     /// to Cloud Armor Enterprise for more information.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Projects;
+    /// async fn sample(
+    ///    client: &Projects
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .set_cloud_armor_tier()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn set_cloud_armor_tier(&self) -> super::builder::projects::SetCloudArmorTier {
         super::builder::projects::SetCloudArmorTier::new(self.inner.clone())
     }
 
     /// Sets metadata common to all instances within the specified project using
     /// the data included in the request.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Projects;
+    /// async fn sample(
+    ///    client: &Projects
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .set_common_instance_metadata()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn set_common_instance_metadata(
         &self,
     ) -> super::builder::projects::SetCommonInstanceMetadata {
@@ -9479,6 +15499,22 @@ impl Projects {
     /// Sets the default network tier of the project. The default network tier is
     /// used when an address/forwardingRule/instance is created without specifying
     /// the network tier field.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Projects;
+    /// async fn sample(
+    ///    client: &Projects
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .set_default_network_tier()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn set_default_network_tier(&self) -> super::builder::projects::SetDefaultNetworkTier {
         super::builder::projects::SetDefaultNetworkTier::new(self.inner.clone())
     }
@@ -9486,13 +15522,24 @@ impl Projects {
     /// Enables the usage export feature and sets theusage export bucket
     /// where reports are stored. If you provide an empty request body using this
     /// method, the usage export feature will be disabled.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Projects;
+    /// async fn sample(
+    ///    client: &Projects
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .set_usage_export_bucket()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn set_usage_export_bucket(&self) -> super::builder::projects::SetUsageExportBucket {
         super::builder::projects::SetUsageExportBucket::new(self.inner.clone())
-    }
-
-    /// Retrieves the specified Operations resource.
-    pub fn get_operation(&self) -> super::builder::projects::GetOperation {
-        super::builder::projects::GetOperation::new(self.inner.clone())
     }
 }
 
@@ -9606,22 +15653,86 @@ impl PublicAdvertisedPrefixes {
     }
 
     /// Announces the specified PublicAdvertisedPrefix
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::PublicAdvertisedPrefixes;
+    /// async fn sample(
+    ///    client: &PublicAdvertisedPrefixes
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .announce()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn announce(&self) -> super::builder::public_advertised_prefixes::Announce {
         super::builder::public_advertised_prefixes::Announce::new(self.inner.clone())
     }
 
     /// Deletes the specified PublicAdvertisedPrefix
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::PublicAdvertisedPrefixes;
+    /// async fn sample(
+    ///    client: &PublicAdvertisedPrefixes
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .delete()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn delete(&self) -> super::builder::public_advertised_prefixes::Delete {
         super::builder::public_advertised_prefixes::Delete::new(self.inner.clone())
     }
 
     /// Returns the specified PublicAdvertisedPrefix resource.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::PublicAdvertisedPrefixes;
+    /// async fn sample(
+    ///    client: &PublicAdvertisedPrefixes
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get(&self) -> super::builder::public_advertised_prefixes::Get {
         super::builder::public_advertised_prefixes::Get::new(self.inner.clone())
     }
 
     /// Creates a PublicAdvertisedPrefix in the specified project
     /// using the parameters that are included in the request.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::PublicAdvertisedPrefixes;
+    /// async fn sample(
+    ///    client: &PublicAdvertisedPrefixes
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .insert()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn insert(&self) -> super::builder::public_advertised_prefixes::Insert {
         super::builder::public_advertised_prefixes::Insert::new(self.inner.clone())
     }
@@ -9635,18 +15746,45 @@ impl PublicAdvertisedPrefixes {
     /// request. This method supportsPATCH
     /// semantics and usesJSON merge
     /// patch format and processing rules.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::PublicAdvertisedPrefixes;
+    /// async fn sample(
+    ///    client: &PublicAdvertisedPrefixes
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .patch()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn patch(&self) -> super::builder::public_advertised_prefixes::Patch {
         super::builder::public_advertised_prefixes::Patch::new(self.inner.clone())
     }
 
     /// Withdraws the specified PublicAdvertisedPrefix
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::PublicAdvertisedPrefixes;
+    /// async fn sample(
+    ///    client: &PublicAdvertisedPrefixes
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .withdraw()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn withdraw(&self) -> super::builder::public_advertised_prefixes::Withdraw {
         super::builder::public_advertised_prefixes::Withdraw::new(self.inner.clone())
-    }
-
-    /// Retrieves the specified Operations resource.
-    pub fn get_operation(&self) -> super::builder::public_advertised_prefixes::GetOperation {
-        super::builder::public_advertised_prefixes::GetOperation::new(self.inner.clone())
     }
 }
 
@@ -9769,22 +15907,86 @@ impl PublicDelegatedPrefixes {
     }
 
     /// Announces the specified PublicDelegatedPrefix in the given region.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::PublicDelegatedPrefixes;
+    /// async fn sample(
+    ///    client: &PublicDelegatedPrefixes
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .announce()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn announce(&self) -> super::builder::public_delegated_prefixes::Announce {
         super::builder::public_delegated_prefixes::Announce::new(self.inner.clone())
     }
 
     /// Deletes the specified PublicDelegatedPrefix in the given region.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::PublicDelegatedPrefixes;
+    /// async fn sample(
+    ///    client: &PublicDelegatedPrefixes
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .delete()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn delete(&self) -> super::builder::public_delegated_prefixes::Delete {
         super::builder::public_delegated_prefixes::Delete::new(self.inner.clone())
     }
 
     /// Returns the specified PublicDelegatedPrefix resource in the given region.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::PublicDelegatedPrefixes;
+    /// async fn sample(
+    ///    client: &PublicDelegatedPrefixes
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get(&self) -> super::builder::public_delegated_prefixes::Get {
         super::builder::public_delegated_prefixes::Get::new(self.inner.clone())
     }
 
     /// Creates a PublicDelegatedPrefix in the specified project in the given
     /// region using the parameters that are included in the request.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::PublicDelegatedPrefixes;
+    /// async fn sample(
+    ///    client: &PublicDelegatedPrefixes
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .insert()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn insert(&self) -> super::builder::public_delegated_prefixes::Insert {
         super::builder::public_delegated_prefixes::Insert::new(self.inner.clone())
     }
@@ -9798,18 +16000,45 @@ impl PublicDelegatedPrefixes {
     /// in the request. This method supportsPATCH
     /// semantics and usesJSON merge
     /// patch format and processing rules.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::PublicDelegatedPrefixes;
+    /// async fn sample(
+    ///    client: &PublicDelegatedPrefixes
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .patch()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn patch(&self) -> super::builder::public_delegated_prefixes::Patch {
         super::builder::public_delegated_prefixes::Patch::new(self.inner.clone())
     }
 
     /// Withdraws the specified PublicDelegatedPrefix in the given region.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::PublicDelegatedPrefixes;
+    /// async fn sample(
+    ///    client: &PublicDelegatedPrefixes
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .withdraw()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn withdraw(&self) -> super::builder::public_delegated_prefixes::Withdraw {
         super::builder::public_delegated_prefixes::Withdraw::new(self.inner.clone())
-    }
-
-    /// Retrieves the specified region-specific Operations resource.
-    pub fn get_operation(&self) -> super::builder::public_delegated_prefixes::GetOperation {
-        super::builder::public_delegated_prefixes::GetOperation::new(self.inner.clone())
     }
 }
 
@@ -9922,17 +16151,65 @@ impl RegionAutoscalers {
     }
 
     /// Deletes the specified autoscaler.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionAutoscalers;
+    /// async fn sample(
+    ///    client: &RegionAutoscalers
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .delete()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn delete(&self) -> super::builder::region_autoscalers::Delete {
         super::builder::region_autoscalers::Delete::new(self.inner.clone())
     }
 
     /// Returns the specified autoscaler.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionAutoscalers;
+    /// async fn sample(
+    ///    client: &RegionAutoscalers
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get(&self) -> super::builder::region_autoscalers::Get {
         super::builder::region_autoscalers::Get::new(self.inner.clone())
     }
 
     /// Creates an autoscaler in the specified project using
     /// the data included in the request.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionAutoscalers;
+    /// async fn sample(
+    ///    client: &RegionAutoscalers
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .insert()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn insert(&self) -> super::builder::region_autoscalers::Insert {
         super::builder::region_autoscalers::Insert::new(self.inner.clone())
     }
@@ -9947,19 +16224,46 @@ impl RegionAutoscalers {
     /// the data included in the request. This method supportsPATCH
     /// semantics and uses theJSON merge
     /// patch format and processing rules.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionAutoscalers;
+    /// async fn sample(
+    ///    client: &RegionAutoscalers
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .patch()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn patch(&self) -> super::builder::region_autoscalers::Patch {
         super::builder::region_autoscalers::Patch::new(self.inner.clone())
     }
 
     /// Updates an autoscaler in the specified project using
     /// the data included in the request.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionAutoscalers;
+    /// async fn sample(
+    ///    client: &RegionAutoscalers
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .update()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn update(&self) -> super::builder::region_autoscalers::Update {
         super::builder::region_autoscalers::Update::new(self.inner.clone())
-    }
-
-    /// Retrieves the specified region-specific Operations resource.
-    pub fn get_operation(&self) -> super::builder::region_autoscalers::GetOperation {
-        super::builder::region_autoscalers::GetOperation::new(self.inner.clone())
     }
 }
 
@@ -10072,23 +16376,87 @@ impl RegionBackendServices {
     }
 
     /// Deletes the specified regional BackendService resource.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionBackendServices;
+    /// async fn sample(
+    ///    client: &RegionBackendServices
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .delete()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn delete(&self) -> super::builder::region_backend_services::Delete {
         super::builder::region_backend_services::Delete::new(self.inner.clone())
     }
 
     /// Returns the specified regional BackendService resource.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionBackendServices;
+    /// async fn sample(
+    ///    client: &RegionBackendServices
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get(&self) -> super::builder::region_backend_services::Get {
         super::builder::region_backend_services::Get::new(self.inner.clone())
     }
 
     /// Gets the most recent health check results for this
     /// regional BackendService.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionBackendServices;
+    /// async fn sample(
+    ///    client: &RegionBackendServices
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get_health()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get_health(&self) -> super::builder::region_backend_services::GetHealth {
         super::builder::region_backend_services::GetHealth::new(self.inner.clone())
     }
 
     /// Gets the access control policy for a resource. May be empty if no such
     /// policy or resource exists.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionBackendServices;
+    /// async fn sample(
+    ///    client: &RegionBackendServices
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get_iam_policy()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get_iam_policy(&self) -> super::builder::region_backend_services::GetIamPolicy {
         super::builder::region_backend_services::GetIamPolicy::new(self.inner.clone())
     }
@@ -10096,6 +16464,22 @@ impl RegionBackendServices {
     /// Creates a regional BackendService resource in the specified project using
     /// the data included in the request. For more information, see
     /// Backend services overview.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionBackendServices;
+    /// async fn sample(
+    ///    client: &RegionBackendServices
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .insert()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn insert(&self) -> super::builder::region_backend_services::Insert {
         super::builder::region_backend_services::Insert::new(self.inner.clone())
     }
@@ -10117,12 +16501,44 @@ impl RegionBackendServices {
     /// Understanding backend services This method
     /// supports PATCH semantics and uses the JSON merge
     /// patch format and processing rules.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionBackendServices;
+    /// async fn sample(
+    ///    client: &RegionBackendServices
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .patch()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn patch(&self) -> super::builder::region_backend_services::Patch {
         super::builder::region_backend_services::Patch::new(self.inner.clone())
     }
 
     /// Sets the access control policy on the specified resource.
     /// Replaces any existing policy.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionBackendServices;
+    /// async fn sample(
+    ///    client: &RegionBackendServices
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .set_iam_policy()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn set_iam_policy(&self) -> super::builder::region_backend_services::SetIamPolicy {
         super::builder::region_backend_services::SetIamPolicy::new(self.inner.clone())
     }
@@ -10130,6 +16546,22 @@ impl RegionBackendServices {
     /// Sets the Google Cloud Armor security policy for the specified backend
     /// service. For more information, seeGoogle
     /// Cloud Armor Overview
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionBackendServices;
+    /// async fn sample(
+    ///    client: &RegionBackendServices
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .set_security_policy()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn set_security_policy(
         &self,
     ) -> super::builder::region_backend_services::SetSecurityPolicy {
@@ -10137,6 +16569,22 @@ impl RegionBackendServices {
     }
 
     /// Returns permissions that a caller has on the specified resource.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionBackendServices;
+    /// async fn sample(
+    ///    client: &RegionBackendServices
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .test_iam_permissions()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn test_iam_permissions(
         &self,
     ) -> super::builder::region_backend_services::TestIamPermissions {
@@ -10147,13 +16595,24 @@ impl RegionBackendServices {
     /// included in the request. For more information,
     /// see
     /// Backend services overview.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionBackendServices;
+    /// async fn sample(
+    ///    client: &RegionBackendServices
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .update()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn update(&self) -> super::builder::region_backend_services::Update {
         super::builder::region_backend_services::Update::new(self.inner.clone())
-    }
-
-    /// Retrieves the specified region-specific Operations resource.
-    pub fn get_operation(&self) -> super::builder::region_backend_services::GetOperation {
-        super::builder::region_backend_services::GetOperation::new(self.inner.clone())
     }
 }
 
@@ -10274,12 +16733,44 @@ impl RegionCommitments {
     }
 
     /// Returns the specified commitment resource.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionCommitments;
+    /// async fn sample(
+    ///    client: &RegionCommitments
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get(&self) -> super::builder::region_commitments::Get {
         super::builder::region_commitments::Get::new(self.inner.clone())
     }
 
     /// Creates a commitment in the specified project using the data
     /// included in the request.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionCommitments;
+    /// async fn sample(
+    ///    client: &RegionCommitments
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .insert()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn insert(&self) -> super::builder::region_commitments::Insert {
         super::builder::region_commitments::Insert::new(self.inner.clone())
     }
@@ -10293,13 +16784,24 @@ impl RegionCommitments {
     /// Updates the specified commitment with the data included in the request.
     /// Update is performed only on selected fields included as part of
     /// update-mask. Only the following fields can be updated: auto_renew and plan.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionCommitments;
+    /// async fn sample(
+    ///    client: &RegionCommitments
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .update()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn update(&self) -> super::builder::region_commitments::Update {
         super::builder::region_commitments::Update::new(self.inner.clone())
-    }
-
-    /// Retrieves the specified region-specific Operations resource.
-    pub fn get_operation(&self) -> super::builder::region_commitments::GetOperation {
-        super::builder::region_commitments::GetOperation::new(self.inner.clone())
     }
 }
 
@@ -10412,6 +16914,22 @@ impl RegionDiskTypes {
     }
 
     /// Returns the specified regional disk type.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionDiskTypes;
+    /// async fn sample(
+    ///    client: &RegionDiskTypes
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get(&self) -> super::builder::region_disk_types::Get {
         super::builder::region_disk_types::Get::new(self.inner.clone())
     }
@@ -10530,11 +17048,43 @@ impl RegionDisks {
     /// Adds existing resource policies to a regional disk. You can only add one
     /// policy which will be applied to this disk for scheduling snapshot
     /// creation.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionDisks;
+    /// async fn sample(
+    ///    client: &RegionDisks
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .add_resource_policies()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn add_resource_policies(&self) -> super::builder::region_disks::AddResourcePolicies {
         super::builder::region_disks::AddResourcePolicies::new(self.inner.clone())
     }
 
     /// Bulk create a set of disks.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionDisks;
+    /// async fn sample(
+    ///    client: &RegionDisks
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .bulk_insert()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn bulk_insert(&self) -> super::builder::region_disks::BulkInsert {
         super::builder::region_disks::BulkInsert::new(self.inner.clone())
     }
@@ -10543,6 +17093,22 @@ impl RegionDisks {
     /// creation, consider using snapshots.insert
     /// instead, as that method supports more features, such as creating snapshots
     /// in a project different from the source disk project.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionDisks;
+    /// async fn sample(
+    ///    client: &RegionDisks
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .create_snapshot()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn create_snapshot(&self) -> super::builder::region_disks::CreateSnapshot {
         super::builder::region_disks::CreateSnapshot::new(self.inner.clone())
     }
@@ -10552,23 +17118,87 @@ impl RegionDisks {
     /// However, deleting a disk does not delete anysnapshots
     /// previously made from the disk. You must separatelydelete
     /// snapshots.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionDisks;
+    /// async fn sample(
+    ///    client: &RegionDisks
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .delete()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn delete(&self) -> super::builder::region_disks::Delete {
         super::builder::region_disks::Delete::new(self.inner.clone())
     }
 
     /// Returns a specified regional persistent disk.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionDisks;
+    /// async fn sample(
+    ///    client: &RegionDisks
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get(&self) -> super::builder::region_disks::Get {
         super::builder::region_disks::Get::new(self.inner.clone())
     }
 
     /// Gets the access control policy for a resource. May be empty if no such
     /// policy or resource exists.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionDisks;
+    /// async fn sample(
+    ///    client: &RegionDisks
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get_iam_policy()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get_iam_policy(&self) -> super::builder::region_disks::GetIamPolicy {
         super::builder::region_disks::GetIamPolicy::new(self.inner.clone())
     }
 
     /// Creates a persistent regional disk in the specified project using the data
     /// included in the request.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionDisks;
+    /// async fn sample(
+    ///    client: &RegionDisks
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .insert()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn insert(&self) -> super::builder::region_disks::Insert {
         super::builder::region_disks::Insert::new(self.inner.clone())
     }
@@ -10580,40 +17210,152 @@ impl RegionDisks {
     }
 
     /// Removes resource policies from a regional disk.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionDisks;
+    /// async fn sample(
+    ///    client: &RegionDisks
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .remove_resource_policies()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn remove_resource_policies(&self) -> super::builder::region_disks::RemoveResourcePolicies {
         super::builder::region_disks::RemoveResourcePolicies::new(self.inner.clone())
     }
 
     /// Resizes the specified regional persistent disk.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionDisks;
+    /// async fn sample(
+    ///    client: &RegionDisks
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .resize()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn resize(&self) -> super::builder::region_disks::Resize {
         super::builder::region_disks::Resize::new(self.inner.clone())
     }
 
     /// Sets the access control policy on the specified resource.
     /// Replaces any existing policy.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionDisks;
+    /// async fn sample(
+    ///    client: &RegionDisks
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .set_iam_policy()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn set_iam_policy(&self) -> super::builder::region_disks::SetIamPolicy {
         super::builder::region_disks::SetIamPolicy::new(self.inner.clone())
     }
 
     /// Sets the labels on the target regional disk.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionDisks;
+    /// async fn sample(
+    ///    client: &RegionDisks
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .set_labels()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn set_labels(&self) -> super::builder::region_disks::SetLabels {
         super::builder::region_disks::SetLabels::new(self.inner.clone())
     }
 
     /// Starts asynchronous replication.
     /// Must be invoked on the primary disk.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionDisks;
+    /// async fn sample(
+    ///    client: &RegionDisks
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .start_async_replication()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn start_async_replication(&self) -> super::builder::region_disks::StartAsyncReplication {
         super::builder::region_disks::StartAsyncReplication::new(self.inner.clone())
     }
 
     /// Stops asynchronous replication.
     /// Can be invoked either on the primary or on the secondary disk.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionDisks;
+    /// async fn sample(
+    ///    client: &RegionDisks
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .stop_async_replication()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn stop_async_replication(&self) -> super::builder::region_disks::StopAsyncReplication {
         super::builder::region_disks::StopAsyncReplication::new(self.inner.clone())
     }
 
     /// Stops asynchronous replication for a consistency group of disks.
     /// Can be invoked either in the primary or secondary scope.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionDisks;
+    /// async fn sample(
+    ///    client: &RegionDisks
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .stop_group_async_replication()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn stop_group_async_replication(
         &self,
     ) -> super::builder::region_disks::StopGroupAsyncReplication {
@@ -10621,6 +17363,22 @@ impl RegionDisks {
     }
 
     /// Returns permissions that a caller has on the specified resource.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionDisks;
+    /// async fn sample(
+    ///    client: &RegionDisks
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .test_iam_permissions()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn test_iam_permissions(&self) -> super::builder::region_disks::TestIamPermissions {
         super::builder::region_disks::TestIamPermissions::new(self.inner.clone())
     }
@@ -10628,13 +17386,24 @@ impl RegionDisks {
     /// Update the specified disk with the data included in the request. Update is
     /// performed only on selected fields included as part of update-mask. Only the
     /// following fields can be modified: user_license.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionDisks;
+    /// async fn sample(
+    ///    client: &RegionDisks
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .update()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn update(&self) -> super::builder::region_disks::Update {
         super::builder::region_disks::Update::new(self.inner.clone())
-    }
-
-    /// Retrieves the specified region-specific Operations resource.
-    pub fn get_operation(&self) -> super::builder::region_disks::GetOperation {
-        super::builder::region_disks::GetOperation::new(self.inner.clone())
     }
 }
 
@@ -10748,17 +17517,65 @@ impl RegionHealthCheckServices {
     }
 
     /// Deletes the specified regional HealthCheckService.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionHealthCheckServices;
+    /// async fn sample(
+    ///    client: &RegionHealthCheckServices
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .delete()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn delete(&self) -> super::builder::region_health_check_services::Delete {
         super::builder::region_health_check_services::Delete::new(self.inner.clone())
     }
 
     /// Returns the specified regional HealthCheckService resource.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionHealthCheckServices;
+    /// async fn sample(
+    ///    client: &RegionHealthCheckServices
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get(&self) -> super::builder::region_health_check_services::Get {
         super::builder::region_health_check_services::Get::new(self.inner.clone())
     }
 
     /// Creates a regional HealthCheckService resource in the
     /// specified project and region using the data included in the request.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionHealthCheckServices;
+    /// async fn sample(
+    ///    client: &RegionHealthCheckServices
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .insert()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn insert(&self) -> super::builder::region_health_check_services::Insert {
         super::builder::region_health_check_services::Insert::new(self.inner.clone())
     }
@@ -10773,13 +17590,24 @@ impl RegionHealthCheckServices {
     /// with the data included in the request.  This method supportsPATCH
     /// semantics and uses theJSON merge
     /// patch format and processing rules.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionHealthCheckServices;
+    /// async fn sample(
+    ///    client: &RegionHealthCheckServices
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .patch()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn patch(&self) -> super::builder::region_health_check_services::Patch {
         super::builder::region_health_check_services::Patch::new(self.inner.clone())
-    }
-
-    /// Retrieves the specified region-specific Operations resource.
-    pub fn get_operation(&self) -> super::builder::region_health_check_services::GetOperation {
-        super::builder::region_health_check_services::GetOperation::new(self.inner.clone())
     }
 }
 
@@ -10892,17 +17720,65 @@ impl RegionHealthChecks {
     }
 
     /// Deletes the specified HealthCheck resource.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionHealthChecks;
+    /// async fn sample(
+    ///    client: &RegionHealthChecks
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .delete()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn delete(&self) -> super::builder::region_health_checks::Delete {
         super::builder::region_health_checks::Delete::new(self.inner.clone())
     }
 
     /// Returns the specified HealthCheck resource.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionHealthChecks;
+    /// async fn sample(
+    ///    client: &RegionHealthChecks
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get(&self) -> super::builder::region_health_checks::Get {
         super::builder::region_health_checks::Get::new(self.inner.clone())
     }
 
     /// Creates a HealthCheck resource in the specified project using the data
     /// included in the request.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionHealthChecks;
+    /// async fn sample(
+    ///    client: &RegionHealthChecks
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .insert()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn insert(&self) -> super::builder::region_health_checks::Insert {
         super::builder::region_health_checks::Insert::new(self.inner.clone())
     }
@@ -10917,19 +17793,46 @@ impl RegionHealthChecks {
     /// included in the request. This method supportsPATCH
     /// semantics and uses theJSON merge
     /// patch format and processing rules.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionHealthChecks;
+    /// async fn sample(
+    ///    client: &RegionHealthChecks
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .patch()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn patch(&self) -> super::builder::region_health_checks::Patch {
         super::builder::region_health_checks::Patch::new(self.inner.clone())
     }
 
     /// Updates a HealthCheck resource in the specified project using the data
     /// included in the request.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionHealthChecks;
+    /// async fn sample(
+    ///    client: &RegionHealthChecks
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .update()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn update(&self) -> super::builder::region_health_checks::Update {
         super::builder::region_health_checks::Update::new(self.inner.clone())
-    }
-
-    /// Retrieves the specified region-specific Operations resource.
-    pub fn get_operation(&self) -> super::builder::region_health_checks::GetOperation {
-        super::builder::region_health_checks::GetOperation::new(self.inner.clone())
     }
 }
 
@@ -11057,6 +17960,22 @@ impl RegionInstanceGroupManagers {
     /// draining duration has elapsed before the VM instance is removed or deleted.
     ///
     /// You can specify a maximum of 1000 instances with this method per request.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionInstanceGroupManagers;
+    /// async fn sample(
+    ///    client: &RegionInstanceGroupManagers
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .abandon_instances()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn abandon_instances(
         &self,
     ) -> super::builder::region_instance_group_managers::AbandonInstances {
@@ -11064,6 +17983,22 @@ impl RegionInstanceGroupManagers {
     }
 
     /// Apply updates to selected instances the managed instance group.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionInstanceGroupManagers;
+    /// async fn sample(
+    ///    client: &RegionInstanceGroupManagers
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .apply_updates_to_instances()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn apply_updates_to_instances(
         &self,
     ) -> super::builder::region_instance_group_managers::ApplyUpdatesToInstances {
@@ -11078,6 +18013,22 @@ impl RegionInstanceGroupManagers {
     /// the createInstances request is successful. The underlying
     /// actions take additional time. You must separately verify the status of thecreating or actions with the listmanagedinstances
     /// method.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionInstanceGroupManagers;
+    /// async fn sample(
+    ///    client: &RegionInstanceGroupManagers
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .create_instances()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn create_instances(
         &self,
     ) -> super::builder::region_instance_group_managers::CreateInstances {
@@ -11086,6 +18037,22 @@ impl RegionInstanceGroupManagers {
 
     /// Deletes the specified managed instance group and all of the instances
     /// in that group.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionInstanceGroupManagers;
+    /// async fn sample(
+    ///    client: &RegionInstanceGroupManagers
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .delete()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn delete(&self) -> super::builder::region_instance_group_managers::Delete {
         super::builder::region_instance_group_managers::Delete::new(self.inner.clone())
     }
@@ -11105,6 +18072,22 @@ impl RegionInstanceGroupManagers {
     /// draining duration has elapsed before the VM instance is removed or deleted.
     ///
     /// You can specify a maximum of 1000 instances with this method per request.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionInstanceGroupManagers;
+    /// async fn sample(
+    ///    client: &RegionInstanceGroupManagers
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .delete_instances()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn delete_instances(
         &self,
     ) -> super::builder::region_instance_group_managers::DeleteInstances {
@@ -11113,6 +18096,22 @@ impl RegionInstanceGroupManagers {
 
     /// Deletes selected per-instance configurations for the managed instance
     /// group.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionInstanceGroupManagers;
+    /// async fn sample(
+    ///    client: &RegionInstanceGroupManagers
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .delete_per_instance_configs()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn delete_per_instance_configs(
         &self,
     ) -> super::builder::region_instance_group_managers::DeletePerInstanceConfigs {
@@ -11122,6 +18121,22 @@ impl RegionInstanceGroupManagers {
     }
 
     /// Returns all of the details about the specified managed instance group.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionInstanceGroupManagers;
+    /// async fn sample(
+    ///    client: &RegionInstanceGroupManagers
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get(&self) -> super::builder::region_instance_group_managers::Get {
         super::builder::region_instance_group_managers::Get::new(self.inner.clone())
     }
@@ -11135,6 +18150,22 @@ impl RegionInstanceGroupManagers {
     /// method.
     ///
     /// A regional managed instance group can contain up to 2000 instances.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionInstanceGroupManagers;
+    /// async fn sample(
+    ///    client: &RegionInstanceGroupManagers
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .insert()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn insert(&self) -> super::builder::region_instance_group_managers::Insert {
         super::builder::region_instance_group_managers::Insert::new(self.inner.clone())
     }
@@ -11190,6 +18221,22 @@ impl RegionInstanceGroupManagers {
     /// in the group is different from the current state of that VM. To learn how
     /// to apply an updated configuration to the VMs in a MIG, seeUpdating instances in
     /// a MIG.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionInstanceGroupManagers;
+    /// async fn sample(
+    ///    client: &RegionInstanceGroupManagers
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .patch()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn patch(&self) -> super::builder::region_instance_group_managers::Patch {
         super::builder::region_instance_group_managers::Patch::new(self.inner.clone())
     }
@@ -11197,6 +18244,22 @@ impl RegionInstanceGroupManagers {
     /// Inserts or patches per-instance configurations for the managed instance
     /// group. perInstanceConfig.name serves as a key used to
     /// distinguish whether to perform insert or patch.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionInstanceGroupManagers;
+    /// async fn sample(
+    ///    client: &RegionInstanceGroupManagers
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .patch_per_instance_configs()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn patch_per_instance_configs(
         &self,
     ) -> super::builder::region_instance_group_managers::PatchPerInstanceConfigs {
@@ -11218,6 +18281,22 @@ impl RegionInstanceGroupManagers {
     /// draining duration has elapsed before the VM instance is removed or deleted.
     ///
     /// You can specify a maximum of 1000 instances with this method per request.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionInstanceGroupManagers;
+    /// async fn sample(
+    ///    client: &RegionInstanceGroupManagers
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .recreate_instances()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn recreate_instances(
         &self,
     ) -> super::builder::region_instance_group_managers::RecreateInstances {
@@ -11237,6 +18316,22 @@ impl RegionInstanceGroupManagers {
     /// service that has enabled
     /// connection draining, it can take up to 60 seconds after the connection
     /// draining duration has elapsed before the VM instance is removed or deleted.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionInstanceGroupManagers;
+    /// async fn sample(
+    ///    client: &RegionInstanceGroupManagers
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .resize()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn resize(&self) -> super::builder::region_instance_group_managers::Resize {
         super::builder::region_instance_group_managers::Resize::new(self.inner.clone())
     }
@@ -11257,6 +18352,22 @@ impl RegionInstanceGroupManagers {
     /// instances will be verified as healthy after they are resumed.
     ///
     /// You can specify a maximum of 1000 instances with this method per request.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionInstanceGroupManagers;
+    /// async fn sample(
+    ///    client: &RegionInstanceGroupManagers
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .resume_instances()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn resume_instances(
         &self,
     ) -> super::builder::region_instance_group_managers::ResumeInstances {
@@ -11265,6 +18376,22 @@ impl RegionInstanceGroupManagers {
 
     /// Sets the instance template to use when creating new instances or recreating
     /// instances in this group. Existing instances are not affected.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionInstanceGroupManagers;
+    /// async fn sample(
+    ///    client: &RegionInstanceGroupManagers
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .set_instance_template()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn set_instance_template(
         &self,
     ) -> super::builder::region_instance_group_managers::SetInstanceTemplate {
@@ -11273,6 +18400,22 @@ impl RegionInstanceGroupManagers {
 
     /// Modifies the target pools to which all new instances in this group are
     /// assigned. Existing instances in the group are not affected.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionInstanceGroupManagers;
+    /// async fn sample(
+    ///    client: &RegionInstanceGroupManagers
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .set_target_pools()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn set_target_pools(
         &self,
     ) -> super::builder::region_instance_group_managers::SetTargetPools {
@@ -11295,6 +18438,22 @@ impl RegionInstanceGroupManagers {
     /// instances will be verified as healthy after they are started.
     ///
     /// You can specify a maximum of 1000 instances with this method per request.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionInstanceGroupManagers;
+    /// async fn sample(
+    ///    client: &RegionInstanceGroupManagers
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .start_instances()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn start_instances(
         &self,
     ) -> super::builder::region_instance_group_managers::StartInstances {
@@ -11326,6 +18485,22 @@ impl RegionInstanceGroupManagers {
     /// method.
     ///
     /// You can specify a maximum of 1000 instances with this method per request.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionInstanceGroupManagers;
+    /// async fn sample(
+    ///    client: &RegionInstanceGroupManagers
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .stop_instances()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn stop_instances(&self) -> super::builder::region_instance_group_managers::StopInstances {
         super::builder::region_instance_group_managers::StopInstances::new(self.inner.clone())
     }
@@ -11355,6 +18530,22 @@ impl RegionInstanceGroupManagers {
     /// method.
     ///
     /// You can specify a maximum of 1000 instances with this method per request.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionInstanceGroupManagers;
+    /// async fn sample(
+    ///    client: &RegionInstanceGroupManagers
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .suspend_instances()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn suspend_instances(
         &self,
     ) -> super::builder::region_instance_group_managers::SuspendInstances {
@@ -11364,17 +18555,28 @@ impl RegionInstanceGroupManagers {
     /// Inserts or updates per-instance configurations for the managed instance
     /// group. perInstanceConfig.name serves as a key used to
     /// distinguish whether to perform insert or patch.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionInstanceGroupManagers;
+    /// async fn sample(
+    ///    client: &RegionInstanceGroupManagers
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .update_per_instance_configs()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn update_per_instance_configs(
         &self,
     ) -> super::builder::region_instance_group_managers::UpdatePerInstanceConfigs {
         super::builder::region_instance_group_managers::UpdatePerInstanceConfigs::new(
             self.inner.clone(),
         )
-    }
-
-    /// Retrieves the specified region-specific Operations resource.
-    pub fn get_operation(&self) -> super::builder::region_instance_group_managers::GetOperation {
-        super::builder::region_instance_group_managers::GetOperation::new(self.inner.clone())
     }
 }
 
@@ -11487,6 +18689,22 @@ impl RegionInstanceGroups {
     }
 
     /// Returns the specified instance group resource.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionInstanceGroups;
+    /// async fn sample(
+    ///    client: &RegionInstanceGroups
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get(&self) -> super::builder::region_instance_groups::Get {
         super::builder::region_instance_groups::Get::new(self.inner.clone())
     }
@@ -11506,20 +18724,47 @@ impl RegionInstanceGroups {
     }
 
     /// Sets the named ports for the specified regional instance group.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionInstanceGroups;
+    /// async fn sample(
+    ///    client: &RegionInstanceGroups
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .set_named_ports()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn set_named_ports(&self) -> super::builder::region_instance_groups::SetNamedPorts {
         super::builder::region_instance_groups::SetNamedPorts::new(self.inner.clone())
     }
 
     /// Returns permissions that a caller has on the specified resource.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionInstanceGroups;
+    /// async fn sample(
+    ///    client: &RegionInstanceGroups
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .test_iam_permissions()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn test_iam_permissions(
         &self,
     ) -> super::builder::region_instance_groups::TestIamPermissions {
         super::builder::region_instance_groups::TestIamPermissions::new(self.inner.clone())
-    }
-
-    /// Retrieves the specified region-specific Operations resource.
-    pub fn get_operation(&self) -> super::builder::region_instance_groups::GetOperation {
-        super::builder::region_instance_groups::GetOperation::new(self.inner.clone())
     }
 }
 
@@ -11634,17 +18879,65 @@ impl RegionInstanceTemplates {
 
     /// Deletes the specified instance template. Deleting an instance template is
     /// permanent and cannot be undone.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionInstanceTemplates;
+    /// async fn sample(
+    ///    client: &RegionInstanceTemplates
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .delete()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn delete(&self) -> super::builder::region_instance_templates::Delete {
         super::builder::region_instance_templates::Delete::new(self.inner.clone())
     }
 
     /// Returns the specified instance template.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionInstanceTemplates;
+    /// async fn sample(
+    ///    client: &RegionInstanceTemplates
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get(&self) -> super::builder::region_instance_templates::Get {
         super::builder::region_instance_templates::Get::new(self.inner.clone())
     }
 
     /// Creates an instance template in the specified project and region using the
     /// global instance template whose URL is included in the request.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionInstanceTemplates;
+    /// async fn sample(
+    ///    client: &RegionInstanceTemplates
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .insert()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn insert(&self) -> super::builder::region_instance_templates::Insert {
         super::builder::region_instance_templates::Insert::new(self.inner.clone())
     }
@@ -11653,11 +18946,6 @@ impl RegionInstanceTemplates {
     /// specified project and region.
     pub fn list(&self) -> super::builder::region_instance_templates::List {
         super::builder::region_instance_templates::List::new(self.inner.clone())
-    }
-
-    /// Retrieves the specified region-specific Operations resource.
-    pub fn get_operation(&self) -> super::builder::region_instance_templates::GetOperation {
-        super::builder::region_instance_templates::GetOperation::new(self.inner.clone())
     }
 }
 
@@ -11771,13 +19059,24 @@ impl RegionInstances {
 
     /// Creates multiple instances in a given region. Count specifies the number of
     /// instances to create.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionInstances;
+    /// async fn sample(
+    ///    client: &RegionInstances
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .bulk_insert()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn bulk_insert(&self) -> super::builder::region_instances::BulkInsert {
         super::builder::region_instances::BulkInsert::new(self.inner.clone())
-    }
-
-    /// Retrieves the specified region-specific Operations resource.
-    pub fn get_operation(&self) -> super::builder::region_instances::GetOperation {
-        super::builder::region_instances::GetOperation::new(self.inner.clone())
     }
 }
 
@@ -11897,22 +19196,86 @@ impl RegionInstantSnapshots {
     ///
     /// For more information, seeDeleting
     /// instantSnapshots.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionInstantSnapshots;
+    /// async fn sample(
+    ///    client: &RegionInstantSnapshots
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .delete()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn delete(&self) -> super::builder::region_instant_snapshots::Delete {
         super::builder::region_instant_snapshots::Delete::new(self.inner.clone())
     }
 
     /// Returns the specified InstantSnapshot resource in the specified region.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionInstantSnapshots;
+    /// async fn sample(
+    ///    client: &RegionInstantSnapshots
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get(&self) -> super::builder::region_instant_snapshots::Get {
         super::builder::region_instant_snapshots::Get::new(self.inner.clone())
     }
 
     /// Gets the access control policy for a resource. May be empty if no such
     /// policy or resource exists.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionInstantSnapshots;
+    /// async fn sample(
+    ///    client: &RegionInstantSnapshots
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get_iam_policy()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get_iam_policy(&self) -> super::builder::region_instant_snapshots::GetIamPolicy {
         super::builder::region_instant_snapshots::GetIamPolicy::new(self.inner.clone())
     }
 
     /// Creates an instant snapshot in the specified region.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionInstantSnapshots;
+    /// async fn sample(
+    ///    client: &RegionInstantSnapshots
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .insert()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn insert(&self) -> super::builder::region_instant_snapshots::Insert {
         super::builder::region_instant_snapshots::Insert::new(self.inner.clone())
     }
@@ -11925,6 +19288,22 @@ impl RegionInstantSnapshots {
 
     /// Sets the access control policy on the specified resource.
     /// Replaces any existing policy.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionInstantSnapshots;
+    /// async fn sample(
+    ///    client: &RegionInstantSnapshots
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .set_iam_policy()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn set_iam_policy(&self) -> super::builder::region_instant_snapshots::SetIamPolicy {
         super::builder::region_instant_snapshots::SetIamPolicy::new(self.inner.clone())
     }
@@ -11932,20 +19311,47 @@ impl RegionInstantSnapshots {
     /// Sets the labels on a instantSnapshot in the given region. To learn more
     /// about labels, read the Labeling
     /// Resources documentation.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionInstantSnapshots;
+    /// async fn sample(
+    ///    client: &RegionInstantSnapshots
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .set_labels()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn set_labels(&self) -> super::builder::region_instant_snapshots::SetLabels {
         super::builder::region_instant_snapshots::SetLabels::new(self.inner.clone())
     }
 
     /// Returns permissions that a caller has on the specified resource.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionInstantSnapshots;
+    /// async fn sample(
+    ///    client: &RegionInstantSnapshots
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .test_iam_permissions()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn test_iam_permissions(
         &self,
     ) -> super::builder::region_instant_snapshots::TestIamPermissions {
         super::builder::region_instant_snapshots::TestIamPermissions::new(self.inner.clone())
-    }
-
-    /// Retrieves the specified region-specific Operations resource.
-    pub fn get_operation(&self) -> super::builder::region_instant_snapshots::GetOperation {
-        super::builder::region_instant_snapshots::GetOperation::new(self.inner.clone())
     }
 }
 
@@ -12059,6 +19465,22 @@ impl RegionNetworkEndpointGroups {
     }
 
     /// Attach a list of network endpoints to the specified network endpoint group.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionNetworkEndpointGroups;
+    /// async fn sample(
+    ///    client: &RegionNetworkEndpointGroups
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .attach_network_endpoints()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn attach_network_endpoints(
         &self,
     ) -> super::builder::region_network_endpoint_groups::AttachNetworkEndpoints {
@@ -12069,11 +19491,43 @@ impl RegionNetworkEndpointGroups {
 
     /// Deletes the specified network endpoint group. Note that the NEG cannot be
     /// deleted if it is configured as a backend of a backend service.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionNetworkEndpointGroups;
+    /// async fn sample(
+    ///    client: &RegionNetworkEndpointGroups
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .delete()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn delete(&self) -> super::builder::region_network_endpoint_groups::Delete {
         super::builder::region_network_endpoint_groups::Delete::new(self.inner.clone())
     }
 
     /// Detach the network endpoint from the specified network endpoint group.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionNetworkEndpointGroups;
+    /// async fn sample(
+    ///    client: &RegionNetworkEndpointGroups
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .detach_network_endpoints()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn detach_network_endpoints(
         &self,
     ) -> super::builder::region_network_endpoint_groups::DetachNetworkEndpoints {
@@ -12083,12 +19537,44 @@ impl RegionNetworkEndpointGroups {
     }
 
     /// Returns the specified network endpoint group.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionNetworkEndpointGroups;
+    /// async fn sample(
+    ///    client: &RegionNetworkEndpointGroups
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get(&self) -> super::builder::region_network_endpoint_groups::Get {
         super::builder::region_network_endpoint_groups::Get::new(self.inner.clone())
     }
 
     /// Creates a network endpoint group in the specified project using the
     /// parameters that are included in the request.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionNetworkEndpointGroups;
+    /// async fn sample(
+    ///    client: &RegionNetworkEndpointGroups
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .insert()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn insert(&self) -> super::builder::region_network_endpoint_groups::Insert {
         super::builder::region_network_endpoint_groups::Insert::new(self.inner.clone())
     }
@@ -12106,11 +19592,6 @@ impl RegionNetworkEndpointGroups {
         super::builder::region_network_endpoint_groups::ListNetworkEndpoints::new(
             self.inner.clone(),
         )
-    }
-
-    /// Retrieves the specified region-specific Operations resource.
-    pub fn get_operation(&self) -> super::builder::region_network_endpoint_groups::GetOperation {
-        super::builder::region_network_endpoint_groups::GetOperation::new(self.inner.clone())
     }
 }
 
@@ -12224,6 +19705,22 @@ impl RegionNetworkFirewallPolicies {
     }
 
     /// Inserts an association for the specified network firewall policy.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionNetworkFirewallPolicies;
+    /// async fn sample(
+    ///    client: &RegionNetworkFirewallPolicies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .add_association()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn add_association(
         &self,
     ) -> super::builder::region_network_firewall_policies::AddAssociation {
@@ -12231,26 +19728,106 @@ impl RegionNetworkFirewallPolicies {
     }
 
     /// Inserts a rule into a network firewall policy.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionNetworkFirewallPolicies;
+    /// async fn sample(
+    ///    client: &RegionNetworkFirewallPolicies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .add_rule()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn add_rule(&self) -> super::builder::region_network_firewall_policies::AddRule {
         super::builder::region_network_firewall_policies::AddRule::new(self.inner.clone())
     }
 
     /// Copies rules to the specified network firewall policy.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionNetworkFirewallPolicies;
+    /// async fn sample(
+    ///    client: &RegionNetworkFirewallPolicies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .clone_rules()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn clone_rules(&self) -> super::builder::region_network_firewall_policies::CloneRules {
         super::builder::region_network_firewall_policies::CloneRules::new(self.inner.clone())
     }
 
     /// Deletes the specified network firewall policy.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionNetworkFirewallPolicies;
+    /// async fn sample(
+    ///    client: &RegionNetworkFirewallPolicies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .delete()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn delete(&self) -> super::builder::region_network_firewall_policies::Delete {
         super::builder::region_network_firewall_policies::Delete::new(self.inner.clone())
     }
 
     /// Returns the specified network firewall policy.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionNetworkFirewallPolicies;
+    /// async fn sample(
+    ///    client: &RegionNetworkFirewallPolicies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get(&self) -> super::builder::region_network_firewall_policies::Get {
         super::builder::region_network_firewall_policies::Get::new(self.inner.clone())
     }
 
     /// Gets an association with the specified name.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionNetworkFirewallPolicies;
+    /// async fn sample(
+    ///    client: &RegionNetworkFirewallPolicies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get_association()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get_association(
         &self,
     ) -> super::builder::region_network_firewall_policies::GetAssociation {
@@ -12258,6 +19835,22 @@ impl RegionNetworkFirewallPolicies {
     }
 
     /// Returns the effective firewalls on a given network.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionNetworkFirewallPolicies;
+    /// async fn sample(
+    ///    client: &RegionNetworkFirewallPolicies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get_effective_firewalls()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get_effective_firewalls(
         &self,
     ) -> super::builder::region_network_firewall_policies::GetEffectiveFirewalls {
@@ -12268,16 +19861,64 @@ impl RegionNetworkFirewallPolicies {
 
     /// Gets the access control policy for a resource. May be empty if no such
     /// policy or resource exists.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionNetworkFirewallPolicies;
+    /// async fn sample(
+    ///    client: &RegionNetworkFirewallPolicies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get_iam_policy()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get_iam_policy(&self) -> super::builder::region_network_firewall_policies::GetIamPolicy {
         super::builder::region_network_firewall_policies::GetIamPolicy::new(self.inner.clone())
     }
 
     /// Gets a rule of the specified priority.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionNetworkFirewallPolicies;
+    /// async fn sample(
+    ///    client: &RegionNetworkFirewallPolicies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get_rule()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get_rule(&self) -> super::builder::region_network_firewall_policies::GetRule {
         super::builder::region_network_firewall_policies::GetRule::new(self.inner.clone())
     }
 
     /// Creates a new network firewall policy in the specified project and region.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionNetworkFirewallPolicies;
+    /// async fn sample(
+    ///    client: &RegionNetworkFirewallPolicies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .insert()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn insert(&self) -> super::builder::region_network_firewall_policies::Insert {
         super::builder::region_network_firewall_policies::Insert::new(self.inner.clone())
     }
@@ -12289,16 +19930,64 @@ impl RegionNetworkFirewallPolicies {
     }
 
     /// Patches the specified network firewall policy.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionNetworkFirewallPolicies;
+    /// async fn sample(
+    ///    client: &RegionNetworkFirewallPolicies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .patch()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn patch(&self) -> super::builder::region_network_firewall_policies::Patch {
         super::builder::region_network_firewall_policies::Patch::new(self.inner.clone())
     }
 
     /// Patches a rule of the specified priority.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionNetworkFirewallPolicies;
+    /// async fn sample(
+    ///    client: &RegionNetworkFirewallPolicies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .patch_rule()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn patch_rule(&self) -> super::builder::region_network_firewall_policies::PatchRule {
         super::builder::region_network_firewall_policies::PatchRule::new(self.inner.clone())
     }
 
     /// Removes an association for the specified network firewall policy.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionNetworkFirewallPolicies;
+    /// async fn sample(
+    ///    client: &RegionNetworkFirewallPolicies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .remove_association()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn remove_association(
         &self,
     ) -> super::builder::region_network_firewall_policies::RemoveAssociation {
@@ -12306,28 +19995,71 @@ impl RegionNetworkFirewallPolicies {
     }
 
     /// Deletes a rule of the specified priority.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionNetworkFirewallPolicies;
+    /// async fn sample(
+    ///    client: &RegionNetworkFirewallPolicies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .remove_rule()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn remove_rule(&self) -> super::builder::region_network_firewall_policies::RemoveRule {
         super::builder::region_network_firewall_policies::RemoveRule::new(self.inner.clone())
     }
 
     /// Sets the access control policy on the specified resource.
     /// Replaces any existing policy.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionNetworkFirewallPolicies;
+    /// async fn sample(
+    ///    client: &RegionNetworkFirewallPolicies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .set_iam_policy()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn set_iam_policy(&self) -> super::builder::region_network_firewall_policies::SetIamPolicy {
         super::builder::region_network_firewall_policies::SetIamPolicy::new(self.inner.clone())
     }
 
     /// Returns permissions that a caller has on the specified resource.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionNetworkFirewallPolicies;
+    /// async fn sample(
+    ///    client: &RegionNetworkFirewallPolicies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .test_iam_permissions()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn test_iam_permissions(
         &self,
     ) -> super::builder::region_network_firewall_policies::TestIamPermissions {
         super::builder::region_network_firewall_policies::TestIamPermissions::new(
             self.inner.clone(),
         )
-    }
-
-    /// Retrieves the specified region-specific Operations resource.
-    pub fn get_operation(&self) -> super::builder::region_network_firewall_policies::GetOperation {
-        super::builder::region_network_firewall_policies::GetOperation::new(self.inner.clone())
     }
 }
 
@@ -12441,17 +20173,65 @@ impl RegionNotificationEndpoints {
     }
 
     /// Deletes the specified NotificationEndpoint in the given region
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionNotificationEndpoints;
+    /// async fn sample(
+    ///    client: &RegionNotificationEndpoints
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .delete()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn delete(&self) -> super::builder::region_notification_endpoints::Delete {
         super::builder::region_notification_endpoints::Delete::new(self.inner.clone())
     }
 
     /// Returns the specified NotificationEndpoint resource in the given region.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionNotificationEndpoints;
+    /// async fn sample(
+    ///    client: &RegionNotificationEndpoints
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get(&self) -> super::builder::region_notification_endpoints::Get {
         super::builder::region_notification_endpoints::Get::new(self.inner.clone())
     }
 
     /// Create a NotificationEndpoint in the specified project in the given region
     /// using the parameters that are included in the request.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionNotificationEndpoints;
+    /// async fn sample(
+    ///    client: &RegionNotificationEndpoints
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .insert()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn insert(&self) -> super::builder::region_notification_endpoints::Insert {
         super::builder::region_notification_endpoints::Insert::new(self.inner.clone())
     }
@@ -12459,11 +20239,6 @@ impl RegionNotificationEndpoints {
     /// Lists the NotificationEndpoints for a project in the given region.
     pub fn list(&self) -> super::builder::region_notification_endpoints::List {
         super::builder::region_notification_endpoints::List::new(self.inner.clone())
-    }
-
-    /// Retrieves the specified region-specific Operations resource.
-    pub fn get_operation(&self) -> super::builder::region_notification_endpoints::GetOperation {
-        super::builder::region_notification_endpoints::GetOperation::new(self.inner.clone())
     }
 }
 
@@ -12576,11 +20351,42 @@ impl RegionOperations {
     }
 
     /// Deletes the specified region-specific Operations resource.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionOperations;
+    /// async fn sample(
+    ///    client: &RegionOperations
+    /// ) -> gax::Result<()> {
+    ///     client
+    ///         .delete()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn delete(&self) -> super::builder::region_operations::Delete {
         super::builder::region_operations::Delete::new(self.inner.clone())
     }
 
     /// Retrieves the specified region-specific Operations resource.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionOperations;
+    /// async fn sample(
+    ///    client: &RegionOperations
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get(&self) -> super::builder::region_operations::Get {
         super::builder::region_operations::Get::new(self.inner.clone())
     }
@@ -12609,6 +20415,22 @@ impl RegionOperations {
     /// - If the default deadline is reached, there is no guarantee that the
     ///   operation is actually done when the method returns. Be prepared to retry
     ///   if the operation is not `DONE`.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionOperations;
+    /// async fn sample(
+    ///    client: &RegionOperations
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .wait()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn wait(&self) -> super::builder::region_operations::Wait {
         super::builder::region_operations::Wait::new(self.inner.clone())
     }
@@ -12723,27 +20545,107 @@ impl RegionSecurityPolicies {
     }
 
     /// Inserts a rule into a security policy.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionSecurityPolicies;
+    /// async fn sample(
+    ///    client: &RegionSecurityPolicies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .add_rule()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn add_rule(&self) -> super::builder::region_security_policies::AddRule {
         super::builder::region_security_policies::AddRule::new(self.inner.clone())
     }
 
     /// Deletes the specified policy.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionSecurityPolicies;
+    /// async fn sample(
+    ///    client: &RegionSecurityPolicies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .delete()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn delete(&self) -> super::builder::region_security_policies::Delete {
         super::builder::region_security_policies::Delete::new(self.inner.clone())
     }
 
     /// List all of the ordered rules present in a single specified policy.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionSecurityPolicies;
+    /// async fn sample(
+    ///    client: &RegionSecurityPolicies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get(&self) -> super::builder::region_security_policies::Get {
         super::builder::region_security_policies::Get::new(self.inner.clone())
     }
 
     /// Gets a rule at the specified priority.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionSecurityPolicies;
+    /// async fn sample(
+    ///    client: &RegionSecurityPolicies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get_rule()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get_rule(&self) -> super::builder::region_security_policies::GetRule {
         super::builder::region_security_policies::GetRule::new(self.inner.clone())
     }
 
     /// Creates a new policy in the specified project using the data included in
     /// the request.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionSecurityPolicies;
+    /// async fn sample(
+    ///    client: &RegionSecurityPolicies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .insert()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn insert(&self) -> super::builder::region_security_policies::Insert {
         super::builder::region_security_policies::Insert::new(self.inner.clone())
     }
@@ -12759,17 +20661,65 @@ impl RegionSecurityPolicies {
     /// updateMask. This cannot be used to be update the rules in the policy.
     /// Please use the per rule methods like addRule, patchRule, and removeRule
     /// instead.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionSecurityPolicies;
+    /// async fn sample(
+    ///    client: &RegionSecurityPolicies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .patch()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn patch(&self) -> super::builder::region_security_policies::Patch {
         super::builder::region_security_policies::Patch::new(self.inner.clone())
     }
 
     /// Patches a rule at the specified priority. To clear fields in the rule,
     /// leave the fields empty and specify them in the updateMask.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionSecurityPolicies;
+    /// async fn sample(
+    ///    client: &RegionSecurityPolicies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .patch_rule()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn patch_rule(&self) -> super::builder::region_security_policies::PatchRule {
         super::builder::region_security_policies::PatchRule::new(self.inner.clone())
     }
 
     /// Deletes a rule at the specified priority.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionSecurityPolicies;
+    /// async fn sample(
+    ///    client: &RegionSecurityPolicies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .remove_rule()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn remove_rule(&self) -> super::builder::region_security_policies::RemoveRule {
         super::builder::region_security_policies::RemoveRule::new(self.inner.clone())
     }
@@ -12777,13 +20727,24 @@ impl RegionSecurityPolicies {
     /// Sets the labels on a security policy. To learn more about labels,
     /// read the Labeling Resources
     /// documentation.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionSecurityPolicies;
+    /// async fn sample(
+    ///    client: &RegionSecurityPolicies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .set_labels()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn set_labels(&self) -> super::builder::region_security_policies::SetLabels {
         super::builder::region_security_policies::SetLabels::new(self.inner.clone())
-    }
-
-    /// Retrieves the specified region-specific Operations resource.
-    pub fn get_operation(&self) -> super::builder::region_security_policies::GetOperation {
-        super::builder::region_security_policies::GetOperation::new(self.inner.clone())
     }
 }
 
@@ -12896,6 +20857,22 @@ impl RegionSslCertificates {
     }
 
     /// Deletes the specified SslCertificate resource in the region.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionSslCertificates;
+    /// async fn sample(
+    ///    client: &RegionSslCertificates
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .delete()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn delete(&self) -> super::builder::region_ssl_certificates::Delete {
         super::builder::region_ssl_certificates::Delete::new(self.inner.clone())
     }
@@ -12903,12 +20880,44 @@ impl RegionSslCertificates {
     /// Returns the specified SslCertificate resource in the specified region. Get
     /// a list of available SSL certificates by making a list()
     /// request.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionSslCertificates;
+    /// async fn sample(
+    ///    client: &RegionSslCertificates
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get(&self) -> super::builder::region_ssl_certificates::Get {
         super::builder::region_ssl_certificates::Get::new(self.inner.clone())
     }
 
     /// Creates a SslCertificate resource in the specified project and region using
     /// the data included in the request
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionSslCertificates;
+    /// async fn sample(
+    ///    client: &RegionSslCertificates
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .insert()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn insert(&self) -> super::builder::region_ssl_certificates::Insert {
         super::builder::region_ssl_certificates::Insert::new(self.inner.clone())
     }
@@ -12917,11 +20926,6 @@ impl RegionSslCertificates {
     /// project in the specified region.
     pub fn list(&self) -> super::builder::region_ssl_certificates::List {
         super::builder::region_ssl_certificates::List::new(self.inner.clone())
-    }
-
-    /// Retrieves the specified region-specific Operations resource.
-    pub fn get_operation(&self) -> super::builder::region_ssl_certificates::GetOperation {
-        super::builder::region_ssl_certificates::GetOperation::new(self.inner.clone())
     }
 }
 
@@ -13036,17 +21040,65 @@ impl RegionSslPolicies {
     /// Deletes the specified SSL policy. The SSL policy resource can be deleted
     /// only if it is not in use by any TargetHttpsProxy or TargetSslProxy
     /// resources.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionSslPolicies;
+    /// async fn sample(
+    ///    client: &RegionSslPolicies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .delete()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn delete(&self) -> super::builder::region_ssl_policies::Delete {
         super::builder::region_ssl_policies::Delete::new(self.inner.clone())
     }
 
     /// Lists all of the ordered rules present in a single specified policy.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionSslPolicies;
+    /// async fn sample(
+    ///    client: &RegionSslPolicies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get(&self) -> super::builder::region_ssl_policies::Get {
         super::builder::region_ssl_policies::Get::new(self.inner.clone())
     }
 
     /// Creates a new policy in the specified project and region using the data
     /// included in the request.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionSslPolicies;
+    /// async fn sample(
+    ///    client: &RegionSslPolicies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .insert()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn insert(&self) -> super::builder::region_ssl_policies::Insert {
         super::builder::region_ssl_policies::Insert::new(self.inner.clone())
     }
@@ -13059,6 +21111,22 @@ impl RegionSslPolicies {
 
     /// Lists all features that can be specified in the SSL policy when using
     /// custom profile.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionSslPolicies;
+    /// async fn sample(
+    ///    client: &RegionSslPolicies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .list_available_features()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn list_available_features(
         &self,
     ) -> super::builder::region_ssl_policies::ListAvailableFeatures {
@@ -13066,13 +21134,24 @@ impl RegionSslPolicies {
     }
 
     /// Patches the specified SSL policy with the data included in the request.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionSslPolicies;
+    /// async fn sample(
+    ///    client: &RegionSslPolicies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .patch()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn patch(&self) -> super::builder::region_ssl_policies::Patch {
         super::builder::region_ssl_policies::Patch::new(self.inner.clone())
-    }
-
-    /// Retrieves the specified region-specific Operations resource.
-    pub fn get_operation(&self) -> super::builder::region_ssl_policies::GetOperation {
-        super::builder::region_ssl_policies::GetOperation::new(self.inner.clone())
     }
 }
 
@@ -13186,17 +21265,65 @@ impl RegionTargetHttpProxies {
     }
 
     /// Deletes the specified TargetHttpProxy resource.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionTargetHttpProxies;
+    /// async fn sample(
+    ///    client: &RegionTargetHttpProxies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .delete()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn delete(&self) -> super::builder::region_target_http_proxies::Delete {
         super::builder::region_target_http_proxies::Delete::new(self.inner.clone())
     }
 
     /// Returns the specified TargetHttpProxy resource in the specified region.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionTargetHttpProxies;
+    /// async fn sample(
+    ///    client: &RegionTargetHttpProxies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get(&self) -> super::builder::region_target_http_proxies::Get {
         super::builder::region_target_http_proxies::Get::new(self.inner.clone())
     }
 
     /// Creates a TargetHttpProxy resource in the specified project and region
     /// using the data included in the request.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionTargetHttpProxies;
+    /// async fn sample(
+    ///    client: &RegionTargetHttpProxies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .insert()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn insert(&self) -> super::builder::region_target_http_proxies::Insert {
         super::builder::region_target_http_proxies::Insert::new(self.inner.clone())
     }
@@ -13208,13 +21335,24 @@ impl RegionTargetHttpProxies {
     }
 
     /// Changes the URL map for TargetHttpProxy.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionTargetHttpProxies;
+    /// async fn sample(
+    ///    client: &RegionTargetHttpProxies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .set_url_map()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn set_url_map(&self) -> super::builder::region_target_http_proxies::SetUrlMap {
         super::builder::region_target_http_proxies::SetUrlMap::new(self.inner.clone())
-    }
-
-    /// Retrieves the specified region-specific Operations resource.
-    pub fn get_operation(&self) -> super::builder::region_target_http_proxies::GetOperation {
-        super::builder::region_target_http_proxies::GetOperation::new(self.inner.clone())
     }
 }
 
@@ -13328,17 +21466,65 @@ impl RegionTargetHttpsProxies {
     }
 
     /// Deletes the specified TargetHttpsProxy resource.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionTargetHttpsProxies;
+    /// async fn sample(
+    ///    client: &RegionTargetHttpsProxies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .delete()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn delete(&self) -> super::builder::region_target_https_proxies::Delete {
         super::builder::region_target_https_proxies::Delete::new(self.inner.clone())
     }
 
     /// Returns the specified TargetHttpsProxy resource in the specified region.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionTargetHttpsProxies;
+    /// async fn sample(
+    ///    client: &RegionTargetHttpsProxies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get(&self) -> super::builder::region_target_https_proxies::Get {
         super::builder::region_target_https_proxies::Get::new(self.inner.clone())
     }
 
     /// Creates a TargetHttpsProxy resource in the specified project and region
     /// using the data included in the request.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionTargetHttpsProxies;
+    /// async fn sample(
+    ///    client: &RegionTargetHttpsProxies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .insert()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn insert(&self) -> super::builder::region_target_https_proxies::Insert {
         super::builder::region_target_https_proxies::Insert::new(self.inner.clone())
     }
@@ -13353,11 +21539,43 @@ impl RegionTargetHttpsProxies {
     /// included in the request. This method supports PATCH
     /// semantics and usesJSON merge
     /// patch format and processing rules.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionTargetHttpsProxies;
+    /// async fn sample(
+    ///    client: &RegionTargetHttpsProxies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .patch()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn patch(&self) -> super::builder::region_target_https_proxies::Patch {
         super::builder::region_target_https_proxies::Patch::new(self.inner.clone())
     }
 
     /// Replaces SslCertificates for TargetHttpsProxy.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionTargetHttpsProxies;
+    /// async fn sample(
+    ///    client: &RegionTargetHttpsProxies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .set_ssl_certificates()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn set_ssl_certificates(
         &self,
     ) -> super::builder::region_target_https_proxies::SetSslCertificates {
@@ -13365,13 +21583,24 @@ impl RegionTargetHttpsProxies {
     }
 
     /// Changes the URL map for TargetHttpsProxy.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionTargetHttpsProxies;
+    /// async fn sample(
+    ///    client: &RegionTargetHttpsProxies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .set_url_map()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn set_url_map(&self) -> super::builder::region_target_https_proxies::SetUrlMap {
         super::builder::region_target_https_proxies::SetUrlMap::new(self.inner.clone())
-    }
-
-    /// Retrieves the specified region-specific Operations resource.
-    pub fn get_operation(&self) -> super::builder::region_target_https_proxies::GetOperation {
-        super::builder::region_target_https_proxies::GetOperation::new(self.inner.clone())
     }
 }
 
@@ -13484,17 +21713,65 @@ impl RegionTargetTcpProxies {
     }
 
     /// Deletes the specified TargetTcpProxy resource.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionTargetTcpProxies;
+    /// async fn sample(
+    ///    client: &RegionTargetTcpProxies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .delete()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn delete(&self) -> super::builder::region_target_tcp_proxies::Delete {
         super::builder::region_target_tcp_proxies::Delete::new(self.inner.clone())
     }
 
     /// Returns the specified TargetTcpProxy resource.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionTargetTcpProxies;
+    /// async fn sample(
+    ///    client: &RegionTargetTcpProxies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get(&self) -> super::builder::region_target_tcp_proxies::Get {
         super::builder::region_target_tcp_proxies::Get::new(self.inner.clone())
     }
 
     /// Creates a TargetTcpProxy resource in the specified project and region using
     /// the data included in the request.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionTargetTcpProxies;
+    /// async fn sample(
+    ///    client: &RegionTargetTcpProxies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .insert()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn insert(&self) -> super::builder::region_target_tcp_proxies::Insert {
         super::builder::region_target_tcp_proxies::Insert::new(self.inner.clone())
     }
@@ -13503,11 +21780,6 @@ impl RegionTargetTcpProxies {
     /// available to the specified project in a given region.
     pub fn list(&self) -> super::builder::region_target_tcp_proxies::List {
         super::builder::region_target_tcp_proxies::List::new(self.inner.clone())
-    }
-
-    /// Retrieves the specified region-specific Operations resource.
-    pub fn get_operation(&self) -> super::builder::region_target_tcp_proxies::GetOperation {
-        super::builder::region_target_tcp_proxies::GetOperation::new(self.inner.clone())
     }
 }
 
@@ -13617,17 +21889,65 @@ impl RegionUrlMaps {
     }
 
     /// Deletes the specified UrlMap resource.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionUrlMaps;
+    /// async fn sample(
+    ///    client: &RegionUrlMaps
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .delete()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn delete(&self) -> super::builder::region_url_maps::Delete {
         super::builder::region_url_maps::Delete::new(self.inner.clone())
     }
 
     /// Returns the specified UrlMap resource.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionUrlMaps;
+    /// async fn sample(
+    ///    client: &RegionUrlMaps
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get(&self) -> super::builder::region_url_maps::Get {
         super::builder::region_url_maps::Get::new(self.inner.clone())
     }
 
     /// Creates a UrlMap resource in the specified project using
     /// the data included in the request.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionUrlMaps;
+    /// async fn sample(
+    ///    client: &RegionUrlMaps
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .insert()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn insert(&self) -> super::builder::region_url_maps::Insert {
         super::builder::region_url_maps::Insert::new(self.inner.clone())
     }
@@ -13642,12 +21962,44 @@ impl RegionUrlMaps {
     /// request. This method supportsPATCH
     /// semantics and usesJSON merge
     /// patch format and processing rules.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionUrlMaps;
+    /// async fn sample(
+    ///    client: &RegionUrlMaps
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .patch()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn patch(&self) -> super::builder::region_url_maps::Patch {
         super::builder::region_url_maps::Patch::new(self.inner.clone())
     }
 
     /// Updates the specified UrlMap resource with the data included in the
     /// request.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionUrlMaps;
+    /// async fn sample(
+    ///    client: &RegionUrlMaps
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .update()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn update(&self) -> super::builder::region_url_maps::Update {
         super::builder::region_url_maps::Update::new(self.inner.clone())
     }
@@ -13655,13 +22007,24 @@ impl RegionUrlMaps {
     /// Runs static validation for the UrlMap. In particular, the tests of the
     /// provided UrlMap will be run. Calling this method does NOT create the
     /// UrlMap.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::RegionUrlMaps;
+    /// async fn sample(
+    ///    client: &RegionUrlMaps
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .validate()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn validate(&self) -> super::builder::region_url_maps::Validate {
         super::builder::region_url_maps::Validate::new(self.inner.clone())
-    }
-
-    /// Retrieves the specified region-specific Operations resource.
-    pub fn get_operation(&self) -> super::builder::region_url_maps::GetOperation {
-        super::builder::region_url_maps::GetOperation::new(self.inner.clone())
     }
 }
 
@@ -13900,6 +22263,22 @@ impl Regions {
     /// It is recommended to use the default setting
     /// for the constraint unless your application requires the fail-closed
     /// behaviour for this method.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Regions;
+    /// async fn sample(
+    ///    client: &Regions
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get(&self) -> super::builder::regions::Get {
         super::builder::regions::Get::new(self.inner.clone())
     }
@@ -14037,12 +22416,44 @@ impl ReservationBlocks {
     }
 
     /// Retrieves information about the specified reservation block.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::ReservationBlocks;
+    /// async fn sample(
+    ///    client: &ReservationBlocks
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get(&self) -> super::builder::reservation_blocks::Get {
         super::builder::reservation_blocks::Get::new(self.inner.clone())
     }
 
     /// Gets the access control policy for a resource. May be empty if no such
     /// policy or resource exists.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::ReservationBlocks;
+    /// async fn sample(
+    ///    client: &ReservationBlocks
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get_iam_policy()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get_iam_policy(&self) -> super::builder::reservation_blocks::GetIamPolicy {
         super::builder::reservation_blocks::GetIamPolicy::new(self.inner.clone())
     }
@@ -14053,24 +22464,67 @@ impl ReservationBlocks {
     }
 
     /// Allows customers to perform maintenance on a reservation block
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::ReservationBlocks;
+    /// async fn sample(
+    ///    client: &ReservationBlocks
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .perform_maintenance()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn perform_maintenance(&self) -> super::builder::reservation_blocks::PerformMaintenance {
         super::builder::reservation_blocks::PerformMaintenance::new(self.inner.clone())
     }
 
     /// Sets the access control policy on the specified resource.
     /// Replaces any existing policy.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::ReservationBlocks;
+    /// async fn sample(
+    ///    client: &ReservationBlocks
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .set_iam_policy()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn set_iam_policy(&self) -> super::builder::reservation_blocks::SetIamPolicy {
         super::builder::reservation_blocks::SetIamPolicy::new(self.inner.clone())
     }
 
     /// Returns permissions that a caller has on the specified resource.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::ReservationBlocks;
+    /// async fn sample(
+    ///    client: &ReservationBlocks
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .test_iam_permissions()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn test_iam_permissions(&self) -> super::builder::reservation_blocks::TestIamPermissions {
         super::builder::reservation_blocks::TestIamPermissions::new(self.inner.clone())
-    }
-
-    /// Retrieves the specified zone-specific Operations resource.
-    pub fn get_operation(&self) -> super::builder::reservation_blocks::GetOperation {
-        super::builder::reservation_blocks::GetOperation::new(self.inner.clone())
     }
 }
 
@@ -14183,12 +22637,44 @@ impl ReservationSubBlocks {
     }
 
     /// Retrieves information about the specified reservation subBlock.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::ReservationSubBlocks;
+    /// async fn sample(
+    ///    client: &ReservationSubBlocks
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get(&self) -> super::builder::reservation_sub_blocks::Get {
         super::builder::reservation_sub_blocks::Get::new(self.inner.clone())
     }
 
     /// Gets the access control policy for a resource. May be empty if no such
     /// policy or resource exists.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::ReservationSubBlocks;
+    /// async fn sample(
+    ///    client: &ReservationSubBlocks
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get_iam_policy()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get_iam_policy(&self) -> super::builder::reservation_sub_blocks::GetIamPolicy {
         super::builder::reservation_sub_blocks::GetIamPolicy::new(self.inner.clone())
     }
@@ -14199,6 +22685,22 @@ impl ReservationSubBlocks {
     }
 
     /// Allows customers to perform maintenance on a reservation subBlock
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::ReservationSubBlocks;
+    /// async fn sample(
+    ///    client: &ReservationSubBlocks
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .perform_maintenance()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn perform_maintenance(
         &self,
     ) -> super::builder::reservation_sub_blocks::PerformMaintenance {
@@ -14206,26 +22708,69 @@ impl ReservationSubBlocks {
     }
 
     /// Allows customers to report a faulty subBlock.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::ReservationSubBlocks;
+    /// async fn sample(
+    ///    client: &ReservationSubBlocks
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .report_faulty()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn report_faulty(&self) -> super::builder::reservation_sub_blocks::ReportFaulty {
         super::builder::reservation_sub_blocks::ReportFaulty::new(self.inner.clone())
     }
 
     /// Sets the access control policy on the specified resource.
     /// Replaces any existing policy.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::ReservationSubBlocks;
+    /// async fn sample(
+    ///    client: &ReservationSubBlocks
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .set_iam_policy()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn set_iam_policy(&self) -> super::builder::reservation_sub_blocks::SetIamPolicy {
         super::builder::reservation_sub_blocks::SetIamPolicy::new(self.inner.clone())
     }
 
     /// Returns permissions that a caller has on the specified resource.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::ReservationSubBlocks;
+    /// async fn sample(
+    ///    client: &ReservationSubBlocks
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .test_iam_permissions()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn test_iam_permissions(
         &self,
     ) -> super::builder::reservation_sub_blocks::TestIamPermissions {
         super::builder::reservation_sub_blocks::TestIamPermissions::new(self.inner.clone())
-    }
-
-    /// Retrieves the specified zone-specific Operations resource.
-    pub fn get_operation(&self) -> super::builder::reservation_sub_blocks::GetOperation {
-        super::builder::reservation_sub_blocks::GetOperation::new(self.inner.clone())
     }
 }
 
@@ -14343,23 +22888,87 @@ impl Reservations {
     }
 
     /// Deletes the specified reservation.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Reservations;
+    /// async fn sample(
+    ///    client: &Reservations
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .delete()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn delete(&self) -> super::builder::reservations::Delete {
         super::builder::reservations::Delete::new(self.inner.clone())
     }
 
     /// Retrieves information about the specified reservation.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Reservations;
+    /// async fn sample(
+    ///    client: &Reservations
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get(&self) -> super::builder::reservations::Get {
         super::builder::reservations::Get::new(self.inner.clone())
     }
 
     /// Gets the access control policy for a resource. May be empty if no such
     /// policy or resource exists.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Reservations;
+    /// async fn sample(
+    ///    client: &Reservations
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get_iam_policy()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get_iam_policy(&self) -> super::builder::reservations::GetIamPolicy {
         super::builder::reservations::GetIamPolicy::new(self.inner.clone())
     }
 
     /// Creates a new reservation. For more information, readReserving zonal
     /// resources.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Reservations;
+    /// async fn sample(
+    ///    client: &Reservations
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .insert()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn insert(&self) -> super::builder::reservations::Insert {
         super::builder::reservations::Insert::new(self.inner.clone())
     }
@@ -14371,6 +22980,22 @@ impl Reservations {
     }
 
     /// Perform maintenance on an extended reservation
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Reservations;
+    /// async fn sample(
+    ///    client: &Reservations
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .perform_maintenance()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn perform_maintenance(&self) -> super::builder::reservations::PerformMaintenance {
         super::builder::reservations::PerformMaintenance::new(self.inner.clone())
     }
@@ -14378,29 +23003,88 @@ impl Reservations {
     /// Resizes the reservation (applicable to standalone reservations only). For
     /// more information, readModifying
     /// reservations.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Reservations;
+    /// async fn sample(
+    ///    client: &Reservations
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .resize()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn resize(&self) -> super::builder::reservations::Resize {
         super::builder::reservations::Resize::new(self.inner.clone())
     }
 
     /// Sets the access control policy on the specified resource.
     /// Replaces any existing policy.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Reservations;
+    /// async fn sample(
+    ///    client: &Reservations
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .set_iam_policy()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn set_iam_policy(&self) -> super::builder::reservations::SetIamPolicy {
         super::builder::reservations::SetIamPolicy::new(self.inner.clone())
     }
 
     /// Returns permissions that a caller has on the specified resource.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Reservations;
+    /// async fn sample(
+    ///    client: &Reservations
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .test_iam_permissions()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn test_iam_permissions(&self) -> super::builder::reservations::TestIamPermissions {
         super::builder::reservations::TestIamPermissions::new(self.inner.clone())
     }
 
     /// Update share settings of the reservation.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Reservations;
+    /// async fn sample(
+    ///    client: &Reservations
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .update()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn update(&self) -> super::builder::reservations::Update {
         super::builder::reservations::Update::new(self.inner.clone())
-    }
-
-    /// Retrieves the specified zone-specific Operations resource.
-    pub fn get_operation(&self) -> super::builder::reservations::GetOperation {
-        super::builder::reservations::GetOperation::new(self.inner.clone())
     }
 }
 
@@ -14521,22 +23205,86 @@ impl ResourcePolicies {
     }
 
     /// Deletes the specified resource policy.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::ResourcePolicies;
+    /// async fn sample(
+    ///    client: &ResourcePolicies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .delete()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn delete(&self) -> super::builder::resource_policies::Delete {
         super::builder::resource_policies::Delete::new(self.inner.clone())
     }
 
     /// Retrieves all information of the specified resource policy.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::ResourcePolicies;
+    /// async fn sample(
+    ///    client: &ResourcePolicies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get(&self) -> super::builder::resource_policies::Get {
         super::builder::resource_policies::Get::new(self.inner.clone())
     }
 
     /// Gets the access control policy for a resource. May be empty if no such
     /// policy or resource exists.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::ResourcePolicies;
+    /// async fn sample(
+    ///    client: &ResourcePolicies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get_iam_policy()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get_iam_policy(&self) -> super::builder::resource_policies::GetIamPolicy {
         super::builder::resource_policies::GetIamPolicy::new(self.inner.clone())
     }
 
     /// Creates a new resource policy.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::ResourcePolicies;
+    /// async fn sample(
+    ///    client: &ResourcePolicies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .insert()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn insert(&self) -> super::builder::resource_policies::Insert {
         super::builder::resource_policies::Insert::new(self.inner.clone())
     }
@@ -14548,24 +23296,67 @@ impl ResourcePolicies {
     }
 
     /// Modify the specified resource policy.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::ResourcePolicies;
+    /// async fn sample(
+    ///    client: &ResourcePolicies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .patch()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn patch(&self) -> super::builder::resource_policies::Patch {
         super::builder::resource_policies::Patch::new(self.inner.clone())
     }
 
     /// Sets the access control policy on the specified resource.
     /// Replaces any existing policy.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::ResourcePolicies;
+    /// async fn sample(
+    ///    client: &ResourcePolicies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .set_iam_policy()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn set_iam_policy(&self) -> super::builder::resource_policies::SetIamPolicy {
         super::builder::resource_policies::SetIamPolicy::new(self.inner.clone())
     }
 
     /// Returns permissions that a caller has on the specified resource.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::ResourcePolicies;
+    /// async fn sample(
+    ///    client: &ResourcePolicies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .test_iam_permissions()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn test_iam_permissions(&self) -> super::builder::resource_policies::TestIamPermissions {
         super::builder::resource_policies::TestIamPermissions::new(self.inner.clone())
-    }
-
-    /// Retrieves the specified region-specific Operations resource.
-    pub fn get_operation(&self) -> super::builder::resource_policies::GetOperation {
-        super::builder::resource_policies::GetOperation::new(self.inner.clone())
     }
 }
 
@@ -14683,21 +23474,85 @@ impl Routers {
     }
 
     /// Deletes the specified Router resource.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Routers;
+    /// async fn sample(
+    ///    client: &Routers
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .delete()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn delete(&self) -> super::builder::routers::Delete {
         super::builder::routers::Delete::new(self.inner.clone())
     }
 
     /// Deletes Route Policy
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Routers;
+    /// async fn sample(
+    ///    client: &Routers
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .delete_route_policy()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn delete_route_policy(&self) -> super::builder::routers::DeleteRoutePolicy {
         super::builder::routers::DeleteRoutePolicy::new(self.inner.clone())
     }
 
     /// Returns the specified Router resource.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Routers;
+    /// async fn sample(
+    ///    client: &Routers
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get(&self) -> super::builder::routers::Get {
         super::builder::routers::Get::new(self.inner.clone())
     }
 
     /// Retrieves runtime NAT IP information.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Routers;
+    /// async fn sample(
+    ///    client: &Routers
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get_nat_ip_info()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get_nat_ip_info(&self) -> super::builder::routers::GetNatIpInfo {
         super::builder::routers::GetNatIpInfo::new(self.inner.clone())
     }
@@ -14708,17 +23563,65 @@ impl Routers {
     }
 
     /// Returns specified Route Policy
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Routers;
+    /// async fn sample(
+    ///    client: &Routers
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get_route_policy()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get_route_policy(&self) -> super::builder::routers::GetRoutePolicy {
         super::builder::routers::GetRoutePolicy::new(self.inner.clone())
     }
 
     /// Retrieves runtime information of the specified router.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Routers;
+    /// async fn sample(
+    ///    client: &Routers
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get_router_status()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get_router_status(&self) -> super::builder::routers::GetRouterStatus {
         super::builder::routers::GetRouterStatus::new(self.inner.clone())
     }
 
     /// Creates a Router resource in the specified project and region using
     /// the data included in the request.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Routers;
+    /// async fn sample(
+    ///    client: &Routers
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .insert()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn insert(&self) -> super::builder::routers::Insert {
         super::builder::routers::Insert::new(self.inner.clone())
     }
@@ -14743,17 +23646,65 @@ impl Routers {
     /// request. This method supportsPATCH
     /// semantics and usesJSON merge
     /// patch format and processing rules.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Routers;
+    /// async fn sample(
+    ///    client: &Routers
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .patch()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn patch(&self) -> super::builder::routers::Patch {
         super::builder::routers::Patch::new(self.inner.clone())
     }
 
     /// Patches Route Policy
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Routers;
+    /// async fn sample(
+    ///    client: &Routers
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .patch_route_policy()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn patch_route_policy(&self) -> super::builder::routers::PatchRoutePolicy {
         super::builder::routers::PatchRoutePolicy::new(self.inner.clone())
     }
 
     /// Preview fields auto-generated during router create andupdate operations.
     /// Calling this method does NOT create or update the router.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Routers;
+    /// async fn sample(
+    ///    client: &Routers
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .preview()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn preview(&self) -> super::builder::routers::Preview {
         super::builder::routers::Preview::new(self.inner.clone())
     }
@@ -14762,18 +23713,45 @@ impl Routers {
     /// request.  This method conforms toPUT semantics, which requests that the state of the
     /// target resource be created or replaced with the state defined by the
     /// representation enclosed in the request message payload.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Routers;
+    /// async fn sample(
+    ///    client: &Routers
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .update()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn update(&self) -> super::builder::routers::Update {
         super::builder::routers::Update::new(self.inner.clone())
     }
 
     /// Updates or creates new Route Policy
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Routers;
+    /// async fn sample(
+    ///    client: &Routers
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .update_route_policy()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn update_route_policy(&self) -> super::builder::routers::UpdateRoutePolicy {
         super::builder::routers::UpdateRoutePolicy::new(self.inner.clone())
-    }
-
-    /// Retrieves the specified region-specific Operations resource.
-    pub fn get_operation(&self) -> super::builder::routers::GetOperation {
-        super::builder::routers::GetOperation::new(self.inner.clone())
     }
 }
 
@@ -14883,17 +23861,65 @@ impl Routes {
     }
 
     /// Deletes the specified Route resource.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Routes;
+    /// async fn sample(
+    ///    client: &Routes
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .delete()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn delete(&self) -> super::builder::routes::Delete {
         super::builder::routes::Delete::new(self.inner.clone())
     }
 
     /// Returns the specified Route resource.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Routes;
+    /// async fn sample(
+    ///    client: &Routes
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get(&self) -> super::builder::routes::Get {
         super::builder::routes::Get::new(self.inner.clone())
     }
 
     /// Creates a Route resource in the specified project using the data included
     /// in the request.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Routes;
+    /// async fn sample(
+    ///    client: &Routes
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .insert()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn insert(&self) -> super::builder::routes::Insert {
         super::builder::routes::Insert::new(self.inner.clone())
     }
@@ -14901,11 +23927,6 @@ impl Routes {
     /// Retrieves the list of Route resources available to the specified project.
     pub fn list(&self) -> super::builder::routes::List {
         super::builder::routes::List::new(self.inner.clone())
-    }
-
-    /// Retrieves the specified Operations resource.
-    pub fn get_operation(&self) -> super::builder::routes::GetOperation {
-        super::builder::routes::GetOperation::new(self.inner.clone())
     }
 }
 
@@ -15018,6 +24039,22 @@ impl SecurityPolicies {
     }
 
     /// Inserts a rule into a security policy.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::SecurityPolicies;
+    /// async fn sample(
+    ///    client: &SecurityPolicies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .add_rule()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn add_rule(&self) -> super::builder::security_policies::AddRule {
         super::builder::security_policies::AddRule::new(self.inner.clone())
     }
@@ -15032,22 +24069,86 @@ impl SecurityPolicies {
     }
 
     /// Deletes the specified policy.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::SecurityPolicies;
+    /// async fn sample(
+    ///    client: &SecurityPolicies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .delete()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn delete(&self) -> super::builder::security_policies::Delete {
         super::builder::security_policies::Delete::new(self.inner.clone())
     }
 
     /// List all of the ordered rules present in a single specified policy.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::SecurityPolicies;
+    /// async fn sample(
+    ///    client: &SecurityPolicies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get(&self) -> super::builder::security_policies::Get {
         super::builder::security_policies::Get::new(self.inner.clone())
     }
 
     /// Gets a rule at the specified priority.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::SecurityPolicies;
+    /// async fn sample(
+    ///    client: &SecurityPolicies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get_rule()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get_rule(&self) -> super::builder::security_policies::GetRule {
         super::builder::security_policies::GetRule::new(self.inner.clone())
     }
 
     /// Creates a new policy in the specified project using the data included in
     /// the request.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::SecurityPolicies;
+    /// async fn sample(
+    ///    client: &SecurityPolicies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .insert()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn insert(&self) -> super::builder::security_policies::Insert {
         super::builder::security_policies::Insert::new(self.inner.clone())
     }
@@ -15059,6 +24160,22 @@ impl SecurityPolicies {
 
     /// Gets the current list of preconfigured Web Application Firewall (WAF)
     /// expressions.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::SecurityPolicies;
+    /// async fn sample(
+    ///    client: &SecurityPolicies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .list_preconfigured_expression_sets()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn list_preconfigured_expression_sets(
         &self,
     ) -> super::builder::security_policies::ListPreconfiguredExpressionSets {
@@ -15070,17 +24187,65 @@ impl SecurityPolicies {
     /// updateMask. This cannot be used to be update the rules in the policy.
     /// Please use the per rule methods like addRule, patchRule, and removeRule
     /// instead.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::SecurityPolicies;
+    /// async fn sample(
+    ///    client: &SecurityPolicies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .patch()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn patch(&self) -> super::builder::security_policies::Patch {
         super::builder::security_policies::Patch::new(self.inner.clone())
     }
 
     /// Patches a rule at the specified priority. To clear fields in the rule,
     /// leave the fields empty and specify them in the updateMask.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::SecurityPolicies;
+    /// async fn sample(
+    ///    client: &SecurityPolicies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .patch_rule()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn patch_rule(&self) -> super::builder::security_policies::PatchRule {
         super::builder::security_policies::PatchRule::new(self.inner.clone())
     }
 
     /// Deletes a rule at the specified priority.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::SecurityPolicies;
+    /// async fn sample(
+    ///    client: &SecurityPolicies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .remove_rule()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn remove_rule(&self) -> super::builder::security_policies::RemoveRule {
         super::builder::security_policies::RemoveRule::new(self.inner.clone())
     }
@@ -15088,13 +24253,24 @@ impl SecurityPolicies {
     /// Sets the labels on a security policy. To learn more about labels,
     /// read the Labeling Resources
     /// documentation.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::SecurityPolicies;
+    /// async fn sample(
+    ///    client: &SecurityPolicies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .set_labels()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn set_labels(&self) -> super::builder::security_policies::SetLabels {
         super::builder::security_policies::SetLabels::new(self.inner.clone())
-    }
-
-    /// Retrieves the specified Operations resource.
-    pub fn get_operation(&self) -> super::builder::security_policies::GetOperation {
-        super::builder::security_policies::GetOperation::new(self.inner.clone())
     }
 }
 
@@ -15216,23 +24392,87 @@ impl ServiceAttachments {
     }
 
     /// Deletes the specified ServiceAttachment in the given scope
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::ServiceAttachments;
+    /// async fn sample(
+    ///    client: &ServiceAttachments
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .delete()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn delete(&self) -> super::builder::service_attachments::Delete {
         super::builder::service_attachments::Delete::new(self.inner.clone())
     }
 
     /// Returns the specified ServiceAttachment resource in the given scope.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::ServiceAttachments;
+    /// async fn sample(
+    ///    client: &ServiceAttachments
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get(&self) -> super::builder::service_attachments::Get {
         super::builder::service_attachments::Get::new(self.inner.clone())
     }
 
     /// Gets the access control policy for a resource. May be empty if no such
     /// policy or resource exists.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::ServiceAttachments;
+    /// async fn sample(
+    ///    client: &ServiceAttachments
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get_iam_policy()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get_iam_policy(&self) -> super::builder::service_attachments::GetIamPolicy {
         super::builder::service_attachments::GetIamPolicy::new(self.inner.clone())
     }
 
     /// Creates a ServiceAttachment in the specified project in the given scope
     /// using the parameters that are included in the request.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::ServiceAttachments;
+    /// async fn sample(
+    ///    client: &ServiceAttachments
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .insert()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn insert(&self) -> super::builder::service_attachments::Insert {
         super::builder::service_attachments::Insert::new(self.inner.clone())
     }
@@ -15246,24 +24486,67 @@ impl ServiceAttachments {
     /// the request. This method supports PATCH
     /// semantics and usesJSON merge
     /// patch format and processing rules.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::ServiceAttachments;
+    /// async fn sample(
+    ///    client: &ServiceAttachments
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .patch()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn patch(&self) -> super::builder::service_attachments::Patch {
         super::builder::service_attachments::Patch::new(self.inner.clone())
     }
 
     /// Sets the access control policy on the specified resource.
     /// Replaces any existing policy.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::ServiceAttachments;
+    /// async fn sample(
+    ///    client: &ServiceAttachments
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .set_iam_policy()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn set_iam_policy(&self) -> super::builder::service_attachments::SetIamPolicy {
         super::builder::service_attachments::SetIamPolicy::new(self.inner.clone())
     }
 
     /// Returns permissions that a caller has on the specified resource.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::ServiceAttachments;
+    /// async fn sample(
+    ///    client: &ServiceAttachments
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .test_iam_permissions()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn test_iam_permissions(&self) -> super::builder::service_attachments::TestIamPermissions {
         super::builder::service_attachments::TestIamPermissions::new(self.inner.clone())
-    }
-
-    /// Retrieves the specified region-specific Operations resource.
-    pub fn get_operation(&self) -> super::builder::service_attachments::GetOperation {
-        super::builder::service_attachments::GetOperation::new(self.inner.clone())
     }
 }
 
@@ -15376,18 +24659,45 @@ impl SnapshotSettings {
     }
 
     /// Get snapshot settings.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::SnapshotSettings;
+    /// async fn sample(
+    ///    client: &SnapshotSettings
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get(&self) -> super::builder::snapshot_settings::Get {
         super::builder::snapshot_settings::Get::new(self.inner.clone())
     }
 
     /// Patch snapshot settings.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::SnapshotSettings;
+    /// async fn sample(
+    ///    client: &SnapshotSettings
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .patch()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn patch(&self) -> super::builder::snapshot_settings::Patch {
         super::builder::snapshot_settings::Patch::new(self.inner.clone())
-    }
-
-    /// Retrieves the specified Operations resource.
-    pub fn get_operation(&self) -> super::builder::snapshot_settings::GetOperation {
-        super::builder::snapshot_settings::GetOperation::new(self.inner.clone())
     }
 }
 
@@ -15504,17 +24814,65 @@ impl Snapshots {
     ///
     /// For more information, seeDeleting
     /// snapshots.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Snapshots;
+    /// async fn sample(
+    ///    client: &Snapshots
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .delete()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn delete(&self) -> super::builder::snapshots::Delete {
         super::builder::snapshots::Delete::new(self.inner.clone())
     }
 
     /// Returns the specified Snapshot resource.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Snapshots;
+    /// async fn sample(
+    ///    client: &Snapshots
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get(&self) -> super::builder::snapshots::Get {
         super::builder::snapshots::Get::new(self.inner.clone())
     }
 
     /// Gets the access control policy for a resource. May be empty if no such
     /// policy or resource exists.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Snapshots;
+    /// async fn sample(
+    ///    client: &Snapshots
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get_iam_policy()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get_iam_policy(&self) -> super::builder::snapshots::GetIamPolicy {
         super::builder::snapshots::GetIamPolicy::new(self.inner.clone())
     }
@@ -15524,6 +24882,22 @@ impl Snapshots {
     /// instead of disks.createSnapshot,
     /// as this method supports more features, such as creating snapshots in a
     /// project different from the source disk project.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Snapshots;
+    /// async fn sample(
+    ///    client: &Snapshots
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .insert()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn insert(&self) -> super::builder::snapshots::Insert {
         super::builder::snapshots::Insert::new(self.inner.clone())
     }
@@ -15536,24 +24910,67 @@ impl Snapshots {
 
     /// Sets the access control policy on the specified resource.
     /// Replaces any existing policy.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Snapshots;
+    /// async fn sample(
+    ///    client: &Snapshots
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .set_iam_policy()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn set_iam_policy(&self) -> super::builder::snapshots::SetIamPolicy {
         super::builder::snapshots::SetIamPolicy::new(self.inner.clone())
     }
 
     /// Sets the labels on a snapshot. To learn more about labels, read theLabeling
     /// Resources documentation.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Snapshots;
+    /// async fn sample(
+    ///    client: &Snapshots
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .set_labels()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn set_labels(&self) -> super::builder::snapshots::SetLabels {
         super::builder::snapshots::SetLabels::new(self.inner.clone())
     }
 
     /// Returns permissions that a caller has on the specified resource.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Snapshots;
+    /// async fn sample(
+    ///    client: &Snapshots
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .test_iam_permissions()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn test_iam_permissions(&self) -> super::builder::snapshots::TestIamPermissions {
         super::builder::snapshots::TestIamPermissions::new(self.inner.clone())
-    }
-
-    /// Retrieves the specified Operations resource.
-    pub fn get_operation(&self) -> super::builder::snapshots::GetOperation {
-        super::builder::snapshots::GetOperation::new(self.inner.clone())
     }
 }
 
@@ -15675,17 +25092,65 @@ impl SslCertificates {
     }
 
     /// Deletes the specified SslCertificate resource.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::SslCertificates;
+    /// async fn sample(
+    ///    client: &SslCertificates
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .delete()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn delete(&self) -> super::builder::ssl_certificates::Delete {
         super::builder::ssl_certificates::Delete::new(self.inner.clone())
     }
 
     /// Returns the specified SslCertificate resource.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::SslCertificates;
+    /// async fn sample(
+    ///    client: &SslCertificates
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get(&self) -> super::builder::ssl_certificates::Get {
         super::builder::ssl_certificates::Get::new(self.inner.clone())
     }
 
     /// Creates a SslCertificate resource in the specified project using the data
     /// included in the request.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::SslCertificates;
+    /// async fn sample(
+    ///    client: &SslCertificates
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .insert()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn insert(&self) -> super::builder::ssl_certificates::Insert {
         super::builder::ssl_certificates::Insert::new(self.inner.clone())
     }
@@ -15694,11 +25159,6 @@ impl SslCertificates {
     /// project.
     pub fn list(&self) -> super::builder::ssl_certificates::List {
         super::builder::ssl_certificates::List::new(self.inner.clone())
-    }
-
-    /// Retrieves the specified Operations resource.
-    pub fn get_operation(&self) -> super::builder::ssl_certificates::GetOperation {
-        super::builder::ssl_certificates::GetOperation::new(self.inner.clone())
     }
 }
 
@@ -15819,16 +25279,64 @@ impl SslPolicies {
     /// Deletes the specified SSL policy. The SSL policy resource can be deleted
     /// only if it is not in use by any TargetHttpsProxy or TargetSslProxy
     /// resources.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::SslPolicies;
+    /// async fn sample(
+    ///    client: &SslPolicies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .delete()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn delete(&self) -> super::builder::ssl_policies::Delete {
         super::builder::ssl_policies::Delete::new(self.inner.clone())
     }
 
     /// Lists all of the ordered rules present in a single specified policy.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::SslPolicies;
+    /// async fn sample(
+    ///    client: &SslPolicies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get(&self) -> super::builder::ssl_policies::Get {
         super::builder::ssl_policies::Get::new(self.inner.clone())
     }
 
     /// Returns the specified SSL policy resource.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::SslPolicies;
+    /// async fn sample(
+    ///    client: &SslPolicies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .insert()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn insert(&self) -> super::builder::ssl_policies::Insert {
         super::builder::ssl_policies::Insert::new(self.inner.clone())
     }
@@ -15841,18 +25349,45 @@ impl SslPolicies {
 
     /// Lists all features that can be specified in the SSL policy when using
     /// custom profile.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::SslPolicies;
+    /// async fn sample(
+    ///    client: &SslPolicies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .list_available_features()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn list_available_features(&self) -> super::builder::ssl_policies::ListAvailableFeatures {
         super::builder::ssl_policies::ListAvailableFeatures::new(self.inner.clone())
     }
 
     /// Patches the specified SSL policy with the data included in the request.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::SslPolicies;
+    /// async fn sample(
+    ///    client: &SslPolicies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .patch()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn patch(&self) -> super::builder::ssl_policies::Patch {
         super::builder::ssl_policies::Patch::new(self.inner.clone())
-    }
-
-    /// Retrieves the specified Operations resource.
-    pub fn get_operation(&self) -> super::builder::ssl_policies::GetOperation {
-        super::builder::ssl_policies::GetOperation::new(self.inner.clone())
     }
 }
 
@@ -15973,6 +25508,22 @@ impl StoragePoolTypes {
     }
 
     /// Returns the specified storage pool type.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::StoragePoolTypes;
+    /// async fn sample(
+    ///    client: &StoragePoolTypes
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get(&self) -> super::builder::storage_pool_types::Get {
         super::builder::storage_pool_types::Get::new(self.inner.clone())
     }
@@ -16102,24 +25653,88 @@ impl StoragePools {
     /// storagePool does not delete any snapshots previously
     /// made from the storagePool. You must separately delete
     /// snapshots.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::StoragePools;
+    /// async fn sample(
+    ///    client: &StoragePools
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .delete()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn delete(&self) -> super::builder::storage_pools::Delete {
         super::builder::storage_pools::Delete::new(self.inner.clone())
     }
 
     /// Returns a specified storage pool. Gets a list of available
     /// storage pools by making a list() request.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::StoragePools;
+    /// async fn sample(
+    ///    client: &StoragePools
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get(&self) -> super::builder::storage_pools::Get {
         super::builder::storage_pools::Get::new(self.inner.clone())
     }
 
     /// Gets the access control policy for a resource. May be empty if no such
     /// policy or resource exists.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::StoragePools;
+    /// async fn sample(
+    ///    client: &StoragePools
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get_iam_policy()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get_iam_policy(&self) -> super::builder::storage_pools::GetIamPolicy {
         super::builder::storage_pools::GetIamPolicy::new(self.inner.clone())
     }
 
     /// Creates a storage pool in the specified project using the data
     /// in the request.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::StoragePools;
+    /// async fn sample(
+    ///    client: &StoragePools
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .insert()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn insert(&self) -> super::builder::storage_pools::Insert {
         super::builder::storage_pools::Insert::new(self.inner.clone())
     }
@@ -16137,11 +25752,43 @@ impl StoragePools {
 
     /// Sets the access control policy on the specified resource.
     /// Replaces any existing policy.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::StoragePools;
+    /// async fn sample(
+    ///    client: &StoragePools
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .set_iam_policy()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn set_iam_policy(&self) -> super::builder::storage_pools::SetIamPolicy {
         super::builder::storage_pools::SetIamPolicy::new(self.inner.clone())
     }
 
     /// Returns permissions that a caller has on the specified resource.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::StoragePools;
+    /// async fn sample(
+    ///    client: &StoragePools
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .test_iam_permissions()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn test_iam_permissions(&self) -> super::builder::storage_pools::TestIamPermissions {
         super::builder::storage_pools::TestIamPermissions::new(self.inner.clone())
     }
@@ -16151,13 +25798,24 @@ impl StoragePools {
     /// of update-mask. Only the following fields can be modified:
     /// pool_provisioned_capacity_gb, pool_provisioned_iops and
     /// pool_provisioned_throughput.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::StoragePools;
+    /// async fn sample(
+    ///    client: &StoragePools
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .update()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn update(&self) -> super::builder::storage_pools::Update {
         super::builder::storage_pools::Update::new(self.inner.clone())
-    }
-
-    /// Retrieves the specified zone-specific Operations resource.
-    pub fn get_operation(&self) -> super::builder::storage_pools::GetOperation {
-        super::builder::storage_pools::GetOperation::new(self.inner.clone())
     }
 }
 
@@ -16275,28 +25933,108 @@ impl Subnetworks {
     }
 
     /// Deletes the specified subnetwork.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Subnetworks;
+    /// async fn sample(
+    ///    client: &Subnetworks
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .delete()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn delete(&self) -> super::builder::subnetworks::Delete {
         super::builder::subnetworks::Delete::new(self.inner.clone())
     }
 
     /// Expands the IP CIDR range of the subnetwork to a specified value.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Subnetworks;
+    /// async fn sample(
+    ///    client: &Subnetworks
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .expand_ip_cidr_range()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn expand_ip_cidr_range(&self) -> super::builder::subnetworks::ExpandIpCidrRange {
         super::builder::subnetworks::ExpandIpCidrRange::new(self.inner.clone())
     }
 
     /// Returns the specified subnetwork.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Subnetworks;
+    /// async fn sample(
+    ///    client: &Subnetworks
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get(&self) -> super::builder::subnetworks::Get {
         super::builder::subnetworks::Get::new(self.inner.clone())
     }
 
     /// Gets the access control policy for a resource. May be empty if no such
     /// policy or resource exists.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Subnetworks;
+    /// async fn sample(
+    ///    client: &Subnetworks
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get_iam_policy()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get_iam_policy(&self) -> super::builder::subnetworks::GetIamPolicy {
         super::builder::subnetworks::GetIamPolicy::new(self.inner.clone())
     }
 
     /// Creates a subnetwork in the specified project using the data
     /// included in the request.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Subnetworks;
+    /// async fn sample(
+    ///    client: &Subnetworks
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .insert()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn insert(&self) -> super::builder::subnetworks::Insert {
         super::builder::subnetworks::Insert::new(self.inner.clone())
     }
@@ -16317,18 +26055,66 @@ impl Subnetworks {
     /// as indicated in the field descriptions.
     /// You must specify the current fingerprint of the
     /// subnetwork resource being patched.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Subnetworks;
+    /// async fn sample(
+    ///    client: &Subnetworks
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .patch()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn patch(&self) -> super::builder::subnetworks::Patch {
         super::builder::subnetworks::Patch::new(self.inner.clone())
     }
 
     /// Sets the access control policy on the specified resource.
     /// Replaces any existing policy.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Subnetworks;
+    /// async fn sample(
+    ///    client: &Subnetworks
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .set_iam_policy()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn set_iam_policy(&self) -> super::builder::subnetworks::SetIamPolicy {
         super::builder::subnetworks::SetIamPolicy::new(self.inner.clone())
     }
 
     /// Set whether VMs in this subnet can access Google services without assigning
     /// external IP addresses through Private Google Access.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Subnetworks;
+    /// async fn sample(
+    ///    client: &Subnetworks
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .set_private_ip_google_access()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn set_private_ip_google_access(
         &self,
     ) -> super::builder::subnetworks::SetPrivateIpGoogleAccess {
@@ -16336,13 +26122,24 @@ impl Subnetworks {
     }
 
     /// Returns permissions that a caller has on the specified resource.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Subnetworks;
+    /// async fn sample(
+    ///    client: &Subnetworks
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .test_iam_permissions()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn test_iam_permissions(&self) -> super::builder::subnetworks::TestIamPermissions {
         super::builder::subnetworks::TestIamPermissions::new(self.inner.clone())
-    }
-
-    /// Retrieves the specified region-specific Operations resource.
-    pub fn get_operation(&self) -> super::builder::subnetworks::GetOperation {
-        super::builder::subnetworks::GetOperation::new(self.inner.clone())
     }
 }
 
@@ -16455,17 +26252,65 @@ impl TargetGrpcProxies {
     }
 
     /// Deletes the specified TargetGrpcProxy in the given scope
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::TargetGrpcProxies;
+    /// async fn sample(
+    ///    client: &TargetGrpcProxies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .delete()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn delete(&self) -> super::builder::target_grpc_proxies::Delete {
         super::builder::target_grpc_proxies::Delete::new(self.inner.clone())
     }
 
     /// Returns the specified TargetGrpcProxy resource in the given scope.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::TargetGrpcProxies;
+    /// async fn sample(
+    ///    client: &TargetGrpcProxies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get(&self) -> super::builder::target_grpc_proxies::Get {
         super::builder::target_grpc_proxies::Get::new(self.inner.clone())
     }
 
     /// Creates a TargetGrpcProxy in the specified project in the given scope
     /// using the parameters that are included in the request.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::TargetGrpcProxies;
+    /// async fn sample(
+    ///    client: &TargetGrpcProxies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .insert()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn insert(&self) -> super::builder::target_grpc_proxies::Insert {
         super::builder::target_grpc_proxies::Insert::new(self.inner.clone())
     }
@@ -16479,13 +26324,24 @@ impl TargetGrpcProxies {
     /// the request. This method supports PATCH
     /// semantics and usesJSON merge
     /// patch format and processing rules.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::TargetGrpcProxies;
+    /// async fn sample(
+    ///    client: &TargetGrpcProxies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .patch()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn patch(&self) -> super::builder::target_grpc_proxies::Patch {
         super::builder::target_grpc_proxies::Patch::new(self.inner.clone())
-    }
-
-    /// Retrieves the specified Operations resource.
-    pub fn get_operation(&self) -> super::builder::target_grpc_proxies::GetOperation {
-        super::builder::target_grpc_proxies::GetOperation::new(self.inner.clone())
     }
 }
 
@@ -16607,17 +26463,65 @@ impl TargetHttpProxies {
     }
 
     /// Deletes the specified TargetHttpProxy resource.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::TargetHttpProxies;
+    /// async fn sample(
+    ///    client: &TargetHttpProxies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .delete()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn delete(&self) -> super::builder::target_http_proxies::Delete {
         super::builder::target_http_proxies::Delete::new(self.inner.clone())
     }
 
     /// Returns the specified TargetHttpProxy resource.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::TargetHttpProxies;
+    /// async fn sample(
+    ///    client: &TargetHttpProxies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get(&self) -> super::builder::target_http_proxies::Get {
         super::builder::target_http_proxies::Get::new(self.inner.clone())
     }
 
     /// Creates a TargetHttpProxy resource in the specified
     /// project using the data included in the request.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::TargetHttpProxies;
+    /// async fn sample(
+    ///    client: &TargetHttpProxies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .insert()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn insert(&self) -> super::builder::target_http_proxies::Insert {
         super::builder::target_http_proxies::Insert::new(self.inner.clone())
     }
@@ -16632,18 +26536,45 @@ impl TargetHttpProxies {
     /// the request. This method supports PATCH
     /// semantics and usesJSON merge
     /// patch format and processing rules.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::TargetHttpProxies;
+    /// async fn sample(
+    ///    client: &TargetHttpProxies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .patch()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn patch(&self) -> super::builder::target_http_proxies::Patch {
         super::builder::target_http_proxies::Patch::new(self.inner.clone())
     }
 
     /// Changes the URL map for TargetHttpProxy.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::TargetHttpProxies;
+    /// async fn sample(
+    ///    client: &TargetHttpProxies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .set_url_map()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn set_url_map(&self) -> super::builder::target_http_proxies::SetUrlMap {
         super::builder::target_http_proxies::SetUrlMap::new(self.inner.clone())
-    }
-
-    /// Retrieves the specified Operations resource.
-    pub fn get_operation(&self) -> super::builder::target_http_proxies::GetOperation {
-        super::builder::target_http_proxies::GetOperation::new(self.inner.clone())
     }
 }
 
@@ -16765,17 +26696,65 @@ impl TargetHttpsProxies {
     }
 
     /// Deletes the specified TargetHttpsProxy resource.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::TargetHttpsProxies;
+    /// async fn sample(
+    ///    client: &TargetHttpsProxies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .delete()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn delete(&self) -> super::builder::target_https_proxies::Delete {
         super::builder::target_https_proxies::Delete::new(self.inner.clone())
     }
 
     /// Returns the specified TargetHttpsProxy resource.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::TargetHttpsProxies;
+    /// async fn sample(
+    ///    client: &TargetHttpsProxies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get(&self) -> super::builder::target_https_proxies::Get {
         super::builder::target_https_proxies::Get::new(self.inner.clone())
     }
 
     /// Creates a TargetHttpsProxy resource in the specified
     /// project using the data included in the request.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::TargetHttpsProxies;
+    /// async fn sample(
+    ///    client: &TargetHttpsProxies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .insert()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn insert(&self) -> super::builder::target_https_proxies::Insert {
         super::builder::target_https_proxies::Insert::new(self.inner.clone())
     }
@@ -16790,21 +26769,85 @@ impl TargetHttpsProxies {
     /// the request. This method supports PATCH
     /// semantics and usesJSON merge
     /// patch format and processing rules.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::TargetHttpsProxies;
+    /// async fn sample(
+    ///    client: &TargetHttpsProxies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .patch()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn patch(&self) -> super::builder::target_https_proxies::Patch {
         super::builder::target_https_proxies::Patch::new(self.inner.clone())
     }
 
     /// Changes the Certificate Map for TargetHttpsProxy.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::TargetHttpsProxies;
+    /// async fn sample(
+    ///    client: &TargetHttpsProxies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .set_certificate_map()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn set_certificate_map(&self) -> super::builder::target_https_proxies::SetCertificateMap {
         super::builder::target_https_proxies::SetCertificateMap::new(self.inner.clone())
     }
 
     /// Sets the QUIC override policy for TargetHttpsProxy.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::TargetHttpsProxies;
+    /// async fn sample(
+    ///    client: &TargetHttpsProxies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .set_quic_override()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn set_quic_override(&self) -> super::builder::target_https_proxies::SetQuicOverride {
         super::builder::target_https_proxies::SetQuicOverride::new(self.inner.clone())
     }
 
     /// Replaces SslCertificates for TargetHttpsProxy.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::TargetHttpsProxies;
+    /// async fn sample(
+    ///    client: &TargetHttpsProxies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .set_ssl_certificates()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn set_ssl_certificates(&self) -> super::builder::target_https_proxies::SetSslCertificates {
         super::builder::target_https_proxies::SetSslCertificates::new(self.inner.clone())
     }
@@ -16813,18 +26856,45 @@ impl TargetHttpsProxies {
     /// server-side support for SSL features. This affects connections between
     /// clients and the HTTPS proxy load balancer. They do not affect the
     /// connection between the load balancer and the backends.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::TargetHttpsProxies;
+    /// async fn sample(
+    ///    client: &TargetHttpsProxies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .set_ssl_policy()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn set_ssl_policy(&self) -> super::builder::target_https_proxies::SetSslPolicy {
         super::builder::target_https_proxies::SetSslPolicy::new(self.inner.clone())
     }
 
     /// Changes the URL map for TargetHttpsProxy.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::TargetHttpsProxies;
+    /// async fn sample(
+    ///    client: &TargetHttpsProxies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .set_url_map()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn set_url_map(&self) -> super::builder::target_https_proxies::SetUrlMap {
         super::builder::target_https_proxies::SetUrlMap::new(self.inner.clone())
-    }
-
-    /// Retrieves the specified Operations resource.
-    pub fn get_operation(&self) -> super::builder::target_https_proxies::GetOperation {
-        super::builder::target_https_proxies::GetOperation::new(self.inner.clone())
     }
 }
 
@@ -16945,17 +27015,65 @@ impl TargetInstances {
     }
 
     /// Deletes the specified TargetInstance resource.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::TargetInstances;
+    /// async fn sample(
+    ///    client: &TargetInstances
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .delete()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn delete(&self) -> super::builder::target_instances::Delete {
         super::builder::target_instances::Delete::new(self.inner.clone())
     }
 
     /// Returns the specified TargetInstance resource.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::TargetInstances;
+    /// async fn sample(
+    ///    client: &TargetInstances
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get(&self) -> super::builder::target_instances::Get {
         super::builder::target_instances::Get::new(self.inner.clone())
     }
 
     /// Creates a TargetInstance resource in the specified project and zone using
     /// the data included in the request.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::TargetInstances;
+    /// async fn sample(
+    ///    client: &TargetInstances
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .insert()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn insert(&self) -> super::builder::target_instances::Insert {
         super::builder::target_instances::Insert::new(self.inner.clone())
     }
@@ -16969,18 +27087,45 @@ impl TargetInstances {
     /// Sets the Google Cloud Armor security policy for the specified target
     /// instance. For more information, seeGoogle
     /// Cloud Armor Overview
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::TargetInstances;
+    /// async fn sample(
+    ///    client: &TargetInstances
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .set_security_policy()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn set_security_policy(&self) -> super::builder::target_instances::SetSecurityPolicy {
         super::builder::target_instances::SetSecurityPolicy::new(self.inner.clone())
     }
 
     /// Returns permissions that a caller has on the specified resource.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::TargetInstances;
+    /// async fn sample(
+    ///    client: &TargetInstances
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .test_iam_permissions()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn test_iam_permissions(&self) -> super::builder::target_instances::TestIamPermissions {
         super::builder::target_instances::TestIamPermissions::new(self.inner.clone())
-    }
-
-    /// Retrieves the specified zone-specific Operations resource.
-    pub fn get_operation(&self) -> super::builder::target_instances::GetOperation {
-        super::builder::target_instances::GetOperation::new(self.inner.clone())
     }
 }
 
@@ -17090,11 +27235,43 @@ impl TargetPools {
     }
 
     /// Adds health check URLs to a target pool.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::TargetPools;
+    /// async fn sample(
+    ///    client: &TargetPools
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .add_health_check()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn add_health_check(&self) -> super::builder::target_pools::AddHealthCheck {
         super::builder::target_pools::AddHealthCheck::new(self.inner.clone())
     }
 
     /// Adds an instance to a target pool.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::TargetPools;
+    /// async fn sample(
+    ///    client: &TargetPools
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .add_instance()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn add_instance(&self) -> super::builder::target_pools::AddInstance {
         super::builder::target_pools::AddInstance::new(self.inner.clone())
     }
@@ -17108,23 +27285,87 @@ impl TargetPools {
     }
 
     /// Deletes the specified target pool.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::TargetPools;
+    /// async fn sample(
+    ///    client: &TargetPools
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .delete()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn delete(&self) -> super::builder::target_pools::Delete {
         super::builder::target_pools::Delete::new(self.inner.clone())
     }
 
     /// Returns the specified target pool.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::TargetPools;
+    /// async fn sample(
+    ///    client: &TargetPools
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get(&self) -> super::builder::target_pools::Get {
         super::builder::target_pools::Get::new(self.inner.clone())
     }
 
     /// Gets the most recent health check results for each IP for the
     /// instance that is referenced by the given target pool.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::TargetPools;
+    /// async fn sample(
+    ///    client: &TargetPools
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get_health()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get_health(&self) -> super::builder::target_pools::GetHealth {
         super::builder::target_pools::GetHealth::new(self.inner.clone())
     }
 
     /// Creates a target pool in the specified project and region using
     /// the data included in the request.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::TargetPools;
+    /// async fn sample(
+    ///    client: &TargetPools
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .insert()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn insert(&self) -> super::builder::target_pools::Insert {
         super::builder::target_pools::Insert::new(self.inner.clone())
     }
@@ -17136,16 +27377,64 @@ impl TargetPools {
     }
 
     /// Removes health check URL from a target pool.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::TargetPools;
+    /// async fn sample(
+    ///    client: &TargetPools
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .remove_health_check()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn remove_health_check(&self) -> super::builder::target_pools::RemoveHealthCheck {
         super::builder::target_pools::RemoveHealthCheck::new(self.inner.clone())
     }
 
     /// Removes instance URL from a target pool.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::TargetPools;
+    /// async fn sample(
+    ///    client: &TargetPools
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .remove_instance()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn remove_instance(&self) -> super::builder::target_pools::RemoveInstance {
         super::builder::target_pools::RemoveInstance::new(self.inner.clone())
     }
 
     /// Changes a backup target pool's configurations.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::TargetPools;
+    /// async fn sample(
+    ///    client: &TargetPools
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .set_backup()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn set_backup(&self) -> super::builder::target_pools::SetBackup {
         super::builder::target_pools::SetBackup::new(self.inner.clone())
     }
@@ -17153,18 +27442,45 @@ impl TargetPools {
     /// Sets the Google Cloud Armor security policy for the specified target pool.
     /// For more information, seeGoogle
     /// Cloud Armor Overview
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::TargetPools;
+    /// async fn sample(
+    ///    client: &TargetPools
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .set_security_policy()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn set_security_policy(&self) -> super::builder::target_pools::SetSecurityPolicy {
         super::builder::target_pools::SetSecurityPolicy::new(self.inner.clone())
     }
 
     /// Returns permissions that a caller has on the specified resource.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::TargetPools;
+    /// async fn sample(
+    ///    client: &TargetPools
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .test_iam_permissions()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn test_iam_permissions(&self) -> super::builder::target_pools::TestIamPermissions {
         super::builder::target_pools::TestIamPermissions::new(self.inner.clone())
-    }
-
-    /// Retrieves the specified region-specific Operations resource.
-    pub fn get_operation(&self) -> super::builder::target_pools::GetOperation {
-        super::builder::target_pools::GetOperation::new(self.inner.clone())
     }
 }
 
@@ -17277,17 +27593,65 @@ impl TargetSslProxies {
     }
 
     /// Deletes the specified TargetSslProxy resource.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::TargetSslProxies;
+    /// async fn sample(
+    ///    client: &TargetSslProxies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .delete()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn delete(&self) -> super::builder::target_ssl_proxies::Delete {
         super::builder::target_ssl_proxies::Delete::new(self.inner.clone())
     }
 
     /// Returns the specified TargetSslProxy resource.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::TargetSslProxies;
+    /// async fn sample(
+    ///    client: &TargetSslProxies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get(&self) -> super::builder::target_ssl_proxies::Get {
         super::builder::target_ssl_proxies::Get::new(self.inner.clone())
     }
 
     /// Creates a TargetSslProxy resource in the specified project using
     /// the data included in the request.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::TargetSslProxies;
+    /// async fn sample(
+    ///    client: &TargetSslProxies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .insert()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn insert(&self) -> super::builder::target_ssl_proxies::Insert {
         super::builder::target_ssl_proxies::Insert::new(self.inner.clone())
     }
@@ -17299,21 +27663,85 @@ impl TargetSslProxies {
     }
 
     /// Changes the BackendService for TargetSslProxy.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::TargetSslProxies;
+    /// async fn sample(
+    ///    client: &TargetSslProxies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .set_backend_service()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn set_backend_service(&self) -> super::builder::target_ssl_proxies::SetBackendService {
         super::builder::target_ssl_proxies::SetBackendService::new(self.inner.clone())
     }
 
     /// Changes the Certificate Map for TargetSslProxy.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::TargetSslProxies;
+    /// async fn sample(
+    ///    client: &TargetSslProxies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .set_certificate_map()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn set_certificate_map(&self) -> super::builder::target_ssl_proxies::SetCertificateMap {
         super::builder::target_ssl_proxies::SetCertificateMap::new(self.inner.clone())
     }
 
     /// Changes the ProxyHeaderType for TargetSslProxy.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::TargetSslProxies;
+    /// async fn sample(
+    ///    client: &TargetSslProxies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .set_proxy_header()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn set_proxy_header(&self) -> super::builder::target_ssl_proxies::SetProxyHeader {
         super::builder::target_ssl_proxies::SetProxyHeader::new(self.inner.clone())
     }
 
     /// Changes SslCertificates for TargetSslProxy.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::TargetSslProxies;
+    /// async fn sample(
+    ///    client: &TargetSslProxies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .set_ssl_certificates()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn set_ssl_certificates(&self) -> super::builder::target_ssl_proxies::SetSslCertificates {
         super::builder::target_ssl_proxies::SetSslCertificates::new(self.inner.clone())
     }
@@ -17322,13 +27750,24 @@ impl TargetSslProxies {
     /// server-side support for SSL features. This affects connections between
     /// clients and the load balancer. They do not affect the
     /// connection between the load balancer and the backends.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::TargetSslProxies;
+    /// async fn sample(
+    ///    client: &TargetSslProxies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .set_ssl_policy()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn set_ssl_policy(&self) -> super::builder::target_ssl_proxies::SetSslPolicy {
         super::builder::target_ssl_proxies::SetSslPolicy::new(self.inner.clone())
-    }
-
-    /// Retrieves the specified Operations resource.
-    pub fn get_operation(&self) -> super::builder::target_ssl_proxies::GetOperation {
-        super::builder::target_ssl_proxies::GetOperation::new(self.inner.clone())
     }
 }
 
@@ -17450,17 +27889,65 @@ impl TargetTcpProxies {
     }
 
     /// Deletes the specified TargetTcpProxy resource.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::TargetTcpProxies;
+    /// async fn sample(
+    ///    client: &TargetTcpProxies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .delete()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn delete(&self) -> super::builder::target_tcp_proxies::Delete {
         super::builder::target_tcp_proxies::Delete::new(self.inner.clone())
     }
 
     /// Returns the specified TargetTcpProxy resource.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::TargetTcpProxies;
+    /// async fn sample(
+    ///    client: &TargetTcpProxies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get(&self) -> super::builder::target_tcp_proxies::Get {
         super::builder::target_tcp_proxies::Get::new(self.inner.clone())
     }
 
     /// Creates a TargetTcpProxy resource in the specified project using
     /// the data included in the request.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::TargetTcpProxies;
+    /// async fn sample(
+    ///    client: &TargetTcpProxies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .insert()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn insert(&self) -> super::builder::target_tcp_proxies::Insert {
         super::builder::target_tcp_proxies::Insert::new(self.inner.clone())
     }
@@ -17472,18 +27959,45 @@ impl TargetTcpProxies {
     }
 
     /// Changes the BackendService for TargetTcpProxy.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::TargetTcpProxies;
+    /// async fn sample(
+    ///    client: &TargetTcpProxies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .set_backend_service()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn set_backend_service(&self) -> super::builder::target_tcp_proxies::SetBackendService {
         super::builder::target_tcp_proxies::SetBackendService::new(self.inner.clone())
     }
 
     /// Changes the ProxyHeaderType for TargetTcpProxy.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::TargetTcpProxies;
+    /// async fn sample(
+    ///    client: &TargetTcpProxies
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .set_proxy_header()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn set_proxy_header(&self) -> super::builder::target_tcp_proxies::SetProxyHeader {
         super::builder::target_tcp_proxies::SetProxyHeader::new(self.inner.clone())
-    }
-
-    /// Retrieves the specified Operations resource.
-    pub fn get_operation(&self) -> super::builder::target_tcp_proxies::GetOperation {
-        super::builder::target_tcp_proxies::GetOperation::new(self.inner.clone())
     }
 }
 
@@ -17604,17 +28118,65 @@ impl TargetVpnGateways {
     }
 
     /// Deletes the specified target VPN gateway.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::TargetVpnGateways;
+    /// async fn sample(
+    ///    client: &TargetVpnGateways
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .delete()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn delete(&self) -> super::builder::target_vpn_gateways::Delete {
         super::builder::target_vpn_gateways::Delete::new(self.inner.clone())
     }
 
     /// Returns the specified target VPN gateway.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::TargetVpnGateways;
+    /// async fn sample(
+    ///    client: &TargetVpnGateways
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get(&self) -> super::builder::target_vpn_gateways::Get {
         super::builder::target_vpn_gateways::Get::new(self.inner.clone())
     }
 
     /// Creates a target VPN gateway in the specified project and region using
     /// the data included in the request.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::TargetVpnGateways;
+    /// async fn sample(
+    ///    client: &TargetVpnGateways
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .insert()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn insert(&self) -> super::builder::target_vpn_gateways::Insert {
         super::builder::target_vpn_gateways::Insert::new(self.inner.clone())
     }
@@ -17627,13 +28189,24 @@ impl TargetVpnGateways {
 
     /// Sets the labels on a TargetVpnGateway. To learn more about labels, read theLabeling
     /// Resources documentation.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::TargetVpnGateways;
+    /// async fn sample(
+    ///    client: &TargetVpnGateways
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .set_labels()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn set_labels(&self) -> super::builder::target_vpn_gateways::SetLabels {
         super::builder::target_vpn_gateways::SetLabels::new(self.inner.clone())
-    }
-
-    /// Retrieves the specified region-specific Operations resource.
-    pub fn get_operation(&self) -> super::builder::target_vpn_gateways::GetOperation {
-        super::builder::target_vpn_gateways::GetOperation::new(self.inner.clone())
     }
 }
 
@@ -17752,17 +28325,65 @@ impl UrlMaps {
     }
 
     /// Deletes the specified UrlMap resource.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::UrlMaps;
+    /// async fn sample(
+    ///    client: &UrlMaps
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .delete()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn delete(&self) -> super::builder::url_maps::Delete {
         super::builder::url_maps::Delete::new(self.inner.clone())
     }
 
     /// Returns the specified UrlMap resource.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::UrlMaps;
+    /// async fn sample(
+    ///    client: &UrlMaps
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get(&self) -> super::builder::url_maps::Get {
         super::builder::url_maps::Get::new(self.inner.clone())
     }
 
     /// Creates a UrlMap resource in the specified project using
     /// the data included in the request.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::UrlMaps;
+    /// async fn sample(
+    ///    client: &UrlMaps
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .insert()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn insert(&self) -> super::builder::url_maps::Insert {
         super::builder::url_maps::Insert::new(self.inner.clone())
     }
@@ -17772,6 +28393,22 @@ impl UrlMaps {
     ///
     /// For more information, see [Invalidating cached
     /// content](/cdn/docs/invalidating-cached-content).
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::UrlMaps;
+    /// async fn sample(
+    ///    client: &UrlMaps
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .invalidate_cache()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn invalidate_cache(&self) -> super::builder::url_maps::InvalidateCache {
         super::builder::url_maps::InvalidateCache::new(self.inner.clone())
     }
@@ -17786,12 +28423,44 @@ impl UrlMaps {
     /// request. This method supportsPATCH
     /// semantics and uses theJSON merge
     /// patch format and processing rules.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::UrlMaps;
+    /// async fn sample(
+    ///    client: &UrlMaps
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .patch()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn patch(&self) -> super::builder::url_maps::Patch {
         super::builder::url_maps::Patch::new(self.inner.clone())
     }
 
     /// Updates the specified UrlMap resource with the data included in the
     /// request.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::UrlMaps;
+    /// async fn sample(
+    ///    client: &UrlMaps
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .update()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn update(&self) -> super::builder::url_maps::Update {
         super::builder::url_maps::Update::new(self.inner.clone())
     }
@@ -17799,13 +28468,24 @@ impl UrlMaps {
     /// Runs static validation for the UrlMap. In particular, the tests of the
     /// provided UrlMap will be run. Calling this method does NOT create the
     /// UrlMap.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::UrlMaps;
+    /// async fn sample(
+    ///    client: &UrlMaps
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .validate()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn validate(&self) -> super::builder::url_maps::Validate {
         super::builder::url_maps::Validate::new(self.inner.clone())
-    }
-
-    /// Retrieves the specified Operations resource.
-    pub fn get_operation(&self) -> super::builder::url_maps::GetOperation {
-        super::builder::url_maps::GetOperation::new(self.inner.clone())
     }
 }
 
@@ -17923,22 +28603,86 @@ impl VpnGateways {
     }
 
     /// Deletes the specified VPN gateway.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::VpnGateways;
+    /// async fn sample(
+    ///    client: &VpnGateways
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .delete()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn delete(&self) -> super::builder::vpn_gateways::Delete {
         super::builder::vpn_gateways::Delete::new(self.inner.clone())
     }
 
     /// Returns the specified VPN gateway.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::VpnGateways;
+    /// async fn sample(
+    ///    client: &VpnGateways
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get(&self) -> super::builder::vpn_gateways::Get {
         super::builder::vpn_gateways::Get::new(self.inner.clone())
     }
 
     /// Returns the status for the specified VPN gateway.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::VpnGateways;
+    /// async fn sample(
+    ///    client: &VpnGateways
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get_status()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get_status(&self) -> super::builder::vpn_gateways::GetStatus {
         super::builder::vpn_gateways::GetStatus::new(self.inner.clone())
     }
 
     /// Creates a VPN gateway in the specified project and region using
     /// the data included in the request.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::VpnGateways;
+    /// async fn sample(
+    ///    client: &VpnGateways
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .insert()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn insert(&self) -> super::builder::vpn_gateways::Insert {
         super::builder::vpn_gateways::Insert::new(self.inner.clone())
     }
@@ -17951,18 +28695,45 @@ impl VpnGateways {
 
     /// Sets the labels on a VpnGateway. To learn more about labels, read theLabeling
     /// Resources documentation.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::VpnGateways;
+    /// async fn sample(
+    ///    client: &VpnGateways
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .set_labels()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn set_labels(&self) -> super::builder::vpn_gateways::SetLabels {
         super::builder::vpn_gateways::SetLabels::new(self.inner.clone())
     }
 
     /// Returns permissions that a caller has on the specified resource.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::VpnGateways;
+    /// async fn sample(
+    ///    client: &VpnGateways
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .test_iam_permissions()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn test_iam_permissions(&self) -> super::builder::vpn_gateways::TestIamPermissions {
         super::builder::vpn_gateways::TestIamPermissions::new(self.inner.clone())
-    }
-
-    /// Retrieves the specified region-specific Operations resource.
-    pub fn get_operation(&self) -> super::builder::vpn_gateways::GetOperation {
-        super::builder::vpn_gateways::GetOperation::new(self.inner.clone())
     }
 }
 
@@ -18080,17 +28851,65 @@ impl VpnTunnels {
     }
 
     /// Deletes the specified VpnTunnel resource.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::VpnTunnels;
+    /// async fn sample(
+    ///    client: &VpnTunnels
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .delete()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn delete(&self) -> super::builder::vpn_tunnels::Delete {
         super::builder::vpn_tunnels::Delete::new(self.inner.clone())
     }
 
     /// Returns the specified VpnTunnel resource.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::VpnTunnels;
+    /// async fn sample(
+    ///    client: &VpnTunnels
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get(&self) -> super::builder::vpn_tunnels::Get {
         super::builder::vpn_tunnels::Get::new(self.inner.clone())
     }
 
     /// Creates a VpnTunnel resource in the specified project and region using
     /// the data included in the request.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::VpnTunnels;
+    /// async fn sample(
+    ///    client: &VpnTunnels
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .insert()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn insert(&self) -> super::builder::vpn_tunnels::Insert {
         super::builder::vpn_tunnels::Insert::new(self.inner.clone())
     }
@@ -18103,13 +28922,24 @@ impl VpnTunnels {
 
     /// Sets the labels on a VpnTunnel. To learn more about labels, read theLabeling
     /// Resources documentation.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::VpnTunnels;
+    /// async fn sample(
+    ///    client: &VpnTunnels
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .set_labels()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn set_labels(&self) -> super::builder::vpn_tunnels::SetLabels {
         super::builder::vpn_tunnels::SetLabels::new(self.inner.clone())
-    }
-
-    /// Retrieves the specified region-specific Operations resource.
-    pub fn get_operation(&self) -> super::builder::vpn_tunnels::GetOperation {
-        super::builder::vpn_tunnels::GetOperation::new(self.inner.clone())
     }
 }
 
@@ -18219,17 +29049,65 @@ impl WireGroups {
     }
 
     /// Deletes the specified wire group in the given scope.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::WireGroups;
+    /// async fn sample(
+    ///    client: &WireGroups
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .delete()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn delete(&self) -> super::builder::wire_groups::Delete {
         super::builder::wire_groups::Delete::new(self.inner.clone())
     }
 
     /// Gets the specified wire group resource in the given scope.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::WireGroups;
+    /// async fn sample(
+    ///    client: &WireGroups
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get(&self) -> super::builder::wire_groups::Get {
         super::builder::wire_groups::Get::new(self.inner.clone())
     }
 
     /// Creates a wire group in the specified project in the given scope
     /// using the parameters that are included in the request.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::WireGroups;
+    /// async fn sample(
+    ///    client: &WireGroups
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .insert()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn insert(&self) -> super::builder::wire_groups::Insert {
         super::builder::wire_groups::Insert::new(self.inner.clone())
     }
@@ -18243,13 +29121,24 @@ impl WireGroups {
     /// request. This method supportsPATCH
     /// semantics and usesJSON merge
     /// patch format and processing rules.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::WireGroups;
+    /// async fn sample(
+    ///    client: &WireGroups
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .patch()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn patch(&self) -> super::builder::wire_groups::Patch {
         super::builder::wire_groups::Patch::new(self.inner.clone())
-    }
-
-    /// Retrieves the specified Operations resource.
-    pub fn get_operation(&self) -> super::builder::wire_groups::GetOperation {
-        super::builder::wire_groups::GetOperation::new(self.inner.clone())
     }
 }
 
@@ -18359,11 +29248,42 @@ impl ZoneOperations {
     }
 
     /// Deletes the specified zone-specific Operations resource.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::ZoneOperations;
+    /// async fn sample(
+    ///    client: &ZoneOperations
+    /// ) -> gax::Result<()> {
+    ///     client
+    ///         .delete()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn delete(&self) -> super::builder::zone_operations::Delete {
         super::builder::zone_operations::Delete::new(self.inner.clone())
     }
 
     /// Retrieves the specified zone-specific Operations resource.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::ZoneOperations;
+    /// async fn sample(
+    ///    client: &ZoneOperations
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get(&self) -> super::builder::zone_operations::Get {
         super::builder::zone_operations::Get::new(self.inner.clone())
     }
@@ -18391,6 +29311,22 @@ impl ZoneOperations {
     /// - If the default deadline is reached, there is no guarantee that the
     ///   operation is actually done when the method returns. Be prepared to retry
     ///   if the operation is not `DONE`.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::ZoneOperations;
+    /// async fn sample(
+    ///    client: &ZoneOperations
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .wait()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn wait(&self) -> super::builder::zone_operations::Wait {
         super::builder::zone_operations::Wait::new(self.inner.clone())
     }
@@ -18502,6 +29438,22 @@ impl Zones {
     }
 
     /// Returns the specified Zone resource.
+    ///
+    /// # Example
+    /// ```
+    /// # use google_cloud_compute_v1::client::Zones;
+    /// async fn sample(
+    ///    client: &Zones
+    /// ) -> gax::Result<()> {
+    ///     let response = client
+    ///         .get()
+    ///         /* set fields */
+    ///         .send()
+    ///         .await?;
+    ///     println!("response {:?}", response);
+    ///     Ok(())
+    /// }
+    /// ```
     pub fn get(&self) -> super::builder::zones::Get {
         super::builder::zones::Get::new(self.inner.clone())
     }
