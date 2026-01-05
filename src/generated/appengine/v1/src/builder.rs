@@ -18,7 +18,7 @@ pub mod applications {
     use crate::Result;
 
     /// A builder for [Applications][crate::client::Applications].
-    ///
+    /// fake code change
     /// ```
     /// # tokio_test::block_on(async {
     /// # use google_cloud_appengine_v1::*;
