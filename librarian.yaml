@@ -18,7 +18,7 @@ sources:
     sha256: 96491310ba1b5c0c71738d3d80327a95196c1b6ac16f033e3fa440870efbbf5c
 release:
   branch: main
-  remote: upstream
+  remote: origin
 default:
   output: src/generated/
   release_level: stable
