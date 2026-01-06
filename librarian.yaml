@@ -106,13 +106,13 @@ libraries:
   - name: common
     version: 0.0.0
     copyright_year: "2025"
-    output: /Users/ldetmer/workspace2/google-cloud-rust/src/wkt/tests/common
+    output: src/wkt/tests/common
     rust:
       modules:
         - module_path: crate::generated
           module_roots:
             project-root: .
-          output: /Users/ldetmer/workspace2/google-cloud-rust/src/wkt/tests/common/src/generated
+          output: src/wkt/tests/common/src/generated
           source: src/wkt/tests/protos
           template: mod
     veneer: true
@@ -396,7 +396,7 @@ libraries:
   - name: google-cloud-auth
     version: 1.4.0
     copyright_year: "2025"
-    output: /Users/ldetmer/workspace2/google-cloud-rust/src/auth
+    output: src/auth
     veneer: true
   - name: google-cloud-backupdr-v1
     version: 1.3.0
@@ -407,7 +407,7 @@ libraries:
   - name: google-cloud-base
     version: 0.0.0
     copyright_year: "2025"
-    output: /Users/ldetmer/workspace2/google-cloud-rust/src/base
+    output: src/base
     veneer: true
   - name: google-cloud-beyondcorp-appconnections-v1
     version: 1.3.0
@@ -430,7 +430,7 @@ libraries:
   - name: google-cloud-bigquery
     version: 0.0.0
     copyright_year: "2025"
-    output: /Users/ldetmer/workspace2/google-cloud-rust/src/bigquery
+    output: src/bigquery
     veneer: true
   - name: google-cloud-bigquery-analyticshub-v1
     version: 1.3.0
@@ -462,7 +462,7 @@ libraries:
   - name: google-cloud-bigtable
     version: 0.0.0
     copyright_year: "2025"
-    output: /Users/ldetmer/workspace2/google-cloud-rust/src/bigtable
+    output: src/bigtable
     veneer: true
   - name: google-cloud-bigtable-admin-v2
     version: 1.3.0
@@ -602,7 +602,7 @@ libraries:
   - name: google-cloud-datastore
     version: 0.0.0
     copyright_year: "2025"
-    output: /Users/ldetmer/workspace2/google-cloud-rust/src/datastore
+    output: src/datastore
     veneer: true
   - name: google-cloud-datastore-admin-v1
     version: 1.3.0
@@ -671,12 +671,12 @@ libraries:
   - name: google-cloud-firestore
     version: 0.0.0
     copyright_year: "2025"
-    output: /Users/ldetmer/workspace2/google-cloud-rust/src/firestore
+    output: src/firestore
     rust:
       modules:
         - generate_setter_samples: true
           module_path: crate::generated::gapic::model
-          output: /Users/ldetmer/workspace2/google-cloud-rust/src/firestore/src/generated/convert/firestore
+          output: src/firestore/src/generated/convert/firestore
           skipped_ids:
             - .google.firestore.v1.Firestore.ExecutePipeline
             - .google.firestore.v1.ExecutePipelineRequest
@@ -687,11 +687,11 @@ libraries:
         - generate_setter_samples: true
           include_list: latlng.proto
           module_path: gtype::model
-          output: /Users/ldetmer/workspace2/google-cloud-rust/src/firestore/src/generated/convert/type
+          output: src/firestore/src/generated/convert/type
           source: google/type
           template: convert-prost
         - generate_setter_samples: true
-          output: /Users/ldetmer/workspace2/google-cloud-rust/src/firestore/src/generated/gapic
+          output: src/firestore/src/generated/gapic
           skipped_ids:
             - .google.firestore.v1.Firestore.ExecutePipeline
             - .google.firestore.v1.ExecutePipelineRequest
@@ -701,7 +701,7 @@ libraries:
           template: grpc-client
           title_override: Cloud Firestore API
         - generate_setter_samples: true
-          output: /Users/ldetmer/workspace2/google-cloud-rust/src/firestore/src/generated/protos/firestore
+          output: src/firestore/src/generated/protos/firestore
           source: google/firestore/v1
           template: prost
     veneer: true
@@ -716,23 +716,23 @@ libraries:
   - name: google-cloud-gax
     version: 1.5.0
     copyright_year: "2025"
-    output: /Users/ldetmer/workspace2/google-cloud-rust/src/gax
+    output: src/gax
     veneer: true
   - name: google-cloud-gax-internal
     version: 0.7.7
     copyright_year: "2025"
-    output: /Users/ldetmer/workspace2/google-cloud-rust/src/gax-internal
+    output: src/gax-internal
     rust:
       modules:
         - generate_setter_samples: true
           module_path: rpc::model
-          output: /Users/ldetmer/workspace2/google-cloud-rust/src/gax-internal/src/generated/convert/rpc
+          output: src/gax-internal/src/generated/convert/rpc
           skipped_ids:
             - .google.rpc.Status
           source: google/rpc
           template: convert-prost
         - generate_setter_samples: true
-          output: /Users/ldetmer/workspace2/google-cloud-rust/src/gax-internal/src/generated/protos/rpc
+          output: src/gax-internal/src/generated/protos/rpc
           source: google/rpc
           template: prost
     veneer: true
@@ -925,7 +925,7 @@ libraries:
   - name: google-cloud-lro
     version: 1.2.0
     copyright_year: "2025"
-    output: /Users/ldetmer/workspace2/google-cloud-rust/src/lro
+    output: src/lro
     veneer: true
   - name: google-cloud-lustre-v1
     version: 1.3.0
@@ -1091,7 +1091,7 @@ libraries:
   - name: google-cloud-pubsub
     version: 0.32.1-preview
     copyright_year: "2025"
-    output: /Users/ldetmer/workspace2/google-cloud-rust/src/pubsub
+    output: src/pubsub
     rust:
       modules:
         - generate_setter_samples: true
@@ -1101,7 +1101,7 @@ libraries:
             - .google.pubsub.v1.Subscriber.Acknowledge
             - .google.pubsub.v1.Subscriber.ModifyAckDeadline
           module_path: crate::generated::gapic_dataplane::model
-          output: /Users/ldetmer/workspace2/google-cloud-rust/src/pubsub/src/generated/convert/pubsub
+          output: src/pubsub/src/generated/convert/pubsub
           source: google/pubsub/v1
           template: convert-prost
         - documentation_overrides:
@@ -1140,7 +1140,7 @@ libraries:
             - .google.pubsub.v1.Subscriber.DeleteSnapshot
             - .google.pubsub.v1.Subscriber.Seek
           name_overrides: .google.pubsub.v1.Publisher=TopicAdmin,.google.pubsub.v1.Subscriber=SubscriptionAdmin
-          output: /Users/ldetmer/workspace2/google-cloud-rust/src/pubsub/src/generated/gapic
+          output: src/pubsub/src/generated/gapic
           service_config: google/pubsub/v1/pubsub_v1.yaml
           source: google/pubsub/v1
           template: http-client
@@ -1151,14 +1151,14 @@ libraries:
             - .google.pubsub.v1.Subscriber.StreamingPull
             - .google.pubsub.v1.Subscriber.Acknowledge
             - .google.pubsub.v1.Subscriber.ModifyAckDeadline
-          output: /Users/ldetmer/workspace2/google-cloud-rust/src/pubsub/src/generated/gapic_dataplane
+          output: src/pubsub/src/generated/gapic_dataplane
           service_config: google/pubsub/v1/pubsub_v1.yaml
           source: google/pubsub/v1
           template: grpc-client
         - generate_setter_samples: true
           included_ids:
             - .google.pubsub.v1.Publisher.Publish
-          output: /Users/ldetmer/workspace2/google-cloud-rust/src/pubsub/src/generated/protos/pubsub
+          output: src/pubsub/src/generated/protos/pubsub
           source: google/pubsub/v1
           template: prost
     veneer: true
@@ -1261,7 +1261,7 @@ libraries:
   - name: google-cloud-spanner
     version: 0.0.0
     copyright_year: "2025"
-    output: /Users/ldetmer/workspace2/google-cloud-rust/src/spanner
+    output: src/spanner
     veneer: true
   - name: google-cloud-spanner-admin-database-v1
     version: 1.3.0
@@ -1318,25 +1318,25 @@ libraries:
   - name: google-cloud-storage
     version: 1.6.0
     copyright_year: "2025"
-    output: /Users/ldetmer/workspace2/google-cloud-rust/src/storage
+    output: src/storage
     rust:
       modules:
         - generate_setter_samples: true
           module_path: crate::generated::gapic_control::model
           name_overrides: .google.storage.control.v2.IntelligenceConfig.Filter.cloud_storage_buckets=CloudStorageBucketsOneOf,.google.storage.control.v2.IntelligenceConfig.Filter.cloud_storage_locations=CloudStorageLocationsOneOf
-          output: /Users/ldetmer/workspace2/google-cloud-rust/src/storage/src/generated/convert/control
+          output: src/storage/src/generated/convert/control
           source: google/storage/control/v2
           template: convert-prost
         - generate_setter_samples: true
           module_path: iam_v1::model
-          output: /Users/ldetmer/workspace2/google-cloud-rust/src/storage/src/generated/convert/iam
+          output: src/storage/src/generated/convert/iam
           skipped_ids:
             - .google.iam.v1.ResourcePolicyMember
           source: google/iam/v1
           template: convert-prost
         - generate_setter_samples: true
           module_path: longrunning::model
-          output: /Users/ldetmer/workspace2/google-cloud-rust/src/storage/src/generated/convert/longrunning
+          output: src/storage/src/generated/convert/longrunning
           skipped_ids:
             - .google.longrunning.Operation
           source: google/longrunning
@@ -1361,13 +1361,13 @@ libraries:
             - .google.storage.v2.Storage.RewriteObject
             - .google.storage.v2.Storage.MoveObject
           module_path: crate::generated::gapic::model
-          output: /Users/ldetmer/workspace2/google-cloud-rust/src/storage/src/generated/convert/storage
+          output: src/storage/src/generated/convert/storage
           source: google/storage/v2
           template: convert-prost
         - generate_setter_samples: true
           include_list: date.proto,expr.proto
           module_path: gtype::model
-          output: /Users/ldetmer/workspace2/google-cloud-rust/src/storage/src/generated/convert/type
+          output: src/storage/src/generated/convert/type
           source: google/type
           template: convert-prost
         - generate_setter_samples: true
@@ -1391,7 +1391,7 @@ libraries:
             - .google.storage.v2.WriteObjectSpec
           include_grpc_only_methods: true
           name_overrides: .google.storage.v2.Storage=StorageControl
-          output: /Users/ldetmer/workspace2/google-cloud-rust/src/storage/src/generated/gapic
+          output: src/storage/src/generated/gapic
           routing_required: true
           service_config: google/storage/v2/storage_v2.yaml
           source: google/storage/v2
@@ -1400,13 +1400,13 @@ libraries:
           has_veneer: true
           include_grpc_only_methods: true
           name_overrides: .google.storage.control.v2.IntelligenceConfig.Filter.cloud_storage_buckets=CloudStorageBucketsOneOf,.google.storage.control.v2.IntelligenceConfig.Filter.cloud_storage_locations=CloudStorageLocationsOneOf
-          output: /Users/ldetmer/workspace2/google-cloud-rust/src/storage/src/generated/gapic_control
+          output: src/storage/src/generated/gapic_control
           routing_required: true
           service_config: google/storage/control/v2/storage_v2.yaml
           source: google/storage/control/v2
           template: grpc-client
         - generate_setter_samples: true
-          output: /Users/ldetmer/workspace2/google-cloud-rust/src/storage/src/generated/protos/control
+          output: src/storage/src/generated/protos/control
           post_process_protos: |-
             let name = format!("{destination}/google.storage.control.v2.rs");
             let content = std::fs::read_to_string(&name)
@@ -1438,7 +1438,7 @@ libraries:
           source: google/storage/control/v2
           template: prost
         - generate_setter_samples: true
-          output: /Users/ldetmer/workspace2/google-cloud-rust/src/storage/src/generated/protos/storage
+          output: src/storage/src/generated/protos/storage
           source: google/storage/v2
           template: prost
     veneer: true
@@ -1470,7 +1470,7 @@ libraries:
   - name: google-cloud-test-utils
     version: 0.0.0
     copyright_year: "2025"
-    output: /Users/ldetmer/workspace2/google-cloud-rust/src/test-utils
+    output: src/test-utils
     veneer: true
   - name: google-cloud-texttospeech-v1
     version: 1.4.0
@@ -1542,13 +1542,13 @@ libraries:
   - name: google-cloud-wkt
     version: 1.2.0
     copyright_year: "2025"
-    output: /Users/ldetmer/workspace2/google-cloud-rust/src/wkt
+    output: src/wkt
     rust:
       modules:
         - generate_setter_samples: true
           include_list: api.proto,source_context.proto,type.proto,descriptor.proto
           module_path: crate
-          output: /Users/ldetmer/workspace2/google-cloud-rust/src/wkt/src/generated
+          output: src/wkt/src/generated
           source: google/protobuf
           template: mod
     veneer: true
@@ -1570,17 +1570,17 @@ libraries:
   - name: grpc-server
     version: 0.0.0
     copyright_year: "2025"
-    output: /Users/ldetmer/workspace2/google-cloud-rust/src/gax-internal/grpc-server
+    output: src/gax-internal/grpc-server
     veneer: true
   - name: pubsub-grpc-mock
     version: 0.0.0
     copyright_year: "2025"
-    output: /Users/ldetmer/workspace2/google-cloud-rust/src/pubsub/grpc-mock
+    output: src/pubsub/grpc-mock
     veneer: true
   - name: pubsub-samples
     version: 0.0.0
     copyright_year: "2025"
-    output: /Users/ldetmer/workspace2/google-cloud-rust/src/pubsub/examples
+    output: src/pubsub/examples
     veneer: true
   - name: secretmanager-openapi-v1
     version: 1.0.0
@@ -1596,25 +1596,25 @@ libraries:
   - name: storage-grpc-mock
     version: 0.0.0
     copyright_year: "2025"
-    output: /Users/ldetmer/workspace2/google-cloud-rust/src/storage/grpc-mock
+    output: src/storage/grpc-mock
     veneer: true
   - name: storage-random
     version: 0.0.0
     copyright_year: "2025"
-    output: /Users/ldetmer/workspace2/google-cloud-rust/src/storage/benchmarks/random
+    output: src/storage/benchmarks/random
     veneer: true
   - name: storage-samples
     version: 0.0.0
     copyright_year: "2025"
-    output: /Users/ldetmer/workspace2/google-cloud-rust/src/storage/examples
+    output: src/storage/examples
     veneer: true
   - name: storage-scenarios
     version: 0.0.0
     copyright_year: "2025"
-    output: /Users/ldetmer/workspace2/google-cloud-rust/src/storage/tests/scenarios
+    output: src/storage/tests/scenarios
     veneer: true
   - name: storage-w1r3
     version: 0.0.0
     copyright_year: "2025"
-    output: /Users/ldetmer/workspace2/google-cloud-rust/src/storage/benchmarks/w1r3
+    output: src/storage/benchmarks/w1r3
     veneer: true
